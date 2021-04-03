@@ -1,6 +1,7 @@
 aiohttp==3.7.4.post0
 appdirs==1.4.4
 appnope==0.1.2
+arch==4.19
 argon2-cffi==20.1.0
 async-generator==1.10
 async-timeout==3.0.1
@@ -60,11 +61,13 @@ pandas==1.2.3
 pandocfilters==1.4.3
 parso==0.8.1
 pastel==0.2.1
+patsy==0.5.1
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==8.1.2
 prometheus-client==0.9.0
 prompt-toolkit==3.0.18
+property-cached==1.6.4
 ptyprocess==0.7.0
 pycparser==2.20
 Pygments==2.8.1
@@ -79,9 +82,11 @@ pytz==2021.1
 pyzmq==22.0.3
 qtconsole==5.0.3
 QtPy==1.9.0
+scipy==1.6.2
 Send2Trash==1.5.0
 setuptools-git==1.2
 six==1.15.0
+statsmodels==0.12.2
 terminado==0.9.3
 testpath==0.4.4
 tornado==6.1
