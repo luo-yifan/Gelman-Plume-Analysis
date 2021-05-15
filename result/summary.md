@@ -44,7 +44,7 @@ DatepartRegression
 }
 `
 
-![](./fig/110 Parkland Plaza.png)
+![](./fig/110_Parkland_Plaza.png)
 ## 170 Aprill
 `
 Initiated AutoTS object with best model: 
@@ -78,4 +78,4 @@ ZeroesNaive
 {}
 `
 
-![](./fig/170 Aprill.png)
+![](./fig/170_Aprill.png)
