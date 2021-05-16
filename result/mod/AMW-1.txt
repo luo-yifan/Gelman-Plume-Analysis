@@ -1,0 +1,84 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "c1f6362f9c6b41cedde365f47fc9ce90": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 7
+          }
+        }
+      }
+    },
+    "a6651612bb7b0235be81b396802f59ad": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Round"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          }
+        }
+      }
+    },
+    "a2c48c6e85447ff0bdd3c49fdb1eae57": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Round",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 7
+          }
+        }
+      }
+    }
+  }
+}

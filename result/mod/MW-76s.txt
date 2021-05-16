@@ -1,0 +1,17 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "RollingMeanTransformer",
+    "1": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "fixed": true,
+      "window": 3
+    },
+    "1": {}
+  }
+}
+{}

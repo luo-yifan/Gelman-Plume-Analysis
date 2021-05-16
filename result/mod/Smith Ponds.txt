@@ -1,0 +1,29 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "SeasonalDifference",
+    "1": "MinMaxScaler",
+    "2": "ClipOutliers",
+    "3": "CumSumTransformer",
+    "4": "StandardScaler"
+  },
+  "transformation_params": {
+    "0": {
+      "lag_1": 7,
+      "method": "LastValue"
+    },
+    "1": {},
+    "2": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    },
+    "3": {},
+    "4": {}
+  }
+}
+{
+  "method": "Mode"
+}

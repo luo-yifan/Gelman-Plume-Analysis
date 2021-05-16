@@ -1,0 +1,91 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "0448f0d2dcab3a4bec36186769469fcd": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "Round",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {}
+        }
+      }
+    },
+    "1ef594845ea07f416e14fa2b204c7529": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Tweedie",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "Round",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {}
+        }
+      }
+    },
+    "49cf530c9cbb56ae73cda0808eca7ac7": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "SinTrend",
+          "1": "PowerTransformer",
+          "2": "MaxAbsScaler",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  }
+}

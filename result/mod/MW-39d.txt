@@ -1,0 +1,95 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "ba5216c47ec25b47ff31a03fd21f06c9": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": true,
+        "stochastic_level": true,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "Detrend",
+          "2": "StandardScaler",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "Linear"
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "0b6ec029e9ff9ce1f099f194feaafc10": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Round"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": false,
+            "on_inverse": true
+          }
+        }
+      }
+    },
+    "623293dadcd5a70438fb5c8e6f6ebd51": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "DecisionTree",
+          "model_params": {
+            "max_depth": null,
+            "min_samples_split": 1.0
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  }
+}

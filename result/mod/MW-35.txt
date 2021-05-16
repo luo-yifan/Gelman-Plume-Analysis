@@ -1,0 +1,44 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "Round",
+    "2": "Detrend",
+    "3": "PositiveShift",
+    "4": "Discretize"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 4,
+      "fillna": null
+    },
+    "1": {
+      "model": "middle",
+      "decimals": 2,
+      "on_transform": false,
+      "on_inverse": true
+    },
+    "2": {
+      "model": "Linear"
+    },
+    "3": {},
+    "4": {
+      "discretization": "upper",
+      "n_bins": 5
+    }
+  }
+}
+{
+  "level": true,
+  "trend": true,
+  "cycle": false,
+  "damped_cycle": false,
+  "irregular": false,
+  "stochastic_trend": true,
+  "stochastic_level": true,
+  "stochastic_cycle": true,
+  "regression_type": "Holiday"
+}

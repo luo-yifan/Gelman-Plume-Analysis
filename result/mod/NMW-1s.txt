@@ -1,0 +1,85 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "83863d81f008929d0ef81cded60abcef": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "PositiveShift",
+          "2": "DifferencedTransformer",
+          "3": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "18a5122b8ce66d5df98f431627ae6351": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "PositiveShift",
+          "2": "DifferencedTransformer",
+          "3": "bkfilter",
+          "4": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "1ae4ae36d2b6c0b94e9424171c0c9a00": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 7
+          }
+        }
+      }
+    }
+  }
+}

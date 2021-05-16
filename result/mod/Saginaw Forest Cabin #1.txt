@@ -1,0 +1,12 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {}
+  }
+}
+{}

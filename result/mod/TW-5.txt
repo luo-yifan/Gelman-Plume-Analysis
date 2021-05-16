@@ -1,0 +1,116 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "18f5e5f70919e0829b772d02dbe13ebd": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "Detrend",
+          "3": "MaxAbsScaler",
+          "4": "PowerTransformer",
+          "5": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {},
+          "5": {
+            "lag_1": 12,
+            "method": "Mean"
+          }
+        }
+      }
+    },
+    "83828fc3c35e04315bea420ab81dd30f": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "QuantileTransformer",
+          "2": "Detrend",
+          "3": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {}
+        }
+      }
+    },
+    "4bb70976e20989a07ea11ccb7bf61ba1": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 5,
+        "regression_model": {
+          "model": "DecisionTree",
+          "model_params": {
+            "max_depth": 3,
+            "min_samples_split": 2
+          }
+        },
+        "input_dim": "multivariate",
+        "output_dim": "1step",
+        "normalize_window": false,
+        "shuffle": true,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "QuantileTransformer",
+          "2": "Detrend",
+          "3": "QuantileTransformer",
+          "4": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          },
+          "4": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "PctChangeTransformer",
+    "1": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "lag_1": 7,
+      "method": "Median"
+    }
+  }
+}
+{
+  "family": "Poisson",
+  "constant": false,
+  "regression_type": null
+}

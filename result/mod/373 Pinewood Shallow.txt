@@ -1,0 +1,127 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "e235d716be05db447563b16819375f94": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": false,
+        "stochastic_level": true,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "Detrend",
+          "2": "Discretize",
+          "3": "DifferencedTransformer",
+          "4": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "uniform",
+            "n_quantiles": 8
+          },
+          "1": {
+            "model": "Linear"
+          },
+          "2": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "e155e240e2f80d2457cfee65dc3081bf": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": false,
+        "stochastic_level": true,
+        "stochastic_cycle": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "Detrend",
+          "2": "Discretize",
+          "3": "DifferencedTransformer",
+          "4": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "uniform",
+            "n_quantiles": 8
+          },
+          "1": {
+            "model": "Linear"
+          },
+          "2": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "f5dba99150defbbdb9be1d62364562ac": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": false,
+        "regression_type": "Holiday"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "Detrend",
+          "2": "Discretize",
+          "3": "DifferencedTransformer",
+          "4": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "uniform",
+            "n_quantiles": 8
+          },
+          "1": {
+            "model": "Linear"
+          },
+          "2": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    }
+  }
+}

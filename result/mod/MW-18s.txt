@@ -1,0 +1,95 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "1a7fe860b8fa78883629e7cacb84b007": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "RobustScaler",
+          "4": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": true,
+            "window": 3
+          },
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {
+            "center": "mean"
+          }
+        }
+      }
+    },
+    "421762a3e6867208c3436fbe750ccd6c": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": true,
+            "window": 3
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "35874ef8c5ff9b2e01d5cbda3ce7f458": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RollingMeanTransformer",
+          "2": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {
+            "fixed": false,
+            "window": 10
+          },
+          "2": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

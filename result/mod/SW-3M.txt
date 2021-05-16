@@ -1,0 +1,96 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "6d023a578cf69c0894844452511ff077": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "DifferencedTransformer",
+          "4": "ClipOutliers",
+          "5": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "5": {}
+        }
+      }
+    },
+    "383a9373483bb2d4b885c251b647d40d": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "DifferencedTransformer",
+          "4": "ClipOutliers",
+          "5": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "5": {}
+        }
+      }
+    },
+    "7f6bca67bfa8a452b2bd2f04074acdb3": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": "multiplicative",
+        "seasonal": "additive",
+        "seasonal_periods": 28
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

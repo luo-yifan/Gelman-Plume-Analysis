@@ -1,0 +1,91 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "b8b4b0dda7914da650b6498a5ee5740c": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "CumSumTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "a0093944d83e973b97b606faa87958e7": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "sgd",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "RollingMean100thN",
+          "1": "MaxAbsScaler",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "8ce4f78c3fe31489e1cd754640056adb": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

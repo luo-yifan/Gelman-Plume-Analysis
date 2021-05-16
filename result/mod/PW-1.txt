@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "RobustScaler",
+    "1": "RobustScaler",
+    "2": "PowerTransformer",
+    "3": "StandardScaler",
+    "4": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{}

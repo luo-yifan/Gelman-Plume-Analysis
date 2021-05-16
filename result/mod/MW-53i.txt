@@ -1,0 +1,24 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "RollingMeanTransformer",
+    "2": "Detrend"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "fixed": true,
+      "window": 10
+    },
+    "2": {
+      "model": "Linear"
+    }
+  }
+}
+{
+  "holiday": true,
+  "regression_type": null
+}

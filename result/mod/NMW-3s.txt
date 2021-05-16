@@ -1,0 +1,18 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "MaxAbsScaler",
+    "1": "Log"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {}
+  }
+}
+{
+  "family": "NegativeBinomial",
+  "constant": false,
+  "regression_type": null
+}

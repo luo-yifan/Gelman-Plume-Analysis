@@ -1,0 +1,21 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    },
+    "1": {}
+  }
+}
+{
+  "holiday": true,
+  "regression_type": null
+}

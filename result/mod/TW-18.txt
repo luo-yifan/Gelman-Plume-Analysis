@@ -1,0 +1,93 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "c27214b63d0c0f2c95abc926f3cc7e2c": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 7,
+        "lag_2": 2
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "PctChangeTransformer",
+          "2": "PositiveShift",
+          "3": "RobustScaler",
+          "4": "CenterLastValue"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {
+            "rows": 5
+          }
+        }
+      }
+    },
+    "de469473f94644fd19c5a45142cd1cc9": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "bkfilter",
+          "2": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "f601ef4513629fd73350094f7f7657b0": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 5,
+        "regression_model": {
+          "model": "DecisionTree",
+          "model_params": {
+            "max_depth": 9,
+            "min_samples_split": 1.0
+          }
+        },
+        "input_dim": "multivariate",
+        "output_dim": "1step",
+        "normalize_window": false,
+        "shuffle": false,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "MinMaxScaler",
+          "2": "RobustScaler",
+          "3": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          }
+        }
+      }
+    }
+  }
+}

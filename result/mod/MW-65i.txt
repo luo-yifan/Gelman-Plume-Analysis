@@ -1,0 +1,24 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "bkfilter",
+    "2": "Log"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 3.5,
+      "fillna": null
+    },
+    "1": {},
+    "2": {}
+  }
+}
+{
+  "family": "Binomial",
+  "constant": false,
+  "regression_type": "datepart"
+}

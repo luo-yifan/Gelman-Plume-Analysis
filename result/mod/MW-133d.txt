@@ -1,0 +1,97 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "1b96a424461991619913a6758ca0f51a": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "ClipOutliers",
+          "2": "Detrend",
+          "3": "DifferencedTransformer",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "discretization": "lower",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "3f46c08268aae7f65803cf6cd74a963f": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "ClipOutliers",
+          "2": "Detrend",
+          "3": "DifferencedTransformer",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "discretization": "lower",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "98e71ce621846495219a5edf2fda1257": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

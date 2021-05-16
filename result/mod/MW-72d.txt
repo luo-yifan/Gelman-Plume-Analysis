@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "PositiveShift",
+    "2": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {}
+  }
+}
+{
+  "family": "Binomial",
+  "constant": false,
+  "regression_type": null
+}

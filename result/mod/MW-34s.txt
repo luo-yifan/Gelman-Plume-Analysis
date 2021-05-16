@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "SinTrend",
+    "1": "Round"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "model": "middle",
+      "decimals": 2,
+      "on_transform": false,
+      "on_inverse": true
+    }
+  }
+}
+{
+  "method": "Mean",
+  "lag_1": 7,
+  "lag_2": 12
+}

@@ -1,0 +1,96 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "47e677dc95d4ab3fef28108c2f11d10d": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    },
+    "2027f37f0b2e79f5705772b969cdd0c4": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 500,
+            "loss": "linear",
+            "base_estimator": "DecisionTree",
+            "learning_rate": 1.0
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 30,
+        "macd_periods": 28,
+        "std_rolling_periods": 30,
+        "max_rolling_periods": null,
+        "min_rolling_periods": 58,
+        "ewm_alpha": 0.2,
+        "additional_lag_periods": 2,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    },
+    "15d20f95e2f24e1d83a03ceb60422988": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "e7345c762863059c9a1a53ce8992ea3c": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "5cf9d66e26e7454c66f0f634bc9e5c83": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 5,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              100
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "input_dim": "univariate",
+        "output_dim": "forecast_length",
+        "normalize_window": false,
+        "shuffle": true,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "PowerTransformer",
+          "2": "RobustScaler",
+          "3": "QuantileTransformer",
+          "4": "Round"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "output_distribution": "normal",
+            "n_quantiles": 20
+          },
+          "4": {
+            "model": "middle",
+            "decimals": -1,
+            "on_transform": true,
+            "on_inverse": true
+          }
+        }
+      }
+    },
+    "1fa4520f07d4afc14e9d807450420a67": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "MinMaxScaler",
+          "2": "Discretize",
+          "3": "RobustScaler",
+          "4": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "discretization": "center",
+            "n_bins": 20
+          },
+          "3": {},
+          "4": {
+            "output_distribution": "normal",
+            "n_quantiles": 20
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "MinMaxScaler",
+    "2": "QuantileTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 1,
+      "fillna": null
+    },
+    "1": {},
+    "2": {
+      "output_distribution": "uniform",
+      "n_quantiles": 3
+    }
+  }
+}
+{
+  "holiday": false,
+  "regression_type": null
+}

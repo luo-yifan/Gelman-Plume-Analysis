@@ -1,0 +1,98 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "59bf20c19a90a049c099ef42ffd76877": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          }
+        }
+      }
+    },
+    "896c8e52a649bf7793ec390cbb880fa4": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          },
+          "2": {
+            "discretization": "lower",
+            "n_bins": 20
+          }
+        }
+      }
+    },
+    "c18302e137c85d68ee391ed552069e19": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "HistGradientBoost",
+          "model_params": {
+            "loss": "poisson",
+            "learning_rate": 1.0
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "DifferencedTransformer",
+          "2": "IntermittentOccurrence",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "center": "mean"
+          },
+          "3": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "7f5c47eb5c832a1908b1e5bb5b14dee7": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "db9a60ec2fdad87471b5d21d34f1412f": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Tweedie",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "74a8cba46225f3d34b9ba62ea4cfe536": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          }
+        }
+      }
+    }
+  }
+}

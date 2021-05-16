@@ -1,0 +1,24 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "PctChangeTransformer",
+    "1": "SeasonalDifference",
+    "2": "Round"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "lag_1": 12,
+      "method": "LastValue"
+    },
+    "2": {
+      "model": "middle",
+      "decimals": -2,
+      "on_transform": true,
+      "on_inverse": false
+    }
+  }
+}
+{}

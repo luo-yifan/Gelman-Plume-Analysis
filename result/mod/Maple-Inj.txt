@@ -1,0 +1,77 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "a1485d69baeb2673305fd7401521c100": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mode"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          }
+        }
+      }
+    },
+    "b4f8067784404f6326e090086d32904d": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": "multiplicative",
+        "seasonal": "multiplicative",
+        "seasonal_periods": 24
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          }
+        }
+      }
+    },
+    "2ae851216d7133d87d44b32e6636103d": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

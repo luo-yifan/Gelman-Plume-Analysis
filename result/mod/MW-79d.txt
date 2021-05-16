@@ -1,0 +1,96 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "5a832fb69382b85b2942ca47d3d4b7fb": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "ElasticNet",
+          "model_params": {}
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "bkfilter",
+          "2": "Detrend",
+          "3": "bkfilter",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "discretization": "upper",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "3bc220f41ef9bfe171bd28064d2a45da": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Mean",
+        "lag_1": 7,
+        "lag_2": 1440
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "Log"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    },
+    "f840b5e41848b5307a631dd13a8bc496": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 7,
+        "lag_2": 1440
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "bkfilter",
+          "2": "Detrend",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "discretization": "upper",
+            "n_bins": 10
+          }
+        }
+      }
+    }
+  }
+}

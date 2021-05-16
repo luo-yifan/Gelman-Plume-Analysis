@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "SeasonalDifference",
+    "2": "Detrend",
+    "3": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "lag_1": 7,
+      "method": "Mean"
+    },
+    "2": {
+      "model": "Linear"
+    },
+    "3": {}
+  }
+}
+{
+  "holiday": true,
+  "regression_type": null
+}
