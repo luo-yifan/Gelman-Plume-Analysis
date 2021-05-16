@@ -1,29 +1,18 @@
 Initiated AutoTS object with best model: 
-ZeroesNaive
+GLS
 {
   "fillna": "median",
   "transformations": {
-    "0": "Discretize",
-    "1": "DifferencedTransformer",
-    "2": "ClipOutliers",
-    "3": "ClipOutliers"
+    "0": "DifferencedTransformer",
+    "1": "Log",
+    "2": "RobustScaler",
+    "3": "MaxAbsScaler"
   },
   "transformation_params": {
-    "0": {
-      "discretization": "upper",
-      "n_bins": 5
-    },
+    "0": {},
     "1": {},
-    "2": {
-      "method": "clip",
-      "std_threshold": 3,
-      "fillna": null
-    },
-    "3": {
-      "method": "clip",
-      "std_threshold": 2,
-      "fillna": null
-    }
+    "2": {},
+    "3": {}
   }
 }
 {}
