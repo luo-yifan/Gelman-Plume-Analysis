@@ -2545,7 +2545,7 @@ RollingRegression
 }
 `
 
-![](./fig/ARTESIAN_#1.png)
+![](./fig/ARTESIAN__1.png)
 ## ARTESIAN #2
 `
 Initiated AutoTS object with best model: 
@@ -2652,7 +2652,7 @@ Ensemble
 }
 `
 
-![](./fig/ARTESIAN_#2.png)
+![](./fig/ARTESIAN__2.png)
 ## ARTESIAN #3
 `
 Initiated AutoTS object with best model: 
@@ -2681,7 +2681,7 @@ SeasonalNaive
 }
 `
 
-![](./fig/ARTESIAN_#3.png)
+![](./fig/ARTESIAN__3.png)
 ## DOLPH
 `
 Initiated AutoTS object with best model: 
@@ -11037,7 +11037,7 @@ LastValueNaive
 {}
 `
 
-![](./fig/Saginaw_Forest_Cabin_#1.png)
+![](./fig/Saginaw_Forest_Cabin__1.png)
 ## Saginaw Forest Cabin #2
 `
 Initiated AutoTS object with best model: 
@@ -11063,7 +11063,7 @@ ETS
 }
 `
 
-![](./fig/Saginaw_Forest_Cabin_#2.png)
+![](./fig/Saginaw_Forest_Cabin__2.png)
 ## Smith Ponds
 `
 Initiated AutoTS object with best model: 
