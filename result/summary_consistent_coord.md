@@ -2,92 +2,29 @@
 ## 110 Parkland Plaza
 `
 Initiated AutoTS object with best model: 
-Ensemble
-{}
+AverageValueNaive
 {
-  "model_name": "BestN",
-  "model_count": 3,
-  "model_metric": "best_score_unique",
-  "models": {
-    "11529b9377f38a41cecc76e3f2d50740": {
-      "Model": "DatepartRegression",
-      "ModelParameters": {
-        "regression_model": {
-          "model": "Adaboost",
-          "model_params": {
-            "n_estimators": 100,
-            "loss": "linear",
-            "base_estimator": "DecisionTree",
-            "learning_rate": 1.0
-          }
-        },
-        "datepart_method": "expanded",
-        "regression_type": null
-      },
-      "TransformationParameters": {
-        "fillna": "rolling_mean_24",
-        "transformations": {
-          "0": "StandardScaler",
-          "1": "Detrend",
-          "2": "Discretize"
-        },
-        "transformation_params": {
-          "0": {},
-          "1": {
-            "model": "Linear"
-          },
-          "2": {
-            "discretization": "upper",
-            "n_bins": 10
-          }
-        }
-      }
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "Round",
+    "1": "Detrend",
+    "2": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "middle",
+      "decimals": 0,
+      "on_transform": true,
+      "on_inverse": true
     },
-    "4cea8351b8dfdd6f1a0ca2156cceea47": {
-      "Model": "GLS",
-      "ModelParameters": {},
-      "TransformationParameters": {
-        "fillna": "median",
-        "transformations": {
-          "0": "ClipOutliers",
-          "1": "Detrend",
-          "2": "RobustScaler",
-          "3": "MaxAbsScaler"
-        },
-        "transformation_params": {
-          "0": {
-            "method": "clip",
-            "std_threshold": 3.5,
-            "fillna": null
-          },
-          "1": {
-            "model": "Linear"
-          },
-          "2": {},
-          "3": {}
-        }
-      }
+    "1": {
+      "model": "Linear"
     },
-    "db1747805e3221ef34f4b32d6141755b": {
-      "Model": "AverageValueNaive",
-      "ModelParameters": {
-        "method": "Median"
-      },
-      "TransformationParameters": {
-        "fillna": "rolling_mean_24",
-        "transformations": {
-          "0": "StandardScaler",
-          "1": "Detrend"
-        },
-        "transformation_params": {
-          "0": {},
-          "1": {
-            "model": "Linear"
-          }
-        }
-      }
-    }
+    "2": {}
   }
+}
+{
+  "method": "Median"
 }
 `
 
@@ -95,54 +32,203 @@ Ensemble
 ## 170 Aprill
 `
 Initiated AutoTS object with best model: 
-GLS
+Ensemble
+{}
 {
-  "fillna": "median",
-  "transformations": {
-    "0": "DifferencedTransformer",
-    "1": "Log",
-    "2": "RobustScaler",
-    "3": "MaxAbsScaler"
-  },
-  "transformation_params": {
-    "0": {},
-    "1": {},
-    "2": {},
-    "3": {}
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "98ff168102d2cdcefc6d6508355b7c2d": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer",
+          "2": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 9
+          },
+          "2": {}
+        }
+      }
+    },
+    "c709edda4df0ff141231977f08f3ee1f": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Tweedie",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer",
+          "2": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 9
+          },
+          "2": {}
+        }
+      }
+    },
+    "0f9e3e6a10976d40f0345238bed24ee1": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 9
+          }
+        }
+      }
+    }
   }
 }
-{}
 `
 
 ![](./fig_cc/170_Aprill.png)
 ## 175 Jackson Plaza
 `
 Initiated AutoTS object with best model: 
-ETS
+Ensemble
+{}
 {
-  "fillna": "zero",
-  "transformations": {
-    "0": "ClipOutliers",
-    "1": "ClipOutliers"
-  },
-  "transformation_params": {
-    "0": {
-      "method": "clip",
-      "std_threshold": 2,
-      "fillna": null
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "e3d2d7b83839932b4df62c034077b642": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Median",
+        "lag_1": 60,
+        "lag_2": 2
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Detrend",
+          "2": "bkfilter",
+          "3": "SeasonalDifference",
+          "4": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {
+            "model": "Linear"
+          },
+          "2": {},
+          "3": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "4": {
+            "lag_1": 12,
+            "method": "Mean"
+          }
+        }
+      }
     },
-    "1": {
-      "method": "clip",
-      "std_threshold": 4,
-      "fillna": null
+    "48ca66478eaacf105ea566ef5563d732": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 100,
+            "loss": "square",
+            "base_estimator": "DecisionTree",
+            "learning_rate": 1.0
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": null,
+        "macd_periods": null,
+        "std_rolling_periods": 7,
+        "max_rolling_periods": 28,
+        "min_rolling_periods": null,
+        "ewm_alpha": null,
+        "additional_lag_periods": 2,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "normal",
+            "n_quantiles": 9
+          }
+        }
+      }
+    },
+    "2a66aebca71a81ff110c71b9986fe4ac": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Gamma",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Detrend",
+          "2": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {
+            "model": "Linear"
+          },
+          "2": {}
+        }
+      }
     }
   }
-}
-{
-  "damped_trend": false,
-  "trend": null,
-  "seasonal": null,
-  "seasonal_periods": null
 }
 `
 
@@ -150,46 +236,25 @@ ETS
 ## 2575 Valley
 `
 Initiated AutoTS object with best model: 
-UnobservedComponents
+LastValueNaive
 {
-  "fillna": "median",
+  "fillna": "mean",
   "transformations": {
-    "0": "Discretize",
-    "1": "Round",
-    "2": "DifferencedTransformer",
-    "3": "StandardScaler",
-    "4": "RollingMeanTransformer"
+    "0": "ClipOutliers",
+    "1": "CenterLastValue"
   },
   "transformation_params": {
     "0": {
-      "discretization": "lower",
-      "n_bins": 10
+      "method": "clip",
+      "std_threshold": 1,
+      "fillna": null
     },
     "1": {
-      "model": "middle",
-      "decimals": 2,
-      "on_transform": false,
-      "on_inverse": true
-    },
-    "2": {},
-    "3": {},
-    "4": {
-      "fixed": false,
-      "window": 12
+      "rows": 6
     }
   }
 }
-{
-  "level": false,
-  "trend": false,
-  "cycle": true,
-  "damped_cycle": false,
-  "irregular": false,
-  "stochastic_trend": true,
-  "stochastic_level": true,
-  "stochastic_cycle": true,
-  "regression_type": null
-}
+{}
 `
 
 ![](./fig_cc/2575_Valley.png)
