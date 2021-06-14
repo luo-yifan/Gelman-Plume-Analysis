@@ -1,114 +1,23 @@
 Initiated AutoTS object with best model: 
-Ensemble
-{}
+GLS
 {
-  "model_name": "BestN",
-  "model_count": 3,
-  "model_metric": "mixed_metric",
-  "models": {
-    "e3d2d7b83839932b4df62c034077b642": {
-      "Model": "SeasonalNaive",
-      "ModelParameters": {
-        "method": "Median",
-        "lag_1": 60,
-        "lag_2": 2
-      },
-      "TransformationParameters": {
-        "fillna": "ffill",
-        "transformations": {
-          "0": "ClipOutliers",
-          "1": "Detrend",
-          "2": "bkfilter",
-          "3": "SeasonalDifference",
-          "4": "SeasonalDifference"
-        },
-        "transformation_params": {
-          "0": {
-            "method": "clip",
-            "std_threshold": 2,
-            "fillna": null
-          },
-          "1": {
-            "model": "Linear"
-          },
-          "2": {},
-          "3": {
-            "lag_1": 12,
-            "method": "LastValue"
-          },
-          "4": {
-            "lag_1": 12,
-            "method": "Mean"
-          }
-        }
-      }
+  "fillna": "median",
+  "transformations": {
+    "0": "Detrend",
+    "1": "SeasonalDifference",
+    "2": "DifferencedTransformer",
+    "3": "bkfilter"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "Linear"
     },
-    "48ca66478eaacf105ea566ef5563d732": {
-      "Model": "RollingRegression",
-      "ModelParameters": {
-        "regression_model": {
-          "model": "Adaboost",
-          "model_params": {
-            "n_estimators": 100,
-            "loss": "square",
-            "base_estimator": "DecisionTree",
-            "learning_rate": 1.0
-          }
-        },
-        "holiday": false,
-        "mean_rolling_periods": null,
-        "macd_periods": null,
-        "std_rolling_periods": 7,
-        "max_rolling_periods": 28,
-        "min_rolling_periods": null,
-        "ewm_alpha": null,
-        "additional_lag_periods": 2,
-        "abs_energy": false,
-        "rolling_autocorr_periods": null,
-        "add_date_part": null,
-        "polynomial_degree": null,
-        "x_transform": null,
-        "regression_type": null
-      },
-      "TransformationParameters": {
-        "fillna": "zero",
-        "transformations": {
-          "0": "QuantileTransformer"
-        },
-        "transformation_params": {
-          "0": {
-            "output_distribution": "normal",
-            "n_quantiles": 9
-          }
-        }
-      }
+    "1": {
+      "lag_1": 12,
+      "method": "Mean"
     },
-    "2a66aebca71a81ff110c71b9986fe4ac": {
-      "Model": "GLM",
-      "ModelParameters": {
-        "family": "Gamma",
-        "constant": false,
-        "regression_type": null
-      },
-      "TransformationParameters": {
-        "fillna": "ffill_mean_biased",
-        "transformations": {
-          "0": "ClipOutliers",
-          "1": "Detrend",
-          "2": "MaxAbsScaler"
-        },
-        "transformation_params": {
-          "0": {
-            "method": "clip",
-            "std_threshold": 2,
-            "fillna": null
-          },
-          "1": {
-            "model": "Linear"
-          },
-          "2": {}
-        }
-      }
-    }
+    "2": {},
+    "3": {}
   }
 }
+{}
