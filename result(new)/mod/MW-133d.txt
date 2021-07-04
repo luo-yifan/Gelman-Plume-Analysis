@@ -1,0 +1,87 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "fb869d6567ce52a1e056c6dc2cd656ed": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 2,
+        "lag_2": "None"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "bkfilter",
+          "2": "PowerTransformer",
+          "3": "PowerTransformer",
+          "4": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "80e0f54894f2141c311dbe0e666980f8": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 2,
+        "lag_2": "None"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "bkfilter",
+          "2": "bkfilter",
+          "3": "PowerTransformer",
+          "4": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "48f4598316b030f6560483637c3dac90": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "Round",
+          "2": "Round"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": true,
+            "on_inverse": false
+          }
+        }
+      }
+    }
+  }
+}

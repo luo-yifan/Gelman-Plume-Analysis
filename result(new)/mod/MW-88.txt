@@ -1,0 +1,101 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "5a3fd8cdc0fa597534b4dd6baa29add6": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              100
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "adam",
+            "early_stopping": true,
+            "learning_rate_init": 0.0001
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "a41eb3dd0a4d8babb416cae1da62fd00": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "ac1dd11f09b57142d951a2896bac6cc1": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "Slice",
+          "2": "PowerTransformer",
+          "3": "PositiveShift",
+          "4": "CumSumTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "1": {
+            "method": 0.2
+          },
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    }
+  }
+}

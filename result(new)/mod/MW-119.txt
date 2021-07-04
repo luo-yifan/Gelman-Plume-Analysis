@@ -1,0 +1,38 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "RollingMeanTransformer",
+    "2": "Detrend",
+    "3": "QuantileTransformer",
+    "4": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "fixed": false,
+      "window": 7
+    },
+    "2": {
+      "model": "Linear"
+    },
+    "3": {
+      "output_distribution": "uniform",
+      "n_quantiles": 2
+    },
+    "4": {}
+  }
+}
+{
+  "level": false,
+  "trend": false,
+  "cycle": false,
+  "damped_cycle": false,
+  "irregular": true,
+  "stochastic_trend": true,
+  "stochastic_level": false,
+  "stochastic_cycle": false,
+  "regression_type": null
+}

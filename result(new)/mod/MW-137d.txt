@@ -1,0 +1,107 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "d6c2795cb26b503f93f27b2c6806af48": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Discretize",
+          "1": "SinTrend",
+          "2": "PowerTransformer",
+          "3": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "center",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "7ee3cf6132616cc1fc8bc4295aaa9eeb": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "Discretize",
+          "1": "MinMaxScaler",
+          "2": "PowerTransformer",
+          "3": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "lower",
+            "n_bins": 10
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "2887d2af24ace64615ccf0154ef2e4be": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "ClipOutliers"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 3,
+      "fillna": null
+    }
+  }
+}
+{
+  "regression_model": {
+    "model": "MLP",
+    "model_params": {
+      "hidden_layer_sizes": [
+        25,
+        50,
+        25
+      ],
+      "max_iter": 250,
+      "activation": "relu",
+      "solver": "lbfgs",
+      "early_stopping": false,
+      "learning_rate_init": 0.001
+    }
+  },
+  "holiday": false,
+  "mean_rolling_periods": null,
+  "macd_periods": null,
+  "std_rolling_periods": 7,
+  "max_rolling_periods": 52,
+  "min_rolling_periods": null,
+  "ewm_alpha": 0.8,
+  "additional_lag_periods": 2,
+  "abs_energy": true,
+  "rolling_autocorr_periods": null,
+  "add_date_part": "expanded",
+  "polynomial_degree": null,
+  "x_transform": null,
+  "regression_type": null
+}

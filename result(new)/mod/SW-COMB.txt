@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "Detrend",
+    "2": "PctChangeTransformer",
+    "3": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "model": "Linear"
+    },
+    "2": {},
+    "3": {
+      "lag_1": 12,
+      "method": "Median"
+    }
+  }
+}
+{}

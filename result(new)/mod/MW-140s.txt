@@ -1,0 +1,21 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "RollingMean100thN",
+    "1": "SinTrend",
+    "2": "PowerTransformer",
+    "3": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {
+      "lag_1": 12,
+      "method": "Mean"
+    }
+  }
+}
+{}

@@ -1,0 +1,105 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "4ba5b0b09b651593cb8ae74ecdaa6e60": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "StandardScaler",
+          "4": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "Median"
+          },
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "e36af96ef1e477d9b8c5dfdcf7b6c02c": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": true,
+        "damped_cycle": true,
+        "irregular": true,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer",
+          "3": "StandardScaler",
+          "4": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "Median"
+          },
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "effa12ecf1f9a5194873126610f21b3a": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": true,
+        "stochastic_level": true,
+        "stochastic_cycle": true,
+        "regression_type": "Holiday"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "Discretize",
+          "1": "bkfilter",
+          "2": "Log",
+          "3": "Round"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "lower",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": true
+          }
+        }
+      }
+    }
+  }
+}

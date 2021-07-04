@@ -1,0 +1,12 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "StandardScaler"
+  },
+  "transformation_params": {
+    "0": {}
+  }
+}
+{}

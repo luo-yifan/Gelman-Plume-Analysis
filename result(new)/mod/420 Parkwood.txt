@@ -1,0 +1,92 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "7706f2163860e93269e77f9bc6b2ef66": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "KNN",
+          "model_params": {
+            "n_neighbors": 5,
+            "weights": "distance"
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PowerTransformer",
+          "2": "RollingMeanTransformer",
+          "3": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "fixed": false,
+            "window": 12
+          },
+          "3": {}
+        }
+      }
+    },
+    "39bf668b54140c0323e0ed55681a2d2d": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Median",
+        "lag_1": 28,
+        "lag_2": 4
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "StandardScaler",
+          "1": "MinMaxScaler",
+          "2": "RollingMeanTransformer",
+          "3": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "fixed": false,
+            "window": 12
+          },
+          "3": {}
+        }
+      }
+    },
+    "af6843342b03aede5563817a8e737121": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "DifferencedTransformer",
+          "2": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "output_distribution": "normal",
+            "n_quantiles": 6
+          }
+        }
+      }
+    }
+  }
+}

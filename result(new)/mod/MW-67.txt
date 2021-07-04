@@ -1,0 +1,152 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "951932263ade5bec5b53949ffebabd90": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 4,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              32,
+              64,
+              32
+            ],
+            "max_iter": 250,
+            "activation": "relu",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "input_dim": "multivariate",
+        "output_dim": "1step",
+        "normalize_window": false,
+        "shuffle": false,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SeasonalDifference",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 12,
+            "method": "Median"
+          },
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "92445f620afe3819ddb9606280dd4eb8": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              32,
+              64,
+              32
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 5,
+        "macd_periods": null,
+        "std_rolling_periods": null,
+        "max_rolling_periods": 24,
+        "min_rolling_periods": 12,
+        "ewm_alpha": 0.8,
+        "additional_lag_periods": 3,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": "simple",
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "83586e2955c9c9e35e9ae3c5ceaa1bcd": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              32,
+              64,
+              32
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 5,
+        "macd_periods": null,
+        "std_rolling_periods": null,
+        "max_rolling_periods": 24,
+        "min_rolling_periods": null,
+        "ewm_alpha": 0.5,
+        "additional_lag_periods": 3,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": "Nystroem",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    }
+  }
+}

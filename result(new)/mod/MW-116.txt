@@ -1,0 +1,74 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "0d1fff8949123c6eb3ff9d74ea2af0ee": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    },
+    "dfbf49c2306c13431150d9cef6a43942": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    },
+    "358f26e7a969a6e4b654805982741c2a": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 50,
+            "loss": "linear",
+            "base_estimator": "SVR",
+            "learning_rate": 1.0
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "Log"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

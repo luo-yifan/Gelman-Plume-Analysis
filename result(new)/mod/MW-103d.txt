@@ -1,0 +1,51 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "PctChangeTransformer",
+    "1": "PowerTransformer",
+    "2": "Round"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "model": "middle",
+      "decimals": -2,
+      "on_transform": true,
+      "on_inverse": false
+    }
+  }
+}
+{
+  "regression_model": {
+    "model": "MLP",
+    "model_params": {
+      "hidden_layer_sizes": [
+        32,
+        32,
+        32
+      ],
+      "max_iter": 250,
+      "activation": "tanh",
+      "solver": "lbfgs",
+      "early_stopping": false,
+      "learning_rate_init": 0.001
+    }
+  },
+  "holiday": true,
+  "mean_rolling_periods": 5,
+  "macd_periods": 24,
+  "std_rolling_periods": 30,
+  "max_rolling_periods": 12,
+  "min_rolling_periods": 24,
+  "ewm_alpha": 0.2,
+  "additional_lag_periods": 3,
+  "abs_energy": false,
+  "rolling_autocorr_periods": null,
+  "add_date_part": null,
+  "polynomial_degree": null,
+  "x_transform": null,
+  "regression_type": null
+}
