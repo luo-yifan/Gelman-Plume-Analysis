@@ -1,0 +1,44 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "8cbda150bd52691e26c5ca986dac0f48": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "Detrend",
+          "2": "bkfilter",
+          "3": "PctChangeTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "Linear"
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "8cbda150bd52691e26c5ca986dac0f48"
+  }
+}
