@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "QuantileTransformer", "2": "SeasonalDifference", "3": "PowerTransformer"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 8}, "1": {"output_distribution": "uniform", "n_quantiles": 8}, "2": {"lag_1": 7, "method": "LastValue"}, "3": {}}}
+{"holiday": false, "regression_type": null}
