@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "rolling_mean", "transformations": {"0": "MaxAbsScaler", "1": "Discretize", "2": "PowerTransformer", "3": "DifferencedTransformer", "4": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {"discretization": "center", "n_bins": 5}, "2": {}, "3": {}, "4": {}}}
+{"regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [25, 15, 25], "max_iter": 250, "activation": "relu", "solver": "lbfgs", "early_stopping": false, "learning_rate_init": 0.001}}, "datepart_method": "simple", "regression_type": null}

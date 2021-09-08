@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{"fillna": "ffill", "transformations": {"0": "Log", "1": "StandardScaler", "2": "IntermittentOccurrence", "3": "PowerTransformer", "4": "PowerTransformer", "5": "Discretize"}, "transformation_params": {"0": {}, "1": {}, "2": {"center": "mean"}, "3": {}, "4": {}, "5": {"discretization": "upper", "n_bins": 20}}}
+{"holiday": false, "regression_type": null}

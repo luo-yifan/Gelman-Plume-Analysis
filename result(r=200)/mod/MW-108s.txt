@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "mean", "transformations": {"0": "MinMaxScaler", "1": "SinTrend", "2": "Round", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "middle", "decimals": 1, "on_transform": true, "on_inverse": true}, "3": {}}}
+{"level": false, "trend": false, "cycle": false, "damped_cycle": false, "irregular": false, "stochastic_trend": false, "stochastic_level": true, "stochastic_cycle": true, "regression_type": null}
