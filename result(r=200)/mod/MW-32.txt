@@ -1,4 +1,4 @@
 Initiated AutoTS object with best model: 
 ZeroesNaive
-{"fillna": "ffill_mean_biased", "transformations": {"0": "PositiveShift", "1": "Round", "2": "Slice", "3": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": -2, "on_transform": false, "on_inverse": true}, "2": {"method": 100}, "3": {}}}
+{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "RobustScaler", "2": "PowerTransformer", "3": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"method": "clip", "std_threshold": 2, "fillna": null}}}
 {}

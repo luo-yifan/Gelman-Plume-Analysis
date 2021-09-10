@@ -1,4 +1,4 @@
 Initiated AutoTS object with best model: 
-UnobservedComponents
-{"fillna": "ffill_mean_biased", "transformations": {"0": "bkfilter", "1": "MinMaxScaler", "2": "Round", "3": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": true}, "3": {}}}
-{"level": true, "trend": true, "cycle": false, "damped_cycle": false, "irregular": false, "stochastic_trend": false, "stochastic_level": true, "stochastic_cycle": false, "regression_type": null}
+DatepartRegression
+{"fillna": "mean", "transformations": {"0": "QuantileTransformer", "1": "ClipOutliers", "2": "Slice", "3": "Detrend"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 9}, "1": {"method": "clip", "std_threshold": 2, "fillna": null}, "2": {"method": 0.2}, "3": {"model": "GLS"}}}
+{"regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [25, 50, 25], "max_iter": 500, "activation": "tanh", "solver": "adam", "early_stopping": false, "learning_rate_init": 0.001}}, "datepart_method": "recurring", "regression_type": null}

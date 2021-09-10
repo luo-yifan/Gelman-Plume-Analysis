@@ -1,4 +1,4 @@
 Initiated AutoTS object with best model: 
-GLS
-{"fillna": "ffill", "transformations": {"0": "Slice", "1": "RobustScaler", "2": "bkfilter", "3": "SeasonalDifference"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {}, "3": {"lag_1": 12, "method": "Median"}}}
+ZeroesNaive
+{"fillna": "rolling_mean_24", "transformations": {"0": "PowerTransformer", "1": "bkfilter", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}
 {}

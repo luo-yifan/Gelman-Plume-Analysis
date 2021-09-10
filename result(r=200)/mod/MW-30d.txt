@@ -1,4 +1,4 @@
 Initiated AutoTS object with best model: 
-UnobservedComponents
-{"fillna": "fake_date", "transformations": {"0": "PositiveShift", "1": "Detrend", "2": "bkfilter", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"model": "Linear"}, "2": {}, "3": {}}}
-{"level": false, "trend": false, "cycle": false, "damped_cycle": false, "irregular": false, "stochastic_trend": true, "stochastic_level": false, "stochastic_cycle": false, "regression_type": null}
+WindowRegression
+{"fillna": "rolling_mean", "transformations": {"0": "DifferencedTransformer", "1": "Discretize", "2": "ClipOutliers", "3": "RobustScaler", "4": "PositiveShift"}, "transformation_params": {"0": {}, "1": {"discretization": "lower", "n_bins": 10}, "2": {"method": "clip", "std_threshold": 3, "fillna": null}, "3": {}, "4": {}}}
+{"window_size": 5, "input_dim": "univariate", "output_dim": "forecast_length", "normalize_window": false, "max_windows": 5000, "regression_type": null, "regression_model": {"model": "BayesianRidge", "model_params": {}}}
