@@ -1,67 +1,67 @@
 # Summary
 ## 110 Parkland Plaza
 
-![](./fig/110 Parkland Plaza.png)
+![](./fig/110_Parkland_Plaza.png)
 ## 170 Aprill
 
-![](./fig/170 Aprill.png)
+![](./fig/170_Aprill.png)
 ## 175 Jackson Plaza
 
-![](./fig/175 Jackson Plaza.png)
+![](./fig/175_Jackson_Plaza.png)
 ## 2575 Valley
 
-![](./fig/2575 Valley.png)
+![](./fig/2575_Valley.png)
 ## 2819 Dexter Rd
 
-![](./fig/2819 Dexter Rd.png)
+![](./fig/2819_Dexter_Rd.png)
 ## 3365 Jackson Rd
 
-![](./fig/3365 Jackson Rd.png)
+![](./fig/3365_Jackson_Rd.png)
 ## 3563 ELIZABETH RD
 
-![](./fig/3563 ELIZABETH RD.png)
+![](./fig/3563_ELIZABETH_RD.png)
 ## 373 Pinewood Deep
 
-![](./fig/373 Pinewood Deep.png)
+![](./fig/373_Pinewood_Deep.png)
 ## 373 Pinewood Shallow
 
-![](./fig/373 Pinewood Shallow.png)
+![](./fig/373_Pinewood_Shallow.png)
 ## 4141 Jackson Rd
 
-![](./fig/4141 Jackson Rd.png)
+![](./fig/4141_Jackson_Rd.png)
 ## 4401 Park West
 
-![](./fig/4401 Park West.png)
+![](./fig/4401_Park_West.png)
 ## 4470 Jackson Rd
 
-![](./fig/4470 Jackson Rd.png)
+![](./fig/4470_Jackson_Rd.png)
 ## 456 Clarendon
 
-![](./fig/456 Clarendon.png)
+![](./fig/456_Clarendon.png)
 ## 4601 Park 4 inch
 
-![](./fig/4601 Park 4 inch.png)
+![](./fig/4601_Park_4_inch.png)
 ## 4601 Park 6 inch
 
-![](./fig/4601 Park 6 inch.png)
+![](./fig/4601_Park_6_inch.png)
 ## 465 Dupont
 
-![](./fig/465 Dupont.png)
+![](./fig/465_Dupont.png)
 ## 4742 Park Rd
 
-![](./fig/4742 Park Rd.png)
+![](./fig/4742_Park_Rd.png)
 ## 5005 Jackson Rd
 
-![](./fig/5005 Jackson Rd.png)
+![](./fig/5005_Jackson_Rd.png)
 ## 5115 Jackson Rd
 
-![](./fig/5115 Jackson Rd.png)
+![](./fig/5115_Jackson_Rd.png)
 ## 697 South Wagner Rd
 
-![](./fig/697 South Wagner Rd.png)
+![](./fig/697_South_Wagner_Rd.png)
 ## A2 Cleaning Supply
 
-![](./fig/A2 Cleaning Supply.png)
+![](./fig/A2_Cleaning_Supply.png)
 ## AMW-1
 
 ![](./fig/AMW-1.png)
@@ -70,10 +70,10 @@
 ![](./fig/AMW-2.png)
 ## ARTESIAN #3
 
-![](./fig/ARTESIAN #3.png)
+![](./fig/ARTESIAN_#3.png)
 ## Bethlehem Cemetery
 
-![](./fig/Bethlehem Cemetery.png)
+![](./fig/Bethlehem_Cemetery.png)
 ## DOLPH
 
 ![](./fig/DOLPH.png)
@@ -88,7 +88,7 @@
 ![](./fig/LB-1.png)
 ## MW-1 Replacement
 
-![](./fig/MW-1 Replacement.png)
+![](./fig/MW-1_Replacement.png)
 ## MW-100
 
 ![](./fig/MW-100.png)
@@ -622,10 +622,10 @@
 ![](./fig/PW-1.png)
 ## Saginaw Forest Cabin #1
 
-![](./fig/Saginaw Forest Cabin #1.png)
+![](./fig/Saginaw_Forest_Cabin_#1.png)
 ## Saginaw Forest Cabin #2
 
-![](./fig/Saginaw Forest Cabin #2.png)
+![](./fig/Saginaw_Forest_Cabin_#2.png)
 ## TW-1
 
 ![](./fig/TW-1.png)
