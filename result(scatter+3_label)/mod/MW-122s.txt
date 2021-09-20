@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "ffill_mean_biased", "transformations": {"0": "QuantileTransformer", "1": "SeasonalDifference", "2": "StandardScaler"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 8}, "1": {"lag_1": 7, "method": "Median"}, "2": {}}}
+{"regression_model": {"model": "KNN", "model_params": {"n_neighbors": 5, "weights": "uniform"}}, "holiday": false, "mean_rolling_periods": 12, "macd_periods": null, "std_rolling_periods": null, "max_rolling_periods": 40, "min_rolling_periods": 44, "ewm_alpha": 0.2, "additional_lag_periods": 11, "abs_energy": false, "rolling_autocorr_periods": null, "add_date_part": null, "polynomial_degree": null, "x_transform": null, "regression_type": null}

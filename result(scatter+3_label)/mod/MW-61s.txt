@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "fake_date", "transformations": {"0": "ClipOutliers", "1": "Log", "2": "Detrend", "3": "Discretize", "4": "Discretize"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 2, "fillna": null}, "1": {}, "2": {"model": "Linear"}, "3": {"discretization": "lower", "n_bins": 20}, "4": {"discretization": "lower", "n_bins": 10}}}
+{"regression_model": {"model": "ElasticNet", "model_params": {}}, "holiday": false, "mean_rolling_periods": 12, "macd_periods": 7, "std_rolling_periods": 5, "max_rolling_periods": 86, "min_rolling_periods": 2, "ewm_alpha": 0.5, "additional_lag_periods": 3, "abs_energy": false, "rolling_autocorr_periods": null, "add_date_part": null, "polynomial_degree": null, "x_transform": null, "regression_type": null}

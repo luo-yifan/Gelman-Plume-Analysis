@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "mean", "transformations": {"0": "Round", "1": "bkfilter", "2": "PowerTransformer"}, "transformation_params": {"0": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "1": {}, "2": {}}}
+{}

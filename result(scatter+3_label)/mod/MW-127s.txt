@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "fake_date", "transformations": {"0": "QuantileTransformer", "1": "QuantileTransformer", "2": "Detrend", "3": "PctChangeTransformer", "4": "Discretize", "5": "SeasonalDifference"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 5}, "1": {"output_distribution": "uniform", "n_quantiles": 5}, "2": {"model": "Linear"}, "3": {}, "4": {"discretization": "center", "n_bins": 5}, "5": {"lag_1": 7, "method": "Median"}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{"fillna": "ffill_mean_biased", "transformations": {"0": "DifferencedTransformer"}, "transformation_params": {"0": {}}}
+{"window_size": 5, "regression_model": {"model": "Adaboost", "model_params": {"n_estimators": 50, "loss": "linear", "base_estimator": "DecisionTree", "learning_rate": 1.0}}, "input_dim": "multivariate", "output_dim": "1step", "normalize_window": false, "shuffle": true, "max_windows": 5000}

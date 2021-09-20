@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "mean", "transformations": {"0": "bkfilter", "1": "PowerTransformer", "2": "PctChangeTransformer", "3": "PCA", "4": "bkfilter"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {}}}
+{"method": "Median"}
