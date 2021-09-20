@@ -1,0 +1,34 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "Round",
+    "2": "MaxAbsScaler",
+    "3": "ClipOutliers"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "model": "middle",
+      "decimals": 2,
+      "on_transform": false,
+      "on_inverse": true
+    },
+    "2": {},
+    "3": {
+      "method": "clip",
+      "std_threshold": 3,
+      "fillna": null
+    }
+  }
+}
+{
+  "regression_model": {
+    "model": "ElasticNet",
+    "model_params": {}
+  },
+  "datepart_method": "simple",
+  "regression_type": null
+}

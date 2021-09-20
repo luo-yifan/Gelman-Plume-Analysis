@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "QuantileTransformer",
+    "1": "StandardScaler",
+    "2": "PositiveShift",
+    "3": "Detrend"
+  },
+  "transformation_params": {
+    "0": {
+      "output_distribution": "normal",
+      "n_quantiles": 5
+    },
+    "1": {},
+    "2": {},
+    "3": {
+      "model": "Linear"
+    }
+  }
+}
+{}

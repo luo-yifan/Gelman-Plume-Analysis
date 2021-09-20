@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "RollingMeanTransformer",
+    "1": "MinMaxScaler",
+    "2": "Round",
+    "3": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {
+      "fixed": false,
+      "window": 12
+    },
+    "1": {},
+    "2": {
+      "model": "middle",
+      "decimals": 0,
+      "on_transform": false,
+      "on_inverse": true
+    },
+    "3": {}
+  }
+}
+{}

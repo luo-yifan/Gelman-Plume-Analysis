@@ -1,0 +1,102 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "f59a60a6c03144d39b51b83d90048d42": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 4,
+        "lag_2": 7
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "MaxAbsScaler",
+          "2": "DifferencedTransformer",
+          "3": "DifferencedTransformer",
+          "4": "Slice"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {
+            "method": 0.5
+          }
+        }
+      }
+    },
+    "bb386504ab4c594513a4992cda4e11b8": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Median",
+        "lag_1": 4,
+        "lag_2": 1
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "MaxAbsScaler",
+          "2": "DifferencedTransformer",
+          "3": "DifferencedTransformer",
+          "4": "Slice"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {
+            "method": 0.5
+          }
+        }
+      }
+    },
+    "652f63a0bdf49dd4ce00b1edc4bedd8e": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "ClipOutliers",
+          "2": "Detrend",
+          "3": "Discretize",
+          "4": "Slice"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "4": {
+            "method": 0.5
+          }
+        }
+      }
+    }
+  }
+}

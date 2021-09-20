@@ -1,0 +1,24 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "Log",
+    "1": "DifferencedTransformer",
+    "2": "MaxAbsScaler",
+    "3": "MaxAbsScaler",
+    "4": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{
+  "method": "Mean",
+  "lag_1": 7,
+  "lag_2": 24
+}

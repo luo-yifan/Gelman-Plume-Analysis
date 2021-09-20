@@ -1,0 +1,118 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "91d07cbbea762c51aa76213827d5aa7b": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Mean",
+        "lag_1": 12,
+        "lag_2": 2
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence",
+          "2": "Detrend",
+          "3": "MinMaxScaler",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "discretization": "center",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "47ffc462d897f5dd776114d1ff832f26": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Mean",
+        "lag_1": 2,
+        "lag_2": 7
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence",
+          "2": "Detrend",
+          "3": "MinMaxScaler",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "discretization": "center",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "df2bd099288f4d4cd2a271fb142edc9f": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 7,
+            "method": "LastValue"
+          }
+        }
+      }
+    }
+  }
+}

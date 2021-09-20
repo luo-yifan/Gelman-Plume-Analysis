@@ -1,0 +1,77 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "1357e65534d138796d4f6c7920e04c68": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Detrend",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "Linear"
+          },
+          "1": {}
+        }
+      }
+    },
+    "794282ffb62703a5abfb3c10f5901d22": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Detrend",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "Linear"
+          },
+          "1": {}
+        }
+      }
+    },
+    "a69c2628915aca676a59bb29c2dcec19": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    }
+  }
+}

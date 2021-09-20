@@ -1,0 +1,35 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "MaxAbsScaler",
+    "2": "RollingMeanTransformer",
+    "3": "Discretize",
+    "4": "SeasonalDifference",
+    "5": "bkfilter"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "fixed": true,
+      "window": 3
+    },
+    "3": {
+      "discretization": "upper",
+      "n_bins": 20
+    },
+    "4": {
+      "lag_1": 7,
+      "method": "Mean"
+    },
+    "5": {}
+  }
+}
+{
+  "method": "Mean",
+  "lag_1": 7,
+  "lag_2": "None"
+}

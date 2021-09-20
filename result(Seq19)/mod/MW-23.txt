@@ -1,0 +1,27 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "PctChangeTransformer",
+    "2": "CumSumTransformer",
+    "3": "Round"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {
+      "model": "middle",
+      "decimals": 1,
+      "on_transform": false,
+      "on_inverse": true
+    }
+  }
+}
+{
+  "method": "LastValue",
+  "lag_1": 52,
+  "lag_2": 1
+}

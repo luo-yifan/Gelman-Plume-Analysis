@@ -1,0 +1,101 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "44ba25293757c07d8a1732ee62c1ec2e": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              32,
+              32,
+              32
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "PowerTransformer",
+          "2": "Discretize",
+          "3": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "discretization": "lower",
+            "n_bins": 10
+          },
+          "3": {}
+        }
+      }
+    },
+    "6ebe8f701ef47ecc27d98ccf82440f11": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "2ae851216d7133d87d44b32e6636103d": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

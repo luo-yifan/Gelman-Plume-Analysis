@@ -1,0 +1,31 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "PowerTransformer",
+    "2": "Detrend",
+    "3": "Discretize",
+    "4": "Slice"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    },
+    "1": {},
+    "2": {
+      "model": "Linear"
+    },
+    "3": {
+      "discretization": "upper",
+      "n_bins": 5
+    },
+    "4": {
+      "method": 0.5
+    }
+  }
+}
+{}

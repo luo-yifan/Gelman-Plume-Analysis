@@ -1,0 +1,92 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "40a6712065a02dc7fa89f42ed235c21b": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "MaxAbsScaler",
+          "2": "PowerTransformer",
+          "3": "PositiveShift",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {
+            "discretization": "upper",
+            "n_bins": 20
+          }
+        }
+      }
+    },
+    "b0faa13bf08d4fe897dc812021fcec81": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "MaxAbsScaler",
+          "2": "PowerTransformer",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "fb730c989af6020d2f7aa38ebedae759": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Mean",
+        "lag_1": 24,
+        "lag_2": 7
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "MaxAbsScaler",
+          "2": "PowerTransformer",
+          "3": "ClipOutliers",
+          "4": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "4": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "8398223100b94820715f7b0387891a61": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    },
+    "2c1b65866ee35db59f42118bb54a7927": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Tweedie",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    },
+    "e3d1e0a280f8d221e8e7c4174e47f20f": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 52,
+        "lag_2": 1
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    }
+  }
+}

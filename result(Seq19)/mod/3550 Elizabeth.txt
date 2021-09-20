@@ -1,0 +1,124 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "9fd97a033213dd83a3370905bd4eec99": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": true,
+        "irregular": true,
+        "stochastic_trend": true,
+        "stochastic_level": false,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "DifferencedTransformer",
+          "2": "SeasonalDifference",
+          "3": "PowerTransformer",
+          "4": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "ad72c3cd7710810bfe473d0dce27c989": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 1000,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SeasonalDifference",
+          "2": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "2": {}
+        }
+      }
+    },
+    "6b57a2547d986c13b941c25084a0310f": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Median",
+        "lag_1": 96,
+        "lag_2": 2
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "Discretize",
+          "2": "Round",
+          "3": "SeasonalDifference",
+          "4": "MinMaxScaler",
+          "5": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "2": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": true,
+            "on_inverse": true
+          },
+          "3": {
+            "lag_1": 7,
+            "method": "Median"
+          },
+          "4": {},
+          "5": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

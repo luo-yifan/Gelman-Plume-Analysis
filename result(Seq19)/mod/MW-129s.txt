@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "PowerTransformer",
+    "2": "Detrend",
+    "3": "QuantileTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "model": "Linear"
+    },
+    "3": {
+      "output_distribution": "uniform",
+      "n_quantiles": 1
+    }
+  }
+}
+{}

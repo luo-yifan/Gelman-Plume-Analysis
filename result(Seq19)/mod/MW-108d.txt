@@ -1,0 +1,105 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "a175151f9a409abfd27d86eb097f9320": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Discretize",
+          "1": "PowerTransformer",
+          "2": "RollingMeanTransformer",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "lower",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {
+            "fixed": true,
+            "window": 12
+          },
+          "3": {}
+        }
+      }
+    },
+    "32d8992c682b5525f34b4de3b5e43276": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Discretize",
+          "1": "PowerTransformer",
+          "2": "RollingMeanTransformer",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "lower",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {
+            "fixed": true,
+            "window": 12
+          },
+          "3": {}
+        }
+      }
+    },
+    "97ff598ff7301835590ea92da0b5cc2f": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": true,
+        "stochastic_level": false,
+        "stochastic_cycle": true,
+        "regression_type": "Holiday"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PowerTransformer",
+          "2": "RollingMeanTransformer",
+          "3": "QuantileTransformer",
+          "4": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "fixed": true,
+            "window": 7
+          },
+          "3": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          },
+          "4": {}
+        }
+      }
+    }
+  }
+}

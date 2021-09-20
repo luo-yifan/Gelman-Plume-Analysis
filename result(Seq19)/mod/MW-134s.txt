@@ -1,0 +1,33 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "bkfilter",
+    "1": "Round",
+    "2": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "model": "middle",
+      "decimals": 1,
+      "on_transform": true,
+      "on_inverse": true
+    },
+    "2": {}
+  }
+}
+{
+  "regression_model": {
+    "model": "Adaboost",
+    "model_params": {
+      "n_estimators": 100,
+      "loss": "linear",
+      "base_estimator": "DecisionTree",
+      "learning_rate": 1.0
+    }
+  },
+  "datepart_method": "simple",
+  "regression_type": null
+}
