@@ -1,0 +1,25 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "ClipOutliers",
+    "2": "Discretize",
+    "3": "PositiveShift"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "method": "clip",
+      "std_threshold": 3,
+      "fillna": null
+    },
+    "2": {
+      "discretization": "lower",
+      "n_bins": 20
+    },
+    "3": {}
+  }
+}
+{}

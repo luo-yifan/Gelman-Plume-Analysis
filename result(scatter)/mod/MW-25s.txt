@@ -1,0 +1,27 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "QuantileTransformer",
+    "2": "ClipOutliers"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "output_distribution": "uniform",
+      "n_quantiles": 9
+    },
+    "2": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    }
+  }
+}
+{
+  "family": "Gamma",
+  "constant": false,
+  "regression_type": null
+}

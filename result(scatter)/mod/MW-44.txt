@@ -1,0 +1,124 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "f691d0e106afdb9604c60a25cf7c7270": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PowerTransformer",
+          "2": "IntermittentOccurrence",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "center": "mean"
+          },
+          "3": {
+            "discretization": "upper",
+            "n_bins": 5
+          }
+        }
+      }
+    },
+    "de1c693e3e7cdea3aa19c36e23589e3a": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 5,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "relu",
+            "solver": "adam",
+            "early_stopping": false,
+            "learning_rate_init": 0.0001
+          }
+        },
+        "input_dim": "univariate",
+        "output_dim": "forecast_length",
+        "normalize_window": false,
+        "shuffle": true,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "center": "mean"
+          }
+        }
+      }
+    },
+    "398b8ec393f2a25a173ec9e572f946ca": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 5,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "relu",
+            "solver": "adam",
+            "early_stopping": false,
+            "learning_rate_init": 0.0001
+          }
+        },
+        "input_dim": "univariate",
+        "output_dim": "forecast_length",
+        "normalize_window": false,
+        "shuffle": true,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "center": "mean"
+          }
+        }
+      }
+    }
+  }
+}

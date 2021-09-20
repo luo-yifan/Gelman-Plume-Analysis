@@ -1,0 +1,106 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "302192810cae1452a13a48b5fdaa7b05": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence",
+          "2": "Detrend",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {}
+        }
+      }
+    },
+    "ef5c20b11aa2e80c3324f062b6529068": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "IntermittentOccurrence",
+          "2": "Detrend",
+          "3": "PositiveShift",
+          "4": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "1": {
+            "center": "mean"
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "1791e6fa3c5eda178ba15bdbbca00f23": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "MinMaxScaler",
+          "2": "Detrend",
+          "3": "Discretize",
+          "4": "StandardScaler",
+          "5": "RollingMeanTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "discretization": "center",
+            "n_bins": 5
+          },
+          "4": {},
+          "5": {
+            "fixed": false,
+            "window": 7
+          }
+        }
+      }
+    }
+  }
+}

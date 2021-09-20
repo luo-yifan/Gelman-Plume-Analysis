@@ -1,0 +1,73 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "54c53535c9112c04f5ad1893ed8c6087": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 12,
+            "method": "LastValue"
+          }
+        }
+      }
+    },
+    "ec44556aa02f6db6ff0a285f68a88e58": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 12,
+            "method": "LastValue"
+          }
+        }
+      }
+    },
+    "0b2e01173092711ab02ba4dfffa700aa": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  }
+}

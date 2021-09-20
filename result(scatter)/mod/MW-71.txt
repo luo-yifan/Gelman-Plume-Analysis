@@ -1,0 +1,104 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "5e0246f76e0597304a4c9b7933943dc4": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              32,
+              32,
+              32
+            ],
+            "max_iter": 250,
+            "activation": "identity",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "CenterLastValue",
+          "1": "PowerTransformer",
+          "2": "DifferencedTransformer",
+          "3": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "rows": 5
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "93cf3fde6a55e516dfbb6ef7bdbc0dc7": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Mean",
+        "lag_1": 96,
+        "lag_2": 28
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "PctChangeTransformer",
+          "2": "RollingMeanTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "fixed": false,
+            "window": 7
+          }
+        }
+      }
+    },
+    "95ef5b66c90e10d5885080f3902cfe60": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "Round",
+          "1": "RollingMeanTransformer",
+          "2": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "1": {
+            "fixed": true,
+            "window": 12
+          },
+          "2": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

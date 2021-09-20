@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "PctChangeTransformer",
+    "2": "Detrend"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 3,
+      "fillna": null
+    },
+    "1": {},
+    "2": {
+      "model": "Linear"
+    }
+  }
+}
+{
+  "method": "LastValue",
+  "lag_1": 24,
+  "lag_2": 2
+}

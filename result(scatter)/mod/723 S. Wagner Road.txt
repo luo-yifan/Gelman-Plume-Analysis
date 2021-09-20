@@ -1,0 +1,32 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "Round",
+    "1": "SeasonalDifference",
+    "2": "PowerTransformer",
+    "3": "StandardScaler",
+    "4": "CumSumTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "middle",
+      "decimals": 0,
+      "on_transform": false,
+      "on_inverse": true
+    },
+    "1": {
+      "lag_1": 7,
+      "method": "Median"
+    },
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{
+  "family": "Binomial",
+  "constant": false,
+  "regression_type": "datepart"
+}

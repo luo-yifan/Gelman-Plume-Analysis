@@ -1,0 +1,30 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "StandardScaler",
+    "2": "MinMaxScaler",
+    "3": "StandardScaler",
+    "4": "PowerTransformer",
+    "5": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 1,
+      "fillna": null
+    },
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {}
+  }
+}
+{
+  "method": "Mean",
+  "lag_1": 4,
+  "lag_2": 91
+}

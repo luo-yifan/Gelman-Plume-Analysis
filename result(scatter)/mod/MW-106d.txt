@@ -1,0 +1,46 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "QuantileTransformer",
+    "1": "StandardScaler",
+    "2": "Detrend",
+    "3": "Round",
+    "4": "bkfilter"
+  },
+  "transformation_params": {
+    "0": {
+      "output_distribution": "uniform",
+      "n_quantiles": 3
+    },
+    "1": {},
+    "2": {
+      "model": "Linear"
+    },
+    "3": {
+      "model": "middle",
+      "decimals": 0,
+      "on_transform": true,
+      "on_inverse": true
+    },
+    "4": {}
+  }
+}
+{
+  "window_size": 4,
+  "regression_model": {
+    "model": "Adaboost",
+    "model_params": {
+      "n_estimators": 50,
+      "loss": "linear",
+      "base_estimator": "DecisionTree",
+      "learning_rate": 1.0
+    }
+  },
+  "input_dim": "multivariate",
+  "output_dim": "1step",
+  "normalize_window": false,
+  "shuffle": true,
+  "max_windows": 5000
+}

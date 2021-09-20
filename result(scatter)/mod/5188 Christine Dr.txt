@@ -1,0 +1,29 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "StandardScaler",
+    "1": "RobustScaler",
+    "2": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "lag_1": 12,
+      "method": "Median"
+    }
+  }
+}
+{
+  "level": false,
+  "trend": false,
+  "cycle": false,
+  "damped_cycle": false,
+  "irregular": false,
+  "stochastic_trend": true,
+  "stochastic_level": false,
+  "stochastic_cycle": false,
+  "regression_type": "Holiday"
+}

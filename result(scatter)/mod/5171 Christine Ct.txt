@@ -1,0 +1,31 @@
+Initiated AutoTS object with best model: 
+ETS
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "SeasonalDifference",
+    "2": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 3.5,
+      "fillna": null
+    },
+    "1": {
+      "lag_1": 7,
+      "method": "Median"
+    },
+    "2": {
+      "lag_1": 7,
+      "method": "Mean"
+    }
+  }
+}
+{
+  "damped_trend": false,
+  "trend": "multiplicative",
+  "seasonal": null,
+  "seasonal_periods": null
+}
