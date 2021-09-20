@@ -1,0 +1,34 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "fd4e18a8c30a5859ca304f8f8a9aa317": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "DifferencedTransformer",
+          "3": "MaxAbsScaler",
+          "4": "CumSumTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "fd4e18a8c30a5859ca304f8f8a9aa317"
+  }
+}

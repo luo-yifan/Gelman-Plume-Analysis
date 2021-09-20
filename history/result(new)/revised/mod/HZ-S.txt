@@ -1,0 +1,41 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "37a2232d656bd074a3b781dd6b7545db": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Discretize",
+          "1": "bkfilter",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "center",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {
+            "discretization": "lower",
+            "n_bins": 5
+          }
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "37a2232d656bd074a3b781dd6b7545db"
+  }
+}

@@ -1,0 +1,19 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "Discretize",
+    "1": "DifferencedTransformer",
+    "2": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "discretization": "upper",
+      "n_bins": 5
+    },
+    "1": {},
+    "2": {}
+  }
+}
+{}

@@ -1,0 +1,35 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "044bd6a02c6f0c06648ee77970746505": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "QuantileTransformer",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 9
+          },
+          "2": {}
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "044bd6a02c6f0c06648ee77970746505"
+  }
+}

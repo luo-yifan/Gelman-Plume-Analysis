@@ -1,0 +1,44 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "f119bb25c36b441da1ddaac6857042da": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": true,
+        "stochastic_level": true,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "Slice",
+          "2": "DifferencedTransformer",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": 100
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "f119bb25c36b441da1ddaac6857042da"
+  }
+}

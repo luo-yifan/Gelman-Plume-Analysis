@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "PowerTransformer",
+    "2": "Detrend",
+    "3": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "model": "Linear"
+    },
+    "3": {
+      "lag_1": 12,
+      "method": "Mean"
+    }
+  }
+}
+{}

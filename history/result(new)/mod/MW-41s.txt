@@ -1,0 +1,31 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "QuantileTransformer",
+    "1": "IntermittentOccurrence",
+    "2": "QuantileTransformer",
+    "3": "RobustScaler",
+    "4": "QuantileTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "output_distribution": "uniform",
+      "n_quantiles": 7
+    },
+    "1": {
+      "center": "mean"
+    },
+    "2": {
+      "output_distribution": "uniform",
+      "n_quantiles": 7
+    },
+    "3": {},
+    "4": {
+      "output_distribution": "uniform",
+      "n_quantiles": 7
+    }
+  }
+}
+{}

@@ -1,0 +1,107 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "6406eec1a80d2b5b68770c09f908d326": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "bkfilter",
+          "2": "MinMaxScaler",
+          "3": "QuantileTransformer",
+          "4": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          },
+          "4": {}
+        }
+      }
+    },
+    "ba9a5f71c4527befb9b7fc7898674ee7": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "DecisionTree",
+          "model_params": {
+            "max_depth": 3,
+            "min_samples_split": 1.0
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 30,
+        "macd_periods": 364,
+        "std_rolling_periods": 10,
+        "max_rolling_periods": 12,
+        "min_rolling_periods": 96,
+        "ewm_alpha": null,
+        "additional_lag_periods": 3,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": "recurring",
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "bkfilter",
+          "2": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "42452c02c0b810e8902b3ea43220eb73": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "bkfilter",
+          "2": "MinMaxScaler",
+          "3": "QuantileTransformer",
+          "4": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          },
+          "4": {}
+        }
+      }
+    }
+  }
+}

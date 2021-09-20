@@ -1,0 +1,109 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "6d3c6bd5234e7b0ebedcf197c82fd421": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 10,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "relu",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "input_dim": "multivariate",
+        "output_dim": "1step",
+        "normalize_window": false,
+        "shuffle": true,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "DifferencedTransformer",
+          "2": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "ead96ba24ae71e2c0e8d06a2a8f3fcdc": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 12,
+            "method": "Mean"
+          }
+        }
+      }
+    },
+    "dee45a21f97bd776520c28729adae972": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "Median",
+        "lag_1": 7,
+        "lag_2": 96
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "DifferencedTransformer",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          },
+          "1": {},
+          "2": {}
+        }
+      }
+    }
+  }
+}

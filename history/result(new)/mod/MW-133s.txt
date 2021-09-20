@@ -1,0 +1,116 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "205af373c9522fc73b64152996103242": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "BayesianRidge",
+          "model_params": {}
+        },
+        "holiday": false,
+        "mean_rolling_periods": 7,
+        "macd_periods": 2,
+        "std_rolling_periods": 30,
+        "max_rolling_periods": 12,
+        "min_rolling_periods": null,
+        "ewm_alpha": 0.2,
+        "additional_lag_periods": 82,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": "expanded",
+        "polynomial_degree": null,
+        "x_transform": "RmZeroVariance",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RobustScaler",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "discretization": "center",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "b85359346912e4ea6fcefe88ca6ebd8e": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 50,
+            "loss": "square",
+            "base_estimator": "SVR",
+            "learning_rate": 1.0
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RobustScaler",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "discretization": "center",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "91c2e232df1d40a4c08bdfe151fc391e": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": true,
+        "stochastic_level": true,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "RobustScaler",
+          "2": "Log"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    }
+  }
+}

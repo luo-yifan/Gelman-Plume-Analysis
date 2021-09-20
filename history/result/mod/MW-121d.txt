@@ -1,0 +1,79 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "0bf7fd1668762d8e29bb19c296e63d40": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    },
+    "639814115aea197957d1f2d5c9870a65": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Gaussian",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "Discretize",
+          "2": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": true,
+            "window": 12
+          },
+          "1": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "2": {}
+        }
+      }
+    },
+    "96f4f365ef2d615577511ba7457bdcf7": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "lower",
+            "n_bins": 20
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "5aff05c08f79260d43f99ac22e769e82": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": "additive",
+        "seasonal_periods": 7
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "QuantileTransformer",
+          "2": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 2
+          },
+          "2": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          }
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "5aff05c08f79260d43f99ac22e769e82"
+  }
+}

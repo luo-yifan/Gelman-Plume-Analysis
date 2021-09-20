@@ -1,0 +1,16 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "PctChangeTransformer",
+    "1": "StandardScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {}
+  }
+}
+{
+  "method": "Mean"
+}

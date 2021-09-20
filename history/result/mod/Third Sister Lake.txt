@@ -1,0 +1,80 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "d6e00d36052146eff5d86977b184c7d6": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              50,
+              25
+            ],
+            "max_iter": 500,
+            "activation": "tanh",
+            "solver": "adam",
+            "early_stopping": false,
+            "learning_rate_init": 1e-05
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "d6239ccc57d875eaad73ab03ae5b8463": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "CumSumTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "c157882df0ba1720624b886fbabb3514": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": true,
+            "window": 3
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

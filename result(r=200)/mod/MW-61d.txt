@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "ClipOutliers", "3": "RobustScaler", "4": "StandardScaler"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {"method": "clip", "std_threshold": 1, "fillna": null}, "3": {}, "4": {}}}
-{"damped_trend": false, "trend": "additive", "seasonal": null, "seasonal_periods": null}

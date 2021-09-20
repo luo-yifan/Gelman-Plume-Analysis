@@ -1,0 +1,49 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "184198e53b711bc9bf78a5979cd88f69": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 50,
+            "loss": "linear",
+            "base_estimator": "DecisionTree",
+            "learning_rate": 1.0
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "Discretize",
+          "1": "ClipOutliers",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "upper",
+            "n_bins": 10
+          },
+          "1": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "2": {}
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "184198e53b711bc9bf78a5979cd88f69"
+  }
+}

@@ -1,0 +1,99 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "0d2c6b2839484eb7dc45b672bd2b2686": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "d0f78129f05cb36cd56caa9b8b14f699": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 4,
+        "lag_2": 2
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "Discretize",
+          "2": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "upper",
+            "n_bins": 10
+          },
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          }
+        }
+      }
+    },
+    "4fb74efff92cf47333c2bb20bac4905c": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 50,
+            "loss": "linear",
+            "base_estimator": "DecisionTree",
+            "learning_rate": 0.5
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 5,
+        "macd_periods": 168,
+        "std_rolling_periods": 30,
+        "max_rolling_periods": 88,
+        "min_rolling_periods": null,
+        "ewm_alpha": 0.2,
+        "additional_lag_periods": 6,
+        "abs_energy": true,
+        "rolling_autocorr_periods": null,
+        "add_date_part": "expanded",
+        "polynomial_degree": null,
+        "x_transform": "RmZeroVariance",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

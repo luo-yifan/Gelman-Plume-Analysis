@@ -1,0 +1,33 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "MaxAbsScaler",
+    "1": "RobustScaler",
+    "2": "PowerTransformer",
+    "3": "DifferencedTransformer",
+    "4": "Discretize"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {
+      "discretization": "lower",
+      "n_bins": 10
+    }
+  }
+}
+{
+  "regression_model": {
+    "model": "KNN",
+    "model_params": {
+      "n_neighbors": 3,
+      "weights": "uniform"
+    }
+  },
+  "datepart_method": "expanded",
+  "regression_type": null
+}

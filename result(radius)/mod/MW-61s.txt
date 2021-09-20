@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{"fillna": "ffill", "transformations": {"0": "Discretize", "1": "QuantileTransformer", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"discretization": "center", "n_bins": 10}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {}}}
-{"regression_model": {"model": "HistGradientBoost", "model_params": {"loss": "least_squares", "learning_rate": 0.01}}, "datepart_method": "recurring", "regression_type": null}

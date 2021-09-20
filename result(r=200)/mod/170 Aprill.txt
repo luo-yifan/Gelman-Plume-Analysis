@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-FBProphet
-{"fillna": "ffill", "transformations": {"0": "SeasonalDifference", "1": "DifferencedTransformer", "2": "RobustScaler"}, "transformation_params": {"0": {"lag_1": 12, "method": "Median"}, "1": {}, "2": {}}}
-{"holiday": true, "regression_type": null}

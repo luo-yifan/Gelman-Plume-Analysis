@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "Slice", "2": "Detrend", "3": "MinMaxScaler", "4": "Slice"}, "transformation_params": {"0": {}, "1": {"method": 0.5}, "2": {"model": "GLS"}, "3": {}, "4": {"method": 0.2}}}
-{"family": "Binomial", "constant": false, "regression_type": null}

@@ -1,0 +1,65 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "48716883441776d977ce52c3ac3b9af4": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "StandardScaler",
+          "2": "MinMaxScaler",
+          "3": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "fc5d2854990c20468778c4c3ec30ada2": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "StandardScaler",
+          "2": "MinMaxScaler",
+          "3": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "a542ecac9c28c819bdc9281e51fa3446": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "StandardScaler",
+          "2": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    }
+  }
+}

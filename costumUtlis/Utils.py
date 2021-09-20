@@ -5,7 +5,7 @@ from pathlib import Path
 
 class Utils:
     def __init__(self):
-        self.cache_dir = pathlib.Path('../cache/')
+        self.cache_dir = pathlib.Path('../history/cache/')
         self.module_dir = pathlib.Path('../result/mod/')
 
     def get_ori_predict(self, well_name):

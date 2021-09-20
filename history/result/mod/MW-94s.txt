@@ -1,0 +1,80 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "e9cfedc69e9d3b1bcad7cfc138c7c881": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "PowerTransformer",
+          "2": "bkfilter",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "discretization": "lower",
+            "n_bins": 5
+          }
+        }
+      }
+    },
+    "6f66c2e5c7f9fb828a9f6ff2b78fe6fc": {
+      "Model": "SeasonalNaive",
+      "ModelParameters": {
+        "method": "LastValue",
+        "lag_1": 2,
+        "lag_2": 7
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SinTrend",
+          "1": "Round",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {}
+        }
+      }
+    },
+    "3f1f62ab03d90272fcb32b48d36ec483": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "PowerTransformer",
+          "2": "StandardScaler",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "discretization": "lower",
+            "n_bins": 5
+          }
+        }
+      }
+    }
+  }
+}

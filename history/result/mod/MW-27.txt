@@ -1,0 +1,92 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "84a5430d9bf6fa7644cc08bcedd963fa": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Median"
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "QuantileTransformer",
+          "2": "MinMaxScaler",
+          "3": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 6
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "5564e5aeef820ff28c1b196078e64c4c": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {}
+        }
+      }
+    },
+    "360900eb59c59679f108c9502990f2ca": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "QuantileTransformer",
+          "2": "PowerTransformer",
+          "3": "ClipOutliers",
+          "4": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 6
+          },
+          "2": {},
+          "3": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "4": {}
+        }
+      }
+    }
+  }
+}

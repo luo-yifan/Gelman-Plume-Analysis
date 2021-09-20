@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "mean", "transformations": {"0": "bkfilter", "1": "QuantileTransformer", "2": "MaxAbsScaler", "3": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 5}, "2": {}, "3": {}}}
-{}

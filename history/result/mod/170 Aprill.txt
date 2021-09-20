@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "PositiveShift",
+    "1": "bkfilter",
+    "2": "MinMaxScaler",
+    "3": "RobustScaler",
+    "4": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{}

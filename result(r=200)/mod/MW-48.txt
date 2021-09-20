@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "ffill", "transformations": {"0": "ClipOutliers", "1": "Slice", "2": "PowerTransformer"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 4, "fillna": null}, "1": {"method": 0.2}, "2": {}}}
-{"family": "Binomial", "constant": false, "regression_type": "datepart"}

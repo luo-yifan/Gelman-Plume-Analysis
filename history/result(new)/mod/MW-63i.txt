@@ -1,0 +1,95 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "83a7bdbf874de3f07d6a8cfac19225e0": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 10,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "relu",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "input_dim": "multivariate",
+        "output_dim": "1step",
+        "normalize_window": false,
+        "shuffle": false,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "Slice"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": 100
+          }
+        }
+      }
+    },
+    "1fa2f1967a423a5bd838e53d12224359": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 50,
+            "loss": "linear",
+            "base_estimator": "SVR",
+            "learning_rate": 1.0
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "96241c03b2f3503613f02ce2ef6e6c0c": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "Slice"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": 100
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{"fillna": "fake_date", "transformations": {"0": "Round", "1": "Slice", "2": "Detrend", "3": "bkfilter", "4": "Slice"}, "transformation_params": {"0": {"model": "middle", "decimals": -1, "on_transform": true, "on_inverse": true}, "1": {"method": 0.5}, "2": {"model": "GLS"}, "3": {}, "4": {"method": 0.2}}}
-{"regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [72, 36, 72], "max_iter": 250, "activation": "relu", "solver": "lbfgs", "early_stopping": false, "learning_rate_init": 0.001}}, "datepart_method": "expanded", "regression_type": null}

@@ -1,0 +1,19 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "Round"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "model": "middle",
+      "decimals": 0,
+      "on_transform": false,
+      "on_inverse": true
+    }
+  }
+}
+{}

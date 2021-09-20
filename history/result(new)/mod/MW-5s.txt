@@ -1,0 +1,81 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "d2b4e10469c70f8aa53dae065e2abbae": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": true,
+        "damped_cycle": true,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": true,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "Log",
+          "2": "PowerTransformer",
+          "3": "SeasonalDifference",
+          "4": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "4": {}
+        }
+      }
+    },
+    "f997d0f8361c04aa6041fbede20f6de6": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "upper",
+            "n_bins": 20
+          }
+        }
+      }
+    },
+    "3cdab2fada8b3c6862a9d901ac6545ac": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    }
+  }
+}

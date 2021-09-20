@@ -1,0 +1,82 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "f86688944de013933ed4b73b6f24929b": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "Detrend",
+          "3": "Slice"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "method": 100
+          }
+        }
+      }
+    },
+    "a865add45fcab7bd9a4c0ea693890473": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "RobustScaler",
+          "3": "Slice"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "method": 100
+          }
+        }
+      }
+    },
+    "c90a67343b94563bfec69e0db8008eea": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mode"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "Discretize",
+          "1": "DifferencedTransformer",
+          "2": "Detrend",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "center",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {}
+        }
+      }
+    }
+  }
+}

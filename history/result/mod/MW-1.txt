@@ -1,0 +1,42 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "SeasonalDifference",
+    "1": "SinTrend",
+    "2": "DifferencedTransformer",
+    "3": "PowerTransformer",
+    "4": "Detrend",
+    "5": "Round"
+  },
+  "transformation_params": {
+    "0": {
+      "lag_1": 12,
+      "method": "Median"
+    },
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {
+      "model": "Linear"
+    },
+    "5": {
+      "model": "middle",
+      "decimals": 2,
+      "on_transform": false,
+      "on_inverse": true
+    }
+  }
+}
+{
+  "level": false,
+  "trend": false,
+  "cycle": false,
+  "damped_cycle": false,
+  "irregular": true,
+  "stochastic_trend": true,
+  "stochastic_level": true,
+  "stochastic_cycle": false,
+  "regression_type": null
+}

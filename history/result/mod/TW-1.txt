@@ -1,0 +1,98 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "a6b26af3617b89a6aefedb2a02d804cf": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "PCA",
+          "1": "ClipOutliers",
+          "2": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 6
+          }
+        }
+      }
+    },
+    "2be035079535313b7842c0fd23e8b37e": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 6
+          }
+        }
+      }
+    },
+    "87ca3eff12e57ac069721f3ca119d2b2": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": false,
+        "stochastic_level": true,
+        "stochastic_cycle": true,
+        "regression_type": "Holiday"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer",
+          "2": "RobustScaler",
+          "3": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 6
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  }
+}

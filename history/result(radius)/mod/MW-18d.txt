@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "Slice", "2": "RobustScaler", "3": "Slice"}, "transformation_params": {"0": {"output_distribution": "normal", "n_quantiles": 10}, "1": {"method": 0.5}, "2": {}, "3": {"method": 0.2}}}
+{}

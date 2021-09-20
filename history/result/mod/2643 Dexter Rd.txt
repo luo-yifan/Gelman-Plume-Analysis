@@ -1,0 +1,117 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "95564026d3982f0df3b03cfa503b81ed": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "Detrend",
+          "3": "QuantileTransformer",
+          "4": "PowerTransformer",
+          "5": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 2
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "output_distribution": "uniform",
+            "n_quantiles": 2
+          },
+          "4": {},
+          "5": {}
+        }
+      }
+    },
+    "b5e6658525537aab33458724c144d6e1": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend",
+          "3": "Round",
+          "4": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "4": {}
+        }
+      }
+    },
+    "9a9c4914e083278e4b20076d1822f372": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend",
+          "3": "DifferencedTransformer",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "discretization": "upper",
+            "n_bins": 5
+          }
+        }
+      }
+    }
+  }
+}

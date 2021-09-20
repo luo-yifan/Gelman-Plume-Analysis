@@ -1,0 +1,142 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "26cc5b67c85826b5145912063071d48e": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "Round",
+          "2": "RobustScaler",
+          "3": "MinMaxScaler",
+          "4": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "2": {},
+          "3": {},
+          "4": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "53697716580d02bcbb466fc317dd14eb": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              32,
+              64,
+              32
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "CenterLastValue",
+          "1": "Round",
+          "2": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "rows": 1
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "2": {}
+        }
+      }
+    },
+    "7de42bc639d6cb9f349b9baeafc0a7d6": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Round",
+          "2": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "2": {}
+        }
+      }
+    }
+  }
+}

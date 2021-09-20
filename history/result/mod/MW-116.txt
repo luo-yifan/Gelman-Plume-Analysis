@@ -1,0 +1,83 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "274a92ac0b8b10986cb393b134305bc4": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Round",
+          "1": "PowerTransformer",
+          "2": "DifferencedTransformer",
+          "3": "MaxAbsScaler",
+          "4": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "middle",
+            "decimals": -1,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "4b7ce9060f4da6e908c72af4a9e5fd9a": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "PowerTransformer",
+          "2": "DifferencedTransformer",
+          "3": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "normal",
+            "n_quantiles": 2
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "e61dde3d0ebd21cda1aaee6d931251a7": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

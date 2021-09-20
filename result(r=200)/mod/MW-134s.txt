@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-FBProphet
-{"fillna": "rolling_mean", "transformations": {"0": "bkfilter", "1": "SeasonalDifference", "2": "SeasonalDifference", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"lag_1": 12, "method": "Mean"}, "2": {"lag_1": 12, "method": "LastValue"}, "3": {}}}
-{"holiday": false, "regression_type": null}

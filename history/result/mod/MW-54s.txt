@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "SeasonalDifference",
+    "1": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {
+      "lag_1": 7,
+      "method": "LastValue"
+    },
+    "1": {}
+  }
+}
+{
+  "holiday": true,
+  "regression_type": null
+}

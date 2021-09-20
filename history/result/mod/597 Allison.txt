@@ -1,0 +1,93 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "397f1b2cceb067fdd4192d542ab5111c": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "SeasonalDifference",
+          "2": "Round"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "2": {
+            "model": "middle",
+            "decimals": -2,
+            "on_transform": true,
+            "on_inverse": false
+          }
+        }
+      }
+    },
+    "4d974cedcbd18492437184212b14867a": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "aaf9077c118d01eabd1e3694ce368bf3": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    }
+  }
+}

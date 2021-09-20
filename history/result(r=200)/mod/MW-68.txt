@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "ffill_mean_biased", "transformations": {"0": "SeasonalDifference", "1": "MaxAbsScaler", "2": "IntermittentOccurrence", "3": "PctChangeTransformer", "4": "MinMaxScaler"}, "transformation_params": {"0": {"lag_1": 12, "method": "Median"}, "1": {}, "2": {"center": "mean"}, "3": {}, "4": {}}}
+{}

@@ -1,0 +1,32 @@
+Initiated AutoTS object with best model: 
+ETS
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "IntermittentOccurrence",
+    "1": "SinTrend",
+    "2": "MaxAbsScaler",
+    "3": "SeasonalDifference",
+    "4": "bkfilter",
+    "5": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "center": "mean"
+    },
+    "1": {},
+    "2": {},
+    "3": {
+      "lag_1": 12,
+      "method": "Median"
+    },
+    "4": {},
+    "5": {}
+  }
+}
+{
+  "damped_trend": true,
+  "trend": "additive",
+  "seasonal": null,
+  "seasonal_periods": null
+}

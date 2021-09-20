@@ -1,0 +1,83 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "75cb5ae7ad71c8cc1156cf3040e3287b": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "MinMaxScaler",
+          "2": "PowerTransformer",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "5d0e1949b871b3ad966a608fdb4f3542": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": true,
+        "stochastic_level": true,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "Discretize",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "lower",
+            "n_bins": 5
+          },
+          "1": {}
+        }
+      }
+    },
+    "a940b8da0f90af78cd55baf9d811822c": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "Discretize",
+          "1": "ClipOutliers",
+          "2": "MinMaxScaler",
+          "3": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "lower",
+            "n_bins": 5
+          },
+          "1": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  }
+}

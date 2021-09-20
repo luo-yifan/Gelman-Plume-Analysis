@@ -1,0 +1,50 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "Horizontal",
+  "model_count": 1,
+  "model_metric": "MAE",
+  "models": {
+    "de7f43eda2be384ee61d8a036baa5270": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "DecisionTree",
+          "model_params": {
+            "max_depth": 9,
+            "min_samples_split": 1.0
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": null,
+        "macd_periods": null,
+        "std_rolling_periods": 7,
+        "max_rolling_periods": 24,
+        "min_rolling_periods": 96,
+        "ewm_alpha": 0.5,
+        "additional_lag_periods": 3,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "StandardScaler",
+          "1": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  },
+  "series": {
+    "y": "de7f43eda2be384ee61d8a036baa5270"
+  }
+}

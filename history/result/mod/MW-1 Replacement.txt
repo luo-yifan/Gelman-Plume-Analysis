@@ -1,0 +1,32 @@
+Initiated AutoTS object with best model: 
+FBProphet
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "PowerTransformer",
+    "2": "Detrend",
+    "3": "DifferencedTransformer",
+    "4": "Discretize"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 1,
+      "fillna": null
+    },
+    "1": {},
+    "2": {
+      "model": "Linear"
+    },
+    "3": {},
+    "4": {
+      "discretization": "upper",
+      "n_bins": 10
+    }
+  }
+}
+{
+  "holiday": true,
+  "regression_type": null
+}

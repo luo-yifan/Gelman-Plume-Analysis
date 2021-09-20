@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+ETS
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "RobustScaler",
+    "2": "PowerTransformer",
+    "3": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {
+      "lag_1": 7,
+      "method": "LastValue"
+    }
+  }
+}
+{
+  "damped_trend": true,
+  "trend": null,
+  "seasonal": null,
+  "seasonal_periods": null
+}

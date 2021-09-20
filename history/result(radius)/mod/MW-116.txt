@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean_24", "transformations": {"0": "RobustScaler"}, "transformation_params": {"0": {}}}
+{"family": "Poisson", "constant": false, "regression_type": null}

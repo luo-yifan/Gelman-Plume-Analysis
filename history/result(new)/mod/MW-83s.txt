@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "RollingMeanTransformer",
+    "2": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "fixed": true,
+      "window": 10
+    },
+    "2": {}
+  }
+}
+{
+  "family": "Binomial",
+  "constant": false,
+  "regression_type": null
+}

@@ -1,0 +1,111 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "d0d0afe945987208e540c9958dcc7e97": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Gaussian",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer",
+          "2": "Round"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "middle",
+            "decimals": -1,
+            "on_transform": false,
+            "on_inverse": true
+          }
+        }
+      }
+    },
+    "4fe99beb923e2e5c83156c6e08c9387a": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 5,
+        "regression_model": {
+          "model": "BayesianRidge",
+          "model_params": {}
+        },
+        "input_dim": "multivariate",
+        "output_dim": "forecast_length",
+        "normalize_window": false,
+        "shuffle": false,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "Round"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "middle",
+            "decimals": -1,
+            "on_transform": false,
+            "on_inverse": true
+          }
+        }
+      }
+    },
+    "c7fb7987ab6a9e3af0552986bb4a94d1": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Median"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "Round",
+          "3": "MaxAbsScaler",
+          "4": "MaxAbsScaler",
+          "5": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          },
+          "2": {
+            "model": "middle",
+            "decimals": -1,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "3": {},
+          "4": {},
+          "5": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          }
+        }
+      }
+    }
+  }
+}

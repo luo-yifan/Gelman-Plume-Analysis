@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "Detrend",
+    "1": "SeasonalDifference",
+    "2": "DifferencedTransformer",
+    "3": "bkfilter"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "Linear"
+    },
+    "1": {
+      "lag_1": 12,
+      "method": "Mean"
+    },
+    "2": {},
+    "3": {}
+  }
+}
+{}

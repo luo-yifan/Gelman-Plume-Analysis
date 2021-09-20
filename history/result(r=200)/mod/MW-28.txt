@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "CenterLastValue", "1": "QuantileTransformer", "2": "Detrend", "3": "QuantileTransformer"}, "transformation_params": {"0": {"rows": 6}, "1": {"output_distribution": "uniform", "n_quantiles": 7}, "2": {"model": "Linear"}, "3": {"output_distribution": "uniform", "n_quantiles": 7}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

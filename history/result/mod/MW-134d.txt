@@ -1,0 +1,93 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "6524fbb77d4237f22c3318ddf8b0cd33": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "8eed7fecdfac5a6722f40029209b3ccd": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "SVM",
+          "model_params": {}
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RollingMeanTransformer",
+          "2": "Detrend",
+          "3": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {
+            "fixed": true,
+            "window": 10
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "output_distribution": "uniform",
+            "n_quantiles": 1
+          }
+        }
+      }
+    },
+    "3bdf8cbff3d7e72f368cc48f2b18caaa": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Round"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": true,
+            "on_inverse": false
+          }
+        }
+      }
+    }
+  }
+}
