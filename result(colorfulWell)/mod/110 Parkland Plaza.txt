@@ -1,4 +1,4 @@
 Initiated AutoTS object with best model: 
-AverageValueNaive
-{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "Slice", "2": "DifferencedTransformer", "3": "PositiveShift", "4": "PowerTransformer"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {"method": 100}, "2": {}, "3": {}, "4": {}}}
-{"method": "Mean"}
+ZeroesNaive
+{"fillna": "median", "transformations": {"0": "MaxAbsScaler", "1": "DifferencedTransformer", "2": "PositiveShift", "3": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
+{}

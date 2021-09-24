@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "rolling_mean_24", "transformations": {"0": "QuantileTransformer", "1": "Detrend", "2": "Detrend", "3": "PositiveShift"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 5}, "1": {"model": "Linear"}, "2": {"model": "Linear"}, "3": {}}}
+{"level": true, "trend": false, "cycle": true, "damped_cycle": false, "irregular": true, "stochastic_trend": true, "stochastic_level": true, "stochastic_cycle": true, "regression_type": null}

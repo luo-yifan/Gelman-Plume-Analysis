@@ -1,4 +1,4 @@
 Initiated AutoTS object with best model: 
-AverageValueNaive
-{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "Slice", "2": "Detrend", "3": "Slice"}, "transformation_params": {"0": {}, "1": {"method": 0.5}, "2": {"model": "GLS"}, "3": {"method": 0.2}}}
-{"method": "Median"}
+SeasonalNaive
+{"fillna": "ffill_mean_biased", "transformations": {"0": "QuantileTransformer", "1": "RobustScaler", "2": "DifferencedTransformer", "3": "SeasonalDifference"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {}, "2": {}, "3": {"lag_1": 7, "method": "Mean"}}}
+{"method": "Median", "lag_1": 7, "lag_2": 1}
