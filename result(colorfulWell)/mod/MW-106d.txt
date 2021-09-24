@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "ffill", "transformations": {"0": "bkfilter", "1": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}}}
+{}

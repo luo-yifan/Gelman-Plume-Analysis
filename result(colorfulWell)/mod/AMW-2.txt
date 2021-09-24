@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnivariateMotif
+{"fillna": "rolling_mean_24", "transformations": {"0": "RobustScaler", "1": "DifferencedTransformer", "2": "Round", "3": "RobustScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "middle", "decimals": -1, "on_transform": true, "on_inverse": true}, "3": {}}}
+{"window": 5, "point_method": "mean", "distance_metric": "sokalsneath", "k": 10, "max_windows": 10000}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{"fillna": "ffill", "transformations": {"0": "SeasonalDifference", "1": "PositiveShift"}, "transformation_params": {"0": {"lag_1": 7, "method": "Mean"}, "1": {}}}
+{"window_size": 5, "input_dim": "univariate", "output_dim": "1step", "normalize_window": false, "max_windows": 5000, "regression_type": null, "regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [72, 36, 72], "max_iter": 250, "activation": "identity", "solver": "lbfgs", "early_stopping": false, "learning_rate_init": 0.001}}}

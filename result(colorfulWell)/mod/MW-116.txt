@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "mean", "transformations": {"0": "PositiveShift", "1": "RollingMeanTransformer", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"fixed": true, "window": 12}, "2": {}}}
+{"method": "Exp_Weighted_Mean"}
