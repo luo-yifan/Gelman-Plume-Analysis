@@ -1,0 +1,31 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "Discretize",
+    "1": "ClipOutliers",
+    "2": "bkfilter",
+    "3": "PctChangeTransformer",
+    "4": "ClipOutliers"
+  },
+  "transformation_params": {
+    "0": {
+      "discretization": "upper",
+      "n_bins": 10
+    },
+    "1": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    },
+    "2": {},
+    "3": {},
+    "4": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    }
+  }
+}
+{}

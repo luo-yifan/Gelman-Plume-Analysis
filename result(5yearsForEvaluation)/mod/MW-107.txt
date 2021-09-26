@@ -1,0 +1,86 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "0656310d0f6755ae88231597078c58ec": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mode"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SinTrend",
+          "2": "PowerTransformer",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "384b738f9aef8974c69f9d2abb40002b": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "KNN",
+          "model_params": {
+            "n_neighbors": 5,
+            "weights": "distance"
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SinTrend",
+          "2": "PowerTransformer",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "c5c85d2ecec1b5dde74a321b69cecfef": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "CenterLastValue",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "rows": 5
+          },
+          "2": {
+            "discretization": "center",
+            "n_bins": 20
+          }
+        }
+      }
+    }
+  }
+}

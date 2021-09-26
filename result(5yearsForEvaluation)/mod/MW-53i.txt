@@ -1,0 +1,19 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "Round"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "middle",
+      "decimals": 2,
+      "on_transform": false,
+      "on_inverse": true
+    }
+  }
+}
+{
+  "method": "Mode"
+}

@@ -1,0 +1,109 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "b7c0545fc767f7340efc21676595b867": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": true,
+        "stochastic_level": false,
+        "stochastic_cycle": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "QuantileTransformer",
+          "2": "Discretize",
+          "3": "PowerTransformer",
+          "4": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 1
+          },
+          "2": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "f738b8b1d59da55773631396d652d91f": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": true,
+        "stochastic_cycle": true,
+        "regression_type": "Holiday"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "QuantileTransformer",
+          "2": "Discretize",
+          "3": "PowerTransformer",
+          "4": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 1
+          },
+          "2": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "ad0e242d66c7cb19a668c51fd1edcd38": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Gaussian",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": true,
+            "window": 12
+          },
+          "1": {
+            "discretization": "lower",
+            "n_bins": 20
+          }
+        }
+      }
+    }
+  }
+}

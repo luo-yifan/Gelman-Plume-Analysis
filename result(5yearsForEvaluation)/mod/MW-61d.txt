@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "DifferencedTransformer",
+    "2": "PctChangeTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {}
+  }
+}
+{
+  "family": "NegativeBinomial",
+  "constant": false,
+  "regression_type": "datepart"
+}

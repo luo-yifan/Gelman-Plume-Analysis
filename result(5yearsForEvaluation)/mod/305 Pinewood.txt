@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "Detrend",
+    "1": "PowerTransformer",
+    "2": "RobustScaler",
+    "3": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "Linear"
+    },
+    "1": {},
+    "2": {},
+    "3": {}
+  }
+}
+{}

@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "Log",
+    "1": "QuantileTransformer",
+    "2": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "output_distribution": "uniform",
+      "n_quantiles": 5
+    },
+    "2": {}
+  }
+}
+{
+  "family": "Tweedie",
+  "constant": false,
+  "regression_type": "datepart"
+}

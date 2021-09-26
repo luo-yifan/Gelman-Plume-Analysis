@@ -1,0 +1,55 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "SeasonalDifference",
+    "1": "MinMaxScaler",
+    "2": "ClipOutliers",
+    "3": "PositiveShift"
+  },
+  "transformation_params": {
+    "0": {
+      "lag_1": 12,
+      "method": "LastValue"
+    },
+    "1": {},
+    "2": {
+      "method": "clip",
+      "std_threshold": 3,
+      "fillna": null
+    },
+    "3": {}
+  }
+}
+{
+  "regression_model": {
+    "model": "MLP",
+    "model_params": {
+      "hidden_layer_sizes": [
+        32,
+        32,
+        32
+      ],
+      "max_iter": 250,
+      "activation": "relu",
+      "solver": "lbfgs",
+      "early_stopping": false,
+      "learning_rate_init": 0.001
+    }
+  },
+  "holiday": false,
+  "mean_rolling_periods": 5,
+  "macd_periods": 17,
+  "std_rolling_periods": 5,
+  "max_rolling_periods": 24,
+  "min_rolling_periods": null,
+  "ewm_alpha": 0.2,
+  "additional_lag_periods": 2,
+  "abs_energy": false,
+  "rolling_autocorr_periods": null,
+  "add_date_part": "expanded",
+  "polynomial_degree": 2,
+  "x_transform": null,
+  "regression_type": null
+}

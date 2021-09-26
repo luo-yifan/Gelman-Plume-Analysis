@@ -1,0 +1,129 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "46f54420db674d30ea95967bf22c9ddd": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 50,
+            "loss": "linear",
+            "base_estimator": "SVR",
+            "learning_rate": 1.0
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": null,
+        "macd_periods": null,
+        "std_rolling_periods": 5,
+        "max_rolling_periods": 364,
+        "min_rolling_periods": 28,
+        "ewm_alpha": 0.8,
+        "additional_lag_periods": 23,
+        "abs_energy": true,
+        "rolling_autocorr_periods": 30,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": "RmZeroVariance",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "a035dde3216d6c040e3ab8b3c450bdf4": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    },
+    "07416b72ed23942f1deea6df12f774b4": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "Round",
+          "3": "Detrend",
+          "4": "PowerTransformer",
+          "5": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          },
+          "2": {
+            "model": "middle",
+            "decimals": -2,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "3": {
+            "model": "Linear"
+          },
+          "4": {},
+          "5": {}
+        }
+      }
+    }
+  }
+}

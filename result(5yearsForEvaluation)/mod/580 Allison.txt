@@ -1,0 +1,120 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "7e55796bca9365948ff1bce927d5855a": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "8140dd3b25f5f413325bc4ac31e651d2": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": true,
+        "stochastic_level": true,
+        "stochastic_cycle": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "discretization": "lower",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "e057771c1242761ca99f34eedbf865e9": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "recurring",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "Round",
+          "2": "RollingMeanTransformer",
+          "3": "Detrend",
+          "4": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {
+            "fixed": false,
+            "window": 12
+          },
+          "3": {
+            "model": "Linear"
+          },
+          "4": {}
+        }
+      }
+    }
+  }
+}

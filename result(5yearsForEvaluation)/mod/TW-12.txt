@@ -1,0 +1,94 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "d55324dbe11b268b78e45f3783ad5cdd": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Gamma",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "ef835b2f94b9fe0b0db351ce2897464e": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              50,
+              25
+            ],
+            "max_iter": 1000,
+            "activation": "identity",
+            "solver": "adam",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "PowerTransformer",
+          "2": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "lag_1": 12,
+            "method": "Median"
+          }
+        }
+      }
+    },
+    "229194a9d9a5db8ba5173fabe89f5b79": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PctChangeTransformer",
+          "2": "Discretize",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "discretization": "center",
+            "n_bins": 5
+          },
+          "3": {
+            "discretization": "upper",
+            "n_bins": 5
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "MaxAbsScaler",
+    "1": "DifferencedTransformer",
+    "2": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {}
+  }
+}
+{
+  "window_size": 5,
+  "regression_model": {
+    "model": "HistGradientBoost",
+    "model_params": {
+      "loss": "least_absolute_deviation",
+      "learning_rate": 1.0
+    }
+  },
+  "input_dim": "multivariate",
+  "output_dim": "1step",
+  "normalize_window": false,
+  "shuffle": false,
+  "max_windows": 5000
+}

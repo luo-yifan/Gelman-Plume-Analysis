@@ -1,0 +1,34 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "QuantileTransformer",
+    "1": "Round",
+    "2": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {
+      "output_distribution": "uniform",
+      "n_quantiles": 3
+    },
+    "1": {
+      "model": "middle",
+      "decimals": -2,
+      "on_transform": true,
+      "on_inverse": false
+    },
+    "2": {}
+  }
+}
+{
+  "level": true,
+  "trend": true,
+  "cycle": false,
+  "damped_cycle": false,
+  "irregular": false,
+  "stochastic_trend": false,
+  "stochastic_level": false,
+  "stochastic_cycle": true,
+  "regression_type": null
+}

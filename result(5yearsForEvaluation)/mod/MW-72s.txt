@@ -1,0 +1,22 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "PctChangeTransformer",
+    "1": "Discretize",
+    "2": "Discretize"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "discretization": "center",
+      "n_bins": 20
+    },
+    "2": {
+      "discretization": "center",
+      "n_bins": 20
+    }
+  }
+}
+{}

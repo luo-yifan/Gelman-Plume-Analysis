@@ -1,0 +1,87 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "d95b542b6c8d83a49a67b5421fe33bbe": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PowerTransformer",
+          "2": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "e4f0c9e331eaaf5382699b5ddcf3380e": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "PowerTransformer",
+          "2": "PositiveShift",
+          "3": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "4e68627ea8a91f61fa9ce08b5367fe4e": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mode"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "PowerTransformer",
+          "2": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    }
+  }
+}

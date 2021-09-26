@@ -1,0 +1,24 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "PctChangeTransformer",
+    "2": "IntermittentOccurrence",
+    "3": "CumSumTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 3,
+      "fillna": null
+    },
+    "1": {},
+    "2": {
+      "center": "mean"
+    },
+    "3": {}
+  }
+}
+{}

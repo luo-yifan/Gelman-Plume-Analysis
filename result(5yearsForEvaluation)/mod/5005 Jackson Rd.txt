@@ -1,0 +1,107 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "34b77226bf94acae6de8bee9bbdf0a22": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              50,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "adam",
+            "early_stopping": false,
+            "learning_rate_init": 0.01
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "CumSumTransformer",
+          "1": "MinMaxScaler",
+          "2": "RollingMeanTransformer",
+          "3": "PowerTransformer",
+          "4": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "fixed": false,
+            "window": 12
+          },
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "07e2a89fbfcd8f8276d8b5af99468d86": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "Mean"
+          },
+          "1": {}
+        }
+      }
+    },
+    "b0fd4568f7d4a7e2716800fa4e8caddd": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "QuantileTransformer",
+          "2": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 8
+          },
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 8
+          }
+        }
+      }
+    }
+  }
+}

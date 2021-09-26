@@ -1,0 +1,84 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "3b75a7564f593aa1627fa16b09af6e3f": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": false,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "RobustScaler",
+          "2": "CumSumTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "624af8178e0a88412ad9d2a98ab4136a": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "MinMaxScaler",
+          "2": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "2ae851216d7133d87d44b32e6636103d": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

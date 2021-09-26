@@ -1,0 +1,76 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "e5955ffdfcd7d1f5051d52f48c68b49c": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    },
+    "765ced73e450671135db689366318bcb": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "Discretize",
+          "2": "MinMaxScaler",
+          "3": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "lower",
+            "n_bins": 5
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "c46d8560c9d21b2d13c0186777360a30": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "MaxAbsScaler",
+          "2": "SeasonalDifference",
+          "3": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "lag_1": 12,
+            "method": "Mean"
+          },
+          "3": {}
+        }
+      }
+    }
+  }
+}

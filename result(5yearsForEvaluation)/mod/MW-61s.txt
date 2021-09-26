@@ -1,0 +1,22 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "StandardScaler",
+    "1": "StandardScaler",
+    "2": "DifferencedTransformer",
+    "3": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {}
+  }
+}
+{
+  "family": "Binomial",
+  "constant": false,
+  "regression_type": null
+}

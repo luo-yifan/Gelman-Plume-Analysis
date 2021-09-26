@@ -1,0 +1,28 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "QuantileTransformer",
+    "1": "Detrend",
+    "2": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {
+      "output_distribution": "uniform",
+      "n_quantiles": 5
+    },
+    "1": {
+      "model": "Linear"
+    },
+    "2": {
+      "lag_1": 12,
+      "method": "Median"
+    }
+  }
+}
+{
+  "family": "Binomial",
+  "constant": false,
+  "regression_type": null
+}

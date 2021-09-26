@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "QuantileTransformer",
+    "2": "CumSumTransformer",
+    "3": "PowerTransformer",
+    "4": "MinMaxScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "output_distribution": "uniform",
+      "n_quantiles": 2
+    },
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{}

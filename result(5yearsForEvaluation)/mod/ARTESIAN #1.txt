@@ -1,0 +1,86 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "39371806bc4e9f0b285134a58f0648b8": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "MaxAbsScaler",
+          "2": "CenterLastValue"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": false,
+            "window": 7
+          },
+          "1": {},
+          "2": {
+            "rows": 4
+          }
+        }
+      }
+    },
+    "fd25951170691e62f2c65bb7631a6e20": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "SeasonalDifference",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": false,
+            "window": 7
+          },
+          "1": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "2": {}
+        }
+      }
+    },
+    "a74991b1fc8924895fe78462a4a0f4d9": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Binomial",
+        "constant": false,
+        "regression_type": "datepart"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "SeasonalDifference",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": false,
+            "window": 7
+          },
+          "1": {
+            "lag_1": 12,
+            "method": "LastValue"
+          },
+          "2": {}
+        }
+      }
+    }
+  }
+}

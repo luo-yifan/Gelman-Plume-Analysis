@@ -1,0 +1,96 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "97f0affc0dde622b6962b4d2dc58a8e8": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "QuantileTransformer",
+          "2": "DifferencedTransformer",
+          "3": "PowerTransformer",
+          "4": "CumSumTransformer",
+          "5": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 2
+          },
+          "2": {},
+          "3": {},
+          "4": {},
+          "5": {}
+        }
+      }
+    },
+    "735d4ef62fc83751e289a2d8d71733a3": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 500,
+            "loss": "linear",
+            "base_estimator": "DecisionTree",
+            "learning_rate": 1.0
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "QuantileTransformer",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 2
+          },
+          "2": {}
+        }
+      }
+    },
+    "8c8ee65eecbaace9d6c60cf71cf665db": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "DecisionTree",
+          "model_params": {
+            "max_depth": 9,
+            "min_samples_split": 2
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    }
+  }
+}

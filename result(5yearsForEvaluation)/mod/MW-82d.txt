@@ -1,0 +1,191 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "21cec1fdc8017c93562cea288c8520a0": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              50,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": true,
+        "mean_rolling_periods": 12,
+        "macd_periods": null,
+        "std_rolling_periods": null,
+        "max_rolling_periods": 29,
+        "min_rolling_periods": null,
+        "ewm_alpha": 0.5,
+        "additional_lag_periods": 3,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RollingMeanTransformer",
+          "2": "Detrend",
+          "3": "Discretize",
+          "4": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "fixed": true,
+            "window": 3
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "4": {}
+        }
+      }
+    },
+    "1160526d67d6d832311e4bda39b7f868": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              50,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": true,
+        "mean_rolling_periods": 12,
+        "macd_periods": null,
+        "std_rolling_periods": null,
+        "max_rolling_periods": 29,
+        "min_rolling_periods": null,
+        "ewm_alpha": 0.5,
+        "additional_lag_periods": 3,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "Discretize",
+          "1": "RollingMeanTransformer",
+          "2": "Detrend",
+          "3": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "upper",
+            "n_bins": 5
+          },
+          "1": {
+            "fixed": true,
+            "window": 3
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {}
+        }
+      }
+    },
+    "d299313455294f6bb828374c4a2327df": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              50,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": true,
+        "mean_rolling_periods": 12,
+        "macd_periods": null,
+        "std_rolling_periods": null,
+        "max_rolling_periods": 29,
+        "min_rolling_periods": null,
+        "ewm_alpha": 0.5,
+        "additional_lag_periods": 3,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RollingMeanTransformer",
+          "2": "Detrend",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "fixed": true,
+            "window": 3
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "discretization": "lower",
+            "n_bins": 20
+          }
+        }
+      }
+    }
+  }
+}

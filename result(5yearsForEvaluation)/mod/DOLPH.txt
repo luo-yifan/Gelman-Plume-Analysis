@@ -1,0 +1,85 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "9f9225d82c1588cf1621c2052ba147a1": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "PowerTransformer",
+          "2": "DifferencedTransformer",
+          "3": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "04a1bade2c928d1a360fe9578fb4ccc3": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "Poisson",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "PowerTransformer",
+          "2": "DifferencedTransformer",
+          "3": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "d207af71b1332a41f1fd11922d97edd1": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": true,
+        "trend": true,
+        "cycle": true,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": true,
+        "stochastic_level": false,
+        "stochastic_cycle": true,
+        "regression_type": "Holiday"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "PowerTransformer",
+          "2": "DifferencedTransformer",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  }
+}

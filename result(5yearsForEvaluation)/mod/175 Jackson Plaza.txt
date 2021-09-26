@@ -1,0 +1,124 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "296201fac7f4e04084e6e84fdcb0ce7f": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "MaxAbsScaler",
+          "2": "MinMaxScaler",
+          "3": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "7f84b1bd6911a18d5a696ac163806c18": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "Adaboost",
+          "model_params": {
+            "n_estimators": 50,
+            "loss": "linear",
+            "base_estimator": "DecisionTree",
+            "learning_rate": 1.0
+          }
+        },
+        "holiday": true,
+        "mean_rolling_periods": 12,
+        "macd_periods": 7,
+        "std_rolling_periods": 10,
+        "max_rolling_periods": null,
+        "min_rolling_periods": 28,
+        "ewm_alpha": null,
+        "additional_lag_periods": 363,
+        "abs_energy": false,
+        "rolling_autocorr_periods": 12,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": "RmZeroVariance",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "SinTrend",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "eae850ac0584dfd647cd7dc63eb185c0": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 500,
+            "activation": "relu",
+            "solver": "adam",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 5,
+        "macd_periods": null,
+        "std_rolling_periods": 10,
+        "max_rolling_periods": null,
+        "min_rolling_periods": 12,
+        "ewm_alpha": null,
+        "additional_lag_periods": 99,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": null,
+        "polynomial_degree": null,
+        "x_transform": "RmZeroVariance",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  }
+}

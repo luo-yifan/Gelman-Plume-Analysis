@@ -1,0 +1,19 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "RollingMeanTransformer",
+    "2": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "fixed": true,
+      "window": 10
+    },
+    "2": {}
+  }
+}
+{}

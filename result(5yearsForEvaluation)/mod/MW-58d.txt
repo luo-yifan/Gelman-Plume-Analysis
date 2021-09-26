@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "Detrend",
+    "1": "PositiveShift"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "Linear"
+    },
+    "1": {}
+  }
+}
+{
+  "method": "Median",
+  "lag_1": 7,
+  "lag_2": 1
+}

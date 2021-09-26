@@ -1,0 +1,149 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "ab5fbf1d284ada28d901e07d9ab5c1d3": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 500,
+            "activation": "relu",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 5,
+        "macd_periods": 84,
+        "std_rolling_periods": 7,
+        "max_rolling_periods": 12,
+        "min_rolling_periods": 24,
+        "ewm_alpha": null,
+        "additional_lag_periods": 6,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": "recurring",
+        "polynomial_degree": 2,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "RobustScaler",
+          "2": "StandardScaler",
+          "3": "DifferencedTransformer",
+          "4": "CumSumTransformer",
+          "5": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {},
+          "5": {}
+        }
+      }
+    },
+    "5007529496f6ec19ba0764a09403fad4": {
+      "Model": "RollingRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 500,
+            "activation": "relu",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "holiday": false,
+        "mean_rolling_periods": 5,
+        "macd_periods": 84,
+        "std_rolling_periods": 7,
+        "max_rolling_periods": 4,
+        "min_rolling_periods": 24,
+        "ewm_alpha": null,
+        "additional_lag_periods": 6,
+        "abs_energy": false,
+        "rolling_autocorr_periods": null,
+        "add_date_part": "recurring",
+        "polynomial_degree": null,
+        "x_transform": null,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "RobustScaler",
+          "2": "PositiveShift",
+          "3": "DifferencedTransformer",
+          "4": "CumSumTransformer",
+          "5": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {},
+          "5": {}
+        }
+      }
+    },
+    "3ddac871958f5d83cb57fc69bb0ffc2a": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              32,
+              64,
+              32
+            ],
+            "max_iter": 1000,
+            "activation": "relu",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  }
+}

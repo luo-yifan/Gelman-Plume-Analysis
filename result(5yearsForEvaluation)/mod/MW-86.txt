@@ -1,0 +1,85 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "472713f4dc0a9e54bbd3afd94cdeb029": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 1000,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "simple",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "ClipOutliers",
+          "2": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "2": {}
+        }
+      }
+    },
+    "2887d2af24ace64615ccf0154ef2e4be": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "a4d88ce0a9ec95a6981ed461b0da506e": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    }
+  }
+}

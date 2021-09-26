@@ -1,0 +1,96 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "ff2a48268cff48a4c2ec93f13b72d461": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": false,
+        "stochastic_trend": false,
+        "stochastic_level": true,
+        "stochastic_cycle": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "PowerTransformer",
+          "2": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "Median"
+          },
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "96d6a39389c613c3211c16f926b4c837": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": false,
+        "damped_cycle": false,
+        "irregular": true,
+        "stochastic_trend": false,
+        "stochastic_level": true,
+        "stochastic_cycle": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "PowerTransformer",
+          "2": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "Median"
+          },
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "de148ef226fbbd2dcba1f7d4cd4037e1": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "PowerTransformer",
+          "2": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

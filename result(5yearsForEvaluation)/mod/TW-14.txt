@@ -1,0 +1,31 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "QuantileTransformer",
+    "2": "QuantileTransformer",
+    "3": "Discretize"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "output_distribution": "normal",
+      "n_quantiles": 3
+    },
+    "2": {
+      "output_distribution": "uniform",
+      "n_quantiles": 3
+    },
+    "3": {
+      "discretization": "lower",
+      "n_bins": 20
+    }
+  }
+}
+{
+  "family": "Poisson",
+  "constant": false,
+  "regression_type": "datepart"
+}

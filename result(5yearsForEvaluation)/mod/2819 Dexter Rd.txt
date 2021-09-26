@@ -1,0 +1,31 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "QuantileTransformer",
+    "2": "QuantileTransformer",
+    "3": "QuantileTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "output_distribution": "uniform",
+      "n_quantiles": 6
+    },
+    "2": {
+      "output_distribution": "uniform",
+      "n_quantiles": 6
+    },
+    "3": {
+      "output_distribution": "uniform",
+      "n_quantiles": 6
+    }
+  }
+}
+{
+  "method": "LastValue",
+  "lag_1": 364,
+  "lag_2": 2
+}

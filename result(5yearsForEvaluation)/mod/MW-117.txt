@@ -1,0 +1,22 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{
+  "fillna": "mean",
+  "transformations": {
+    "0": "PositiveShift",
+    "1": "Log",
+    "2": "ClipOutliers",
+    "3": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "method": "clip",
+      "std_threshold": 1,
+      "fillna": null
+    },
+    "3": {}
+  }
+}
+{}

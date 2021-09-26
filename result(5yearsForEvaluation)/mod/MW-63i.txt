@@ -1,0 +1,126 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "d9e32188f8385e307d4d8888a51a1fb5": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              72,
+              36,
+              72
+            ],
+            "max_iter": 1000,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "StandardScaler",
+          "1": "SeasonalDifference",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 12,
+            "method": "Median"
+          },
+          "2": {}
+        }
+      }
+    },
+    "6a981e32089a34b107a8b47389925c67": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 2,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "input_dim": "univariate",
+        "output_dim": "forecast_length",
+        "normalize_window": false,
+        "shuffle": true,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SinTrend",
+          "2": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "6f595ccbca184144cd9c0bd67f5f00d9": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 2,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              25,
+              15,
+              25
+            ],
+            "max_iter": 250,
+            "activation": "tanh",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "input_dim": "univariate",
+        "output_dim": "forecast_length",
+        "normalize_window": false,
+        "shuffle": false,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SinTrend",
+          "2": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    }
+  }
+}

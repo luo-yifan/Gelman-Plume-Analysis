@@ -1,0 +1,25 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "Round",
+    "1": "MinMaxScaler",
+    "2": "MinMaxScaler",
+    "3": "PowerTransformer",
+    "4": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "model": "middle",
+      "decimals": -1,
+      "on_transform": false,
+      "on_inverse": true
+    },
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{}

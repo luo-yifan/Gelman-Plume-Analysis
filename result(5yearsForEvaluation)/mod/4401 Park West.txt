@@ -1,0 +1,138 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "82aa07760c118ee8ba7974b46088c48e": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              100
+            ],
+            "max_iter": 250,
+            "activation": "relu",
+            "solver": "adam",
+            "early_stopping": true,
+            "learning_rate_init": 0.001
+          }
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "PowerTransformer",
+          "2": "DifferencedTransformer",
+          "3": "Round"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          }
+        }
+      }
+    },
+    "2a4de8d62ac518422aaacb554a82396c": {
+      "Model": "WindowRegression",
+      "ModelParameters": {
+        "window_size": 10,
+        "regression_model": {
+          "model": "MLP",
+          "model_params": {
+            "hidden_layer_sizes": [
+              100
+            ],
+            "max_iter": 250,
+            "activation": "relu",
+            "solver": "lbfgs",
+            "early_stopping": false,
+            "learning_rate_init": 0.001
+          }
+        },
+        "input_dim": "univariate",
+        "output_dim": "forecast_length",
+        "normalize_window": false,
+        "shuffle": false,
+        "max_windows": 5000
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "Detrend",
+          "3": "Round"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "normal",
+            "n_quantiles": 8
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          }
+        }
+      }
+    },
+    "32d53a7bfa02e8be1211313327cecbfc": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "Detrend",
+          "3": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "normal",
+            "n_quantiles": 8
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "model": "Linear"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "QuantileTransformer",
+    "1": "DifferencedTransformer",
+    "2": "MaxAbsScaler",
+    "3": "DifferencedTransformer",
+    "4": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "output_distribution": "uniform",
+      "n_quantiles": 6
+    },
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{
+  "family": "Binomial",
+  "constant": false,
+  "regression_type": "datepart"
+}

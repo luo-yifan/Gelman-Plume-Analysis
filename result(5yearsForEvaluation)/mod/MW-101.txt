@@ -1,0 +1,79 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "59e13f9d2e52843c9ccd2e70b4313af5": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    },
+    "b0ecc0677aeb67aeb4fdf5538e31d937": {
+      "Model": "GLM",
+      "ModelParameters": {
+        "family": "NegativeBinomial",
+        "constant": false,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SeasonalDifference",
+          "2": "RobustScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 7,
+            "method": "Median"
+          },
+          "2": {}
+        }
+      }
+    },
+    "58458bafed19ee56e65796de10f1f3e1": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "Discretize",
+          "2": "Discretize",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "2": {
+            "discretization": "lower",
+            "n_bins": 20
+          },
+          "3": {
+            "discretization": "center",
+            "n_bins": 20
+          }
+        }
+      }
+    }
+  }
+}

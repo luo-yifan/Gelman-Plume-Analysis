@@ -1,0 +1,29 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "zero",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "PowerTransformer",
+    "2": "PowerTransformer",
+    "3": "DifferencedTransformer",
+    "4": "MaxAbsScaler",
+    "5": "Discretize"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {
+      "discretization": "center",
+      "n_bins": 10
+    }
+  }
+}
+{
+  "family": "Poisson",
+  "constant": false,
+  "regression_type": "datepart"
+}

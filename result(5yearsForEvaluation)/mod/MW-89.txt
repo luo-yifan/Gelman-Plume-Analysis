@@ -1,0 +1,89 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "018cf94cd29d77020f19f1cf53f041ae": {
+      "Model": "UnobservedComponents",
+      "ModelParameters": {
+        "level": false,
+        "trend": false,
+        "cycle": true,
+        "damped_cycle": true,
+        "irregular": true,
+        "stochastic_trend": true,
+        "stochastic_level": true,
+        "stochastic_cycle": true,
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "Detrend",
+          "2": "PowerTransformer",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "Median"
+          },
+          "1": {
+            "model": "Linear"
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "46aeff3d8c2687c3ba4c1bd171038d0d": {
+      "Model": "ZeroesNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "Detrend",
+          "2": "PowerTransformer",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "Median"
+          },
+          "1": {
+            "model": "Linear"
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "d43b647418a709cedcfeeeb5acb9f2f8": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "DifferencedTransformer",
+          "2": "RobustScaler",
+          "3": "PositiveShift"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  }
+}

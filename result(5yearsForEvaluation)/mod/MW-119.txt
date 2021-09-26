@@ -1,0 +1,79 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "6165d9157a60ba12c40b49b88797ab9b": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "ElasticNet",
+          "model_params": {}
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "d442e1b147d1127575d16193e378d4ba": {
+      "Model": "DatepartRegression",
+      "ModelParameters": {
+        "regression_model": {
+          "model": "BayesianRidge",
+          "model_params": {}
+        },
+        "datepart_method": "expanded",
+        "regression_type": null
+      },
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "StandardScaler",
+          "1": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "2d05a538b3cb0295e64084408598fe13": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "DifferencedTransformer",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": false,
+            "window": 3
+          },
+          "1": {},
+          "2": {
+            "discretization": "center",
+            "n_bins": 20
+          }
+        }
+      }
+    }
+  }
+}

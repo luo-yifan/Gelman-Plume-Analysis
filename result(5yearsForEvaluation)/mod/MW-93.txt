@@ -1,0 +1,94 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "135100bfd933301bce2c4443148bafb9": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Slice",
+          "1": "PowerTransformer",
+          "2": "Detrend",
+          "3": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "method": 0.5
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "lag_1": 7,
+            "method": "LastValue"
+          }
+        }
+      }
+    },
+    "ea1af97b6abad49c20f761d6f6fdf9c4": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Slice",
+          "1": "PowerTransformer",
+          "2": "Detrend",
+          "3": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "method": 0.5
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "lag_1": 7,
+            "method": "LastValue"
+          }
+        }
+      }
+    },
+    "e03898cf3b605a59136f1e911b9ae41a": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "QuantileTransformer",
+          "1": "DifferencedTransformer",
+          "2": "DifferencedTransformer",
+          "3": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "output_distribution": "normal",
+            "n_quantiles": 2
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "discretization": "lower",
+            "n_bins": 5
+          }
+        }
+      }
+    }
+  }
+}

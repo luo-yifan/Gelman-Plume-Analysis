@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "CumSumTransformer",
+    "1": "IntermittentOccurrence",
+    "2": "DifferencedTransformer",
+    "3": "PowerTransformer",
+    "4": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "center": "mean"
+    },
+    "2": {},
+    "3": {},
+    "4": {}
+  }
+}
+{
+  "family": "NegativeBinomial",
+  "constant": false,
+  "regression_type": null
+}

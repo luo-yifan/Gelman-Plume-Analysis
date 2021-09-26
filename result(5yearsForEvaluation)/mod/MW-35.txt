@@ -1,0 +1,25 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 4,
+      "fillna": null
+    },
+    "1": {
+      "lag_1": 7,
+      "method": "LastValue"
+    }
+  }
+}
+{
+  "method": "Median",
+  "lag_1": 7,
+  "lag_2": "None"
+}

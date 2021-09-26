@@ -1,0 +1,22 @@
+Initiated AutoTS object with best model: 
+GLM
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "MaxAbsScaler",
+    "1": "PowerTransformer",
+    "2": "RobustScaler",
+    "3": "PowerTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {}
+  }
+}
+{
+  "family": "Poisson",
+  "constant": false,
+  "regression_type": "datepart"
+}
