@@ -1,148 +1,148 @@
 # Summary
 ## 105 Myrtle
 
-![](./fig/105_Myrtle.png)
+![](fig/105_Myrtle.png)
 ## 110 Parkland Plaza
 
-![](./fig/110_Parkland_Plaza.png)
+![](fig/110_Parkland_Plaza.png)
 ## 116 LUELLA ST
 
-![](./fig/116_LUELLA_ST.png)
+![](fig/116_LUELLA_ST.png)
 ## 170 Aprill
 
-![](./fig/170_Aprill.png)
+![](fig/170_Aprill.png)
 ## 175 Jackson Plaza
 
-![](./fig/175_Jackson_Plaza.png)
+![](fig/175_Jackson_Plaza.png)
 ## 250 W Delhi Rd
 
-![](./fig/250_W_Delhi_Rd.png)
+![](fig/250_W_Delhi_Rd.png)
 ## 255 W DELHI RD
 
-![](./fig/255_W_DELHI_RD.png)
+![](fig/255_W_DELHI_RD.png)
 ## 2575 Valley
 
-![](./fig/2575_Valley.png)
+![](fig/2575_Valley.png)
 ## 2643 Dexter Rd
 
-![](./fig/2643_Dexter_Rd.png)
+![](fig/2643_Dexter_Rd.png)
 ## 2652 Dexter Rd
 
-![](./fig/2652_Dexter_Rd.png)
+![](fig/2652_Dexter_Rd.png)
 ## 2678 Valley
 
-![](./fig/2678_Valley.png)
+![](fig/2678_Valley.png)
 ## 2700 Dexter Rd
 
-![](./fig/2700_Dexter_Rd.png)
+![](fig/2700_Dexter_Rd.png)
 ## 2805 Dexter Rd
 
-![](./fig/2805_Dexter_Rd.png)
+![](fig/2805_Dexter_Rd.png)
 ## 2819 Dexter Rd
 
-![](./fig/2819_Dexter_Rd.png)
+![](fig/2819_Dexter_Rd.png)
 ## 2950 Valley
 
-![](./fig/2950_Valley.png)
+![](fig/2950_Valley.png)
 ## 304 W DELHI RD
 
-![](./fig/304_W_DELHI_RD.png)
+![](fig/304_W_DELHI_RD.png)
 ## 305 Pinewood
 
-![](./fig/305_Pinewood.png)
+![](fig/305_Pinewood.png)
 ## 310 W DELHI RD
 
-![](./fig/310_W_DELHI_RD.png)
+![](fig/310_W_DELHI_RD.png)
 ## 3161 Dexter Rd
 
-![](./fig/3161_Dexter_Rd.png)
+![](fig/3161_Dexter_Rd.png)
 ## 3225 Dexter Rd
 
-![](./fig/3225_Dexter_Rd.png)
+![](fig/3225_Dexter_Rd.png)
 ## 3245 Kingwood
 
-![](./fig/3245_Kingwood.png)
+![](fig/3245_Kingwood.png)
 ## 3249 Dexter Rd
 
-![](./fig/3249_Dexter_Rd.png)
+![](fig/3249_Dexter_Rd.png)
 ## 325 W DELHI RD
 
-![](./fig/325_W_DELHI_RD.png)
+![](fig/325_W_DELHI_RD.png)
 ## 33-37 Burton
 
-![](./fig/33-37_Burton.png)
+![](fig/33-37_Burton.png)
 ## 333 Jackson Plaza
 
-![](./fig/333_Jackson_Plaza.png)
+![](fig/333_Jackson_Plaza.png)
 ## 3365 Jackson Rd
 
-![](./fig/3365_Jackson_Rd.png)
+![](fig/3365_Jackson_Rd.png)
 ## 345 W DELHI RD
 
-![](./fig/345_W_DELHI_RD.png)
+![](fig/345_W_DELHI_RD.png)
 ## 3460 DEXTER RD
 
-![](./fig/3460_DEXTER_RD.png)
+![](fig/3460_DEXTER_RD.png)
 ## 350 Rose
 
-![](./fig/350_Rose.png)
+![](fig/350_Rose.png)
 ## 3500 ELIZABETH RD
 
-![](./fig/3500_ELIZABETH_RD.png)
+![](fig/3500_ELIZABETH_RD.png)
 ## 3530 ELIZABETH RD
 
-![](./fig/3530_ELIZABETH_RD.png)
+![](fig/3530_ELIZABETH_RD.png)
 ## 3535 Dexter Rd
 
-![](./fig/3535_Dexter_Rd.png)
+![](fig/3535_Dexter_Rd.png)
 ## 354 Pinewood
 
-![](./fig/354_Pinewood.png)
+![](fig/354_Pinewood.png)
 ## 3550 Elizabeth
 
-![](./fig/3550_Elizabeth.png)
+![](fig/3550_Elizabeth.png)
 ## 3563 ELIZABETH RD
 
-![](./fig/3563_ELIZABETH_RD.png)
+![](fig/3563_ELIZABETH_RD.png)
 ## 3573 ELIZABETH RD
 
-![](./fig/3573_ELIZABETH_RD.png)
+![](fig/3573_ELIZABETH_RD.png)
 ## 3586 ELIZABETH RD
 
-![](./fig/3586_ELIZABETH_RD.png)
+![](fig/3586_ELIZABETH_RD.png)
 ## 359 W Delhi Rd
 
-![](./fig/359_W_Delhi_Rd.png)
+![](fig/359_W_Delhi_Rd.png)
 ## 360 W DELHI RD
 
-![](./fig/360_W_DELHI_RD.png)
+![](fig/360_W_DELHI_RD.png)
 ## 3600 ELIZABETH RD
 
-![](./fig/3600_ELIZABETH_RD.png)
+![](fig/3600_ELIZABETH_RD.png)
 ## 3601 ELIZABETH RD
 
-![](./fig/3601_ELIZABETH_RD.png)
+![](fig/3601_ELIZABETH_RD.png)
 ## 3615 ELIZABETH RD
 
-![](./fig/3615_ELIZABETH_RD.png)
+![](fig/3615_ELIZABETH_RD.png)
 ## 3618 ELIZABETH RD
 
-![](./fig/3618_ELIZABETH_RD.png)
+![](fig/3618_ELIZABETH_RD.png)
 ## 3627 ELIZABETH RD
 
-![](./fig/3627_ELIZABETH_RD.png)
+![](fig/3627_ELIZABETH_RD.png)
 ## 3639 ELIZABETH RD
 
-![](./fig/3639_ELIZABETH_RD.png)
+![](fig/3639_ELIZABETH_RD.png)
 ## 3669 ELIZABETH RD
 
-![](./fig/3669_ELIZABETH_RD.png)
+![](fig/3669_ELIZABETH_RD.png)
 ## 367 W DELHI RD
 
-![](./fig/367_W_DELHI_RD.png)
+![](fig/367_W_DELHI_RD.png)
 ## 3686 ELIZABETH RD
 
-![](./fig/3686_ELIZABETH_RD.png)
+![](fig/3686_ELIZABETH_RD.png)
 ## 371 Parkland Plaza #1
 
 ![](./fig/371_Parkland_Plaza_#1.png)
@@ -151,313 +151,313 @@
 ![](./fig/371_Parkland_Plaza_#2.png)
 ## 373 Pinewood Deep
 
-![](./fig/373_Pinewood_Deep.png)
+![](fig/373_Pinewood_Deep.png)
 ## 373 Pinewood Shallow
 
-![](./fig/373_Pinewood_Shallow.png)
+![](fig/373_Pinewood_Shallow.png)
 ## 3750 ELIZABETH RD
 
-![](./fig/3750_ELIZABETH_RD.png)
+![](fig/3750_ELIZABETH_RD.png)
 ## 3786 ELIZABETH RD
 
-![](./fig/3786_ELIZABETH_RD.png)
+![](fig/3786_ELIZABETH_RD.png)
 ## 3789 ELIZABETH RD
 
-![](./fig/3789_ELIZABETH_RD.png)
+![](fig/3789_ELIZABETH_RD.png)
 ## 379 W DELHI RD
 
-![](./fig/379_W_DELHI_RD.png)
+![](fig/379_W_DELHI_RD.png)
 ## 380 W DELHI RD
 
-![](./fig/380_W_DELHI_RD.png)
+![](fig/380_W_DELHI_RD.png)
 ## 384 W DELHI RD
 
-![](./fig/384_W_DELHI_RD.png)
+![](fig/384_W_DELHI_RD.png)
 ## 395 W DELHI RD
 
-![](./fig/395_W_DELHI_RD.png)
+![](fig/395_W_DELHI_RD.png)
 ## 396-398 W Delhi Rd
 
-![](./fig/396-398_W_Delhi_Rd.png)
+![](fig/396-398_W_Delhi_Rd.png)
 ## 4141 Jackson Rd
 
-![](./fig/4141_Jackson_Rd.png)
+![](fig/4141_Jackson_Rd.png)
 ## 42 BURTON RD
 
-![](./fig/42_BURTON_RD.png)
+![](fig/42_BURTON_RD.png)
 ## 420 Parkwood
 
-![](./fig/420_Parkwood.png)
+![](fig/420_Parkwood.png)
 ## 420 W DELHI RD
 
-![](./fig/420_W_DELHI_RD.png)
+![](fig/420_W_DELHI_RD.png)
 ## 430 Barber East
 
-![](./fig/430_Barber_East.png)
+![](fig/430_Barber_East.png)
 ## 430 Barber West
 
-![](./fig/430_Barber_West.png)
+![](fig/430_Barber_West.png)
 ## 435 Barber
 
-![](./fig/435_Barber.png)
+![](fig/435_Barber.png)
 ## 4401 Park West
 
-![](./fig/4401_Park_West.png)
+![](fig/4401_Park_West.png)
 ## 441 Parkwood
 
-![](./fig/441_Parkwood.png)
+![](fig/441_Parkwood.png)
 ## 442 W DELHI RD
 
-![](./fig/442_W_DELHI_RD.png)
+![](fig/442_W_DELHI_RD.png)
 ## 4470 Jackson Rd
 
-![](./fig/4470_Jackson_Rd.png)
+![](fig/4470_Jackson_Rd.png)
 ## 453 Dupont
 
-![](./fig/453_Dupont.png)
+![](fig/453_Dupont.png)
 ## 4532 Breezewood Ct
 
-![](./fig/4532_Breezewood_Ct.png)
+![](fig/4532_Breezewood_Ct.png)
 ## 4541 Breezewood Ct
 
-![](./fig/4541_Breezewood_Ct.png)
+![](fig/4541_Breezewood_Ct.png)
 ## 4548 Breezewood Ct
 
-![](./fig/4548_Breezewood_Ct.png)
+![](fig/4548_Breezewood_Ct.png)
 ## 456 Clarendon
 
-![](./fig/456_Clarendon.png)
+![](fig/456_Clarendon.png)
 ## 4560 Jackson Rd
 
-![](./fig/4560_Jackson_Rd.png)
+![](fig/4560_Jackson_Rd.png)
 ## 4564 Countryside Ct
 
-![](./fig/4564_Countryside_Ct.png)
+![](fig/4564_Countryside_Ct.png)
 ## 4583 Breezewood Ct
 
-![](./fig/4583_Breezewood_Ct.png)
+![](fig/4583_Breezewood_Ct.png)
 ## 4596 Countryside Ct
 
-![](./fig/4596_Countryside_Ct.png)
+![](fig/4596_Countryside_Ct.png)
 ## 460 Rose
 
-![](./fig/460_Rose.png)
+![](fig/460_Rose.png)
 ## 4601 Park 4 inch
 
-![](./fig/4601_Park_4_inch.png)
+![](fig/4601_Park_4_inch.png)
 ## 4601 Park 6 inch
 
-![](./fig/4601_Park_6_inch.png)
+![](fig/4601_Park_6_inch.png)
 ## 4628 Breezewood Ct
 
-![](./fig/4628_Breezewood_Ct.png)
+![](fig/4628_Breezewood_Ct.png)
 ## 465 Dupont
 
-![](./fig/465_Dupont.png)
+![](fig/465_Dupont.png)
 ## 4667 Breezewood Ct
 
-![](./fig/4667_Breezewood_Ct.png)
+![](fig/4667_Breezewood_Ct.png)
 ## 4670 Breezewood Ct
 
-![](./fig/4670_Breezewood_Ct.png)
+![](fig/4670_Breezewood_Ct.png)
 ## 4712 Breezewood Ct
 
-![](./fig/4712_Breezewood_Ct.png)
+![](fig/4712_Breezewood_Ct.png)
 ## 4742 Park Rd
 
-![](./fig/4742_Park_Rd.png)
+![](fig/4742_Park_Rd.png)
 ## 475 Barber
 
-![](./fig/475_Barber.png)
+![](fig/475_Barber.png)
 ## 476 Barber
 
-![](./fig/476_Barber.png)
+![](fig/476_Barber.png)
 ## 50 W DELHI RD
 
-![](./fig/50_W_DELHI_RD.png)
+![](fig/50_W_DELHI_RD.png)
 ## 5005 Jackson Rd
 
-![](./fig/5005_Jackson_Rd.png)
+![](fig/5005_Jackson_Rd.png)
 ## 5015 JACKSON RD
 
-![](./fig/5015_JACKSON_RD.png)
+![](fig/5015_JACKSON_RD.png)
 ## 505 Lakeview Ave
 
-![](./fig/505_Lakeview_Ave.png)
+![](fig/505_Lakeview_Ave.png)
 ## 5061 Christine Dr
 
-![](./fig/5061_Christine_Dr.png)
+![](fig/5061_Christine_Dr.png)
 ## 5065 PARK RD
 
-![](./fig/5065_PARK_RD.png)
+![](fig/5065_PARK_RD.png)
 ## 5089 Christine Dr
 
-![](./fig/5089_Christine_Dr.png)
+![](fig/5089_Christine_Dr.png)
 ## 5112 Christine Dr
 
-![](./fig/5112_Christine_Dr.png)
+![](fig/5112_Christine_Dr.png)
 ## 5115 Jackson Rd
 
-![](./fig/5115_Jackson_Rd.png)
+![](fig/5115_Jackson_Rd.png)
 ## 5119 Christine Dr
 
-![](./fig/5119_Christine_Dr.png)
+![](fig/5119_Christine_Dr.png)
 ## 5130 JACKSON RD
 
-![](./fig/5130_JACKSON_RD.png)
+![](fig/5130_JACKSON_RD.png)
 ## 5134 JACKSON RD
 
-![](./fig/5134_JACKSON_RD.png)
+![](fig/5134_JACKSON_RD.png)
 ## 5140 PARK RD
 
-![](./fig/5140_PARK_RD.png)
+![](fig/5140_PARK_RD.png)
 ## 5145 Christine Dr
 
-![](./fig/5145_Christine_Dr.png)
+![](fig/5145_Christine_Dr.png)
 ## 5155 Christine Ct
 
-![](./fig/5155_Christine_Ct.png)
+![](fig/5155_Christine_Ct.png)
 ## 5159 Christine Dr
 
-![](./fig/5159_Christine_Dr.png)
+![](fig/5159_Christine_Dr.png)
 ## 5160 Christine Dr
 
-![](./fig/5160_Christine_Dr.png)
+![](fig/5160_Christine_Dr.png)
 ## 5161 Christine Dr
 
-![](./fig/5161_Christine_Dr.png)
+![](fig/5161_Christine_Dr.png)
 ## 5163-5165 Christine Dr
 
-![](./fig/5163-5165_Christine_Dr.png)
+![](fig/5163-5165_Christine_Dr.png)
 ## 5167 Christine Ct
 
-![](./fig/5167_Christine_Ct.png)
+![](fig/5167_Christine_Ct.png)
 ## 5171 Christine Ct
 
-![](./fig/5171_Christine_Ct.png)
+![](fig/5171_Christine_Ct.png)
 ## 5175 Christine Ct
 
-![](./fig/5175_Christine_Ct.png)
+![](fig/5175_Christine_Ct.png)
 ## 5183-5185 Christine Dr
 
-![](./fig/5183-5185_Christine_Dr.png)
+![](fig/5183-5185_Christine_Dr.png)
 ## 5188 Christine Dr
 
-![](./fig/5188_Christine_Dr.png)
+![](fig/5188_Christine_Dr.png)
 ## 523 Lakeview Ave
 
-![](./fig/523_Lakeview_Ave.png)
+![](fig/523_Lakeview_Ave.png)
 ## 524 Lakeview Ave
 
-![](./fig/524_Lakeview_Ave.png)
+![](fig/524_Lakeview_Ave.png)
 ## 530 W DELHI RD
 
-![](./fig/530_W_DELHI_RD.png)
+![](fig/530_W_DELHI_RD.png)
 ## 531 W DELHI RD
 
-![](./fig/531_W_DELHI_RD.png)
+![](fig/531_W_DELHI_RD.png)
 ## 541 Lakeview Ave
 
-![](./fig/541_Lakeview_Ave.png)
+![](fig/541_Lakeview_Ave.png)
 ## 544 Allison
 
-![](./fig/544_Allison.png)
+![](fig/544_Allison.png)
 ## 545 Allison
 
-![](./fig/545_Allison.png)
+![](fig/545_Allison.png)
 ## 548 W DELHI RD
 
-![](./fig/548_W_DELHI_RD.png)
+![](fig/548_W_DELHI_RD.png)
 ## 553 W DELHI RD
 
-![](./fig/553_W_DELHI_RD.png)
+![](fig/553_W_DELHI_RD.png)
 ## 557 Lakeview Ave
 
-![](./fig/557_Lakeview_Ave.png)
+![](fig/557_Lakeview_Ave.png)
 ## 572 Lakeview Ave
 
-![](./fig/572_Lakeview_Ave.png)
+![](fig/572_Lakeview_Ave.png)
 ## 575 W DELHI RD
 
-![](./fig/575_W_DELHI_RD.png)
+![](fig/575_W_DELHI_RD.png)
 ## 577 Lakeview Ave
 
-![](./fig/577_Lakeview_Ave.png)
+![](fig/577_Lakeview_Ave.png)
 ## 580 Allison
 
-![](./fig/580_Allison.png)
+![](fig/580_Allison.png)
 ## 584 Allison
 
-![](./fig/584_Allison.png)
+![](fig/584_Allison.png)
 ## 593 Allison
 
-![](./fig/593_Allison.png)
+![](fig/593_Allison.png)
 ## 595 Sciomeadow Dr
 
-![](./fig/595_Sciomeadow_Dr.png)
+![](fig/595_Sciomeadow_Dr.png)
 ## 597 Allison
 
-![](./fig/597_Allison.png)
+![](fig/597_Allison.png)
 ## 597 Lakeview Ave
 
-![](./fig/597_Lakeview_Ave.png)
+![](fig/597_Lakeview_Ave.png)
 ## 598 Sciomeadow Dr
 
-![](./fig/598_Sciomeadow_Dr.png)
+![](fig/598_Sciomeadow_Dr.png)
 ## 602 Lakeview Ave
 
-![](./fig/602_Lakeview_Ave.png)
+![](fig/602_Lakeview_Ave.png)
 ## 609 South Wagner Rd
 
-![](./fig/609_South_Wagner_Rd.png)
+![](fig/609_South_Wagner_Rd.png)
 ## 617 Lakeview Ave
 
-![](./fig/617_Lakeview_Ave.png)
+![](fig/617_Lakeview_Ave.png)
 ## 627 Sciomeadow Dr
 
-![](./fig/627_Sciomeadow_Dr.png)
+![](fig/627_Sciomeadow_Dr.png)
 ## 630 Sciomeadow Dr
 
-![](./fig/630_Sciomeadow_Dr.png)
+![](fig/630_Sciomeadow_Dr.png)
 ## 647 Lakeview Ave
 
-![](./fig/647_Lakeview_Ave.png)
+![](fig/647_Lakeview_Ave.png)
 ## 659 Sciomeadow Dr
 
-![](./fig/659_Sciomeadow_Dr.png)
+![](fig/659_Sciomeadow_Dr.png)
 ## 663 Halcyon Ct
 
-![](./fig/663_Halcyon_Ct.png)
+![](fig/663_Halcyon_Ct.png)
 ## 672 Halcyon Ct
 
-![](./fig/672_Halcyon_Ct.png)
+![](fig/672_Halcyon_Ct.png)
 ## 672 Sciomeadow Dr
 
-![](./fig/672_Sciomeadow_Dr.png)
+![](fig/672_Sciomeadow_Dr.png)
 ## 679 South Wagner Rd
 
-![](./fig/679_South_Wagner_Rd.png)
+![](fig/679_South_Wagner_Rd.png)
 ## 685 South Wagner Rd
 
-![](./fig/685_South_Wagner_Rd.png)
+![](fig/685_South_Wagner_Rd.png)
 ## 687 Lakeview Ave
 
-![](./fig/687_Lakeview_Ave.png)
+![](fig/687_Lakeview_Ave.png)
 ## 691 Sciomeadow Dr
 
-![](./fig/691_Sciomeadow_Dr.png)
+![](fig/691_Sciomeadow_Dr.png)
 ## 697 South Wagner Rd
 
-![](./fig/697_South_Wagner_Rd.png)
+![](fig/697_South_Wagner_Rd.png)
 ## 707 Lakeview Ave
 
-![](./fig/707_Lakeview_Ave.png)
+![](fig/707_Lakeview_Ave.png)
 ## 712 Lakeview Ave
 
-![](./fig/712_Lakeview_Ave.png)
+![](fig/712_Lakeview_Ave.png)
 ## 714 Sciomeadow Dr
 
-![](./fig/714_Sciomeadow_Dr.png)
+![](fig/714_Sciomeadow_Dr.png)
 ## 723 S. Wagner Road
 
 ![](./fig/723_S._Wagner_Road.png)
