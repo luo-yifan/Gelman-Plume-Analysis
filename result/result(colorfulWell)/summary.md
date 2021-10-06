@@ -171,9 +171,9 @@ A2 Cleaning Supply
 ['MW-53i']
 
 Initiated AutoTS object with best model: 
-ZeroesNaive
-{"fillna": "ffill", "transformations": {"0": "MaxAbsScaler", "1": "Discretize", "2": "PowerTransformer", "3": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"discretization": "upper", "n_bins": 5}, "2": {}, "3": {"output_distribution": "uniform", "n_quantiles": 5}}}
-{}
+GLM
+{"fillna": "rolling_mean", "transformations": {"0": "QuantileTransformer", "1": "Round"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 5}, "1": {"model": "middle", "decimals": -1, "on_transform": true, "on_inverse": false}}}
+{"family": "Binomial", "constant": false, "regression_type": null}
 ## AMW-1
 
 ![](./fig/AMW-1.png)
