@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "median", "transformations": {"0": "Round", "1": "QuantileTransformer", "2": "DifferencedTransformer", "3": "Round"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {}, "3": {"model": "middle", "decimals": -2, "on_transform": true, "on_inverse": true}}}
+{"damped_trend": true, "trend": null, "seasonal": null, "seasonal_periods": null}

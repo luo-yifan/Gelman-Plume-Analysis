@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "fake_date", "transformations": {"0": "Discretize", "1": "DifferencedTransformer", "2": "ClipOutliers"}, "transformation_params": {"0": {"discretization": "lower", "n_bins": 5}, "1": {}, "2": {"method": "clip", "std_threshold": 2, "fillna": null}}}
+{"level": false, "trend": false, "cycle": false, "damped_cycle": false, "irregular": false, "stochastic_trend": true, "stochastic_level": false, "stochastic_cycle": true, "regression_type": null}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{"fillna": "zero", "transformations": {"0": "Round", "1": "bkfilter", "2": "Discretize", "3": "bkfilter"}, "transformation_params": {"0": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "1": {}, "2": {"discretization": "center", "n_bins": 20}, "3": {}}}
+{"method": "Median", "lag_1": 28, "lag_2": 1}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "mean", "transformations": {"0": "DifferencedTransformer", "1": "QuantileTransformer", "2": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {"output_distribution": "uniform", "n_quantiles": 9}}}
+{"regression_model": {"model": "DecisionTree", "model_params": {"max_depth": 3, "min_samples_split": 0.05}}, "datepart_method": "expanded", "regression_type": null}

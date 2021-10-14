@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{"fillna": "ffill_mean_biased", "transformations": {"0": "PowerTransformer", "1": "ClipOutliers", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "2": {}}}
+{"window_size": 12, "regression_model": {"model": "DecisionTree", "model_params": {"max_depth": null, "min_samples_split": 0.05}}, "input_dim": "multivariate", "output_dim": "forecast_length", "normalize_window": false, "shuffle": true, "max_windows": 5000}

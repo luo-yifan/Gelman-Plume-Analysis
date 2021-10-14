@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "median", "transformations": {"0": "ClipOutliers", "1": "DifferencedTransformer", "2": "CumSumTransformer"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 5, "fillna": null}, "1": {}, "2": {}}}
+{"regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [25, 15, 25], "max_iter": 1000, "activation": "relu", "solver": "adam", "early_stopping": true, "learning_rate_init": 1e-05}}, "holiday": false, "mean_rolling_periods": 12, "macd_periods": 7, "std_rolling_periods": 30, "max_rolling_periods": 7, "min_rolling_periods": 60, "ewm_alpha": null, "additional_lag_periods": 6, "abs_energy": false, "rolling_autocorr_periods": null, "add_date_part": "expanded", "polynomial_degree": null, "x_transform": "FastICA", "regression_type": null}

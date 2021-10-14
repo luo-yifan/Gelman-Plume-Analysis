@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{"fillna": "zero", "transformations": {"0": "DifferencedTransformer", "1": "RollingMeanTransformer", "2": "Detrend", "3": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {"fixed": true, "window": 10}, "2": {"model": "Linear"}, "3": {}}}
+{"window_size": 10, "regression_model": {"model": "KNN", "model_params": {"n_neighbors": 5, "weights": "distance"}}, "input_dim": "univariate", "output_dim": "forecast_length", "normalize_window": false, "shuffle": true, "max_windows": 5000}

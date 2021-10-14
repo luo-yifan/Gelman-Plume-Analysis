@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "rolling_mean", "transformations": {"0": "DifferencedTransformer", "1": "IntermittentOccurrence", "2": "RobustScaler", "3": "bkfilter", "4": "RobustScaler"}, "transformation_params": {"0": {}, "1": {"center": "mean"}, "2": {}, "3": {}, "4": {}}}
+{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}
