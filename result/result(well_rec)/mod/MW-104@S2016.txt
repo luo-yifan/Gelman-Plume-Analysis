@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "ffill", "transformations": {"0": "SeasonalDifference", "1": "PowerTransformer", "2": "Discretize", "3": "PositiveShift"}, "transformation_params": {"0": {"lag_1": 12, "method": "Median"}, "1": {}, "2": {"discretization": "lower", "n_bins": 20}, "3": {}}}
+{"level": false, "trend": false, "cycle": true, "damped_cycle": true, "irregular": true, "stochastic_trend": false, "stochastic_level": false, "stochastic_cycle": true, "regression_type": null}

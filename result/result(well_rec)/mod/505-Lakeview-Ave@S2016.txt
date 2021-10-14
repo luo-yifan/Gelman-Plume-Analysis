@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "DifferencedTransformer", "2": "SeasonalDifference", "3": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"lag_1": 7, "method": "Median"}, "3": {"output_distribution": "uniform", "n_quantiles": 8}}}
+{"damped_trend": true, "trend": null, "seasonal": null, "seasonal_periods": null}
