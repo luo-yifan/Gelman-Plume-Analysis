@@ -1679,9 +1679,9 @@ TW-19
 ['MW-79d', 'MW-85']
 
 Initiated AutoTS object with best model: 
-UnobservedComponents
-{"fillna": "median", "transformations": {"0": "PowerTransformer", "1": "PowerTransformer", "2": "PctChangeTransformer", "3": "DifferencedTransformer", "4": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {}}}
-{"level": false, "trend": false, "cycle": true, "damped_cycle": false, "irregular": true, "stochastic_trend": false, "stochastic_level": false, "stochastic_cycle": false, "regression_type": "Holiday"}
+LastValueNaive
+{"fillna": "ffill", "transformations": {"0": "RobustScaler", "1": "PowerTransformer", "2": "Slice"}, "transformation_params": {"0": {}, "1": {}, "2": {"method": 100}}}
+{}
 ## TW-20
 
 ![](./fig/TW-20.png)
