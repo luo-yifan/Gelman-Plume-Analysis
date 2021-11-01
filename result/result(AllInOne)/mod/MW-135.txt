@@ -1,0 +1,23 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "DifferencedTransformer",
+    "1": "QuantileTransformer",
+    "2": "ClipOutliers"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "output_distribution": "uniform",
+      "n_quantiles": 1
+    },
+    "2": {
+      "method": "clip",
+      "std_threshold": 3.5,
+      "fillna": null
+    }
+  }
+}
+{}

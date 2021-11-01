@@ -1,0 +1,94 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "ecba5c2e498ec71b8d5a0bc5003c9803": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 7
+          }
+        }
+      }
+    },
+    "a2ec743bc1cdfed15a17c3cdc00ce7ba": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "Slice"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 7
+          },
+          "2": {
+            "method": 0.2
+          }
+        }
+      }
+    },
+    "8bba082f7d2a283931fd31ddec00b075": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer",
+          "2": "MinMaxScaler",
+          "3": "bkfilter",
+          "4": "RobustScaler",
+          "5": "Round"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 7
+          },
+          "2": {},
+          "3": {},
+          "4": {},
+          "5": {
+            "model": "middle",
+            "decimals": -1,
+            "on_transform": false,
+            "on_inverse": true
+          }
+        }
+      }
+    }
+  }
+}

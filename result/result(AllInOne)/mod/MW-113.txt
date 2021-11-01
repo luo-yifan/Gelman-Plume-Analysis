@@ -1,0 +1,101 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "b094e36bc197201d25c7aa4984209626": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "Discretize",
+          "2": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "center",
+            "n_bins": 10
+          },
+          "2": {
+            "lag_1": 12,
+            "method": "Median"
+          }
+        }
+      }
+    },
+    "53264656a28b6fc583f1174d6e96342c": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "Detrend",
+          "2": "Detrend",
+          "3": "Slice",
+          "4": "SeasonalDifference",
+          "5": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "GLS"
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "method": 100
+          },
+          "4": {
+            "lag_1": 12,
+            "method": "Mean"
+          },
+          "5": {
+            "lag_1": 12,
+            "method": "Median"
+          }
+        }
+      }
+    },
+    "35f486d935515f2652fafeceace9de8c": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "RollingMeanTransformer",
+          "1": "DifferencedTransformer",
+          "2": "Detrend",
+          "3": "Slice"
+        },
+        "transformation_params": {
+          "0": {
+            "fixed": true,
+            "window": 3
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "method": 100
+          }
+        }
+      }
+    }
+  }
+}

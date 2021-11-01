@@ -1,0 +1,30 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "median",
+  "transformations": {
+    "0": "MaxAbsScaler",
+    "1": "DifferencedTransformer",
+    "2": "Round",
+    "3": "Discretize",
+    "4": "Detrend"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "model": "middle",
+      "decimals": -1,
+      "on_transform": true,
+      "on_inverse": false
+    },
+    "3": {
+      "discretization": "lower",
+      "n_bins": 5
+    },
+    "4": {
+      "model": "GLS"
+    }
+  }
+}
+{}

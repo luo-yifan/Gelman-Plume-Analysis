@@ -1,0 +1,71 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "12f11b29f165d90aecff8bd575ce1359": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "bbc1fa99ba0928fcfa572125d084ac1c": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "SinTrend",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "discretization": "upper",
+            "n_bins": 5
+          }
+        }
+      }
+    },
+    "3eb53c08d93aeab663798a0b7ab2ea66": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "Detrend",
+          "2": "Detrend",
+          "3": "RollingMeanTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "GLS"
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "fixed": true,
+            "window": 7
+          }
+        }
+      }
+    }
+  }
+}

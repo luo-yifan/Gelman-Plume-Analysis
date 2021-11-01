@@ -1,0 +1,93 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "1bfbeebf2c2b6c1464b3ff68447836b3": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "RobustScaler",
+          "3": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          },
+          "2": {},
+          "3": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "532e43bb9a9f4337771b9ce52a67fe6e": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          }
+        }
+      }
+    },
+    "02727cc40e79af881b7c42eb82b54931": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "Round",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          }
+        }
+      }
+    }
+  }
+}

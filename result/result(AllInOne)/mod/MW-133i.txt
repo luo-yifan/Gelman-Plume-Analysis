@@ -1,0 +1,93 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "a63a970b0e00954c738d31e96e096adb": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Discretize",
+          "1": "Slice",
+          "2": "DifferencedTransformer",
+          "3": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "lower",
+            "n_bins": 10
+          },
+          "1": {
+            "method": 0.2
+          },
+          "2": {},
+          "3": {
+            "lag_1": 12,
+            "method": "Median"
+          }
+        }
+      }
+    },
+    "f4045e1d1f0172fa96ea0640e6f6efd2": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Detrend",
+          "1": "bkfilter",
+          "2": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "GLS"
+          },
+          "1": {},
+          "2": {
+            "discretization": "lower",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "d7938e2a8d5df72aea285c0bb8c8b76f": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Detrend",
+          "1": "bkfilter",
+          "2": "RollingMeanTransformer",
+          "3": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "GLS"
+          },
+          "1": {},
+          "2": {
+            "fixed": true,
+            "window": 7
+          },
+          "3": {}
+        }
+      }
+    }
+  }
+}

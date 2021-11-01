@@ -1,0 +1,85 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "652a26c0674ac8ba597a20affd749c1c": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "775f803a43d858c52f1fc466e3634d76": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "60c44c06dfc7a35db0997ca2bd47e818": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "PowerTransformer",
+          "2": "Detrend",
+          "3": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 4,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "GLS"
+          },
+          "3": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

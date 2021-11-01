@@ -1,0 +1,16 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "SinTrend"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {}
+  }
+}
+{
+  "method": "Midhinge"
+}

@@ -1,0 +1,25 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "RobustScaler",
+    "1": "QuantileTransformer",
+    "2": "Slice",
+    "3": "MinMaxScaler",
+    "4": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "output_distribution": "uniform",
+      "n_quantiles": 9
+    },
+    "2": {
+      "method": 0.2
+    },
+    "3": {},
+    "4": {}
+  }
+}
+{}

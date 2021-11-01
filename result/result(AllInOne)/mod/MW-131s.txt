@@ -1,0 +1,75 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "2887d2af24ace64615ccf0154ef2e4be": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "e2a60c4ecbd462977f9bb3743c7e1a1b": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "bkfilter",
+          "2": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "3800d94d453da167d3ff228241c81648": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SinTrend",
+          "2": "bkfilter",
+          "3": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "lag_1": 7,
+            "method": "Median"
+          }
+        }
+      }
+    }
+  }
+}

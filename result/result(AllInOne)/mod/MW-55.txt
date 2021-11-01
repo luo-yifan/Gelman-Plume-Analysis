@@ -1,0 +1,71 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "957ca1789bcf2d4fab06b4c7377aa51f": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Detrend",
+          "1": "MaxAbsScaler",
+          "2": "PowerTransformer",
+          "3": "PowerTransformer",
+          "4": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "GLS"
+          },
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "588bc62fee1e7e02a727fa76b9b2dbea": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Detrend",
+          "1": "MaxAbsScaler",
+          "2": "PowerTransformer",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "GLS"
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "eb7d80803b54b5c909bb169f71508e07": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": null
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "11937bb8df9bf3ca4c644b6fd35f5f79": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Detrend",
+          "1": "Round",
+          "2": "PowerTransformer",
+          "3": "PowerTransformer",
+          "4": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "GLS"
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    },
+    "32efaffed85571894fb604872ab857ba": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Detrend",
+          "1": "PowerTransformer",
+          "2": "PowerTransformer",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "GLS"
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "b66d4cfc8107d2f436211416d30921a4": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Discretize",
+          "1": "QuantileTransformer",
+          "2": "MinMaxScaler",
+          "3": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "upper",
+            "n_bins": 10
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 6
+          },
+          "2": {},
+          "3": {
+            "model": "Linear"
+          }
+        }
+      }
+    }
+  }
+}

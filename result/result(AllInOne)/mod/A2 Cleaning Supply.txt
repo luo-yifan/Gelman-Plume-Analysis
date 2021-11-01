@@ -1,0 +1,77 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "a6e361b94aad7e05f0340e09c110bb75": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "QuantileTransformer",
+          "2": "PositiveShift",
+          "3": "bkfilter",
+          "4": "RobustScaler",
+          "5": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          },
+          "2": {},
+          "3": {},
+          "4": {},
+          "5": {}
+        }
+      }
+    },
+    "daa8d3de6c0be7d651ebf1a3b951c5f8": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": "additive",
+        "seasonal_periods": 7
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "CenterLastValue"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "rows": 6
+          }
+        }
+      }
+    },
+    "e15593cbec81a41278734d4374f0ac71": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "Slice",
+          "2": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": 0.5
+          },
+          "2": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "da3c53c0617d9f838e7cfcf5e786e702": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "Round",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "Mean"
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "2ae851216d7133d87d44b32e6636103d": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "1": {}
+        }
+      }
+    },
+    "cf24811a7358f264e92546fa532f36ff": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Midhinge"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "SeasonalDifference",
+          "2": "SeasonalDifference",
+          "3": "ClipOutliers",
+          "4": "MinMaxScaler",
+          "5": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "2": {
+            "lag_1": 12,
+            "method": "Mean"
+          },
+          "3": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "4": {},
+          "5": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

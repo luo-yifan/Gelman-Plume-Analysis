@@ -1,0 +1,79 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "ad1bddd1a2af96b066be54052451dcfa": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Exp_Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Round",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "1": {}
+        }
+      }
+    },
+    "6fcc2324f5bfca4de479202448cd3a60": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Discretize",
+          "1": "DifferencedTransformer",
+          "2": "StandardScaler",
+          "3": "Discretize",
+          "4": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "upper",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "discretization": "upper",
+            "n_bins": 10
+          },
+          "4": {}
+        }
+      }
+    },
+    "6eea9f9ee9f94ec695c1a0073179f75e": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  }
+}

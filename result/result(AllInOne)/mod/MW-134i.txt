@@ -1,0 +1,66 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "17e7864294fcc3134ac1414e638e121a": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "upper",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "50da68d05571c68b36a0f7bd5456b0b2": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "upper",
+            "n_bins": 10
+          }
+        }
+      }
+    },
+    "f6794290aff4345839dff9c08cbd42ff": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Exp_Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "discretization": "upper",
+            "n_bins": 10
+          }
+        }
+      }
+    }
+  }
+}

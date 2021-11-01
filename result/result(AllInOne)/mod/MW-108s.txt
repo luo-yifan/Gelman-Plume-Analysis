@@ -1,0 +1,78 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "2880f5328260e1bb69cda98e724ea1a3": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "MaxAbsScaler",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "c94365d00deb47bb2ce057a6801b8d72": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "Detrend",
+          "2": "StandardScaler",
+          "3": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "model": "GLS"
+          },
+          "2": {},
+          "3": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "6b28df69121fcd678a7c0e32a5b85556": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer",
+          "2": "RollingMean100thN",
+          "3": "MaxAbsScaler",
+          "4": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 3
+          },
+          "2": {},
+          "3": {},
+          "4": {}
+        }
+      }
+    }
+  }
+}

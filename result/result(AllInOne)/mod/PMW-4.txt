@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "SeasonalDifference",
+    "1": "QuantileTransformer"
+  },
+  "transformation_params": {
+    "0": {
+      "lag_1": 7,
+      "method": "LastValue"
+    },
+    "1": {
+      "output_distribution": "uniform",
+      "n_quantiles": 7
+    }
+  }
+}
+{}

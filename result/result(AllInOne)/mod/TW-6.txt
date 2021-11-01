@@ -1,0 +1,78 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "482ed9f037afb04d53c9f716233927f5": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "Slice",
+          "2": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": 0.2
+          },
+          "2": {}
+        }
+      }
+    },
+    "0b034220b52c8074dc81b2b45b0376fb": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "multiplicative",
+        "seasonal": "additive",
+        "seasonal_periods": 12
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "Slice",
+          "2": "StandardScaler",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": 0.2
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    },
+    "fb7f43bb6fcda3234463a5b527775b67": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "MaxAbsScaler",
+          "1": "Slice",
+          "2": "StandardScaler",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "method": 0.2
+          },
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  }
+}

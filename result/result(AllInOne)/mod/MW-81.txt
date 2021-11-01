@@ -1,0 +1,94 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "3475a5e2af7a71b45564dbf2335cb415": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "SinTrend",
+          "2": "bkfilter",
+          "3": "SeasonalDifference",
+          "4": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "lag_1": 7,
+            "method": "Median"
+          },
+          "4": {
+            "lag_1": 7,
+            "method": "Mean"
+          }
+        }
+      }
+    },
+    "31382e2dc2657fa2870cc59e2631162a": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SinTrend",
+          "2": "bkfilter",
+          "3": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {
+            "lag_1": 7,
+            "method": "Median"
+          }
+        }
+      }
+    },
+    "bd4ead52a14b482d60b737bf7fdf5275": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "SinTrend",
+          "2": "ClipOutliers",
+          "3": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "3": {
+            "lag_1": 7,
+            "method": "Median"
+          }
+        }
+      }
+    }
+  }
+}

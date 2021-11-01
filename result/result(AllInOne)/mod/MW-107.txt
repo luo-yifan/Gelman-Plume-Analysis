@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+ETS
+{
+  "fillna": null,
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "Discretize"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 5,
+      "fillna": null
+    },
+    "1": {
+      "discretization": "center",
+      "n_bins": 10
+    }
+  }
+}
+{
+  "damped_trend": false,
+  "trend": null,
+  "seasonal": null,
+  "seasonal_periods": null
+}

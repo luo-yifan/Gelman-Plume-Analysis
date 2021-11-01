@@ -1,0 +1,83 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "fabbe2953e169984059a8b56255ef36d": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    },
+    "3f4e2e02feacd500acb73695ae5ba8b2": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer",
+          "2": "Round",
+          "3": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 1
+          },
+          "2": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": true,
+            "on_inverse": true
+          },
+          "3": {}
+        }
+      }
+    },
+    "9000e8c6d6e2bd0337f7aedd804de6e4": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "QuantileTransformer",
+          "2": "Round",
+          "3": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 1
+          },
+          "2": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": true,
+            "on_inverse": true
+          },
+          "3": {}
+        }
+      }
+    }
+  }
+}

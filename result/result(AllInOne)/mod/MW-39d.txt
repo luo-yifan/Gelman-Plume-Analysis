@@ -1,0 +1,29 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "PowerTransformer",
+    "2": "DifferencedTransformer",
+    "3": "Discretize",
+    "4": "RobustScaler"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    },
+    "1": {},
+    "2": {},
+    "3": {
+      "discretization": "lower",
+      "n_bins": 20
+    },
+    "4": {}
+  }
+}
+{
+  "method": "Median"
+}

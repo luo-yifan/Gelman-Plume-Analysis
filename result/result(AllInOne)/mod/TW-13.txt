@@ -1,0 +1,88 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "f6133b6ce2816c1a5748336d8dd316b6": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Discretize"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "discretization": "center",
+            "n_bins": 20
+          }
+        }
+      }
+    },
+    "39891593a08f5d75797bfd09a723bc0e": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Discretize",
+          "2": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "discretization": "center",
+            "n_bins": 20
+          },
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 1
+          }
+        }
+      }
+    },
+    "9d1c34ccb177d3d21d8bb03224c4d157": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 1
+          }
+        }
+      }
+    }
+  }
+}

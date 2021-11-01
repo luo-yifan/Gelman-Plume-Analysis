@@ -1,0 +1,101 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "5aa6fb5e9dde4c1d07fbc675989a60c7": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Round",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "8e4726f0ed152ae2a89f67e3c35ba8f3": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Median"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Round",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "40281155a223b51d59a9b3e09bddcfea": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "Round",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": false,
+            "on_inverse": true
+          },
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    }
+  }
+}

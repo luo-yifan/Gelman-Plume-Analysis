@@ -1,0 +1,103 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "42fb798fe0a5988737bb8ecbf0e0aadd": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "IntermittentOccurrence",
+          "1": "RollingMeanTransformer",
+          "2": "Detrend",
+          "3": "SeasonalDifference",
+          "4": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "center": "mean"
+          },
+          "1": {
+            "fixed": true,
+            "window": 7
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "4": {
+            "center": "mean"
+          }
+        }
+      }
+    },
+    "7d8f1051dcd522e9dc5921857326e038": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill_mean_biased",
+        "transformations": {
+          "0": "IntermittentOccurrence",
+          "1": "RollingMeanTransformer",
+          "2": "Detrend",
+          "3": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "center": "mean"
+          },
+          "1": {
+            "fixed": true,
+            "window": 7
+          },
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "lag_1": 7,
+            "method": "LastValue"
+          }
+        }
+      }
+    },
+    "7346621dd6fb764fe3003ed6181ec8b7": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Detrend",
+          "1": "PowerTransformer",
+          "2": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "GLS"
+          },
+          "1": {},
+          "2": {}
+        }
+      }
+    }
+  }
+}

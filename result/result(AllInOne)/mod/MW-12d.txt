@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{
+  "fillna": "ffill_mean_biased",
+  "transformations": {
+    "0": "PowerTransformer",
+    "1": "Detrend",
+    "2": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {
+      "model": "Linear"
+    },
+    "2": {}
+  }
+}
+{
+  "method": "Mean"
+}

@@ -1,0 +1,96 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "053f4f30a98c5ca4e9fc3d7b38388607": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          },
+          "2": {}
+        }
+      }
+    },
+    "43be953ef9de52bed39a1aedb9848be0": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          }
+        }
+      }
+    },
+    "4227ea11cbb6620f9f5312f619e4d78c": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "median",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "RobustScaler",
+          "3": "Round",
+          "4": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          },
+          "2": {},
+          "3": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": true,
+            "on_inverse": true
+          },
+          "4": {}
+        }
+      }
+    }
+  }
+}

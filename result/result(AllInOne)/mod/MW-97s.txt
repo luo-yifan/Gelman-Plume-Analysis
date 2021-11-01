@@ -1,0 +1,21 @@
+Initiated AutoTS object with best model: 
+GLS
+{
+  "fillna": "rolling_mean",
+  "transformations": {
+    "0": "CenterLastValue",
+    "1": "StandardScaler",
+    "2": "Discretize"
+  },
+  "transformation_params": {
+    "0": {
+      "rows": 5
+    },
+    "1": {},
+    "2": {
+      "discretization": "upper",
+      "n_bins": 10
+    }
+  }
+}
+{}

@@ -1,0 +1,72 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "15e1eebc46c19f7c73ca093d2217b3ab": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "MinMaxScaler",
+          "1": "PowerTransformer",
+          "2": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "f333cb7adee0642bba82529a4c185e1a": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "RobustScaler",
+          "1": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "49aa80fc558937ef2ddb989b4d881440": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer",
+          "2": "MinMaxScaler",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {},
+          "2": {},
+          "3": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "8046ada974c83b254e1dc96729451001": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SeasonalDifference",
+          "2": "ClipOutliers",
+          "3": "StandardScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "lag_1": 7,
+            "method": "Median"
+          },
+          "2": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          },
+          "3": {}
+        }
+      }
+    },
+    "a3f60a95f0f11fd479b5c3c7a808a28c": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Slice",
+          "1": "SeasonalDifference",
+          "2": "ClipOutliers",
+          "3": "Discretize",
+          "4": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "method": 100
+          },
+          "1": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "2": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          },
+          "3": {
+            "discretization": "center",
+            "n_bins": 5
+          },
+          "4": {
+            "lag_1": 7,
+            "method": "LastValue"
+          }
+        }
+      }
+    },
+    "04533a7482ecb897d88ffce2701f4e68": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "SeasonalDifference"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 12,
+            "method": "Mean"
+          },
+          "1": {
+            "lag_1": 7,
+            "method": "Median"
+          }
+        }
+      }
+    }
+  }
+}

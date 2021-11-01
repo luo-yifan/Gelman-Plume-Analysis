@@ -1,0 +1,30 @@
+Initiated AutoTS object with best model: 
+ETS
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "QuantileTransformer",
+    "1": "IntermittentOccurrence",
+    "2": "DifferencedTransformer",
+    "3": "Detrend"
+  },
+  "transformation_params": {
+    "0": {
+      "output_distribution": "uniform",
+      "n_quantiles": 3
+    },
+    "1": {
+      "center": "mean"
+    },
+    "2": {},
+    "3": {
+      "model": "Linear"
+    }
+  }
+}
+{
+  "damped_trend": false,
+  "trend": "additive",
+  "seasonal": null,
+  "seasonal_periods": null
+}

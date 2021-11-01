@@ -1,0 +1,86 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "d6964770622a5c4bb019bfbfa8b22fa0": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          }
+        }
+      }
+    },
+    "c99d40694c623b27e9a780067b79e91e": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "MaxAbsScaler",
+          "3": "MaxAbsScaler",
+          "4": "PositiveShift",
+          "5": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {},
+          "3": {},
+          "4": {},
+          "5": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          }
+        }
+      }
+    },
+    "cb0c9edb51f750e2dabaa91e8dd1274b": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "QuantileTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 4
+          }
+        }
+      }
+    }
+  }
+}

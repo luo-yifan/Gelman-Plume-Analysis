@@ -1,0 +1,82 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "7640a2b63b496d5a63c8980caa1c51e9": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Round",
+          "1": "Round",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 1,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "2": {}
+        }
+      }
+    },
+    "03d042bf81c24ec1b25ecb61a10a4a91": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Discretize",
+          "1": "DifferencedTransformer",
+          "2": "Round",
+          "3": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "upper",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {
+            "model": "middle",
+            "decimals": 0,
+            "on_transform": true,
+            "on_inverse": true
+          },
+          "3": {}
+        }
+      }
+    },
+    "dca79e1055da59bf7506bdd9d91dcf93": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": "additive",
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PowerTransformer"
+        },
+        "transformation_params": {
+          "0": {}
+        }
+      }
+    }
+  }
+}

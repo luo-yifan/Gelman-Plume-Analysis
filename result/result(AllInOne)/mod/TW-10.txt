@@ -1,0 +1,88 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "e734df1401d5ae9f40662dddc91eca90": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Exp_Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "QuantileTransformer",
+          "2": "DifferencedTransformer",
+          "3": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          },
+          "2": {},
+          "3": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "455db6a60fe570aad3c2764f88104ae0": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Exp_Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "QuantileTransformer",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          },
+          "2": {}
+        }
+      }
+    },
+    "6b8095dc0dc607a27424f9fae5f42f56": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "bkfilter",
+          "1": "QuantileTransformer",
+          "2": "DifferencedTransformer",
+          "3": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 5
+          },
+          "2": {},
+          "3": {
+            "method": "clip",
+            "std_threshold": 3.5,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

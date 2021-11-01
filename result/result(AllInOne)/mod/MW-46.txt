@@ -1,0 +1,22 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "Discretize",
+    "1": "Discretize",
+    "2": "MaxAbsScaler"
+  },
+  "transformation_params": {
+    "0": {
+      "discretization": "center",
+      "n_bins": 5
+    },
+    "1": {
+      "discretization": "upper",
+      "n_bins": 20
+    },
+    "2": {}
+  }
+}
+{}

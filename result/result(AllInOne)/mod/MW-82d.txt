@@ -1,0 +1,78 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "00fdc01e308a28738e962901ff250a96": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "zero",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "666a917eb9784f8ab86f1b06c759003e": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": "additive",
+        "seasonal": "additive",
+        "seasonal_periods": 2
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "1c04b8b8c0ea94aec87bde262271faa4": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Discretize",
+          "1": "DifferencedTransformer",
+          "2": "Detrend",
+          "3": "MaxAbsScaler",
+          "4": "Slice"
+        },
+        "transformation_params": {
+          "0": {
+            "discretization": "upper",
+            "n_bins": 5
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "method": 0.2
+          }
+        }
+      }
+    }
+  }
+}

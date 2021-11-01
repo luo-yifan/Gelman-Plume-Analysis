@@ -1,0 +1,30 @@
+Initiated AutoTS object with best model: 
+ETS
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "RollingMean100thN",
+    "1": "MaxAbsScaler",
+    "2": "Detrend",
+    "3": "SeasonalDifference",
+    "4": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "model": "GLS"
+    },
+    "3": {
+      "lag_1": 12,
+      "method": "LastValue"
+    },
+    "4": {}
+  }
+}
+{
+  "damped_trend": false,
+  "trend": "additive",
+  "seasonal": "additive",
+  "seasonal_periods": 7
+}

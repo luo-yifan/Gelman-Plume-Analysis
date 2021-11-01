@@ -1,0 +1,88 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "76170cec4f068a402b0615381e879733": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 1,
+            "fillna": null
+          },
+          "1": {}
+        }
+      }
+    },
+    "f8abbaee2a4ecc6a61fd5b5fd46d00e9": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Weighted_Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "Discretize",
+          "2": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "1": {
+            "discretization": "lower",
+            "n_bins": 5
+          },
+          "2": {
+            "method": "clip",
+            "std_threshold": 5,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "25f1cf716445bfb710abaf111fdd00f9": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "RobustScaler",
+          "2": "bkfilter",
+          "3": "SeasonalDifference",
+          "4": "IntermittentOccurrence"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {},
+          "2": {},
+          "3": {
+            "lag_1": 7,
+            "method": "LastValue"
+          },
+          "4": {
+            "center": "mean"
+          }
+        }
+      }
+    }
+  }
+}

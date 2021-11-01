@@ -1,0 +1,17 @@
+Initiated AutoTS object with best model: 
+ETS
+{
+  "fillna": "fake_date",
+  "transformations": {
+    "0": "DifferencedTransformer"
+  },
+  "transformation_params": {
+    "0": {}
+  }
+}
+{
+  "damped_trend": true,
+  "trend": null,
+  "seasonal": null,
+  "seasonal_periods": null
+}

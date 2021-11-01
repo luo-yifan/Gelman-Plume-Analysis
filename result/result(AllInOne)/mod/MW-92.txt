@@ -1,0 +1,61 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score_unique",
+  "models": {
+    "a02446712d4694409e2c0b03f356938d": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mode"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "Log",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "7e598c7773e49f15f25abba9a8bc241f": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "Log",
+          "1": "MaxAbsScaler",
+          "2": "MaxAbsScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    },
+    "0a93918622a4173319a26548b0cd9971": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "Log",
+          "1": "DifferencedTransformer",
+          "2": "bkfilter"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      }
+    }
+  }
+}

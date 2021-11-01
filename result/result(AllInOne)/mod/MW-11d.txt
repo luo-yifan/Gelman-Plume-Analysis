@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "ClipOutliers",
+    "1": "Discretize",
+    "2": "SeasonalDifference"
+  },
+  "transformation_params": {
+    "0": {
+      "method": "clip",
+      "std_threshold": 3,
+      "fillna": null
+    },
+    "1": {
+      "discretization": "center",
+      "n_bins": 20
+    },
+    "2": {
+      "lag_1": 7,
+      "method": "Median"
+    }
+  }
+}
+{}

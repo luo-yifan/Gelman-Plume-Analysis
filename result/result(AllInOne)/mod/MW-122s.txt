@@ -1,0 +1,79 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "best_score",
+  "models": {
+    "e49b6c553a2d8577fd8f1cb28f721fce": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    },
+    "65b70a793e4d5cda028aa2a82a1dc27e": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "DifferencedTransformer",
+          "2": "Detrend",
+          "3": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          },
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {
+            "model": "GLS"
+          }
+        }
+      }
+    },
+    "91187a1baf86209060b3684db0dacf2d": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PositiveShift",
+          "1": "DifferencedTransformer",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          }
+        }
+      }
+    }
+  }
+}

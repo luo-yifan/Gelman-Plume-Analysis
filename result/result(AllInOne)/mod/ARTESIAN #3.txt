@@ -1,0 +1,101 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "13a0c5c83bafa83a5e8c96f625321148": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "RollingMeanTransformer",
+          "2": "QuantileTransformer",
+          "3": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "fixed": false,
+            "window": 3
+          },
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 9
+          },
+          "3": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "b3bfe304d227b0084e40e9814b90b8c3": {
+      "Model": "LastValueNaive",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "RollingMeanTransformer",
+          "2": "Slice",
+          "3": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "fixed": false,
+            "window": 3
+          },
+          "2": {
+            "method": 100
+          },
+          "3": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          }
+        }
+      }
+    },
+    "f1ed2ac2ae7484706695c8f1493bf43c": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": true,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PctChangeTransformer",
+          "1": "RollingMeanTransformer",
+          "2": "QuantileTransformer",
+          "3": "ClipOutliers"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {
+            "fixed": false,
+            "window": 3
+          },
+          "2": {
+            "output_distribution": "uniform",
+            "n_quantiles": 9
+          },
+          "3": {
+            "method": "clip",
+            "std_threshold": 2,
+            "fillna": null
+          }
+        }
+      }
+    }
+  }
+}

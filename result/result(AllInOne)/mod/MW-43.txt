@@ -1,0 +1,20 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{
+  "fillna": "ffill",
+  "transformations": {
+    "0": "Log",
+    "1": "MinMaxScaler",
+    "2": "ClipOutliers"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {
+      "method": "clip",
+      "std_threshold": 1,
+      "fillna": null
+    }
+  }
+}
+{}

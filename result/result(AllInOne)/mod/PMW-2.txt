@@ -1,0 +1,26 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{
+  "fillna": "rolling_mean_24",
+  "transformations": {
+    "0": "MaxAbsScaler",
+    "1": "bkfilter",
+    "2": "PowerTransformer",
+    "3": "ClipOutliers",
+    "4": "bkfilter"
+  },
+  "transformation_params": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {
+      "method": "clip",
+      "std_threshold": 2,
+      "fillna": null
+    },
+    "4": {}
+  }
+}
+{
+  "method": "Median"
+}

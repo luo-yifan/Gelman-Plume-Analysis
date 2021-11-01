@@ -1,0 +1,82 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "2887d2af24ace64615ccf0154ef2e4be": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "fake_date",
+        "transformations": {
+          "0": "DifferencedTransformer",
+          "1": "SinTrend"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "32acf1f6936e129f7f028374d553538f": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "mean",
+        "transformations": {
+          "0": "ClipOutliers",
+          "1": "QuantileTransformer",
+          "2": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {
+            "method": "clip",
+            "std_threshold": 3,
+            "fillna": null
+          },
+          "1": {
+            "output_distribution": "uniform",
+            "n_quantiles": 7
+          },
+          "2": {}
+        }
+      }
+    },
+    "da3c53c0617d9f838e7cfcf5e786e702": {
+      "Model": "AverageValueNaive",
+      "ModelParameters": {
+        "method": "Mean"
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean_24",
+        "transformations": {
+          "0": "SeasonalDifference",
+          "1": "Round",
+          "2": "Detrend"
+        },
+        "transformation_params": {
+          "0": {
+            "lag_1": 7,
+            "method": "Mean"
+          },
+          "1": {
+            "model": "middle",
+            "decimals": 2,
+            "on_transform": true,
+            "on_inverse": false
+          },
+          "2": {
+            "model": "GLS"
+          }
+        }
+      }
+    }
+  }
+}

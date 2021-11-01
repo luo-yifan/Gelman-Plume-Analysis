@@ -1,0 +1,76 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{
+  "model_name": "BestN",
+  "model_count": 3,
+  "model_metric": "mixed_metric",
+  "models": {
+    "93133e3316b3a0887f4a91083e1ad271": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": null,
+        "seasonal_periods": null
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    },
+    "0d2aa9e11faed214874cbfa05303b1fc": {
+      "Model": "ETS",
+      "ModelParameters": {
+        "damped_trend": false,
+        "trend": null,
+        "seasonal": "multiplicative",
+        "seasonal_periods": 2
+      },
+      "TransformationParameters": {
+        "fillna": "rolling_mean",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "DifferencedTransformer",
+          "2": "Detrend",
+          "3": "bkfilter",
+          "4": "Discretize"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {},
+          "2": {
+            "model": "Linear"
+          },
+          "3": {},
+          "4": {
+            "discretization": "center",
+            "n_bins": 20
+          }
+        }
+      }
+    },
+    "414e0ba0e8e8711ac3b49194fffb2cb0": {
+      "Model": "GLS",
+      "ModelParameters": {},
+      "TransformationParameters": {
+        "fillna": "ffill",
+        "transformations": {
+          "0": "PowerTransformer",
+          "1": "MinMaxScaler"
+        },
+        "transformation_params": {
+          "0": {},
+          "1": {}
+        }
+      }
+    }
+  }
+}
