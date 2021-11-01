@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{"fillna": "zero", "transformations": {"0": "PowerTransformer", "1": "SinTrend", "2": "bkfilter", "3": "PCA"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
+{"method": "LastValue", "lag_1": 10, "lag_2": "None"}

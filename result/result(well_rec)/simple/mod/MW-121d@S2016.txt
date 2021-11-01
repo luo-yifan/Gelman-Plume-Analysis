@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "rolling_mean_24", "transformations": {"0": "Discretize", "1": "MinMaxScaler", "2": "ClipOutliers"}, "transformation_params": {"0": {"discretization": "center", "n_bins": 20}, "1": {}, "2": {"method": "clip", "std_threshold": 4, "fillna": null}}}
+{}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{"fillna": "mean", "transformations": {"0": "Discretize", "1": "RollingMeanTransformer", "2": "ClipOutliers", "3": "QuantileTransformer", "4": "DifferencedTransformer", "5": "SeasonalDifference"}, "transformation_params": {"0": {"discretization": "upper", "n_bins": 5}, "1": {"fixed": true, "window": 10}, "2": {"method": "clip", "std_threshold": 3, "fillna": null}, "3": {"output_distribution": "uniform", "n_quantiles": 9}, "4": {}, "5": {"lag_1": 7, "method": "Median"}}}
+{"method": "Mean", "lag_1": 24, "lag_2": 7}

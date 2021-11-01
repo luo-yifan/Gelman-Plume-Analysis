@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "ffill_mean_biased", "transformations": {"0": "PositiveShift", "1": "PctChangeTransformer", "2": "bkfilter", "3": "bkfilter"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
+{}
