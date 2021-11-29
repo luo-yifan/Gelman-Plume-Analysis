@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{"fillna": "rolling_mean_24", "transformations": {"0": "PowerTransformer", "1": "MinMaxScaler", "2": "DifferencedTransformer", "3": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"method": "clip", "std_threshold": 3.5, "fillna": null}}}
+{"method": "LastValue", "lag_1": 24, "lag_2": 1}

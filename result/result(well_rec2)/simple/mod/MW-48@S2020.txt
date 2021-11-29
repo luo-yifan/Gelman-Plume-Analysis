@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "mean", "transformations": {"0": "PowerTransformer", "1": "Detrend", "2": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {"model": "Linear"}, "2": {"lag_1": 7, "method": "LastValue"}}}
+{"family": "Gaussian", "constant": false, "regression_type": null}

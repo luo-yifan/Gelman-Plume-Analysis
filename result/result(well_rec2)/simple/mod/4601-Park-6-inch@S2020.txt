@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "median", "transformations": {"0": "SinTrend", "1": "PowerTransformer", "2": "MaxAbsScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}
+{"regression_model": {"model": "KNN", "model_params": {"n_neighbors": 3, "weights": "uniform"}}, "datepart_method": "expanded", "regression_type": null}

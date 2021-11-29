@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "zero", "transformations": {"0": "bkfilter", "1": "Discretize", "2": "Detrend", "3": "Discretize"}, "transformation_params": {"0": {}, "1": {"discretization": "lower", "n_bins": 20}, "2": {"model": "Linear"}, "3": {"discretization": "lower", "n_bins": 10}}}
+{}

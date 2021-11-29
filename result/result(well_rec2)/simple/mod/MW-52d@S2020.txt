@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "fake_date", "transformations": {"0": "Round", "1": "QuantileTransformer", "2": "DifferencedTransformer", "3": "CenterLastValue", "4": "bkfilter"}, "transformation_params": {"0": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {}, "3": {"rows": 1}, "4": {}}}
+{"level": true, "trend": false, "cycle": false, "damped_cycle": false, "irregular": true, "stochastic_trend": true, "stochastic_level": false, "stochastic_cycle": true, "regression_type": null}

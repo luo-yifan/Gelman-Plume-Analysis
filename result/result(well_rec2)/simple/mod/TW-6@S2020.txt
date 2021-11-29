@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "zero", "transformations": {"0": "PctChangeTransformer", "1": "PowerTransformer", "2": "DifferencedTransformer", "3": "Round"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}}}
+{}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "ffill_mean_biased", "transformations": {"0": "PowerTransformer", "1": "PowerTransformer", "2": "SeasonalDifference", "3": "CenterLastValue", "4": "PositiveShift"}, "transformation_params": {"0": {}, "1": {}, "2": {"lag_1": 12, "method": "LastValue"}, "3": {"rows": 5}, "4": {}}}
+{"damped_trend": true, "trend": null, "seasonal": null, "seasonal_periods": null}
