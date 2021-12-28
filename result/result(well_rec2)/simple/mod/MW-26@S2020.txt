@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{"fillna": "mean", "transformations": {"0": "Round", "1": "DifferencedTransformer", "2": "RobustScaler"}, "transformation_params": {"0": {"model": "middle", "decimals": 1, "on_transform": true, "on_inverse": true}, "1": {}, "2": {}}}
+{"method": "Median", "lag_1": 4, "lag_2": 1}

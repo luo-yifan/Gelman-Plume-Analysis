@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{"fillna": "fake_date", "transformations": {"0": "QuantileTransformer", "1": "SinTrend", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"output_distribution": "normal", "n_quantiles": 9}, "1": {}, "2": {}}}
+{"method": "Mean", "lag_1": 12, "lag_2": 2}

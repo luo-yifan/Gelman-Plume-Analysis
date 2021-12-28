@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{"fillna": "ffill_mean_biased", "transformations": {"0": "Discretize", "1": "PowerTransformer", "2": "PctChangeTransformer"}, "transformation_params": {"0": {"discretization": "lower", "n_bins": 20}, "1": {}, "2": {}}}
+{"method": "Mean", "lag_1": 96, "lag_2": "None"}

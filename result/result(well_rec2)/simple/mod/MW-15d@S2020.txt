@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{"fillna": "mean", "transformations": {"0": "QuantileTransformer", "1": "QuantileTransformer", "2": "Log"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 9}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {}}}
+{"window_size": 5, "regression_model": {"model": "Adaboost", "model_params": {"n_estimators": 500, "loss": "linear", "base_estimator": "DecisionTree", "learning_rate": 1.0}}, "input_dim": "multivariate", "output_dim": "1step", "normalize_window": false, "shuffle": true, "max_windows": 5000}
