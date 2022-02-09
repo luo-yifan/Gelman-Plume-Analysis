@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "ffill", "transformations": {"0": "PositiveShift", "1": "QuantileTransformer", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {}}}
+{"regression_model": {"model": "Adaboost", "model_params": {"n_estimators": 50, "loss": "linear", "base_estimator": "SVR", "learning_rate": 1.0}}, "datepart_method": "recurring", "regression_type": null}

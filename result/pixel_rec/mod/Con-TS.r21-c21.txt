@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "rolling_mean_24", "transformations": {"0": "Detrend", "1": "Discretize", "2": "Detrend", "3": "DifferencedTransformer"}, "transformation_params": {"0": {"model": "Linear"}, "1": {"discretization": "upper", "n_bins": 5}, "2": {"model": "Linear"}, "3": {}}}
+{"level": false, "trend": false, "cycle": false, "damped_cycle": false, "irregular": false, "stochastic_trend": false, "stochastic_level": false, "stochastic_cycle": false, "regression_type": "Holiday"}

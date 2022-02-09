@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean_24", "transformations": {"0": "ClipOutliers", "1": "ClipOutliers", "2": "Detrend", "3": "Discretize"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 2, "fillna": null}, "1": {"method": "clip", "std_threshold": 3, "fillna": null}, "2": {"model": "Linear"}, "3": {"discretization": "center", "n_bins": 10}}}
+{"family": "Gamma", "constant": false, "regression_type": "datepart"}

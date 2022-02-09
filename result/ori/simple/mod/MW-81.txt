@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "mean", "transformations": {"0": "Discretize", "1": "SinTrend", "2": "Detrend"}, "transformation_params": {"0": {"discretization": "upper", "n_bins": 20}, "1": {}, "2": {"model": "Linear"}}}
+{"regression_model": {"model": "BayesianRidge", "model_params": {}}, "datepart_method": "expanded", "regression_type": null}

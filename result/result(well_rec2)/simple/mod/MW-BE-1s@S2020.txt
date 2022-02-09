@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "rolling_mean", "transformations": {"0": "ClipOutliers", "1": "DifferencedTransformer", "2": "bkfilter", "3": "PowerTransformer", "4": "RollingMean100thN"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3, "fillna": null}, "1": {}, "2": {}, "3": {}, "4": {}}}
-{"family": "Poisson", "constant": false, "regression_type": "datepart"}

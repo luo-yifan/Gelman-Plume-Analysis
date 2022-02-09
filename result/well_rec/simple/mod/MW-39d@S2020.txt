@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "ffill", "transformations": {"0": "Round", "1": "DifferencedTransformer", "2": "bkfilter", "3": "PowerTransformer", "4": "Detrend", "5": "ClipOutliers"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": false}, "1": {}, "2": {}, "3": {}, "4": {"model": "GLS"}, "5": {"method": "clip", "std_threshold": 3.5, "fillna": null}}}
+{"level": true, "trend": false, "cycle": true, "damped_cycle": false, "irregular": true, "stochastic_trend": false, "stochastic_level": true, "stochastic_cycle": false, "regression_type": null}

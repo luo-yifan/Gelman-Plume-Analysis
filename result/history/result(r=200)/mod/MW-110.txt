@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{"fillna": "mean", "transformations": {"0": "PctChangeTransformer", "1": "RollingMeanTransformer", "2": "Discretize", "3": "Discretize", "4": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"fixed": true, "window": 7}, "2": {"discretization": "lower", "n_bins": 20}, "3": {"discretization": "lower", "n_bins": 10}, "4": {}}}
-{}

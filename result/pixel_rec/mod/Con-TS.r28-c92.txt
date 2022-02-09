@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "fake_date", "transformations": {"0": "Discretize", "1": "SinTrend"}, "transformation_params": {"0": {"discretization": "center", "n_bins": 10}, "1": {}}}
+{"damped_trend": false, "trend": null, "seasonal": "additive", "seasonal_periods": 4}

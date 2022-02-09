@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "rolling_mean", "transformations": {"0": "Slice", "1": "ClipOutliers", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"method": 0.2}, "1": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "2": {}}}
+{"method": "Weighted_Mean"}

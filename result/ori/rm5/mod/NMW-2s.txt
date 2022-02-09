@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "ffill_mean_biased", "transformations": {"0": "QuantileTransformer", "1": "MaxAbsScaler", "2": "Discretize", "3": "MaxAbsScaler", "4": "Slice", "5": "ClipOutliers"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 5}, "1": {}, "2": {"discretization": "center", "n_bins": 20}, "3": {}, "4": {"method": 0.2}, "5": {"method": "clip", "std_threshold": 4, "fillna": null}}}
+{}

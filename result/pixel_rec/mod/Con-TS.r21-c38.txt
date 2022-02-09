@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "ffill", "transformations": {"0": "PositiveShift", "1": "IntermittentOccurrence", "2": "bkfilter", "3": "PowerTransformer", "4": "Round"}, "transformation_params": {"0": {}, "1": {"center": "mean"}, "2": {}, "3": {}, "4": {"model": "middle", "decimals": 1, "on_transform": false, "on_inverse": true}}}
+{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

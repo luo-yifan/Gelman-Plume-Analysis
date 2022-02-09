@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill_mean_biased", "transformations": {"0": "DifferencedTransformer", "1": "QuantileTransformer", "2": "RobustScaler"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 8}, "2": {}}}
+{"family": "Binomial", "constant": false, "regression_type": "datepart"}

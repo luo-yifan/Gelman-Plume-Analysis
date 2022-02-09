@@ -1,2 +1,0 @@
-PMW-4
-['AMW-1', 'AMW-2', 'MW-24', 'MW-25s', 'MW-2s', 'MW-5d', 'NMW-1d', 'NMW-1s', 'NMW-2d', 'NMW-2s', 'NMW-3d', 'NMW-3s', 'PMW-1', 'PMW-2', 'PMW-3', 'PW-1']

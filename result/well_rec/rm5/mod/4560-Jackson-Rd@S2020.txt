@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "zero", "transformations": {"0": "bkfilter", "1": "RollingMeanTransformer", "2": "RobustScaler", "3": "ClipOutliers", "4": "Detrend"}, "transformation_params": {"0": {}, "1": {"fixed": true, "window": 10}, "2": {}, "3": {"method": "clip", "std_threshold": 2, "fillna": null}, "4": {"model": "GLS"}}}
+{"regression_model": {"model": "BayesianRidge", "model_params": {}}, "datepart_method": "recurring", "regression_type": null}

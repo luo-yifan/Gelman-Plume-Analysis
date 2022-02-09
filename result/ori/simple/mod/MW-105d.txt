@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "ffill", "transformations": {"0": "bkfilter", "1": "PctChangeTransformer", "2": "bkfilter"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}
+{"method": "Weighted_Mean"}

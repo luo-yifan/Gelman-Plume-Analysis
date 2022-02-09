@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "rolling_mean_24", "transformations": {"0": "MaxAbsScaler", "1": "MaxAbsScaler", "2": "DifferencedTransformer", "3": "MinMaxScaler", "4": "PowerTransformer", "5": "Discretize"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {}, "5": {"discretization": "center", "n_bins": 5}}}
+{}

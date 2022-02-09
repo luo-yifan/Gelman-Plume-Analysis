@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{"fillna": "rolling_mean", "transformations": {"0": "bkfilter", "1": "SinTrend", "2": "DifferencedTransformer", "3": "CumSumTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
-{"method": "Mean"}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "median", "transformations": {"0": "MinMaxScaler", "1": "CenterLastValue", "2": "Discretize", "3": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"rows": 5}, "2": {"discretization": "upper", "n_bins": 20}, "3": {"output_distribution": "uniform", "n_quantiles": 10}}}
+{}

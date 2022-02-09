@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "Detrend"}, "transformation_params": {"0": {}, "1": {"model": "GLS"}}}
+{"regression_model": {"model": "RadiusNeighbors", "model_params": {}}, "holiday": true, "mean_rolling_periods": 7, "macd_periods": 12, "std_rolling_periods": null, "max_rolling_periods": null, "min_rolling_periods": null, "ewm_alpha": null, "additional_lag_periods": 6, "abs_energy": false, "rolling_autocorr_periods": null, "add_date_part": null, "polynomial_degree": null, "x_transform": null, "regression_type": null}

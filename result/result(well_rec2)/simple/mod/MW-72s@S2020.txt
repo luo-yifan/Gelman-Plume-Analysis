@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{"fillna": "median", "transformations": {"0": "PctChangeTransformer", "1": "CenterLastValue", "2": "Round"}, "transformation_params": {"0": {}, "1": {"rows": 5}, "2": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}}}
-{}

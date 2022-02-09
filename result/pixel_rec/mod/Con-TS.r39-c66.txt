@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "ffill_mean_biased", "transformations": {"0": "PowerTransformer", "1": "PowerTransformer", "2": "Round"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": true}}}
+{"method": "Median"}

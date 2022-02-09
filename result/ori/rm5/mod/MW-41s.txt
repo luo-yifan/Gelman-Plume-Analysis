@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "median", "transformations": {"0": "Round", "1": "ClipOutliers", "2": "StandardScaler", "3": "Detrend", "4": "Round"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {"method": "clip", "std_threshold": 1, "fillna": null}, "2": {}, "3": {"model": "Linear"}, "4": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}}}
+{"family": "Gaussian", "constant": false, "regression_type": null}

@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{"fillna": "rolling_mean", "transformations": {"0": "ClipOutliers", "1": "PowerTransformer", "2": "Round", "3": "DifferencedTransformer", "4": "QuantileTransformer"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "1": {}, "2": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "3": {}, "4": {"output_distribution": "uniform", "n_quantiles": 9}}}
-{"level": false, "trend": false, "cycle": true, "damped_cycle": true, "irregular": true, "stochastic_trend": false, "stochastic_level": true, "stochastic_cycle": false, "regression_type": "Holiday"}

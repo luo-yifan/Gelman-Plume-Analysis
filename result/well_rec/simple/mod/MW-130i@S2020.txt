@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "SeasonalDifference", "2": "MaxAbsScaler", "3": "MinMaxScaler", "4": "PctChangeTransformer"}, "transformation_params": {"0": {}, "1": {"lag_1": 12, "method": "LastValue"}, "2": {}, "3": {}, "4": {}}}
+{}

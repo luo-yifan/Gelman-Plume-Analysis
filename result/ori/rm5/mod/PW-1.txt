@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "mean", "transformations": {"0": "PctChangeTransformer", "1": "Round", "2": "Detrend"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "2": {"model": "GLS"}}}
+{"damped_trend": false, "trend": "additive", "seasonal": "additive", "seasonal_periods": 79}

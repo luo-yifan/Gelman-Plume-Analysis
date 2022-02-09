@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "fake_date", "transformations": {"0": "ClipOutliers", "1": "SinTrend"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "1": {}}}
+{"regression_model": {"model": "ElasticNet", "model_params": {}}, "datepart_method": "expanded", "regression_type": null}

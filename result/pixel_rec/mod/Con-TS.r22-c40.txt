@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "ffill", "transformations": {"0": "bkfilter", "1": "QuantileTransformer", "2": "Detrend", "3": "Discretize"}, "transformation_params": {"0": {}, "1": {"output_distribution": "normal", "n_quantiles": 10}, "2": {"model": "GLS"}, "3": {"discretization": "upper", "n_bins": 20}}}
+{}

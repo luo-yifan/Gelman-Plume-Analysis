@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "fake_date", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "StandardScaler"}, "transformation_params": {"0": {}, "1": {"output_distribution": "normal", "n_quantiles": 9}, "2": {}}}
+{}

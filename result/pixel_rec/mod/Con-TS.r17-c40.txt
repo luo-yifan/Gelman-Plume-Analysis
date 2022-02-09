@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean", "transformations": {"0": "CenterLastValue", "1": "IntermittentOccurrence", "2": "StandardScaler", "3": "bkfilter", "4": "bkfilter", "5": "Round"}, "transformation_params": {"0": {"rows": 6}, "1": {"center": "mean"}, "2": {}, "3": {}, "4": {}, "5": {"model": "middle", "decimals": 1, "on_transform": false, "on_inverse": true}}}
+{"family": "Gaussian", "constant": false, "regression_type": null}

@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{"fillna": "ffill_mean_biased", "transformations": {"0": "MinMaxScaler", "1": "PctChangeTransformer", "2": "MaxAbsScaler", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
-{"window_size": 5, "regression_model": {"model": "DecisionTree", "model_params": {"max_depth": 3, "min_samples_split": 1.0}}, "input_dim": "univariate", "output_dim": "forecast_length", "normalize_window": false, "shuffle": false, "max_windows": 5000}

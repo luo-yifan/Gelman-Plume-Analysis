@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "ffill", "transformations": {"0": "MaxAbsScaler", "1": "StandardScaler"}, "transformation_params": {"0": {}, "1": {}}}
+{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "zero", "transformations": {"0": "ClipOutliers", "1": "SinTrend", "2": "Detrend"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "1": {}, "2": {"model": "Linear"}}}
+{"regression_model": {"model": "KNN", "model_params": {"n_neighbors": 5, "weights": "uniform"}}, "datepart_method": "simple", "regression_type": null}

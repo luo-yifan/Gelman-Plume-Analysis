@@ -1,2 +1,0 @@
-TW-6
-['MW-1 Replacement', 'MW-22', 'MW-25d', 'MW-2d', 'TW-10', 'TW-20']

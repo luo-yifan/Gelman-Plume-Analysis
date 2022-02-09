@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{"fillna": "fake_date", "transformations": {"0": "bkfilter", "1": "DifferencedTransformer", "2": "PowerTransformer", "3": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
-{}

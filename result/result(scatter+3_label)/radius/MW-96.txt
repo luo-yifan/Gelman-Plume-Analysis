@@ -1,2 +1,0 @@
-MW-96
-['175 Jackson Plaza', 'MW-106d', 'MW-106s', 'MW-94d', 'MW-94s', 'MW-95', 'TW-18', 'TW-21']

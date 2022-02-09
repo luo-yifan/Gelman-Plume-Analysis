@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "fake_date", "transformations": {"0": "Detrend", "1": "ClipOutliers"}, "transformation_params": {"0": {"model": "GLS"}, "1": {"method": "clip", "std_threshold": 1, "fillna": null}}}
+{"level": true, "trend": true, "cycle": true, "damped_cycle": true, "irregular": false, "stochastic_trend": false, "stochastic_level": true, "stochastic_cycle": true, "regression_type": null}

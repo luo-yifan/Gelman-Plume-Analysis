@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "zero", "transformations": {"0": "ClipOutliers", "1": "Detrend", "2": "Detrend", "3": "Discretize"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 2, "fillna": null}, "1": {"model": "GLS"}, "2": {"model": "GLS"}, "3": {"discretization": "lower", "n_bins": 10}}}
+{"method": "Weighted_Mean"}

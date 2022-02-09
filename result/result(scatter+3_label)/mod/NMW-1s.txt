@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{"fillna": "rolling_mean_24", "transformations": {"0": "Log", "1": "ClipOutliers", "2": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"method": "clip", "std_threshold": 2, "fillna": null}, "2": {"output_distribution": "uniform", "n_quantiles": 10}}}
-{"window_size": 10, "regression_model": {"model": "DecisionTree", "model_params": {"max_depth": 3, "min_samples_split": 2}}, "input_dim": "multivariate", "output_dim": "1step", "normalize_window": false, "shuffle": false, "max_windows": 5000}

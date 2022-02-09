@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "fake_date", "transformations": {"0": "ClipOutliers", "1": "bkfilter", "2": "Round", "3": "Round"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "1": {}, "2": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": true}, "3": {"model": "middle", "decimals": 2, "on_transform": true, "on_inverse": true}}}
+{}

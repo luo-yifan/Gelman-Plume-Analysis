@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{"fillna": "ffill", "transformations": {"0": "PositiveShift", "1": "DifferencedTransformer", "2": "MinMaxScaler", "3": "DifferencedTransformer", "4": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {"output_distribution": "uniform", "n_quantiles": 4}}}
-{"level": false, "trend": false, "cycle": true, "damped_cycle": true, "irregular": true, "stochastic_trend": true, "stochastic_level": true, "stochastic_cycle": false, "regression_type": null}

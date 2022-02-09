@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "fake_date", "transformations": {"0": "SeasonalDifference", "1": "DifferencedTransformer", "2": "SeasonalDifference", "3": "StandardScaler"}, "transformation_params": {"0": {"lag_1": 7, "method": "Mean"}, "1": {}, "2": {"lag_1": 7, "method": "Median"}, "3": {}}}
+{"method": "Exp_Weighted_Mean"}

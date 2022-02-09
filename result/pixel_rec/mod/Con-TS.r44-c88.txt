@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "IntermittentOccurrence", "1": "QuantileTransformer", "2": "PowerTransformer"}, "transformation_params": {"0": {"center": "mean"}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {}}}
+{"family": "Binomial", "constant": false, "regression_type": null}

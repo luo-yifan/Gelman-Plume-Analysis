@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "ffill", "transformations": {"0": "Detrend", "1": "DifferencedTransformer", "2": "bkfilter"}, "transformation_params": {"0": {"model": "GLS"}, "1": {}, "2": {}}}
+{"regression_model": {"model": "KNN", "model_params": {"n_neighbors": 3, "weights": "uniform"}}, "datepart_method": "recurring", "regression_type": null}

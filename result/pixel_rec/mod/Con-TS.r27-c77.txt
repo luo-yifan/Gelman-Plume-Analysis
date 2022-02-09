@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "fake_date", "transformations": {"0": "SeasonalDifference", "1": "SinTrend", "2": "ClipOutliers", "3": "PCA"}, "transformation_params": {"0": {"lag_1": 7, "method": "Median"}, "1": {}, "2": {"method": "clip", "std_threshold": 2, "fillna": null}, "3": {}}}
+{"level": false, "trend": false, "cycle": false, "damped_cycle": false, "irregular": false, "stochastic_trend": false, "stochastic_level": true, "stochastic_cycle": true, "regression_type": null}

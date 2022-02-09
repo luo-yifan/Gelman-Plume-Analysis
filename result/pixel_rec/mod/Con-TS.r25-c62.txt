@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "mean", "transformations": {"0": "MaxAbsScaler", "1": "QuantileTransformer", "2": "Slice"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {"method": 0.2}}}
+{"regression_model": {"model": "BayesianRidge", "model_params": {}}, "datepart_method": "simple", "regression_type": null}

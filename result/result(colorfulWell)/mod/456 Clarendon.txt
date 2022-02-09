@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{"fillna": "fake_date", "transformations": {"0": "SeasonalDifference", "1": "QuantileTransformer", "2": "Detrend"}, "transformation_params": {"0": {"lag_1": 7, "method": "Median"}, "1": {"output_distribution": "normal", "n_quantiles": 7}, "2": {"model": "Linear"}}}
-{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-RollingRegression
-{"fillna": "ffill", "transformations": {"0": "Round"}, "transformation_params": {"0": {"model": "middle", "decimals": -1, "on_transform": true, "on_inverse": false}}}
-{"regression_model": {"model": "Adaboost", "model_params": {"n_estimators": 50, "loss": "exponential", "base_estimator": "DecisionTree", "learning_rate": 1.0}}, "holiday": false, "mean_rolling_periods": 5, "macd_periods": 364, "std_rolling_periods": 30, "max_rolling_periods": null, "min_rolling_periods": 34, "ewm_alpha": null, "additional_lag_periods": 23, "abs_energy": true, "rolling_autocorr_periods": null, "add_date_part": "expanded", "polynomial_degree": null, "x_transform": "RmZeroVariance", "regression_type": null}

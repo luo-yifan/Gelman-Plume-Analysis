@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": null, "transformations": {"0": "RobustScaler", "1": "Discretize"}, "transformation_params": {"0": {}, "1": {"discretization": "upper", "n_bins": 20}}}
+{}

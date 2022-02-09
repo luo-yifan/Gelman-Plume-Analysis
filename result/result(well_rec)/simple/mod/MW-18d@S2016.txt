@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "ffill", "transformations": {"0": "PctChangeTransformer", "1": "QuantileTransformer", "2": "Detrend", "3": "bkfilter"}, "transformation_params": {"0": {}, "1": {"output_distribution": "normal", "n_quantiles": 8}, "2": {"model": "Linear"}, "3": {}}}
-{"family": "Binomial", "constant": false, "regression_type": null}

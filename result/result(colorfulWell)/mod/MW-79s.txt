@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "fake_date", "transformations": {"0": "Discretize", "1": "PowerTransformer", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"discretization": "upper", "n_bins": 20}, "1": {}, "2": {}}}
-{}

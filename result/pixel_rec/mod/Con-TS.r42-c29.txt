@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean_24", "transformations": {"0": "SeasonalDifference", "1": "PowerTransformer", "2": "DifferencedTransformer", "3": "Round"}, "transformation_params": {"0": {"lag_1": 7, "method": "LastValue"}, "1": {}, "2": {}, "3": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}}}
+{"family": "Binomial", "constant": false, "regression_type": "datepart"}

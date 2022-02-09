@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "DifferencedTransformer", "2": "Detrend", "3": "Discretize", "4": "Discretize"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {}, "2": {"model": "Linear"}, "3": {"discretization": "upper", "n_bins": 20}, "4": {"discretization": "upper", "n_bins": 20}}}
+{"family": "Binomial", "constant": false, "regression_type": null}

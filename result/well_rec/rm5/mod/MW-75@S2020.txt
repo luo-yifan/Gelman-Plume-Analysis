@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "mean", "transformations": {"0": "Discretize", "1": "Detrend"}, "transformation_params": {"0": {"discretization": "upper", "n_bins": 10}, "1": {"model": "GLS"}}}
+{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

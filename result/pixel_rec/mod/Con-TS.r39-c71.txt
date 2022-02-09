@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "mean", "transformations": {"0": "DifferencedTransformer", "1": "RollingMeanTransformer", "2": "ClipOutliers", "3": "ClipOutliers", "4": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {"fixed": true, "window": 10}, "2": {"method": "clip", "std_threshold": 3, "fillna": null}, "3": {"method": "clip", "std_threshold": 5, "fillna": null}, "4": {"lag_1": 12, "method": "Mean"}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

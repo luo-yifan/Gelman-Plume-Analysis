@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "MaxAbsScaler", "2": "MinMaxScaler", "3": "Slice"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {}, "2": {}, "3": {"method": 0.2}}}
+{"family": "Poisson", "constant": true, "regression_type": null}

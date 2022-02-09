@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean_24", "transformations": {"0": "MaxAbsScaler", "1": "SinTrend", "2": "bkfilter", "3": "Detrend"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"model": "GLS"}}}
+{"family": "Gaussian", "constant": false, "regression_type": "datepart"}

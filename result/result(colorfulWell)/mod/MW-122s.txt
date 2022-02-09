@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-FBProphet
-{"fillna": "rolling_mean_24", "transformations": {"0": "DifferencedTransformer", "1": "PowerTransformer", "2": "Discretize", "3": "Detrend"}, "transformation_params": {"0": {}, "1": {}, "2": {"discretization": "lower", "n_bins": 20}, "3": {"model": "Linear"}}}
-{"holiday": false, "regression_type": null}

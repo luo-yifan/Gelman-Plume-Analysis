@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "Discretize", "2": "ClipOutliers", "3": "PctChangeTransformer"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {"discretization": "center", "n_bins": 10}, "2": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "3": {}}}
+{"regression_model": {"model": "ExtraTrees", "model_params": {}}, "datepart_method": "simple", "regression_type": null}

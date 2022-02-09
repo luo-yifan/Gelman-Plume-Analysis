@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "mean", "transformations": {"0": "MaxAbsScaler", "1": "DifferencedTransformer", "2": "ClipOutliers", "3": "MinMaxScaler", "4": "ClipOutliers", "5": "StandardScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {"method": "clip", "std_threshold": 1, "fillna": null}, "3": {}, "4": {"method": "clip", "std_threshold": 1, "fillna": null}, "5": {}}}
+{}

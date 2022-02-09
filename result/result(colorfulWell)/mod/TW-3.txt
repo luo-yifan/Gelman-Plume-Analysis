@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "ffill_mean_biased", "transformations": {"0": "PowerTransformer", "1": "DifferencedTransformer", "2": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {}, "2": {"method": "clip", "std_threshold": 1, "fillna": null}}}
-{"family": "NegativeBinomial", "constant": false, "regression_type": null}

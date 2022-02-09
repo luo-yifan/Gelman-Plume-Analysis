@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "rolling_mean", "transformations": {"0": "Slice", "1": "CenterLastValue", "2": "DifferencedTransformer", "3": "CumSumTransformer", "4": "Round", "5": "RobustScaler"}, "transformation_params": {"0": {"method": 100}, "1": {"rows": 3}, "2": {}, "3": {}, "4": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "5": {}}}
+{"level": false, "trend": false, "cycle": true, "damped_cycle": false, "irregular": true, "stochastic_trend": true, "stochastic_level": false, "stochastic_cycle": false, "regression_type": null}

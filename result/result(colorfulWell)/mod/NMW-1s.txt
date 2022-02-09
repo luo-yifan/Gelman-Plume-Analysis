@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{"fillna": "median", "transformations": {"0": "QuantileTransformer", "1": "QuantileTransformer", "2": "PowerTransformer", "3": "bkfilter"}, "transformation_params": {"0": {"output_distribution": "normal", "n_quantiles": 10}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {}, "3": {}}}
-{}

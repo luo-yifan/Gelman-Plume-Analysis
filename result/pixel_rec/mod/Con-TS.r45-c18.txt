@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "SeasonalDifference", "2": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {"lag_1": 12, "method": "Mean"}, "2": {"method": "clip", "std_threshold": 4, "fillna": null}}}
+{}

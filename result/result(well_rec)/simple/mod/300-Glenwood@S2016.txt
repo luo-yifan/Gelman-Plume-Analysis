@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{"fillna": "fake_date", "transformations": {"0": "IntermittentOccurrence", "1": "PctChangeTransformer", "2": "bkfilter"}, "transformation_params": {"0": {"center": "mean"}, "1": {}, "2": {}}}
-{"window_size": 5, "regression_model": {"model": "BayesianRidge", "model_params": {}}, "input_dim": "multivariate", "output_dim": "forecast_length", "normalize_window": false, "shuffle": true, "max_windows": 1000}

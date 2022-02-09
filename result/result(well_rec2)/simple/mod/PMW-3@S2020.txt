@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "mean", "transformations": {"0": "PowerTransformer", "1": "PctChangeTransformer", "2": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"output_distribution": "uniform", "n_quantiles": 9}}}
-{}

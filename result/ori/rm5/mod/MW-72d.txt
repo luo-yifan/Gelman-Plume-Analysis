@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "mean", "transformations": {"0": "DifferencedTransformer", "1": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 3}}}
+{"regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [72, 36, 72], "max_iter": 250, "activation": "relu", "solver": "lbfgs", "early_stopping": false, "learning_rate_init": 0.001}}, "holiday": false, "mean_rolling_periods": 7, "macd_periods": 28, "std_rolling_periods": 7, "max_rolling_periods": 52, "min_rolling_periods": 168, "ewm_alpha": null, "additional_lag_periods": 1439, "abs_energy": true, "rolling_autocorr_periods": null, "add_date_part": null, "polynomial_degree": null, "x_transform": "RmZeroVariance", "regression_type": null}

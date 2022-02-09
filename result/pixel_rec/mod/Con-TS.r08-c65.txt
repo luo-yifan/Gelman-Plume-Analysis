@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "ffill", "transformations": {"0": "StandardScaler", "1": "MaxAbsScaler", "2": "Detrend", "3": "Slice", "4": "Slice"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "GLS"}, "3": {"method": 0.5}, "4": {"method": 100}}}
+{"regression_model": {"model": "DecisionTree", "model_params": {"max_depth": null, "min_samples_split": 1.0}}, "datepart_method": "recurring", "regression_type": null}

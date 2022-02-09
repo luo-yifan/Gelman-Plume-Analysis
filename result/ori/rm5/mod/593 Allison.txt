@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean_24", "transformations": {"0": "PowerTransformer", "1": "DifferencedTransformer", "2": "Discretize", "3": "bkfilter"}, "transformation_params": {"0": {}, "1": {}, "2": {"discretization": "upper", "n_bins": 5}, "3": {}}}
+{"family": "NegativeBinomial", "constant": false, "regression_type": null}

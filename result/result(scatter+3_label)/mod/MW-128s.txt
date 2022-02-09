@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "median", "transformations": {"0": "PowerTransformer", "1": "PowerTransformer", "2": "PowerTransformer", "3": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"lag_1": 7, "method": "Median"}}}
-{}

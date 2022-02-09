@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "zero", "transformations": {"0": "MaxAbsScaler"}, "transformation_params": {"0": {}}}
+{"regression_model": {"model": "ExtraTrees", "model_params": {}}, "datepart_method": "recurring", "regression_type": null}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "ffill_mean_biased", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "Detrend", "3": "SeasonalDifference", "4": "Discretize"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {"model": "GLS"}, "3": {"lag_1": 12, "method": "Mean"}, "4": {"discretization": "center", "n_bins": 20}}}
+{}

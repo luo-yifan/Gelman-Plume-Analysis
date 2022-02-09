@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "fake_date", "transformations": {"0": "RobustScaler", "1": "SeasonalDifference", "2": "ClipOutliers", "3": "SeasonalDifference", "4": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {"lag_1": 7, "method": "Median"}, "2": {"method": "clip", "std_threshold": 4, "fillna": null}, "3": {"lag_1": 7, "method": "LastValue"}, "4": {}}}
+{}

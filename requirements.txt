@@ -95,3 +95,4 @@ xlrd==2.0.1
 yarl==1.6.3
 zipp==3.4.1
 pandas~=1.3.2
+AutoTS~=0.3.5

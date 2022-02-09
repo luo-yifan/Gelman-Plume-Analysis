@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "ffill_mean_biased", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "QuantileTransformer", "3": "RobustScaler", "4": "PositiveShift"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {"output_distribution": "normal", "n_quantiles": 9}, "3": {}, "4": {}}}
-{"family": "Gaussian", "constant": false, "regression_type": "datepart"}

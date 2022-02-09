@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{"fillna": "mean", "transformations": {"0": "PowerTransformer", "1": "DifferencedTransformer", "2": "PowerTransformer", "3": "MaxAbsScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
-{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

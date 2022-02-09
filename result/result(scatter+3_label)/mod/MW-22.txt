@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{"fillna": "median", "transformations": {"0": "RobustScaler", "1": "bkfilter", "2": "Discretize", "3": "Log", "4": "DifferencedTransformer", "5": "Round"}, "transformation_params": {"0": {}, "1": {}, "2": {"discretization": "center", "n_bins": 20}, "3": {}, "4": {}, "5": {"model": "middle", "decimals": 1, "on_transform": false, "on_inverse": true}}}
-{}

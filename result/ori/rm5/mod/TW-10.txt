@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "Log", "1": "DifferencedTransformer", "2": "IntermittentOccurrence", "3": "RollingMeanTransformer", "4": "Discretize", "5": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {"center": "mean"}, "3": {"fixed": true, "window": 3}, "4": {"discretization": "lower", "n_bins": 10}, "5": {}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "ffill", "transformations": {"0": "bkfilter", "1": "DifferencedTransformer", "2": "Slice", "3": "RobustScaler", "4": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {}, "2": {"method": 100}, "3": {}, "4": {"lag_1": 12, "method": "LastValue"}}}
+{"regression_model": {"model": "ElasticNet", "model_params": {}}, "datepart_method": "expanded", "regression_type": null}

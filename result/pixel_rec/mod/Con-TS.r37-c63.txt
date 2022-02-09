@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "ffill", "transformations": {"0": "SeasonalDifference", "1": "Round", "2": "SeasonalDifference"}, "transformation_params": {"0": {"lag_1": 12, "method": "LastValue"}, "1": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "2": {"lag_1": 12, "method": "Median"}}}
+{}

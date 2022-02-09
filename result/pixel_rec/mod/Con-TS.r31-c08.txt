@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "rolling_mean", "transformations": {"0": "DifferencedTransformer", "1": "Round", "2": "PowerTransformer", "3": "Detrend", "4": "CenterLastValue"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": -2, "on_transform": false, "on_inverse": true}, "2": {}, "3": {"model": "Linear"}, "4": {"rows": 4}}}
+{}

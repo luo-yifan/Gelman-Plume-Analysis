@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{"fillna": "fake_date", "transformations": {"0": "PowerTransformer", "1": "Discretize", "2": "MaxAbsScaler", "3": "DifferencedTransformer", "4": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {"discretization": "lower", "n_bins": 20}, "2": {}, "3": {}, "4": {"method": "clip", "std_threshold": 3, "fillna": null}}}
-{}

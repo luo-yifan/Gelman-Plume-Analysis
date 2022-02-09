@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "fake_date", "transformations": {"0": "Round", "1": "SinTrend", "2": "Detrend", "3": "Round"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {}, "2": {"model": "Linear"}, "3": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}}}
+{"family": "NegativeBinomial", "constant": false, "regression_type": null}

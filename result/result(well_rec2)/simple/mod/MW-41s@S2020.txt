@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "RobustScaler", "2": "Detrend", "3": "SeasonalDifference"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 9}, "1": {}, "2": {"model": "Linear"}, "3": {"lag_1": 7, "method": "LastValue"}}}
-{}

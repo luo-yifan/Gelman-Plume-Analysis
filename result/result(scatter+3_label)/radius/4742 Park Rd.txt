@@ -1,2 +1,0 @@
-4742 Park Rd
-['ARTESIAN #3', 'MW-31']

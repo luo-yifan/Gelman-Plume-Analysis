@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean", "transformations": {"0": "QuantileTransformer", "1": "CenterLastValue", "2": "Detrend", "3": "CumSumTransformer", "4": "ClipOutliers", "5": "StandardScaler"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {"rows": 3}, "2": {"model": "Linear"}, "3": {}, "4": {"method": "clip", "std_threshold": 1, "fillna": null}, "5": {}}}
+{"family": "Tweedie", "constant": false, "regression_type": "datepart"}

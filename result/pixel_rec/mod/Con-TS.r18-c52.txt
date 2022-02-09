@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "rolling_mean_24", "transformations": {"0": "DifferencedTransformer", "1": "MaxAbsScaler", "2": "SeasonalDifference", "3": "SeasonalDifference", "4": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {}, "2": {"lag_1": 12, "method": "Mean"}, "3": {"lag_1": 7, "method": "LastValue"}, "4": {"method": "clip", "std_threshold": 3, "fillna": null}}}
+{}

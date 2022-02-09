@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "mean", "transformations": {"0": "DifferencedTransformer", "1": "Round", "2": "bkfilter", "3": "Round"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": 1, "on_transform": false, "on_inverse": true}, "2": {}, "3": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}}}
-{}

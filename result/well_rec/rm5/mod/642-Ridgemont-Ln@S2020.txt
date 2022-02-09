@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "rolling_mean_24", "transformations": {"0": "MaxAbsScaler", "1": "ClipOutliers", "2": "CumSumTransformer"}, "transformation_params": {"0": {}, "1": {"method": "clip", "std_threshold": 2, "fillna": null}, "2": {}}}
+{"damped_trend": false, "trend": "additive", "seasonal": "multiplicative", "seasonal_periods": 12}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "ffill", "transformations": {"0": "Discretize", "1": "DifferencedTransformer", "2": "ClipOutliers", "3": "StandardScaler", "4": "ClipOutliers"}, "transformation_params": {"0": {"discretization": "upper", "n_bins": 10}, "1": {}, "2": {"method": "clip", "std_threshold": 1, "fillna": null}, "3": {}, "4": {"method": "clip", "std_threshold": 4, "fillna": null}}}
+{"method": "Midhinge"}

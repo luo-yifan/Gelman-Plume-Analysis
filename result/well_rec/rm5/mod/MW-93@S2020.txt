@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": null, "transformations": {"0": "PctChangeTransformer", "1": "SeasonalDifference", "2": "DifferencedTransformer", "3": "RobustScaler"}, "transformation_params": {"0": {}, "1": {"lag_1": 12, "method": "LastValue"}, "2": {}, "3": {}}}
+{"regression_model": {"model": "DecisionTree", "model_params": {"max_depth": null, "min_samples_split": 0.05}}, "holiday": false, "mean_rolling_periods": 7, "macd_periods": 7, "std_rolling_periods": 5, "max_rolling_periods": null, "min_rolling_periods": 4, "ewm_alpha": null, "additional_lag_periods": 3, "abs_energy": false, "rolling_autocorr_periods": null, "add_date_part": "recurring", "polynomial_degree": null, "x_transform": null, "regression_type": null}

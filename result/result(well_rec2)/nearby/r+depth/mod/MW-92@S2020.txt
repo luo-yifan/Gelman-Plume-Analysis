@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "median", "transformations": {"0": "ClipOutliers", "1": "DifferencedTransformer", "2": "ClipOutliers", "3": "QuantileTransformer", "4": "PctChangeTransformer"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "1": {}, "2": {"method": "clip", "std_threshold": 3, "fillna": null}, "3": {"output_distribution": "uniform", "n_quantiles": 9}, "4": {}}}
-{"family": "Gaussian", "constant": false, "regression_type": "datepart"}

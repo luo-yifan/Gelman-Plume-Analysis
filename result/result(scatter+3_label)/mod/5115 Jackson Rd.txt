@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-SeasonalNaive
-{"fillna": "rolling_mean_24", "transformations": {"0": "Discretize", "1": "Discretize", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"discretization": "lower", "n_bins": 10}, "1": {"discretization": "upper", "n_bins": 20}, "2": {}}}
-{"method": "LastValue", "lag_1": 60, "lag_2": 1}

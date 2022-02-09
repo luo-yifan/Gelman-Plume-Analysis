@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "zero", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "DifferencedTransformer", "3": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 5}, "2": {}, "3": {"output_distribution": "uniform", "n_quantiles": 5}}}
+{"regression_model": {"model": "KNN", "model_params": {"n_neighbors": 5, "weights": "uniform"}}, "datepart_method": "simple", "regression_type": null}

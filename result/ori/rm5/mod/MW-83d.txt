@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "fake_date", "transformations": {"0": "IntermittentOccurrence"}, "transformation_params": {"0": {"center": "mean"}}}
+{"family": "Poisson", "constant": false, "regression_type": null}

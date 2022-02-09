@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{"fillna": "fake_date", "transformations": {"0": "bkfilter", "1": "SeasonalDifference", "2": "RobustScaler", "3": "SeasonalDifference", "4": "Detrend"}, "transformation_params": {"0": {}, "1": {"lag_1": 7, "method": "Mean"}, "2": {}, "3": {"lag_1": 12, "method": "Mean"}, "4": {"model": "Linear"}}}
-{}

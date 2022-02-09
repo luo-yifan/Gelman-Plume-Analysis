@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "ffill_mean_biased", "transformations": {"0": "IntermittentOccurrence", "1": "SinTrend"}, "transformation_params": {"0": {"center": "mean"}, "1": {}}}
+{"regression_model": {"model": "DecisionTree", "model_params": {"max_depth": null, "min_samples_split": 1.0}}, "holiday": true, "mean_rolling_periods": 5, "macd_periods": 2, "std_rolling_periods": null, "max_rolling_periods": null, "min_rolling_periods": null, "ewm_alpha": null, "additional_lag_periods": 2, "abs_energy": true, "rolling_autocorr_periods": null, "add_date_part": "expanded", "polynomial_degree": null, "x_transform": null, "regression_type": null}

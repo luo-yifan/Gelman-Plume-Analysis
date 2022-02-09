@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{"fillna": "fake_date", "transformations": {"0": "PowerTransformer"}, "transformation_params": {"0": {}}}
-{"regression_model": {"model": "Adaboost", "model_params": {"n_estimators": 50, "loss": "square", "base_estimator": "DecisionTree", "learning_rate": 1.0}}, "datepart_method": "simple", "regression_type": null}

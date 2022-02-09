@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "mean", "transformations": {"0": "QuantileTransformer", "1": "QuantileTransformer", "2": "ClipOutliers", "3": "DifferencedTransformer"}, "transformation_params": {"0": {"output_distribution": "normal", "n_quantiles": 10}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {"method": "clip", "std_threshold": 3, "fillna": null}, "3": {}}}
+{"family": "Binomial", "constant": false, "regression_type": "datepart"}

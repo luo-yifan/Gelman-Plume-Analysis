@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "SinTrend", "2": "PowerTransformer", "3": "Discretize"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {}, "2": {}, "3": {"discretization": "center", "n_bins": 5}}}
+{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "fake_date", "transformations": {"0": "MinMaxScaler", "1": "SeasonalDifference", "2": "QuantileTransformer", "3": "SeasonalDifference", "4": "Round", "5": "RollingMeanTransformer"}, "transformation_params": {"0": {}, "1": {"lag_1": 7, "method": "LastValue"}, "2": {"output_distribution": "normal", "n_quantiles": 10}, "3": {"lag_1": 7, "method": "Median"}, "4": {"model": "middle", "decimals": -1, "on_transform": true, "on_inverse": true}, "5": {"fixed": true, "window": 7}}}
+{"regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [25, 15, 25], "max_iter": 250, "activation": "tanh", "solver": "adam", "early_stopping": false, "learning_rate_init": 0.001}}, "datepart_method": "simple", "regression_type": null}

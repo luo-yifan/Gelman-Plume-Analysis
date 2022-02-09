@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "IntermittentOccurrence", "1": "ClipOutliers", "2": "ClipOutliers", "3": "ClipOutliers", "4": "DifferencedTransformer"}, "transformation_params": {"0": {"center": "mean"}, "1": {"method": "clip", "std_threshold": 2, "fillna": null}, "2": {"method": "clip", "std_threshold": 4, "fillna": null}, "3": {"method": "clip", "std_threshold": 3, "fillna": null}, "4": {}}}
+{"family": "Poisson", "constant": true, "regression_type": null}

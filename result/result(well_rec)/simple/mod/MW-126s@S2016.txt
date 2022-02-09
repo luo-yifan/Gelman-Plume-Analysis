@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "median", "transformations": {"0": "Discretize", "1": "ClipOutliers", "2": "QuantileTransformer"}, "transformation_params": {"0": {"discretization": "center", "n_bins": 20}, "1": {"method": "clip", "std_threshold": 4, "fillna": null}, "2": {"output_distribution": "uniform", "n_quantiles": 8}}}
-{}

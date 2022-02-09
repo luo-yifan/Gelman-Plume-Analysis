@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "ffill", "transformations": {"0": "RobustScaler", "1": "RobustScaler", "2": "MinMaxScaler", "3": "MaxAbsScaler", "4": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {}}}
+{}

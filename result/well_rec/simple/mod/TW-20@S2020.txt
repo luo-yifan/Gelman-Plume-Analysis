@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill_mean_biased", "transformations": {"0": "PctChangeTransformer", "1": "PositiveShift", "2": "RollingMeanTransformer", "3": "SeasonalDifference", "4": "ClipOutliers", "5": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"fixed": false, "window": 12}, "3": {"lag_1": 7, "method": "Mean"}, "4": {"method": "clip", "std_threshold": 5, "fillna": null}, "5": {}}}
+{"family": "NegativeBinomial", "constant": false, "regression_type": null}

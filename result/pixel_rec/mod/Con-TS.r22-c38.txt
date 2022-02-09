@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "median", "transformations": {"0": "IntermittentOccurrence", "1": "QuantileTransformer", "2": "MaxAbsScaler"}, "transformation_params": {"0": {"center": "mean"}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {}}}
+{}

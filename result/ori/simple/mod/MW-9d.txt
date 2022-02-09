@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "ffill", "transformations": {"0": "PCA", "1": "SeasonalDifference", "2": "Discretize", "3": "QuantileTransformer", "4": "Discretize"}, "transformation_params": {"0": {}, "1": {"lag_1": 12, "method": "Median"}, "2": {"discretization": "upper", "n_bins": 20}, "3": {"output_distribution": "uniform", "n_quantiles": 6}, "4": {"discretization": "upper", "n_bins": 10}}}
+{"method": "Exp_Weighted_Mean"}

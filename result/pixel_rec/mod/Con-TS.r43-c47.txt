@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "zero", "transformations": {"0": "Detrend", "1": "SinTrend"}, "transformation_params": {"0": {"model": "Linear"}, "1": {}}}
+{"regression_model": {"model": "RadiusNeighbors", "model_params": {}}, "datepart_method": "recurring", "regression_type": null}

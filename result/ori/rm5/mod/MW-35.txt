@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill_mean_biased", "transformations": {"0": "Discretize", "1": "QuantileTransformer", "2": "SeasonalDifference", "3": "MaxAbsScaler"}, "transformation_params": {"0": {"discretization": "center", "n_bins": 5}, "1": {"output_distribution": "uniform", "n_quantiles": 7}, "2": {"lag_1": 7, "method": "LastValue"}, "3": {}}}
+{"family": "Gamma", "constant": true, "regression_type": null}

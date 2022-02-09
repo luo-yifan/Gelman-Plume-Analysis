@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "zero", "transformations": {"0": "SeasonalDifference", "1": "Detrend"}, "transformation_params": {"0": {"lag_1": 7, "method": "Mean"}, "1": {"model": "Linear"}}}
+{}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "ffill_mean_biased", "transformations": {"0": "QuantileTransformer", "1": "Discretize", "2": "Detrend", "3": "DifferencedTransformer", "4": "RobustScaler"}, "transformation_params": {"0": {"output_distribution": "normal", "n_quantiles": 10}, "1": {"discretization": "lower", "n_bins": 20}, "2": {"model": "GLS"}, "3": {}, "4": {}}}
+{}

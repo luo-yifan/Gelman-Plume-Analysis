@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{"fillna": "median", "transformations": {"0": "PowerTransformer", "1": "Round", "2": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": 2, "on_transform": true, "on_inverse": true}, "2": {}}}
-{"family": "Poisson", "constant": false, "regression_type": "datepart"}

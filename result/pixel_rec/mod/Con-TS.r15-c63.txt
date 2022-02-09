@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "ffill", "transformations": {"0": "Log", "1": "DifferencedTransformer", "2": "Detrend"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "GLS"}}}
+{}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "ffill", "transformations": {"0": "IntermittentOccurrence", "1": "ClipOutliers", "2": "Detrend", "3": "RollingMean100thN"}, "transformation_params": {"0": {"center": "mean"}, "1": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "2": {"model": "Linear"}, "3": {}}}
+{}

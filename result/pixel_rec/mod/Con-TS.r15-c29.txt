@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "rolling_mean", "transformations": {"0": "Round", "1": "RollingMeanTransformer", "2": "RollingMeanTransformer"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": false}, "1": {"fixed": true, "window": 12}, "2": {"fixed": true, "window": 12}}}
+{"regression_model": {"model": "ElasticNet", "model_params": {}}, "holiday": false, "mean_rolling_periods": 5, "macd_periods": null, "std_rolling_periods": null, "max_rolling_periods": null, "min_rolling_periods": 4, "ewm_alpha": null, "additional_lag_periods": 6, "abs_energy": true, "rolling_autocorr_periods": null, "add_date_part": null, "polynomial_degree": null, "x_transform": null, "regression_type": null}

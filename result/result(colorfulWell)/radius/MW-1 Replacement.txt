@@ -1,2 +1,0 @@
-MW-1 Replacement
-['MW-25d', 'MW-2d', 'MW-45d', 'MW-75', 'TW-20', 'TW-6', 'TW-8']

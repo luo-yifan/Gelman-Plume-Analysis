@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{"fillna": "mean", "transformations": {"0": "QuantileTransformer", "1": "bkfilter", "2": "MaxAbsScaler"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 9}, "1": {}, "2": {}}}
-{"window_size": 10, "regression_model": {"model": "MLP", "model_params": {"hidden_layer_sizes": [25, 15, 25], "max_iter": 250, "activation": "tanh", "solver": "lbfgs", "early_stopping": false, "learning_rate_init": 0.001}}, "input_dim": "univariate", "output_dim": "forecast_length", "normalize_window": false, "shuffle": true, "max_windows": 5000}

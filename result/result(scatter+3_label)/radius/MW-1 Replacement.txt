@@ -1,2 +1,0 @@
-MW-1 Replacement
-['AMW-1', 'AMW-2', 'MW-23', 'MW-24', 'MW-25d', 'MW-25s', 'MW-2d', 'MW-2s', 'MW-45d', 'MW-45s', 'MW-5d', 'MW-65d', 'MW-65i', 'MW-65s', 'MW-75', 'NMW-1d', 'NMW-1s', 'NMW-2d', 'NMW-2s', 'NMW-3d', 'NMW-3s', 'PMW-1', 'PMW-2', 'PMW-3', 'PMW-4', 'PW-1', 'TW-12', 'TW-20', 'TW-6', 'TW-8']

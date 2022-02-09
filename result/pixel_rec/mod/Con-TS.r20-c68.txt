@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "mean", "transformations": {"0": "MaxAbsScaler", "1": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}}}
+{"level": true, "trend": false, "cycle": true, "damped_cycle": false, "irregular": false, "stochastic_trend": false, "stochastic_level": false, "stochastic_cycle": true, "regression_type": "Holiday"}

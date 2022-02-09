@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{"fillna": "zero", "transformations": {"0": "DifferencedTransformer", "1": "Discretize", "2": "Discretize"}, "transformation_params": {"0": {}, "1": {"discretization": "lower", "n_bins": 10}, "2": {"discretization": "lower", "n_bins": 10}}}
-{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

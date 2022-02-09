@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "mean", "transformations": {"0": "ClipOutliers", "1": "Detrend", "2": "RobustScaler"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 1, "fillna": null}, "1": {"model": "Linear"}, "2": {}}}
+{"regression_model": {"model": "RadiusNeighbors", "model_params": {}}, "datepart_method": "recurring", "regression_type": null}

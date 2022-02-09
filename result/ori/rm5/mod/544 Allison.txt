@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "ffill", "transformations": {"0": "PctChangeTransformer", "1": "QuantileTransformer", "2": "SeasonalDifference", "3": "StandardScaler"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 1}, "2": {"lag_1": 12, "method": "Mean"}, "3": {}}}
+{"method": "Mean"}

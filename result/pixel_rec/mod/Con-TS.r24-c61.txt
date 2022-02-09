@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "rolling_mean_24", "transformations": {"0": "bkfilter", "1": "RollingMeanTransformer", "2": "DifferencedTransformer", "3": "QuantileTransformer", "4": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {"fixed": true, "window": 10}, "2": {}, "3": {"output_distribution": "uniform", "n_quantiles": 10}, "4": {}}}
+{"regression_model": {"model": "RadiusNeighbors", "model_params": {}}, "datepart_method": "recurring", "regression_type": null}

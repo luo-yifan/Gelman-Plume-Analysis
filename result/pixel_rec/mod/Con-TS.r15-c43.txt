@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "Detrend", "1": "MinMaxScaler", "2": "MaxAbsScaler"}, "transformation_params": {"0": {"model": "GLS"}, "1": {}, "2": {}}}
+{"family": "Tweedie", "constant": false, "regression_type": null}

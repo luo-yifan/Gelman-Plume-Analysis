@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "mean", "transformations": {"0": "Slice", "1": "MinMaxScaler", "2": "PowerTransformer", "3": "QuantileTransformer"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {}, "3": {"output_distribution": "uniform", "n_quantiles": 2}}}
+{"family": "Tweedie", "constant": false, "regression_type": "datepart"}

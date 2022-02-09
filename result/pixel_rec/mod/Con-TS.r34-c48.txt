@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "DifferencedTransformer", "2": "Round", "3": "DifferencedTransformer", "4": "bkfilter"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {}, "2": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": false}, "3": {}, "4": {}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

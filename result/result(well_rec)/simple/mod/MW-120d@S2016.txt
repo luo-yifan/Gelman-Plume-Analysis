@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-SeasonalNaive
-{"fillna": "fake_date", "transformations": {"0": "QuantileTransformer", "1": "ClipOutliers", "2": "PowerTransformer", "3": "RobustScaler", "4": "IntermittentOccurrence"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 8}, "1": {"method": "clip", "std_threshold": 2, "fillna": null}, "2": {}, "3": {}, "4": {"center": "mean"}}}
-{"method": "Median", "lag_1": 2, "lag_2": 7}

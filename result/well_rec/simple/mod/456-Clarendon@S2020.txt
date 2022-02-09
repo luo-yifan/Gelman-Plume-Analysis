@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "RollingMeanTransformer", "1": "SinTrend", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"fixed": true, "window": 7}, "1": {}, "2": {}}}
+{"family": "Gaussian", "constant": false, "regression_type": "datepart"}

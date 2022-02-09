@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "ClipOutliers", "2": "DifferencedTransformer", "3": "Detrend"}, "transformation_params": {"0": {}, "1": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "2": {}, "3": {"model": "GLS"}}}
+{"regression_model": {"model": "DecisionTree", "model_params": {"max_depth": null, "min_samples_split": 0.05}}, "datepart_method": "simple", "regression_type": null}

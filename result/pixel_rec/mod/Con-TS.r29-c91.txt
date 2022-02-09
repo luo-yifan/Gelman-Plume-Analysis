@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "RobustScaler", "2": "MaxAbsScaler", "3": "Detrend", "4": "CumSumTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"model": "GLS"}, "4": {}}}
+{"regression_model": {"model": "ElasticNet", "model_params": {}}, "datepart_method": "recurring", "regression_type": null}

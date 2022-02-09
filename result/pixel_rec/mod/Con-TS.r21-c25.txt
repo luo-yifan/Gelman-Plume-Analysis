@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+RollingRegression
+{"fillna": "ffill", "transformations": {"0": "RobustScaler", "1": "QuantileTransformer", "2": "DifferencedTransformer", "3": "MaxAbsScaler", "4": "PCA", "5": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {}, "3": {}, "4": {}, "5": {"output_distribution": "uniform", "n_quantiles": 10}}}
+{"regression_model": {"model": "HistGradientBoost", "model_params": {"loss": "least_squares", "learning_rate": 0.1}}, "holiday": true, "mean_rolling_periods": 5, "macd_periods": 58, "std_rolling_periods": null, "max_rolling_periods": 4, "min_rolling_periods": 2, "ewm_alpha": null, "additional_lag_periods": 1439, "abs_energy": false, "rolling_autocorr_periods": null, "add_date_part": "expanded", "polynomial_degree": null, "x_transform": "RmZeroVariance", "regression_type": null}

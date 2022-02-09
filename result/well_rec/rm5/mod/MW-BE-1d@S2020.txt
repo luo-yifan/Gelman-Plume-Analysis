@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean", "transformations": {"0": "MaxAbsScaler", "1": "ClipOutliers", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"method": "clip", "std_threshold": 2, "fillna": null}, "2": {}}}
+{"family": "Binomial", "constant": false, "regression_type": null}

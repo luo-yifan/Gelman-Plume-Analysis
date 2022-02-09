@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "StandardScaler", "1": "Detrend", "2": "DifferencedTransformer", "3": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {"model": "Linear"}, "2": {}, "3": {}}}
+{"family": "Binomial", "constant": false, "regression_type": null}

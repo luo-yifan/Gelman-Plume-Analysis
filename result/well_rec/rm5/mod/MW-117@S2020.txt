@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "mean", "transformations": {"0": "Round", "1": "RollingMeanTransformer", "2": "Discretize", "3": "SeasonalDifference"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {"fixed": true, "window": 12}, "2": {"discretization": "lower", "n_bins": 20}, "3": {"lag_1": 7, "method": "Median"}}}
+{}

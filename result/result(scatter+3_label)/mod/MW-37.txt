@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{"fillna": "rolling_mean_24", "transformations": {"0": "ClipOutliers", "1": "QuantileTransformer", "2": "Detrend", "3": "QuantileTransformer", "4": "QuantileTransformer", "5": "Slice"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 2, "fillna": null}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {"model": "Linear"}, "3": {"output_distribution": "uniform", "n_quantiles": 9}, "4": {"output_distribution": "uniform", "n_quantiles": 9}, "5": {"method": 0.2}}}
-{"damped_trend": false, "trend": "multiplicative", "seasonal": null, "seasonal_periods": null}

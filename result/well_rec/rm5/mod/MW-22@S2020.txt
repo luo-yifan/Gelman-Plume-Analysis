@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "MaxAbsScaler", "1": "Slice", "2": "Slice"}, "transformation_params": {"0": {}, "1": {"method": 0.5}, "2": {"method": 0.2}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

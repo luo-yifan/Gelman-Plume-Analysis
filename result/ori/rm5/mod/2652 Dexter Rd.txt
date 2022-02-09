@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "ffill", "transformations": {"0": "QuantileTransformer", "1": "DifferencedTransformer", "2": "MaxAbsScaler", "3": "RobustScaler", "4": "MaxAbsScaler", "5": "DifferencedTransformer"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 3}, "1": {}, "2": {}, "3": {}, "4": {}, "5": {}}}
+{}

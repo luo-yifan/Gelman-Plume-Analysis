@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{"fillna": "ffill_mean_biased", "transformations": {"0": "MaxAbsScaler", "1": "bkfilter", "2": "Detrend", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "Linear"}, "3": {}}}
-{"method": "Median"}

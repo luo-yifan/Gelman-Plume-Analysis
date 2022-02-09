@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "Round", "2": "SeasonalDifference", "3": "StandardScaler"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": -2, "on_transform": false, "on_inverse": true}, "2": {"lag_1": 12, "method": "Median"}, "3": {}}}
-{}

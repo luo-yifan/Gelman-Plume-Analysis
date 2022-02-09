@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "fake_date", "transformations": {"0": "Detrend", "1": "DifferencedTransformer", "2": "IntermittentOccurrence", "3": "Discretize"}, "transformation_params": {"0": {"model": "GLS"}, "1": {}, "2": {"center": "mean"}, "3": {"discretization": "upper", "n_bins": 20}}}
+{"method": "Median"}

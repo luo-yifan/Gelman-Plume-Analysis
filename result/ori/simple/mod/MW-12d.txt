@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "RollingMeanTransformer", "2": "SeasonalDifference", "3": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {"fixed": true, "window": 10}, "2": {"lag_1": 7, "method": "LastValue"}, "3": {}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

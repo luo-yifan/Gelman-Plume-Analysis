@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{"fillna": "rolling_mean", "transformations": {"0": "QuantileTransformer", "1": "bkfilter"}, "transformation_params": {"0": {"output_distribution": "normal", "n_quantiles": 8}, "1": {}}}
+{"level": true, "trend": false, "cycle": true, "damped_cycle": false, "irregular": false, "stochastic_trend": false, "stochastic_level": false, "stochastic_cycle": true, "regression_type": "Holiday"}

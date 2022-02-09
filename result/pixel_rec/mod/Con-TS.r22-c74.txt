@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "Round", "1": "IntermittentOccurrence", "2": "bkfilter", "3": "SeasonalDifference", "4": "Round", "5": "Log"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {"center": "mean"}, "2": {}, "3": {"lag_1": 7, "method": "Median"}, "4": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "5": {}}}
+{"family": "Binomial", "constant": false, "regression_type": null}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{"fillna": "mean", "transformations": {"0": "PctChangeTransformer", "1": "Detrend"}, "transformation_params": {"0": {}, "1": {"model": "GLS"}}}
+{"method": "Weighted_Mean"}

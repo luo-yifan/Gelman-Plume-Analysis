@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "rolling_mean", "transformations": {"0": "ClipOutliers", "1": "ClipOutliers", "2": "Detrend", "3": "RollingMeanTransformer", "4": "Detrend"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 4, "fillna": null}, "1": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "2": {"model": "Linear"}, "3": {"fixed": true, "window": 3}, "4": {"model": "GLS"}}}
+{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "median", "transformations": {"0": "MinMaxScaler", "1": "DifferencedTransformer", "2": "Round"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": true}}}
+{"damped_trend": false, "trend": "additive", "seasonal": null, "seasonal_periods": null}

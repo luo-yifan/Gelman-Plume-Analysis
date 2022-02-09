@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{"fillna": "zero", "transformations": {"0": "PowerTransformer", "1": "Discretize", "2": "PowerTransformer", "3": "PositiveShift", "4": "Round"}, "transformation_params": {"0": {}, "1": {"discretization": "upper", "n_bins": 10}, "2": {}, "3": {}, "4": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}}}
-{"method": "Mean"}

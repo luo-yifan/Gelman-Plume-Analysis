@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "fake_date", "transformations": {"0": "Round", "1": "Round", "2": "CumSumTransformer", "3": "Slice", "4": "Round"}, "transformation_params": {"0": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "1": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "2": {}, "3": {"method": 0.2}, "4": {"model": "middle", "decimals": 0, "on_transform": true, "on_inverse": false}}}
+{}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "mean", "transformations": {"0": "Round", "1": "IntermittentOccurrence", "2": "PowerTransformer", "3": "SeasonalDifference", "4": "RollingMeanTransformer", "5": "PctChangeTransformer"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {"center": "mean"}, "2": {}, "3": {"lag_1": 7, "method": "Median"}, "4": {"fixed": true, "window": 12}, "5": {}}}
+{}

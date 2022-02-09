@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "mean", "transformations": {"0": "Slice"}, "transformation_params": {"0": {"method": 0.2}}}
+{}

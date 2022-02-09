@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{"fillna": "fake_date", "transformations": {"0": "QuantileTransformer", "1": "DifferencedTransformer", "2": "PowerTransformer", "3": "StandardScaler", "4": "Discretize", "5": "MaxAbsScaler"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 9}, "1": {}, "2": {}, "3": {}, "4": {"discretization": "center", "n_bins": 20}, "5": {}}}
-{}

@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-SeasonalNaive
-{"fillna": "rolling_mean_24", "transformations": {"0": "RobustScaler", "1": "QuantileTransformer", "2": "Detrend"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {"model": "Linear"}}}
-{"method": "Mean", "lag_1": 28, "lag_2": "None"}

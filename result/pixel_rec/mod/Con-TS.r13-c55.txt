@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "rolling_mean", "transformations": {"0": "DifferencedTransformer", "1": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 10}}}
+{"damped_trend": false, "trend": null, "seasonal": "multiplicative", "seasonal_periods": 96}

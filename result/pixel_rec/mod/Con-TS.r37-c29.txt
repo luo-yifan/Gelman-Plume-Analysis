@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "zero", "transformations": {"0": "QuantileTransformer", "1": "SeasonalDifference", "2": "RobustScaler"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 10}, "1": {"lag_1": 7, "method": "LastValue"}, "2": {}}}
+{}

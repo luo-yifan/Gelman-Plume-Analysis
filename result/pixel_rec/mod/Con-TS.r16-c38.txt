@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "Discretize", "2": "ClipOutliers", "3": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {"discretization": "lower", "n_bins": 10}, "2": {"method": "clip", "std_threshold": 3, "fillna": null}, "3": {"lag_1": 12, "method": "LastValue"}}}
+{"family": "Gaussian", "constant": false, "regression_type": null}

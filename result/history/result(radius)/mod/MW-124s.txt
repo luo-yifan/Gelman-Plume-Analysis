@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{"fillna": "rolling_mean", "transformations": {"0": "StandardScaler", "1": "StandardScaler", "2": "DifferencedTransformer", "3": "MaxAbsScaler", "4": "StandardScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {}}}
-{}

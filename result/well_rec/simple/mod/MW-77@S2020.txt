@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "SeasonalDifference", "2": "bkfilter", "3": "Discretize", "4": "CumSumTransformer"}, "transformation_params": {"0": {}, "1": {"lag_1": 7, "method": "Median"}, "2": {}, "3": {"discretization": "lower", "n_bins": 20}, "4": {}}}
+{"family": "Binomial", "constant": true, "regression_type": null}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill_mean_biased", "transformations": {"0": "PowerTransformer", "1": "DifferencedTransformer", "2": "Detrend", "3": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "Linear"}, "3": {"method": "clip", "std_threshold": 4, "fillna": null}}}
+{"family": "Gamma", "constant": true, "regression_type": "datepart"}

@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "zero", "transformations": {"0": "RollingMeanTransformer", "1": "QuantileTransformer", "2": "PowerTransformer", "3": "MinMaxScaler", "4": "QuantileTransformer", "5": "MaxAbsScaler"}, "transformation_params": {"0": {"fixed": false, "window": 10}, "1": {"output_distribution": "uniform", "n_quantiles": 6}, "2": {}, "3": {}, "4": {"output_distribution": "uniform", "n_quantiles": 6}, "5": {}}}
+{"family": "Gamma", "constant": false, "regression_type": "datepart"}

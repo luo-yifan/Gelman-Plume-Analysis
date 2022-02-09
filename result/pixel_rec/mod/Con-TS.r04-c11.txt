@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "fake_date", "transformations": {"0": "Round", "1": "Detrend", "2": "StandardScaler", "3": "Detrend", "4": "DifferencedTransformer", "5": "Log"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {"model": "Linear"}, "2": {}, "3": {"model": "Linear"}, "4": {}, "5": {}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

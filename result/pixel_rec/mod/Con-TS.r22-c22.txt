@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill_mean_biased", "transformations": {"0": "StandardScaler", "1": "DifferencedTransformer", "2": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

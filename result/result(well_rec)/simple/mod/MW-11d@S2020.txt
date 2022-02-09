@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{"fillna": "mean", "transformations": {"0": "Log", "1": "SeasonalDifference", "2": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {"lag_1": 12, "method": "Mean"}, "2": {}}}
-{"method": "Median"}

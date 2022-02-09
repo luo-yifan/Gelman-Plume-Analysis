@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{"fillna": "rolling_mean_24", "transformations": {"0": "PowerTransformer", "1": "PowerTransformer", "2": "DifferencedTransformer", "3": "PCA"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
-{}

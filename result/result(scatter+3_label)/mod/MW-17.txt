@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{"fillna": "median", "transformations": {"0": "ClipOutliers", "1": "ClipOutliers", "2": "DifferencedTransformer", "3": "IntermittentOccurrence"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 2, "fillna": null}, "1": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "2": {}, "3": {"center": "mean"}}}
-{"method": "Mean"}

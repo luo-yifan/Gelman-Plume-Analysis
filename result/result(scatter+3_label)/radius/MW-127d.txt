@@ -1,2 +1,0 @@
-MW-127d
-['MW-127s', 'MW-78', 'Saginaw Forest Cabin #1', 'Saginaw Forest Cabin #2']

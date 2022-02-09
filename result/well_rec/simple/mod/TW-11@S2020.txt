@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{"fillna": "ffill", "transformations": {"0": "Round", "1": "QuantileTransformer", "2": "DifferencedTransformer", "3": "MaxAbsScaler", "4": "Round", "5": "Log"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {"output_distribution": "normal", "n_quantiles": 9}, "2": {}, "3": {}, "4": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "5": {}}}
+{"regression_model": {"model": "KNN", "model_params": {"n_neighbors": 5, "weights": "distance"}}, "datepart_method": "recurring", "regression_type": null}

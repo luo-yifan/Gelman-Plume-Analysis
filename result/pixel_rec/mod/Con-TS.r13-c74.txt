@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{"fillna": "ffill", "transformations": {"0": "Discretize", "1": "CenterLastValue", "2": "Detrend", "3": "MinMaxScaler", "4": "PositiveShift"}, "transformation_params": {"0": {"discretization": "center", "n_bins": 5}, "1": {"rows": 5}, "2": {"model": "GLS"}, "3": {}, "4": {}}}
+{}

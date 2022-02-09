@@ -1,4 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{"fillna": "rolling_mean", "transformations": {"0": "MinMaxScaler", "1": "RobustScaler", "2": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}
-{}
