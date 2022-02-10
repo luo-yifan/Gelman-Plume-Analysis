@@ -158,16 +158,18 @@ def run_from_ori(output_directory, m_list, remove_recent_years=False):
         group.set_index('Date', inplace=True)
 
         mod = AutoTS(forecast_length=5,
+                     # TODO: Based on sample size
                      frequency='Y',
+                     # TODO: ensemble method
                      ensemble='simple',
                      no_negatives=True,
-                     min_allowed_train_percent=0.2,
                      model_list=m_list,
                      verbose=-4)
 
         try:
             mod = mod.fit(group, date_col='ds', value_col='y', id_col=None)
         except:
+            # TODO: catch well names
             continue
 
         prediction = mod.predict()
@@ -186,11 +188,14 @@ def run_from_ori(output_directory, m_list, remove_recent_years=False):
         ax.scatter(forecast.index, forecast, label='b')
         ax.set_title(name)
         plt.savefig(output_directory + "/fig/" + name + '.png')
+
         cache_dir = pathlib.Path(output_directory + '/cache/' + name)
         cache_dir.mkdir(parents=True, exist_ok=True)
         group.y.to_csv(cache_dir.joinpath('data.csv'))
+        # TODO: "raw_input.csv"
         forecast.index.name = "Date"
         forecast.squeeze().to_csv(cache_dir.joinpath('predict.csv'))
+        # TODO: "pred_output.csv"
         all_well_data.append((name, group.y, forecast, mod))
         count += 1
 
@@ -205,6 +210,7 @@ def predict_cache_to_csv(cache_dir, output_dir):
         for index, row in well_data.iterrows():
             sum_data.append([row['WellName'], row['Date'], row['Concentration']])
     df = pd.DataFrame(sum_data, columns=['WellName', 'Date', 'Concentration'])
+    # TODO: filename
     df.to_csv(output_dir + '/all_predict_data_rec.csv')
 
 
@@ -220,6 +226,7 @@ def ori_data_to_csv(output_directory):
             for index, row in well_data.iterrows():
                 sum_data.append([row['WellName'], row['Date'], row['Concentration']])
     df = pd.DataFrame(sum_data, columns=['WellName', 'Date', 'Concentration'])
+    # TODO: filename
     df.to_csv(output_directory + '/all_data.csv')
 
 
@@ -247,6 +254,7 @@ def pixel_data_to_csv(output_directory):
 
 def calc_rmse(cache_dir_simple, cache_dir_rm5, DATE_COL, Y_COL):
     sum_data = []
+
     def search_nearest_data(data, search_date):
         def error_datetime_str(str_a, str_b):
             str_a = str_a[:10]
@@ -277,7 +285,7 @@ def calc_rmse(cache_dir_simple, cache_dir_rm5, DATE_COL, Y_COL):
             for i_ in within_a_year:
                 y_loss.append(i_)
             return_value = np.asarray(y_loss).mean()
-            return_date = datetime.datetime.strptime( search_date[:10], '%Y-%m-%d').year + 1
+            return_date = datetime.datetime.strptime(search_date[:10], '%Y-%m-%d').year + 1
 
         else:
             for _, row_ in data.iterrows():
@@ -324,7 +332,6 @@ def calc_rmse(cache_dir_simple, cache_dir_rm5, DATE_COL, Y_COL):
             df_row.append(nearest_date)
             df_row.append(nearest_value)
 
-
             sum_per_well += error_square
             count_per_well += 1.0
             print(i, cur_date, cur_value, 'error:', error_square, '|', nearest_date, nearest_value)
@@ -367,6 +374,7 @@ def calc_rmse(cache_dir_simple, cache_dir_rm5, DATE_COL, Y_COL):
 
 
 if __name__ == "__main__":
+    # TODO: categorize
     model_list = [
         'LastValueNaive',
         'RollingRegression',
