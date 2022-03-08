@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "ffill", "transformations": {"0": "Round", "1": "bkfilter", "2": "Round", "3": "Detrend", "4": "Round", "5": "Log"}, "transformation_params": {"0": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "1": {}, "2": {"model": "middle", "decimals": -1, "on_transform": true, "on_inverse": false}, "3": {"model": "Linear"}, "4": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "5": {}}}
+{"family": "Poisson", "constant": false, "regression_type": "datepart"}

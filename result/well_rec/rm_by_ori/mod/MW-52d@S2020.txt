@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "ffill", "transformations": {"0": "Round", "1": "DifferencedTransformer", "2": "Detrend", "3": "IntermittentOccurrence"}, "transformation_params": {"0": {"model": "middle", "decimals": -1, "on_transform": false, "on_inverse": true}, "1": {}, "2": {"model": "Linear"}, "3": {"center": "mean"}}}
+{}

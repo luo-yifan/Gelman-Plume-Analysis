@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLS
+{"fillna": "median", "transformations": {"0": "MaxAbsScaler", "1": "CumSumTransformer", "2": "Log", "3": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}}}
+{}

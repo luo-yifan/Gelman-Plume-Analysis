@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+GLM
+{"fillna": "rolling_mean", "transformations": {"0": "PctChangeTransformer", "1": "bkfilter", "2": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}
+{"family": "Binomial", "constant": false, "regression_type": "datepart"}

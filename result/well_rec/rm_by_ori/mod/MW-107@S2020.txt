@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "StandardScaler", "2": "PowerTransformer", "3": "PowerTransformer", "4": "Detrend"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {}, "4": {"model": "Linear"}}}
+{}

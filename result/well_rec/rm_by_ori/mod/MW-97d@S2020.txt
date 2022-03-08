@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+ETS
+{"fillna": "median", "transformations": {"0": "SeasonalDifference", "1": "MaxAbsScaler", "2": "ClipOutliers", "3": "bkfilter", "4": "CumSumTransformer", "5": "SeasonalDifference"}, "transformation_params": {"0": {"lag_1": 12, "method": "Mean"}, "1": {}, "2": {"method": "clip", "std_threshold": 5, "fillna": null}, "3": {}, "4": {}, "5": {"lag_1": 12, "method": "Mean"}}}
+{"damped_trend": false, "trend": null, "seasonal": "multiplicative", "seasonal_periods": 12}

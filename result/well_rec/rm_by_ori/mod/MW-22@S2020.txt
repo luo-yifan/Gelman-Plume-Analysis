@@ -1,0 +1,4 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{"fillna": "median", "transformations": {"0": "DifferencedTransformer", "1": "Discretize", "2": "ClipOutliers", "3": "PowerTransformer", "4": "StandardScaler"}, "transformation_params": {"0": {}, "1": {"discretization": "lower", "n_bins": 5}, "2": {"method": "clip", "std_threshold": 2, "fillna": null}, "3": {}, "4": {}}}
+{}

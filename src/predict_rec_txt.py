@@ -73,6 +73,90 @@ def run_rec(output_directory, m_list, remove_recent_years=False):
             print("[predict success]", name, count, '/', len_name_list)
 
 
+def run_rec_remove_invalid_date(output_directory,
+                                m_list,
+                                keep_date_consistent=True,
+                                remove_recent_years=False):
+    create_dir(output_directory)
+    name_list = [name for name in os.listdir("../data/Well_Rec_txt/")]
+    ori_dir = '../result/ori/rm5/cache/'
+    ori_name_list = [name for name in os.listdir(ori_dir)]
+    count = 0
+    len_name_list = len(name_list)
+    for i in name_list:
+        count += 1
+        name = i.split('.')[1] + '@' + i.split('.')[2]
+        if i.split('.')[2] == 'S2020':
+            print(name)
+            if os.path.exists(output_directory + '/cache/' + name):
+                continue
+            well_data = pd.read_csv('../data/Well_Rec_txt/' + i)
+            well_data['Date'] = well_data.apply(lambda row: datetime.datetime(int(row.Year), int(row.Month), 1), axis=1)
+            well_data['ds'] = pd.to_datetime(well_data['Date'])
+            well_data['y'] = well_data['Concentration']
+
+            has_cut = False
+            if keep_date_consistent:
+                for ori_name in ori_name_list:
+                    # print(ori_name.replace(' ', '-'))
+                    stupid_name = i.split('.')[1]
+                    if ori_name.replace(' ', '-') == stupid_name:
+                        ori_data = pd.read_csv(ori_dir + ori_name + '/data.csv')
+                        max_date = ori_data['Date'].max()
+                        well_data = well_data[well_data['Date'] <= max_date]
+                        has_cut = True
+                        break
+            if not has_cut:
+                print("skip ", name, count, '/', len_name_list)
+                continue
+
+            if remove_recent_years:
+                max_date = well_data['Date'].max() - datetime.timedelta(days=365 * 5)
+                well_data = well_data[well_data['Date'] <= max_date]
+
+            well_data.set_index('ds', inplace=True)
+            fig, ax = plt.subplots()
+
+            mod = AutoTS(forecast_length=5,
+                         frequency='Y',
+                         ensemble='simple',
+                         no_negatives=True,
+                         min_allowed_train_percent=0.2,
+                         model_list=m_list,
+                         verbose=-4)
+
+            try:
+                mod = mod.fit(well_data, date_col='Date', value_col='Concentration', id_col=None)
+                prediction = mod.predict()
+            except:
+                # TODO: catch well names
+                continue
+            forecast = prediction.forecast
+
+            create_dir(output_directory + "mod/")
+            create_dir(output_directory + "cache/")
+            create_dir(output_directory + "fig/")
+
+            ft = open(output_directory + "mod/" + name + '.txt', "w")
+            ft.write(str(mod))
+            ft.close()
+
+            ax.scatter(well_data.y.index, well_data.y, label='a')
+            ax.scatter(forecast.index, forecast, label='b')
+
+            ax.set_title(name)
+            plt.savefig(output_directory + '/fig/' + name + '.png')
+
+            cache_dir = pathlib.Path(output_directory + '/cache/' + name)
+            cache_dir.mkdir(parents=True, exist_ok=True)
+
+            well_data.y.to_csv(cache_dir.joinpath('data.csv'))
+            forecast.index.name = "Date"
+            forecast.squeeze().to_csv(cache_dir.joinpath('predict.csv'))
+
+            print("[predict success]", name, count, '/', len_name_list)
+
+
 def run_map_rec(output_directory, m_list):
     create_dir(output_directory)
     name_list = [name for name in os.listdir("../data/pixel_rec/")]
@@ -388,9 +472,10 @@ if __name__ == "__main__":
     ]
     # ori_data_to_csv(output_dir)
 
+    output_dir_ori = '../result/well_rec/rm_by_ori/'
     # output_dir = '../result/well_rec/simple/'
     # remove_recent_years_output_dir = '../result/well_rec/rm5/'
-    # run(remove_recent_years_output_dir, model_list, True)
+    run_rec_remove_invalid_date(output_dir_ori, model_list)
     # dir = '../result/well_rec/rm5/cache/'
     # predict_cache_to_csv(dir, remove_recent_years_output_dir)
 
@@ -402,7 +487,7 @@ if __name__ == "__main__":
     # predict_cache_to_csv(dir, output_dir)
 
     # print(calc_rmse('../result/ori/simple/cache/', '../result/ori/rm5/cache/', 'Date', 'y'))
-    print(calc_rmse('../result/well_rec/simple/cache/', '../result/well_rec/rm5/cache/', 'ds', 'Concentration'))
+    # print(calc_rmse('../result/well_rec/simple/cache/', '../result/well_rec/rm5/cache/', 'ds', 'Concentration'))
 
     # pixel_data_to_csv('../result/pixel_rec/')
 
