@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'KNNImputer', 'transformations': {'0': 'Slice', '1': 'EWMAFilter'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'span': 3}}}
+{'damped_trend': False, 'trend': 'multiplicative', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 0.0, 39.770600012586556, 61.26620240769122
+MAE: 0.0, 0.5124356525864309, 0.8477505097492697
+SPL: 0.0, 0.14060159836265718, 0.0861740817323651

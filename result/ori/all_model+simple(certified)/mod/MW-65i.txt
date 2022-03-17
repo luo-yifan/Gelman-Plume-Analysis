@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'nearest', 'transformations': {'0': 'MinMaxScaler', '1': 'Detrend', '2': 'StandardScaler'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {}}}
+{'method': 'Midhinge'}
+SMAPE: 200.0, 200.0, 160.02158221424935
+MAE: 2.44, 0.8, 41.13703287938054
+SPL: 0.0632134732870471, 0.014519658156266444, 0.10017864898742201

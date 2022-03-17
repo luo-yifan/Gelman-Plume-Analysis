@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'Slice', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {'method': 100}, '1': {}}}
+{'method': 'Midhinge'}
+SMAPE: 26.824950427699214, 20.78345076908206, 17.795586478287852
+MAE: 208.5, 300.475, 248.2
+SPL: 0.5188129675810474, 0.7082063419117646, 0.6748685258964143

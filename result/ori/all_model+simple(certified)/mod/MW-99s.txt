@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'fake_date', 'transformations': {'0': 'EWMAFilter', '1': 'DifferencedTransformer', '2': 'QuantileTransformer', '3': 'bkfilter'}, 'transformation_params': {'0': {'span': 7}, '1': {}, '2': {'output_distribution': 'normal', 'n_quantiles': 3}, '3': {}}}
+{'family': 'NegativeBinomial', 'constant': False, 'regression_type': None}
+SMAPE: 0.0, 0.0
+MAE: 0.0, 0.0
+SPL: 0.0, 0.0

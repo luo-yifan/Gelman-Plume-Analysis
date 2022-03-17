@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'pad', 'transformations': {'0': 'PowerTransformer', '1': 'MaxAbsScaler', '2': 'MinMaxScaler', '3': 'ClipOutliers', '4': 'PositiveShift'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'method': 'clip', 'std_threshold': 5, 'fillna': None}, '4': {}}}
+{}
+SMAPE: 12.549513658208102, 81.59036207228034
+MAE: 6.2, 102.0
+SPL: 0.13971387400698607, 0.22973944954486747

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'median', 'transformations': {'0': 'DifferencedTransformer', '1': 'Round', '2': 'MaxAbsScaler', '3': 'Slice'}, 'transformation_params': {'0': {}, '1': {'decimals': 0, 'on_transform': False, 'on_inverse': True}, '2': {}, '3': {'method': 0.5}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

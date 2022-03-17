@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'ffill', 'transformations': {'0': 'HPFilter', '1': 'PositiveShift', '2': 'PctChangeTransformer'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 129600}, '1': {}, '2': {}}}
+{'method': 'lastvalue', 'lag_1': 2, 'lag_2': 4}
+SMAPE: 13.33333333594857, 1.4144774240656539e-09
+MAE: 0.10000000001267946, 7.072387120388157e-12
+SPL: 0.10000000001000867, 2.168776269684258e-12

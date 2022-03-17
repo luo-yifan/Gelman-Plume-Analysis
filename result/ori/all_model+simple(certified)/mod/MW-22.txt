@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'pad', 'transformations': {'0': 'ClipOutliers', '1': 'QuantileTransformer', '2': 'Detrend', '3': 'HPFilter', '4': 'STLFilter'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}, '2': {'model': 'Linear', 'phi': 1, 'window': 365}, '3': {'part': 'cycle', 'lamb': 1600}, '4': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
+{}
+SMAPE: 22.638444657606343, 63.117166329159986, 47.33495956861542
+MAE: 86.0, 744.0, 1990.543625716727
+SPL: 0.02733551099616844, 0.17923581821904702, 0.37472270570457084

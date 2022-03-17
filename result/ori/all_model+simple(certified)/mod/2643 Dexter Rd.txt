@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'rolling_mean', 'transformations': {'0': 'CumSumTransformer', '1': 'EWMAFilter', '2': 'MinMaxScaler', '3': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {'span': 7}, '2': {}, '3': {}}}
+{'damped_trend': False, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 14.209067264963931, 54.64500122379991
+MAE: 0.46729688549806614, 1.339593598723678
+SPL: 0.21615089065535267, 1.3116888448789878

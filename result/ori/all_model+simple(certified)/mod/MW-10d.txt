@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'HPFilter', '1': 'StandardScaler'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 1600}, '1': {}}}
+{'method': 'Mean'}
+SMAPE: 60.852414691601595, 32.88779561926551, 37.73471956928194
+MAE: 376.8200000000502, 345.83199999997413, 357.6999999999798
+SPL: 0.3520317588820614, 1.1287422621614913, 0.5279787765089228

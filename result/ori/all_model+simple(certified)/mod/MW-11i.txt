@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'akima', 'transformations': {'0': 'PowerTransformer', '1': 'PositiveShift', '2': 'Detrend', '3': 'HPFilter', '4': 'STLFilter'}, 'transformation_params': {'0': {}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'part': 'cycle', 'lamb': 1600}, '4': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
+{'regression_model': {'model': 'SVM', 'model_params': {}}, 'mean_rolling_periods': 5, 'macd_periods': 7, 'std_rolling_periods': 5, 'max_rolling_periods': 2, 'min_rolling_periods': 12, 'quantile90_rolling_periods': 10, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 61.775802335052354, 41.7087257098621, 13.907421559306439
+MAE: 6.045384231897574, 24.268397643140656, 9.31029132504786
+SPL: 0.09746493738644782, 0.3859219567493894, 0.22224487310908095

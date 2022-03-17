@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'RollingMeanTransformer', '1': 'DifferencedTransformer', '2': 'Discretize', '3': 'QuantileTransformer'}, 'transformation_params': {'0': {'fixed': True, 'window': 3}, '1': {}, '2': {'discretization': 'center', 'n_bins': 10}, '3': {'output_distribution': 'uniform', 'n_quantiles': 5}}}
+{'method': 'median', 'lag_1': 12, 'lag_2': 7}
+SMAPE: 18.921685395925085, 16.048152181273636, 84.23453990910521
+MAE: 57.87327724478005, 116.34166666666667, 589.8833333333333
+SPL: 0.3183473301205966, 0.4421058576115426, 1.0449508202074926

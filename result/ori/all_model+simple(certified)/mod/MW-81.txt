@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'CenterLastValue', '1': 'SinTrend', '2': 'SeasonalDifference', '3': 'MinMaxScaler'}, 'transformation_params': {'0': {'rows': 1}, '1': {}, '2': {'lag_1': 7, 'method': 'Mean'}, '3': {}}}
+{'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [32, 32, 32], 'max_iter': 250, 'activation': 'relu', 'solver': 'lbfgs', 'early_stopping': False, 'learning_rate_init': 0.001}}, 'mean_rolling_periods': 12, 'macd_periods': 12, 'std_rolling_periods': 7, 'max_rolling_periods': None, 'min_rolling_periods': 60, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 42.94769278442383, 8.449174341566609, 80.97963825449021
+MAE: 53.24931252531917, 34.49075882464149, 245.532233063184
+SPL: 0.6371610654912124, 0.5989941430045846, 6.087576026359934

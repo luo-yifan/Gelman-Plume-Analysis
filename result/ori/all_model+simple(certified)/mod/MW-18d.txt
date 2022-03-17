@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'cubic', 'transformations': {'0': 'bkfilter', '1': 'PctChangeTransformer', '2': 'EWMAFilter', '3': 'CumSumTransformer', '4': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {'span': 7}, '3': {}, '4': {'model': 'GLS', 'phi': 1, 'window': 365}}}
+{'method': 'median', 'lag_1': 60, 'lag_2': None}
+SMAPE: 42.142811500667015, 36.202368097691455, 26.06692490877066
+MAE: 35.31085793728488, 75.28472772266501, 79.92702843536321
+SPL: 0.006169503806289032, 0.009215094263627422, 0.005104400550815229

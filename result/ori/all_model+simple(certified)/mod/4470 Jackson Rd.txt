@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'fake_date', 'transformations': {'0': 'QuantileTransformer', '1': 'PositiveShift'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {}}}
+{'deseasonalize': False, 'difference': False, 'use_test': False, 'method': 'auto', 'period': None, 'theta': 2, 'use_mle': False}
+SMAPE: 0.0, 0.0, nan
+MAE: 0.0, 0.0, nan
+SPL: 0.0, 0.0, nan

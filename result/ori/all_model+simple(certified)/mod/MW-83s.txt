@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'KNNImputer', 'transformations': {'0': 'PositiveShift', '1': 'DifferencedTransformer', '2': 'PowerTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{'family': 'Binomial', 'constant': False, 'regression_type': None}
+SMAPE: 11.220103210944162, 47.54153851634425, 15.062659511119122
+MAE: 41.54446286845882, 204.32831800293314, 56.013441121507284
+SPL: 0.8843529419617409, 0.9542562680714496, 1.0257748663851445

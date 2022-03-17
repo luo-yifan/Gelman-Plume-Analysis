@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'ffill', 'transformations': {'0': 'MinMaxScaler', '1': 'SeasonalDifference', '2': 'MinMaxScaler', '3': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {'lag_1': 12, 'method': 'Mean'}, '2': {}, '3': {}}}
+{'level': 'random walk with drift', 'maxiter': 100, 'cov_type': 'opg', 'method': 'nm', 'autoregressive': 2, 'regression_type': 'Holiday'}
+SMAPE: 6.68512583125553e-07, 34.66666785314052
+MAE: 3.3425629042405093e-09, 1.3000000047444729
+SPL: 1.7998415638218126e-09, 1.3000000047444729

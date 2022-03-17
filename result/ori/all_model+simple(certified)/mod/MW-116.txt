@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'rolling_mean', 'transformations': {'0': 'MaxAbsScaler', '1': 'QuantileTransformer', '2': 'PowerTransformer', '3': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 3}, '2': {}, '3': {'part': 'cycle', 'lamb': 1600}}}
+{}
+SMAPE: 10.245617446904053, 28.883433347283688
+MAE: 41.12286360947186, 206.63638815214935
+SPL: 0.10974300628167608, 3.421993566139378

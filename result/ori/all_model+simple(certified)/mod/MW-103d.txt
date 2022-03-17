@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score', 'models': {'0af4301fe60be6dbe06c515c2a03f879': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Weighted_Mean"}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "DifferencedTransformer", "1": "MaxAbsScaler", "2": "HPFilter"}, "transformation_params": {"0": {}, "1": {}, "2": {"part": "trend", "lamb": 6.25}}}'}, 'e4c8fdbdacc47c41676a9c94ec44f50e': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Weighted_Mean"}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "DifferencedTransformer", "1": "Detrend", "2": "HPFilter"}, "transformation_params": {"0": {}, "1": {"model": "GLS", "phi": 1, "window": 90}, "2": {"part": "trend", "lamb": 6.25}}}'}, 'aa41551674682c4975198f0b12e24ff8': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "DifferencedTransformer", "1": "RobustScaler"}, "transformation_params": {"0": {}, "1": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 7.106547675325594, 25.006931211008972
+MAE: 0.5599459743613207, 3.5957956986655
+SPL: 0.1462908743325613, 0.2739454462816027

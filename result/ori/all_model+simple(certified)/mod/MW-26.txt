@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'akima', 'transformations': {'0': 'ClipOutliers', '1': 'Discretize', '2': 'ClipOutliers', '3': 'Log'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'discretization': 'upper', 'n_bins': 20}, '2': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '3': {}}}
+{}
+SMAPE: 69.86834268207649, 77.39465308833138, 93.56749311294766
+MAE: 5.700000000000001, 30.499044011792797, 58.666666666666664
+SPL: 0.03480558182708147, 0.08844759603460757, 0.09859784485064058

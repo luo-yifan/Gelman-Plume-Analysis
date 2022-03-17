@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'RobustScaler', '1': 'QuantileTransformer', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 6}, '2': {'lag_1': 12, 'method': 'Median'}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 24.0, 130.36690085870413, 29.217391304347824
+MAE: 0.3, 2.7700000000000005, 0.32999999999999996
+SPL: 0.4964054374425471, 7.386666666666668, 0.32999999999999996

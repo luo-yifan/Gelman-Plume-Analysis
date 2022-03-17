@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'time', 'transformations': {'0': 'DatepartRegression'}, 'transformation_params': {'0': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'recurring', 'polynomial_degree': None}}}
+{'k': 2, 'ridge_param': 2e-06, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'input_order'}
+SMAPE: 7.236467790202122, 20.84533556319121, 43.59019692910606
+MAE: 160.90698015055978, 430.203772308929, 1410.493013087515
+SPL: 0.1455681891171377, 0.32034558502763677, inf

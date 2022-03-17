@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'fake_date', 'transformations': {'0': 'DifferencedTransformer', '1': 'SinTrend'}, 'transformation_params': {'0': {}, '1': {}}}
+{'method': 'Mean'}
+SMAPE: 7.284357988678101, 15.480181726893667
+MAE: 5.878103370960142, 6.382942447587356
+SPL: 0.8094604095955314, 4.570723237754811

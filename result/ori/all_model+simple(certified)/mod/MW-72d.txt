@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'linear', 'transformations': {'0': 'PctChangeTransformer', '1': 'Detrend', '2': 'Detrend'}, 'transformation_params': {'0': {}, '1': {'model': 'GLS', 'phi': 1, 'window': None}, '2': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{}
+SMAPE: 47.52351688769347, 8.37337602053618, 15.72139566006904
+MAE: 229.24688932093554, 195.40740108879157, 531.2926243724783
+SPL: 0.3673998074510277, 0.4948146079160386, 0.6146259907640114

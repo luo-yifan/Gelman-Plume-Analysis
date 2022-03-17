@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'cubic', 'transformations': {'0': 'DifferencedTransformer', '1': 'convolution_filter'}, 'transformation_params': {'0': {}, '1': {}}}
+{'method': 'Midhinge'}
+SMAPE: 7.021545071646304, 29.8337227880176
+MAE: 8.35, 76.075
+SPL: 0.4525343680709533, 0.7630487804878048

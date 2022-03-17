@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'mean', 'transformations': {'0': 'PowerTransformer', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 6}}}
+{'regression_model': {'model': 'SVM', 'model_params': {}}, 'datepart_method': 'simple_2', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 1.7763568394002487e-13, 0.0, 32.727272727272734
+MAE: 8.881784197001252e-16, 0.0, 0.9
+SPL: 1.4802973661668755e-15, 0.0, 0.9

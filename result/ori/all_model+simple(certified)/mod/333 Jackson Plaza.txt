@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'ffill', 'transformations': {'0': 'QuantileTransformer', '1': 'PositiveShift', '2': 'Detrend', '3': 'ClipOutliers'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 7}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'method': 'clip', 'std_threshold': 2, 'fillna': None}}}
+{'method': 'Median'}
+SMAPE: 24.946768630979157, 174.646694478247, 77.4743345886564
+MAE: 6.2, 932.8456391322546, 6445.680803026027
+SPL: 0.0007836201786734038, 0.07896014988032168, 0.3232500862193157

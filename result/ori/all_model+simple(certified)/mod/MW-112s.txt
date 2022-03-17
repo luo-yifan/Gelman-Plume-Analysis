@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'EWMAFilter', '1': 'CenterLastValue', '2': 'bkfilter', '3': 'SeasonalDifference'}, 'transformation_params': {'0': {'span': 10}, '1': {'rows': 6}, '2': {}, '3': {'lag_1': 7, 'method': 'Mean'}}}
+{}
+SMAPE: 0.008938685823530036, 13.333333333333332
+MAE: 4.4695428373242584e-05, 0.1
+SPL: 0.003864404098088325, 0.1

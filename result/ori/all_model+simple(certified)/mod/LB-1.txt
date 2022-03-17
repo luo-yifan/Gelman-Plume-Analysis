@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'bestn_horizontal', 'models': {'2887d2af24ace64615ccf0154ef2e4be': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Mean"}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "SinTrend"}, "transformation_params": {"0": {}, "1": {}}}'}, '1ae4ae36d2b6c0b94e9424171c0c9a00': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": "additive", "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "ClipOutliers", "1": "QuantileTransformer"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3, "fillna": null}, "1": {"output_distribution": "uniform", "n_quantiles": 7}}}'}, '2b46a38a640256cadcb320ef0e10a3bf': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "lastvalue", "lag_1": 2, "lag_2": 7}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "SinTrend", "1": "Round", "2": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": 2, "on_transform": false, "on_inverse": true}, "2": {}}}'}}, 'model_weights': {'1ae4ae36d2b6c0b94e9424171c0c9a00': 0.0, '2887d2af24ace64615ccf0154ef2e4be': 0.0, '2b46a38a640256cadcb320ef0e10a3bf': 0.0}, 'point_method': 'mean'}
+SMAPE: 0.0, 0.0, 0.0
+MAE: nan, nan, nan
+SPL: nan, nan, nan

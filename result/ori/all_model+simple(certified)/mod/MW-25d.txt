@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'rolling_mean', 'transformations': {'0': 'Discretize', '1': 'bkfilter', '2': 'MaxAbsScaler'}, 'transformation_params': {'0': {'discretization': 'lower', 'n_bins': 5}, '1': {}, '2': {}}}
+{'k': 1, 'ridge_param': 2e-06, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'input_order'}
+SMAPE: 40.13134682610907, 54.509361432518205, 6.563082443791944
+MAE: 36.88798282300453, 64.29790633171869, 18.555300888373665
+SPL: 0.01953838947125119, 0.028163825940760223, 0.021096330592958745

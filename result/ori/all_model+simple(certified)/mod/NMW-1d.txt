@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'fake_date', 'transformations': {'0': 'ClipOutliers', '1': 'Slice', '2': 'DatepartRegression', '3': 'Round'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {'method': 0.5}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 1.0}}, 'datepart_method': 'simple', 'polynomial_degree': None}, '3': {'decimals': 1, 'on_transform': True, 'on_inverse': True}}}
+{}
+SMAPE: 5.396405837713898, 16.79258314475264, 22.227394485853075
+MAE: 38.17142857142858, 116.6714285714286, 181.06
+SPL: 0.06615777715721864, 0.09472137349046998, 0.07583280327124035

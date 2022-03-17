@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'ffill', 'transformations': {'0': 'DifferencedTransformer', '1': 'Detrend', '2': 'StandardScaler', '3': 'StandardScaler'}, 'transformation_params': {'0': {}, '1': {'model': 'GLS', 'phi': 1, 'window': 30}, '2': {}, '3': {}}}
+{'k': 3, 'ridge_param': 2e-05, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 10, 'batch_method': 'max_sorted'}
+SMAPE: 37.199669002322864, 8.030532608935552, 7.394351551873439
+MAE: 1.3008049756462348, 1.4742775738748761, 1.9024315128733427
+SPL: 0.11189451603695891, 0.09860774978800108, 0.10992474042314036

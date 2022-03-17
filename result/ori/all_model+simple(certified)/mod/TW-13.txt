@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'9bf2ab5ad9e416a03bc7ee5cb43b2dee': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "pad", "transformations": {"0": "RobustScaler", "1": "convolution_filter", "2": "CenterLastValue", "3": "RobustScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {"rows": 3}, "3": {}}}'}, '4ad7bed6973a8e2988b204519e51f675': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "KNNImputer", "transformations": {"0": "RobustScaler", "1": "convolution_filter", "2": "MinMaxScaler", "3": "CenterLastValue", "4": "RobustScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"rows": 3}, "4": {}}}'}, '5a437d042eb6fe20a63def826ed69a9e': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Exp_Weighted_Mean"}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "ClipOutliers", "1": "Slice", "2": "IntermittentOccurrence"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 1, "fillna": null}, "1": {"method": 100}, "2": {"center": "mean"}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 10.940885987143332
+MAE: 59.94944050706097
+SPL: 0.11830003727840685

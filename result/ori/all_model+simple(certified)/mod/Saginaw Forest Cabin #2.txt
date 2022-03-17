@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'mean', 'transformations': {'0': 'ClipOutliers', '1': 'MinMaxScaler', '2': 'CenterLastValue', '3': 'HPFilter'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '1': {}, '2': {'rows': 5}, '3': {'part': 'cycle', 'lamb': 1600}}}
+{'family': 'Gaussian', 'constant': False, 'regression_type': None}
+SMAPE: 13.33381020547468, 53.333413940151864, 84.00060093696757
+MAE: 0.10000230466359705, 1.100000950451424, 1.6000073770677077
+SPL: 0.2019064703620059, 0.4317866756393447, 0.2026877113643537

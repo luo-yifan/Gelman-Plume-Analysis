@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'rolling_mean', 'transformations': {'0': 'Log', '1': 'Discretize'}, 'transformation_params': {'0': {}, '1': {'discretization': 'center', 'n_bins': 5}}}
+{'damped_trend': False, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 122.08383114830004, 74.6078270252302, 40.52043818442932
+MAE: 572.6126543504837, 255.33884528091735, 338.2320074243351
+SPL: 0.17504122623330906, 0.22494668101800688, 0.1846585494659558

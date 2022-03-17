@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'pad', 'transformations': {'0': 'ClipOutliers', '1': 'MinMaxScaler'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '1': {}}}
+{}
+SMAPE: 9.932875629055545, 20.9394800880993
+MAE: 49.0, 154.8
+SPL: 0.383668903803132, 0.8672268907563025

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'akima', 'transformations': {'0': 'MaxAbsScaler', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'HPFilter', '4': 'STLFilter', '5': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 2}, '2': {}, '3': {'part': 'cycle', 'lamb': 1600}, '4': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}, '5': {}}}
+{'regression_model': {'model': 'SVM', 'model_params': {}}, 'datepart_method': 'simple', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 13.333333333333332, 36.99649273388286
+MAE: 0.1, 0.3998687671365689
+SPL: 0.08316480104208593, 0.9900279684194361

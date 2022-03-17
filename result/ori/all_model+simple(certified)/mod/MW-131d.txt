@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'quadratic', 'transformations': {'0': 'MinMaxScaler', '1': 'ClipOutliers', '2': 'Detrend'}, 'transformation_params': {'0': {}, '1': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '2': {'model': 'Linear', 'phi': 1, 'window': 365}}}
+{'level': 'random trend', 'maxiter': 100, 'cov_type': 'robust', 'method': 'bfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 5.412668339286242e-05
+MAE: 2.7063349834488547e-07
+SPL: 0.12002628455884139

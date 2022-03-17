@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'ffill', 'transformations': {'0': 'PowerTransformer', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}}}
+{}
+SMAPE: 27.64205570782761, 22.073268847108736, 0.0
+MAE: 22.000000000000018, 14.20000000000044, inf
+SPL: 0.016187522993640627, 0.0067408618598029406, inf

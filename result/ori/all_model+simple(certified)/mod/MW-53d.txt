@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'ClipOutliers', '1': 'Slice', '2': 'MinMaxScaler'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {'method': 100}, '2': {}}}
+{}
+SMAPE: 0.0, 52.444444444444436, 8.0
+MAE: 0.0, 0.7, 0.2
+SPL: 0.0, 0.35, 0.052631578947368425

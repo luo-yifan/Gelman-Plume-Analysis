@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill', 'transformations': {'0': 'SeasonalDifference', '1': 'PctChangeTransformer', '2': 'MaxAbsScaler', '3': 'HPFilter'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'LastValue'}, '1': {}, '2': {}, '3': {'part': 'trend', 'lamb': 6.25}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 2, 'max_depth': 20}}, 'mean_rolling_periods': 30, 'macd_periods': 12, 'std_rolling_periods': 30, 'max_rolling_periods': 364, 'min_rolling_periods': 60, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': 5, 'ewm_alpha': None, 'ewm_var_alpha': 0.5, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 56.376545782716484, 175.37625323197574, 124.80147634409602
+MAE: 318.8277677923068, 1033.0534360469367, 73.53999999999999
+SPL: 1.5632232210158272, 13.673122077430973, 98.05333333333333

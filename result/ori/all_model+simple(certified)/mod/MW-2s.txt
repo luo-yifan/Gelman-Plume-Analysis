@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'rolling_mean', 'transformations': {'0': 'PctChangeTransformer', '1': 'SeasonalDifference', '2': 'Detrend', '3': 'RollingMeanTransformer'}, 'transformation_params': {'0': {}, '1': {'lag_1': 7, 'method': 'Median'}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'fixed': True, 'window': 7}}}
+{'method': 'mean', 'lag_1': 2, 'lag_2': 63}
+SMAPE: 33.08525625127441, 58.82623788074368, 81.79271035442828
+MAE: 0.6863760174162803, 1.4841007757319693, 13.83886063197497
+SPL: 0.00785424955759686, 0.0065671263423431065, 0.03859407993996249

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'quadratic', 'transformations': {'0': 'MaxAbsScaler', '1': 'QuantileTransformer', '2': 'Slice'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {'method': 0.2}}}
+{'family': 'Poisson', 'constant': False, 'regression_type': None}
+SMAPE: 33.94505139076446, 47.0086624656309, 20.956569993055304
+MAE: 63.699869286906754, 136.862353920121, 89.92471095512964
+SPL: 0.05344497980158825, 0.11570252772139472, 0.3132534506892682

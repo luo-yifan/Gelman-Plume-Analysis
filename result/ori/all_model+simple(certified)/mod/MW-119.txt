@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'pchip', 'transformations': {'0': 'MaxAbsScaler', '1': 'EWMAFilter', '2': 'RobustScaler', '3': 'DifferencedTransformer', '4': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {'span': 12}, '2': {}, '3': {}, '4': {'part': 'trend', 'lamb': 129600}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 2, 'max_depth': 20}}, 'mean_rolling_periods': 5, 'macd_periods': 12, 'std_rolling_periods': 10, 'max_rolling_periods': 4, 'min_rolling_periods': 49, 'quantile90_rolling_periods': 90, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 39.63837053031251, 68.68399283642067
+MAE: 26.147593211884605, 38.369925374109485
+SPL: 0.24742815442845956, 0.28962015897587917

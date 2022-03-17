@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'RobustScaler', '1': 'RollingMean100thN', '2': 'MaxAbsScaler', '3': 'RollingMean100thN'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {}}}
+{}
+SMAPE: 0.0, 24.0, 0.0
+MAE: 0.0, 0.3, 0.0
+SPL: 0.0, 0.14042553191489363, 0.0

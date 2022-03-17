@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'rolling_mean', 'transformations': {'0': 'SinTrend', '1': 'MaxAbsScaler', '2': 'MinMaxScaler', '3': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{'deseasonalize': True, 'difference': True, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 3, 'use_mle': False}
+SMAPE: 28.41206510997519, 148.21186391160344
+MAE: 24.406853449205673, 19.0
+SPL: 1.282904174666966, 18.9999598327052

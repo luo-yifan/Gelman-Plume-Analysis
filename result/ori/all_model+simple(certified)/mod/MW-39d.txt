@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'akima', 'transformations': {'0': 'HPFilter', '1': 'RobustScaler', '2': 'RobustScaler'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 6.25}, '1': {}, '2': {}}}
+{'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [25, 15, 25], 'max_iter': 250, 'activation': 'tanh', 'solver': 'lbfgs', 'early_stopping': False, 'learning_rate_init': 0.001}}, 'mean_rolling_periods': 5, 'macd_periods': 60, 'std_rolling_periods': 10, 'max_rolling_periods': 4, 'min_rolling_periods': 60, 'quantile90_rolling_periods': 90, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 61.62221272793645, 21.126467676236807, 24.04431332649214
+MAE: 28.281120521226757, 23.912683858511013, 54.90209246721255
+SPL: 0.2182324018561405, 0.18637986105074755, 0.198395721508566

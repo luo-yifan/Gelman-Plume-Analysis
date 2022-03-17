@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score_unique', 'models': {'a92ab7fb50f6765ad4803621eaf8e158': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "lastvalue", "lag_1": 83, "lag_2": 7}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "MinMaxScaler", "1": "PowerTransformer", "2": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {}, "2": {"lag_1": 12, "method": "Mean"}}}'}, 'b8cbcf273b721c317a9de0b5006983a3': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "median", "transformations": {"0": "MinMaxScaler", "1": "PowerTransformer", "2": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {}, "2": {"lag_1": 12, "method": "Mean"}}}'}, '98f0ef398cdd5a74e9a314c6a1cb6931': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": "additive", "seasonal_periods": 4}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "MinMaxScaler", "1": "PowerTransformer", "2": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {}, "2": {"lag_1": 12, "method": "Mean"}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 19.260102259454627, 116.67939903234019, 135.93073593073592
+MAE: 0.20106924764331602, 5.999999999999998, 2.8999999999999995
+SPL: 0.04635188582005283, 9.33333333333333, 1.4499999999999997

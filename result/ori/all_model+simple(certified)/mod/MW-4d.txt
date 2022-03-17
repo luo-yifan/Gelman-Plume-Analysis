@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'rolling_mean', 'transformations': {'0': 'MaxAbsScaler', '1': 'Slice', '2': 'DifferencedTransformer', '3': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {'method': 0.5}, '2': {}, '3': {}}}
+{'level': 'deterministic constant', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 68.78105935015877, 27.52403773186457, 22.46425291918138
+MAE: 498.20001984498805, 413.4499919699207, 219.22000470147083
+SPL: 0.6150456538093421, 0.5116526227887132, 0.4199022383996558

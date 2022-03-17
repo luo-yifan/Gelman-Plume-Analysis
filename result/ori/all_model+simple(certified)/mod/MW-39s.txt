@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'rolling_mean', 'transformations': {'0': 'RobustScaler', '1': 'QuantileTransformer', '2': 'HPFilter', '3': 'PowerTransformer', '4': 'PowerTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 7}, '2': {'part': 'cycle', 'lamb': 1600}, '3': {}, '4': {}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 54.80201399556239, 92.72431915910178, 158.01089636978844
+MAE: 0.8200000000000001, 7.7, 31.800000000000004
+SPL: 0.008607005192048532, 0.029630075443491978, 0.028463315183060812
