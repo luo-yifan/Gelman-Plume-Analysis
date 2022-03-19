@@ -287,19 +287,13 @@ def run_from_pixel_rec(output_directory, m_list, n_jobs):
 
 
 if __name__ == '__main__':
-    model_list = [
-        'LastValueNaive',
-        'RollingRegression',
-        'UnobservedComponents',
-        'ZeroesNaive',
-        'AverageValueNaive',
-        'DatepartRegression',
-        'GLS',
-        'GLM',
-        'ETS',
-    ]
+
     # run_from_ori( '../result/ori/simple_parallel_test/', 'default', 32, False)
 
+    # run_from_ori( '../result/ori/rm5_parallel_test/', 'default', 32, True)
+
     # run_from_rec('../result/well_rec/simple_parallel_test/', 'default',32,generate_name_dict(), False)
+
+    # run_from_rec('../result/well_rec/rm5_parallel_test/', 'default',32,generate_name_dict(), True)
 
     run_from_pixel_rec('../result/well_rec/simple_parallel_test/', 'default', 32)
