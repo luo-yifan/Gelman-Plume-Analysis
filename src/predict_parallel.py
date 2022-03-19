@@ -165,14 +165,18 @@ def run_from_ori(output_directory, m_list, n_jobs, remove_recent_years=False):
 
 def run_from_rec(output_directory, m_list, n_jobs, name_dict, remove_recent_years=False):
     create_dir(output_directory)
-    name_list = [name for name in os.listdir("../data/Well_Rec_txt/")]
+    name_list = [name for name in os.listdir("../data/Well_Rec_txt2/")]
     count = 0
     len_name_list = len(name_list)
     for i in name_list:
         count += 1
         name = i.split('.')[1]
         if i.split('.')[2] == 'S2020':
+            if name not in name_dict.keys():
+                name = name.split('_')[0]
+
             name = name_dict[name]
+
             if os.path.exists(output_directory + '/cache/' + name):
                 continue
             well_data = pd.read_csv('../data/Well_Rec_txt/' + i)
@@ -294,6 +298,6 @@ if __name__ == '__main__':
 
     # run_from_rec('../result/well_rec/simple_parallel_test/', 'default',32,generate_name_dict(), False)
 
-    # run_from_rec('../result/well_rec/rm5_parallel_test/', 'default',32,generate_name_dict(), True)
+    run_from_rec('../result/well_rec/rm5_parallel_test/', 'default',32,generate_name_dict(), True)
 
-    run_from_pixel_rec('../result/well_rec/simple_parallel_test/', 'default', 32)
+    # run_from_pixel_rec('../result/well_rec/simple_parallel_test/', 'default', 32)
