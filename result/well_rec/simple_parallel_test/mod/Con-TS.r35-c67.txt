@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'KNNImputer', 'transformations': {'0': 'QuantileTransformer', '1': 'Detrend'}, 'transformation_params': {'0': {'output_distribution': 'normal', 'n_quantiles': 10}, '1': {'model': 'Linear', 'phi': 1, 'window': 10}}}
+{'k': 2, 'ridge_param': 2, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'input_order'}
+SMAPE: 0.46135750191017316, 4.687992197676207, 9.319259366685056
+MAE: 0.001238786063659847, 0.01210619526159542, 0.02150412929078534
+SPL: 0.0979974046393005, 0.9187199653559399, 1.515540091209532

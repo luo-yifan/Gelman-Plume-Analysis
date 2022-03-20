@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'rolling_mean', 'transformations': {'0': 'ClipOutliers', '1': 'SinTrend', '2': 'EWMAFilter', '3': 'PowerTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {}, '2': {'span': 3}, '3': {}}}
+{'regression_model': {'model': 'SVM', 'model_params': {}}, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 1.8916394196715227, 4.115236433171719, 8.315555103614665
+MAE: 0.04956231325488769, 0.11331493451454806, 0.26773367671586207
+SPL: 0.2656277999240765, 0.35595826998094493, 5.500483349970296

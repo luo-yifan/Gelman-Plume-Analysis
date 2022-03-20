@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'rolling_mean', 'transformations': {'0': 'Detrend', '1': 'DifferencedTransformer', '2': 'Detrend', '3': 'QuantileTransformer'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'output_distribution': 'uniform', 'n_quantiles': 9}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 50, 'min_samples_leaf': 1, 'max_depth': 10}}, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 6.307280835523249, 80.0, 0.0
+MAE: 0.19289572684096107, 1.170164287826576, 0.0
+SPL: 0.7140976873276258, 0.33711293160934236, 0.0075004473401436645

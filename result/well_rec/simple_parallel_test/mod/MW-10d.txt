@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'median', 'transformations': {'0': 'HPFilter', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 129600}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}}}
+{'family': 'NegativeBinomial', 'constant': False, 'regression_type': None}
+SMAPE: 33.59016178133378, 6.347019529686085, 11.375697475353503
+MAE: 269.60625162788995, 44.63936927194152, 79.85890847560265
+SPL: 0.83368855418012, 0.5849695873976892, 0.7497353241903357

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'pad', 'transformations': {'0': 'Detrend', '1': 'SinTrend', '2': 'Detrend'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': 30}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{'regression_model': {'model': 'KNN', 'model_params': {'n_neighbors': 3, 'weights': 'uniform', 'p': 2, 'leaf_size': 50}}, 'mean_rolling_periods': 5, 'macd_periods': 60, 'std_rolling_periods': None, 'max_rolling_periods': None, 'min_rolling_periods': 81, 'quantile90_rolling_periods': None, 'quantile10_rolling_periods': 10, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': 12, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 4.6093436427643955, 8.29278736827978, 9.227545356144454
+MAE: 18.90795524244719, 40.20224466186909, 42.7133989081092
+SPL: 0.554035390433852, 0.5918484559919946, 0.8865783322472562

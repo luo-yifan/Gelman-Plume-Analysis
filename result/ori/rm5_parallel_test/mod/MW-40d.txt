@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'fake_date', 'transformations': {'0': 'PowerTransformer', '1': 'DifferencedTransformer', '2': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {}, '2': {'part': 'trend', 'lamb': 129600}}}
+{}
+SMAPE: 6.883382752675733e-12, 2.797762022055355e-12, 4.4408920985006274e-14
+MAE: 3.441691376337985e-14, 1.3988810110276972e-14, 2.220446049250313e-16
+SPL: 1.7208456881689926e-13, 4.6629367034256575e-14, 3.7007434154171886e-16

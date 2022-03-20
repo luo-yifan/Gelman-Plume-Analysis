@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'RobustScaler', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 8}}}
+{'regression_model': {'model': 'Ridge', 'model_params': {'alpha': 1e-05}}, 'mean_rolling_periods': None, 'macd_periods': None, 'std_rolling_periods': 90, 'max_rolling_periods': None, 'min_rolling_periods': None, 'quantile90_rolling_periods': None, 'quantile10_rolling_periods': 10, 'ewm_alpha': 0.8, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 10, 'holiday': False, 'probabilistic': False}
+SMAPE: 30.233515276933424, 45.454525595432976, 36.859382932397565
+MAE: 6.811219980949529, 0.9376821358246413, 8.19392108528064
+SPL: 0.6894411931496784, 0.20226947172270124, 2.8659744168600962

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'SeasonalDifference', '1': 'SeasonalDifference', '2': 'DatepartRegression', '3': 'QuantileTransformer'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'Median'}, '1': {'lag_1': 12, 'method': 'Median'}, '2': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'expanded', 'polynomial_degree': None}, '3': {'output_distribution': 'uniform', 'n_quantiles': 9}}}
+{'level': 'smooth trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 25.630855817251074, 35.906064717870926, 25.735506878909383
+MAE: 214.79325222301614, 446.8140106323419, 253.687562419307
+SPL: 0.9309038107872967, 1.169117751557174, 1.340285980896079

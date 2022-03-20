@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'bkfilter', '1': 'RollingMeanTransformer', '2': 'MinMaxScaler', '3': 'CenterLastValue'}, 'transformation_params': {'0': {}, '1': {'fixed': True, 'window': 10}, '2': {}, '3': {'rows': 1}}}
+{'level': 'random walk with drift', 'maxiter': 100, 'cov_type': 'approx', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 13.910220646720834
+MAE: 10.363953745967859
+SPL: 0.21650066808869295

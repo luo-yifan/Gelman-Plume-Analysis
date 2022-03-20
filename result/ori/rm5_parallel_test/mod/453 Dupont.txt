@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'8657b4f2466ebfb562799efc493a36e8': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "akima", "transformations": {"0": "PowerTransformer", "1": "RobustScaler", "2": "Discretize", "3": "EWMAFilter", "4": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {}, "2": {"discretization": "lower", "n_bins": 20}, "3": {"span": 3}, "4": {"lag_1": 7, "method": "Mean"}}}'}, '85acc77349a759ea3a37ac26c5272cdf': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "fixed slope", "maxiter": 100, "cov_type": "opg", "method": "nm", "autoregressive": 1, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "Detrend"}, "transformation_params": {"0": {}, "1": {"model": "GLS", "phi": 1, "window": 90}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 27.899862853746907
+MAE: 1.018255135114116
+SPL: 0.03442475209229839

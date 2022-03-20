@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'mean', 'transformations': {'0': 'PctChangeTransformer', '1': 'QuantileTransformer', '2': 'IntermittentOccurrence'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}, '2': {'center': 'mean'}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 5.1508669593539205, 7.0422064091785455, 59.201923382834956
+MAE: 10.20734854449854, 15.250542982655748, 305.4018844118251
+SPL: 0.11180449432910411, 0.10687607605864206, 0.27613319045414814

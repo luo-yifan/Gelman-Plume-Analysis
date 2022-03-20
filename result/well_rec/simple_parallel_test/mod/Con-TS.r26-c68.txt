@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'linear', 'transformations': {'0': 'DifferencedTransformer', '1': 'QuantileTransformer', '2': 'bkfilter', '3': 'MinMaxScaler', '4': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'normal', 'n_quantiles': 10}, '2': {}, '3': {}, '4': {'lag_1': 12, 'method': 'LastValue'}}}
+{}
+SMAPE: 4.5614730557173795, 156.75547856403418, 16.749423247901316
+MAE: 0.388849935017798, 3.2679086640477166, 0.13083176612853997
+SPL: 5.4437865535200585, 22.9236989059068, 2.6404019223429946

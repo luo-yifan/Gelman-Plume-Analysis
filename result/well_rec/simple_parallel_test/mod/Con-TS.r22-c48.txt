@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'981522a3bb46e3e114480868f613cf70': {'Model': 'DatepartRegression', 'ModelParameters': '{"regression_model": {"model": "RandomForest", "model_params": {"n_estimators": 300, "min_samples_leaf": 1, "bootstrap": true}}, "datepart_method": "simple", "polynomial_degree": null, "regression_type": null}', 'TransformationParameters': '{"fillna": "pchip", "transformations": {"0": "MinMaxScaler", "1": "QuantileTransformer", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 10}, "2": {}}}'}, 'c4a215db32910eb36ad18e8c5bd7ce2d': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 0.0002, "warmup_pts": 1, "seed_pts": 1, "seed_weighted": null, "batch_size": 10, "batch_method": "input_order"}', 'TransformationParameters': '{"fillna": "pchip", "transformations": {"0": "Detrend", "1": "QuantileTransformer"}, "transformation_params": {"0": {"model": "GLS", "phi": 1, "window": null}, "1": {"output_distribution": "uniform", "n_quantiles": 10}}}'}}, 'dis_frac': 0.5, 'FirstModel': '981522a3bb46e3e114480868f613cf70', 'SecondModel': 'c4a215db32910eb36ad18e8c5bd7ce2d'}
+SMAPE: 20.450766317168647, 16.19912070886437, 15.522049382015904
+MAE: 12.394920844751722, 22.284946183070197, 19.762731704508948
+SPL: 1.631202570039912, 1.92440811792994, 4.819336286237915

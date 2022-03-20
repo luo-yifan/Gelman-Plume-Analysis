@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'QuantileTransformer', '1': 'DifferencedTransformer', '2': 'Detrend'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': 900}}}
+{'window_size': 4, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 50000, 'regression_type': None, 'regression_model': {'model': 'KNN', 'model_params': {'n_neighbors': 5, 'weights': 'distance', 'p': 2, 'leaf_size': 30}}}
+SMAPE: 23.75916177011647, 16.44618619068882, 16.483789116215803
+MAE: 73.69776611328099, 52.902716064453, 65.99276123046859
+SPL: 0.5217078614186084, 0.339753300755437, 0.35864443440437394

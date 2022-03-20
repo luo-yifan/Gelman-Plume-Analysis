@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'fake_date', 'transformations': {'0': 'Slice', '1': 'MaxAbsScaler', '2': 'DatepartRegression'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}, '2': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'simple', 'polynomial_degree': 2}}}
+{'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 50, 'loss': 'linear', 'base_estimator': 'LinReg', 'learning_rate': 1}}, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 10.176010413231221, 5.2153363744756716, 26.83397247689117
+MAE: 33.04745749436493, 16.722819724114014, 103.6
+SPL: 0.03709612982765092, 0.02083875005489297, 0.06121122599704579

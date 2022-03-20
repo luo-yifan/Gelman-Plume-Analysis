@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'quadratic', 'transformations': {'0': 'Slice', '1': 'bkfilter', '2': 'MaxAbsScaler'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}, '2': {}}}
+{'level': 'local linear deterministic trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'bfgs', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 0.4428945240886005, 0.17680168188750728, 0.34321432389187045
+MAE: 3.9738625885908734, 1.5900959205401932, 3.104016078425161
+SPL: 0.06410980304236673, 0.015560433385070006, 0.03495724123286425

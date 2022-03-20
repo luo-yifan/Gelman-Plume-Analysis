@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'zero', 'transformations': {'0': 'Slice', '1': 'EWMAFilter'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'span': 3}}}
+{'regression_model': {'model': 'RandomForest', 'model_params': {'n_estimators': 300, 'min_samples_leaf': 1, 'bootstrap': True}}, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

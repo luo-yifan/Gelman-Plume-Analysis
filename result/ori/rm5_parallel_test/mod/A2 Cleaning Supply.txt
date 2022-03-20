@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'mean', 'transformations': {'0': 'ClipOutliers'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}}}
+{'regression_model': {'model': 'RandomForest', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'bootstrap': True}}, 'datepart_method': 'simple_2', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 35.65529245110977, 38.83838717057763
+MAE: 28.192, 49.888
+SPL: 0.644030172413793, 1.4458766256710045

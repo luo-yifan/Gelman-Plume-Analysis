@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'zero', 'transformations': {'0': 'Discretize', '1': 'PctChangeTransformer', '2': 'DifferencedTransformer', '3': 'MinMaxScaler'}, 'transformation_params': {'0': {'discretization': 'center', 'n_bins': 20}, '1': {}, '2': {}, '3': {}}}
+{'level': 'smooth trend', 'maxiter': 100, 'cov_type': 'opg', 'method': 'bfgs', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 41.575214769042894, 59.916860267747154, 29.970418327601358
+MAE: 128.37286446315312, 453.65831696229327, 404.0063089342873
+SPL: 0.33298949737349137, 1.3936490987823822, 2.2663963839671752

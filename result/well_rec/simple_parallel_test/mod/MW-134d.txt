@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'StandardScaler', '1': 'RobustScaler', '2': 'MaxAbsScaler', '3': 'PctChangeTransformer', '4': 'StandardScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {}, '4': {}}}
+{'method': 'Weighted_Mean'}
+SMAPE: 3.9663796893630177, 5.0266983371030225, 0.7219280682462468
+MAE: 0.20846769279056437, 0.2543333182943387, 0.03469061110068168
+SPL: 1.078470457669515, 1.1241910113974665, 0.13078504158030235

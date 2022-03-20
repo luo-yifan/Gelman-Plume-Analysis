@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'quadratic', 'transformations': {'0': 'StandardScaler'}, 'transformation_params': {'0': {}}}
+{'regression_model': {'model': 'SVM', 'model_params': {}}, 'mean_rolling_periods': 30, 'macd_periods': 60, 'std_rolling_periods': 10, 'max_rolling_periods': 28, 'min_rolling_periods': 364, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': None, 'ewm_alpha': 0.2, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 1.3676036579507203, 4.504744736523841, 5.45486185916418
+MAE: 6.3344235842262835, 22.619414452769046, 26.809409822843236
+SPL: 1.9179974238935078, 1.8984309710429899, 9.551005235759614

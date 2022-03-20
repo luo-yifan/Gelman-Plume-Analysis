@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'zero', 'transformations': {'0': 'SinTrend', '1': 'MinMaxScaler', '2': 'StandardScaler', '3': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {}}}
+{'level': 'random trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 22.61662359910894, 3.5502773588163343, 32.69300889997984
+MAE: 4.6264430766807205, 1.4219991272195203, 11.414000931150863
+SPL: 0.5480750863907007, 0.31635211454846757, 3.445226727122267

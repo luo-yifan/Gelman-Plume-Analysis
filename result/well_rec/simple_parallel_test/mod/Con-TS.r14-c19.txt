@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'pchip', 'transformations': {'0': 'PositiveShift', '1': 'MinMaxScaler', '2': 'QuantileTransformer', '3': 'bkfilter', '4': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 10}, '3': {}, '4': {}}}
+{}
+SMAPE: 0.0, 0.0, 40.0
+MAE: 0.0, 0.0, 0.00747522115707398
+SPL: 0.0, 1.0528261466714164, 0.14550233272851246

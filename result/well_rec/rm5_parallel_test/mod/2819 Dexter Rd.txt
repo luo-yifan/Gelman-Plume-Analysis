@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'fake_date', 'transformations': {'0': 'Slice', '1': 'HPFilter'}, 'transformation_params': {'0': {'method': 0.5}, '1': {'part': 'trend', 'lamb': 129600}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 20.014326229224615, 19.57423270784938, 14.895953495104914
+MAE: 128.31025886994067, 126.83911589923093, 68.94251087748296
+SPL: 1.345234349607239, 1.4777408070091835, 1.6336936364627097

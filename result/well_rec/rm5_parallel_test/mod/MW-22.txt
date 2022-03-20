@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'linear', 'transformations': {'0': 'PctChangeTransformer', '1': 'Discretize', '2': 'Discretize'}, 'transformation_params': {'0': {}, '1': {'discretization': 'upper', 'n_bins': 10}, '2': {'discretization': 'lower', 'n_bins': 5}}}
+{'method': 'lastvalue', 'lag_1': 364, 'lag_2': 1}
+SMAPE: 22.94281446064861, 19.535473311108255, 8.265072572433619
+MAE: 348.1895974043535, 631.0573957508449, 320.0069821306132
+SPL: 0.11713248879803634, 0.13726811712300624, 0.18604203152075374

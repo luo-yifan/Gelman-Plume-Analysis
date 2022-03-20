@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'DifferencedTransformer', '1': 'CenterLastValue'}, 'transformation_params': {'0': {}, '1': {'rows': 3}}}
+{'deseasonalize': True, 'difference': True, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.4, 'use_mle': False}
+SMAPE: 28.738583349244323, 90.05283993471747, 69.237006203166
+MAE: 1.8877401608666389, 9.84629033594466, 5.8450489264458385
+SPL: 2.665489078838387, 3.940622571696538, 6.807178345280214

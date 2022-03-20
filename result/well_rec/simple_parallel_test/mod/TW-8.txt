@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'akima', 'transformations': {'0': 'QuantileTransformer'}, 'transformation_params': {'0': {'output_distribution': 'normal', 'n_quantiles': 9}}}
+{'window_size': 2, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 10}}}
+SMAPE: 2.2326216443413607, 7.619805163797501, 18.154469055379277
+MAE: 15.091115966182292, 42.141247147710715, 120.07506167818545
+SPL: 0.6531599075457216, 0.5905909588417929, 2.500662605585846

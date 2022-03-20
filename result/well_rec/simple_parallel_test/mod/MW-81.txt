@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'quadratic', 'transformations': {'0': 'Slice', '1': 'Slice', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'method': 0.5}, '1': {'method': 0.5}, '2': {}}}
+{'deseasonalize': True, 'difference': True, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 4, 'use_mle': False}
+SMAPE: 11.660876355961918, 1.3608237003968975, 21.97490342950197
+MAE: 31.813660878690825, 6.01135709074124, 99.1606790862716
+SPL: 1.141301451392039, 11.52530308425769, 7.240697945807303

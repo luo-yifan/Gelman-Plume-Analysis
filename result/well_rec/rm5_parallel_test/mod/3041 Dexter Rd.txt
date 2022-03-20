@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'ffill', 'transformations': {'0': 'HPFilter', '1': 'Detrend', '2': 'EWMAFilter', '3': 'PctChangeTransformer'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 6.25}, '1': {'model': 'Linear', 'phi': 0.998, 'window': 900}, '2': {'span': 3}, '3': {}}}
+{}
+SMAPE: 5.113367494388976, 3.555431070182563, 172.7759815910153
+MAE: 1.3630036398462444, 0.8205767106795975, 13.172633053341775
+SPL: 1.1126395550638402, 0.5492936418222594, 228.50241909984933

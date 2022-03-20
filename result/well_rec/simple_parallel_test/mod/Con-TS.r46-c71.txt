@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'fake_date', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend', '2': 'ClipOutliers'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '1': {'model': 'Linear'}, '2': {'method': 'clip', 'std_threshold': 2, 'fillna': None}}}
+{'level': 'local linear trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'powell', 'autoregressive': None, 'regression_type': None}
+SMAPE: 4.816753013370575, 152.50121209213563, 50.79302548850039
+MAE: 0.04194434977692716, 0.6473909090620896, 0.002792389921967417
+SPL: 0.6250517586450883, 1538.3054216909554, 11.621144781783265

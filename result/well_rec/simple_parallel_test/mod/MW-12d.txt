@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'ffill', 'transformations': {'0': 'Round', '1': 'Round', '2': 'HPFilter', '3': 'PowerTransformer'}, 'transformation_params': {'0': {'decimals': -1, 'on_transform': False, 'on_inverse': True}, '1': {'decimals': -1, 'on_transform': False, 'on_inverse': True}, '2': {'part': 'trend', 'lamb': 1600}, '3': {}}}
+{'method': 'mean', 'lag_1': 28, 'lag_2': 1}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

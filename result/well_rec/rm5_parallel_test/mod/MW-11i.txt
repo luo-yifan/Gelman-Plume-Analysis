@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'ffill', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'RollingMeanTransformer', '3': 'Discretize'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {'fixed': True, 'window': 10}, '3': {'discretization': 'center', 'n_bins': 10}}}
+{'method': 'lastvalue', 'lag_1': 364, 'lag_2': None}
+SMAPE: 37.96191855160107, 32.06294685517632, 10.885607318722714
+MAE: 4.625067242018821, 9.494733226403241, 5.504101490890005
+SPL: 0.4382807415732176, 0.532473220459811, 0.20858628452025232

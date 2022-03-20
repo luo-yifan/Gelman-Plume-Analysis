@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'rolling_mean', 'transformations': {'0': 'bkfilter', '1': 'Slice'}, 'transformation_params': {'0': {}, '1': {'method': 0.2}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 27.802392025269796, 56.38267856059925, 63.372161410376066
+MAE: 109.2427018261031, 211.69212489164389, 135.10125634457162
+SPL: 0.2017753210673683, 0.15929733821029704, 0.19910106703576488

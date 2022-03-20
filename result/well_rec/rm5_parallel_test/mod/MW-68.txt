@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'mean', 'transformations': {'0': 'QuantileTransformer', '1': 'MinMaxScaler', '2': 'QuantileTransformer'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 8}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 8}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'ElasticNet', 'model_params': {}}}
+SMAPE: 0.0, 0.0, 40.0
+MAE: 0.0, 0.0, 5.68256972045746
+SPL: 0.0, 0.0, 5.68256972045746

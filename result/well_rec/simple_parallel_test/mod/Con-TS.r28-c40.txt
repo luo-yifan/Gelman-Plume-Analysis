@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'median', 'transformations': {'0': 'Slice', '1': 'PowerTransformer'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}}}
+{'level': 'fixed intercept', 'maxiter': 50, 'cov_type': 'approx', 'method': 'powell', 'autoregressive': 1, 'regression_type': None}
+SMAPE: 2.2242729429180175, 0.0, 8.222009773527144
+MAE: 0.005008286274726215, inf, 0.015971034957647227
+SPL: 0.03860068592511807, inf, 0.03613584239777086

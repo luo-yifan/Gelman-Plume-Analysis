@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'fake_date', 'transformations': {'0': 'DifferencedTransformer'}, 'transformation_params': {'0': {}}}
+{'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 50, 'loss': 'linear', 'base_estimator': None, 'learning_rate': 1}}, 'mean_rolling_periods': 90, 'macd_periods': 60, 'std_rolling_periods': 10, 'max_rolling_periods': 4, 'min_rolling_periods': 96, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': 10, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 10.589111685641816, 114.14089746570565, 37.24930097611649
+MAE: 4.124999999999998, 19.5, 15.4
+SPL: 1.1749775007544527, 0.8176424883023038, 4.106744154415686

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'KNNImputer', 'transformations': {'0': 'Detrend', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'Detrend'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': 365}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {}, '3': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'ElasticNet', 'model_params': {}}}
+SMAPE: 7.825640863432757, 29.457391393857268, 14.538448838707046
+MAE: 2.815933552808167, 7.439852660903182, 1.998882840036218
+SPL: 0.3468044047504471, 6.628999637532326, 1.8899566549844746

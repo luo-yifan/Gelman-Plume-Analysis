@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'6f8c8e7bf004811bf3ed66f4de2e8283': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 0.002, "warmup_pts": 50, "seed_pts": 10, "seed_weighted": "exponential", "batch_size": 20, "batch_method": "input_order"}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "PowerTransformer", "1": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {"lag_1": 7, "method": "Median"}}}'}, '70ecc109430798f029099205b8181d72': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 0.002, "warmup_pts": 50, "seed_pts": 1, "seed_weighted": "exponential", "batch_size": 10, "batch_method": "input_order"}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "Detrend"}, "transformation_params": {"0": {}, "1": {"model": "GLS", "phi": 1, "window": null}}}'}}, 'dis_frac': 0.5, 'FirstModel': '70ecc109430798f029099205b8181d72', 'SecondModel': '6f8c8e7bf004811bf3ed66f4de2e8283'}
+SMAPE: 1.1455616644501767, 37.022906478922216, 75.19459426096789
+MAE: 0.04614656772717316, 2.617191449637712, 6.417975007019574
+SPL: 0.002294262002877459, 0.0781584303484617, 0.23262213518129665

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'MinMaxScaler', '1': 'PowerTransformer', '2': 'DatepartRegression', '3': 'Discretize', '4': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 0.05}}, 'datepart_method': 'simple', 'polynomial_degree': None}, '3': {'discretization': 'lower', 'n_bins': 10}, '4': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 2, 'max_depth': 20}}, 'mean_rolling_periods': 12, 'macd_periods': 60, 'std_rolling_periods': 5, 'max_rolling_periods': 4, 'min_rolling_periods': 24, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 7.775355815792065, 12.855481453282994, 34.84166518431974
+MAE: 13.618336301096992, 22.6666850352726, 166.2821379007704
+SPL: 0.05286861477519478, 0.07268197107623367, 0.4684226036154445

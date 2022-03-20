@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'zero', 'transformations': {'0': 'PositiveShift', '1': 'Discretize', '2': 'Discretize', '3': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {'discretization': 'upper', 'n_bins': 5}, '2': {'discretization': 'lower', 'n_bins': 5}, '3': {}}}
+{}
+SMAPE: 15.605460508581032, 32.73172392566489, 7.074878464319893
+MAE: 0.14913236634107, 0.24990466060478678, 0.03044254188335299
+SPL: 2.611139855290283, 4.592701450599015, 1.0969318600655462

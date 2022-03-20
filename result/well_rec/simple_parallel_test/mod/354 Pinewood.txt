@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'fake_date', 'transformations': {'0': 'RobustScaler', '1': 'QuantileTransformer', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}, '2': {}}}
+{}
+SMAPE: 0.0, 49.71580488977189, 3.9091272657702296
+MAE: 0.0, 0.3302667318291098, 0.11983528983942193
+SPL: 0.0, 1.6718602776068177, 0.7248261582498979

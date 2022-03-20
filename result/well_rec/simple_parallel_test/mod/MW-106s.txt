@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'fake_date', 'transformations': {'0': 'StandardScaler', '1': 'MaxAbsScaler', '2': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{'k': 1, 'ridge_param': 0.002, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 20, 'batch_method': 'input_order'}
+SMAPE: 25.21869534366892, 24.678295729996588, 46.74657753466309
+MAE: 51.916162209888775, 73.52048259949129, 680.4505411337692
+SPL: 0.46852209593808936, 0.2676880768330797, 1.6100211087656933

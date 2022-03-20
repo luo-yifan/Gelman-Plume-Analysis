@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'ff0b79bc9a68cc4f0ca7502a95e8e019': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PctChangeTransformer", "1": "SinTrend", "2": "Detrend", "3": "Discretize"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "GLS", "phi": 1, "window": null}, "3": {"discretization": "upper", "n_bins": 20}}}'}, '5b0a0e5981c11a5671a6a33725823139': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "mean", "lag_1": 28, "lag_2": null}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "Detrend", "1": "STLFilter", "2": "QuantileTransformer"}, "transformation_params": {"0": {"model": "Linear", "phi": 1, "window": null}, "1": {"decomp_type": "seasonal_decompose", "part": "trend"}, "2": {"output_distribution": "uniform", "n_quantiles": 8}}}'}}, 'dis_frac': 0.5, 'FirstModel': 'ff0b79bc9a68cc4f0ca7502a95e8e019', 'SecondModel': '5b0a0e5981c11a5671a6a33725823139'}
+SMAPE: 2.583776959532525, 49.837471029092704, 4.944979853191855
+MAE: 0.8916668508367713, 11.70162155222162, 0.7331846131690011
+SPL: 1.1681395968486141, 43.32363984982223, 8.972626340985448

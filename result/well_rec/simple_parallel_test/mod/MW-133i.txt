@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'fake_date', 'transformations': {'0': 'Detrend', '1': 'RobustScaler', '2': 'bkfilter'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {}, '2': {}}}
+{'level': 'random walk with drift', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 6.687557277532171, 120.0, 0.0
+MAE: 0.11254453238502778, 0.9230757390614199, 0.0
+SPL: 0.6140630980429563, 0.9230757390614199, 0.0

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'rolling_mean', 'transformations': {'0': 'Discretize', '1': 'PositiveShift', '2': 'Detrend', '3': 'EWMAFilter', '4': 'RobustScaler'}, 'transformation_params': {'0': {'discretization': 'lower', 'n_bins': 10}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'span': 7}, '4': {}}}
+{'level': 'smooth trend', 'maxiter': 100, 'cov_type': 'oim', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 9.344786629432281, 4.173694056060994, 6.801101213972551
+MAE: 0.6037211367534908, 0.26026362916704004, 0.3421098926821875
+SPL: 1.5479631590554073, 0.6983109465542864, 0.49929537771963095

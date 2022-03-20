@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'317d2183e30dc43963b8fecc7411cbe1': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 1}, "2": {"lag_1": 7, "method": "LastValue"}}}'}, '53bfebcd5755ff86375e5ebf201dee7a': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "DatepartRegression", "1": "StandardScaler", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"regression_model": {"model": "ElasticNet", "model_params": {}}, "datepart_method": "recurring", "polynomial_degree": null}, "1": {}, "2": {}}}'}, '8f1d3c4ef2c1cc797b7d16dd85af9c3f': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "DatepartRegression", "1": "StandardScaler", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"regression_model": {"model": "ElasticNet", "model_params": {}}, "datepart_method": "recurring", "polynomial_degree": null}, "1": {}, "2": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 67.1231408684539
+MAE: 36.59774018629773
+SPL: 0.1356937110930685

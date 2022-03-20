@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'ffill', 'transformations': {'0': 'Detrend', '1': 'RobustScaler', '2': 'DatepartRegression'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': 365}, '1': {}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 1.0}}, 'datepart_method': 'simple', 'polynomial_degree': None}}}
+{'level': 'fixed slope', 'maxiter': 100, 'cov_type': 'approx', 'method': 'lbfgs', 'autoregressive': 1, 'regression_type': None}
+SMAPE: 2.7257432671358828, 1.9453317703047799, 160.0
+MAE: 15.161749568274946, 9.8313089916536, 98.34450663009767
+SPL: 1.2618337431990139, 0.37476976327652656, 98.34450663009767

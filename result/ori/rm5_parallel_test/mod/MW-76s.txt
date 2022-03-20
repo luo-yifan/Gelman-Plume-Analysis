@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'akima', 'transformations': {'0': 'Detrend', '1': 'DifferencedTransformer', '2': 'QuantileTransformer', '3': 'RollingMean100thN'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': None}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 3}, '3': {}}}
+{'deseasonalize': True, 'difference': False, 'use_test': False, 'method': 'auto', 'period': None, 'theta': 2, 'use_mle': False}
+SMAPE: 12.063937808334128, 17.91145446017531
+MAE: 25.02349175043789, 25.88702938647607
+SPL: 1.0381216947786176, 1.499026020442794

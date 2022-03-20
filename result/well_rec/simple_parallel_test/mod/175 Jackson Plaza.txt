@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'fb4f67be7ebb92685429f447fbfec252': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "Slice", "1": "MaxAbsScaler"}, "transformation_params": {"0": {"method": 100}, "1": {}}}'}, 'ed43f1d3aeeb111512a4c7c38476d8c5': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "akima", "transformations": {"0": "ClipOutliers", "1": "MaxAbsScaler"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3, "fillna": null}, "1": {}}}'}, 'db002398e9a5ce80043764e709785612': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 0.002, "warmup_pts": 50, "seed_pts": 1, "seed_weighted": null, "batch_size": 5, "batch_method": "input_order"}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "ClipOutliers", "1": "MaxAbsScaler"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "1": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 1.7054860115646029, 23.181336189881073, 9.031523376261584
+MAE: 13.27560066454862, 224.02664135518225, 47.68183801164521
+SPL: 0.6476643818640381, 4.36993395764341, 1.0203825497786512

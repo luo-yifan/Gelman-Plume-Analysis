@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'SinTrend'}, 'transformation_params': {'0': {}}}
+{'level': 'smooth trend', 'maxiter': 50, 'cov_type': 'robust', 'method': 'newton', 'autoregressive': 1, 'regression_type': None}
+SMAPE: 7.393448288544542, 6.631600144335927, 30.885739970500595
+MAE: 1.9789375982060746, 2.717628044556534, 8.508006845881784
+SPL: 0.3543726956105642, 0.33534568560627687, 1.2699633459236996

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'time', 'transformations': {'0': 'RobustScaler', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}}}
+{'regression_model': {'model': 'RandomForest', 'model_params': {'n_estimators': 300, 'min_samples_leaf': 4, 'bootstrap': True}}, 'mean_rolling_periods': 5, 'macd_periods': None, 'std_rolling_periods': 7, 'max_rolling_periods': None, 'min_rolling_periods': 7, 'quantile90_rolling_periods': 90, 'quantile10_rolling_periods': 5, 'ewm_alpha': 0.2, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'simple', 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

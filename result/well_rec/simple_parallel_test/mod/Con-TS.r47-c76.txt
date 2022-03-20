@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'PowerTransformer', '1': 'RobustScaler', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {}, '2': {'lag_1': 12, 'method': 'LastValue'}}}
+{'method': 'median', 'lag_1': 96, 'lag_2': None}
+SMAPE: 40.0, 40.0, 0.0
+MAE: 0.0013691616244614, 0.0438244551420212, 0.0
+SPL: 0.1355672925126082, 0.0438244551420212, 0.0

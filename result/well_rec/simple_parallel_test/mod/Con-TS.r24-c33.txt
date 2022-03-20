@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'cubic', 'transformations': {'0': 'Slice', '1': 'PCA', '2': 'QuantileTransformer'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 2}}}
+{'damped_trend': True, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

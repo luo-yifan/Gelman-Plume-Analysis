@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'rolling_mean', 'transformations': {'0': 'QuantileTransformer', '1': 'DifferencedTransformer', '2': 'Detrend', '3': 'Round'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 2}, '1': {}, '2': {'model': 'Linear'}, '3': {'decimals': 2, 'on_transform': True, 'on_inverse': True}}}
+{}
+SMAPE: 23.559429070765407
+MAE: 0.36337028616658734
+SPL: 0.8473168288842708

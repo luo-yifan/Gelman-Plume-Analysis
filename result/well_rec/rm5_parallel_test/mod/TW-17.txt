@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'KNNImputer', 'transformations': {'0': 'StandardScaler', '1': 'DifferencedTransformer', '2': 'Detrend', '3': 'MinMaxScaler', '4': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': 900}, '3': {}, '4': {'part': 'trend', 'lamb': 129600}}}
+{}
+SMAPE: 28.174652955528295, 200.0, 30.241658154874976
+MAE: 89.01803504423665, 205.60209192453505, 457.39269530639996
+SPL: 0.2557516151555277, 0.4069349793062087, 0.8353064556174897

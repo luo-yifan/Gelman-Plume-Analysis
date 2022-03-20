@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'time', 'transformations': {'0': 'DatepartRegression', '1': 'DifferencedTransformer', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'expanded', 'polynomial_degree': None}, '1': {}, '2': {}}}
+{'family': 'Binomial', 'constant': False, 'regression_type': None}
+SMAPE: 20.884272012284292, 119.14644752220094
+MAE: 164.76152166053316, 70.59195813664397
+SPL: 7.1490962995007665, 85.73870166167607

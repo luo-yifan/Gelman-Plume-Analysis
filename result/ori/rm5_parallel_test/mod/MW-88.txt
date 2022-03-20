@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'ffill', 'transformations': {'0': 'Slice', '1': 'MinMaxScaler', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'method': 100}, '1': {}, '2': {}}}
+{}
+SMAPE: 54.92030782094181, 75.32345501203278
+MAE: 142.60000000000002, 483.39999999999975
+SPL: 0.428385641025641, 1.0339874213836466

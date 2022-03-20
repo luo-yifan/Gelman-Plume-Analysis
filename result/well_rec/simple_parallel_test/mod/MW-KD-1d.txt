@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'zero', 'transformations': {'0': 'PCA', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}}}
+{'level': 'deterministic trend', 'maxiter': 250, 'cov_type': 'oim', 'method': 'lbfgs', 'autoregressive': 2, 'regression_type': None}
+SMAPE: 7.48147453517502, 15.27482187483957, 19.66987515976618
+MAE: 13.07700741125709, 22.626732448007022, 26.52775593564263
+SPL: 0.8347296523456751, 4.148100389730748, 8.686211587503765

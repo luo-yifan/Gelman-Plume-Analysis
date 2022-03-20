@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'ffill', 'transformations': {'0': 'SinTrend', '1': 'convolution_filter', '2': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 100, 'loss': 'linear', 'base_estimator': None, 'learning_rate': 1}}, 'datepart_method': 'simple_2', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 15.380486526244146, 8.627439015554437, 11.187973145249618
+MAE: 2.2868774526324014, 1.7607815937281928, 2.6697573465031055
+SPL: 0.31172418916872274, 0.25733738259211947, 0.2639462014024284

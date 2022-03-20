@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'linear', 'transformations': {'0': 'DifferencedTransformer', '1': 'Round', '2': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {'decimals': 1, 'on_transform': True, 'on_inverse': True}, '2': {}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 50, 'loss': 'linear', 'base_estimator': None, 'learning_rate': 1}}}
+SMAPE: 200.0, 200.0, 167.2484681091979
+MAE: 149.7126597090896, 27.76627903465278, 284.77784631942257
+SPL: 0.10864111218155208, 0.016552311024934797, 0.1622143920033042

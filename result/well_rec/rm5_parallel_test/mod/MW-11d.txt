@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'pchip', 'transformations': {'0': 'Discretize', '1': 'Log'}, 'transformation_params': {'0': {'discretization': 'center', 'n_bins': 20}, '1': {}}}
+{'k': 1, 'ridge_param': 2e-08, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'max_sorted'}
+SMAPE: 26.528445753057476, 51.18712908434132, 113.53224741847589
+MAE: 40.723800818966865, 143.87748603220717, inf
+SPL: 0.1962820138805944, 0.3056535504878391, inf

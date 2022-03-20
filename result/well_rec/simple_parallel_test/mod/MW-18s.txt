@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'time', 'transformations': {'0': 'Slice', '1': 'DifferencedTransformer', '2': 'QuantileTransformer'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}, '2': {'output_distribution': 'normal', 'n_quantiles': 1}}}
+{}
+SMAPE: 28.901226416785516, 0.43850917274594686, 3.9583898461827673
+MAE: 28.01936997438118, 0.7239285269660058, 7.021740981328202
+SPL: 0.016611929193435446, 0.0003526213451483803, 0.002677469786537022

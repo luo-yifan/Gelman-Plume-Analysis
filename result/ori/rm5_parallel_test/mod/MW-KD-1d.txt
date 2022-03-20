@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'quadratic', 'transformations': {'0': 'DifferencedTransformer', '1': 'RobustScaler', '2': 'RobustScaler', '3': 'DatepartRegression'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'recurring', 'polynomial_degree': None}}}
+{'method': 'lastvalue', 'lag_1': 12, 'lag_2': None}
+SMAPE: 23.148691488586834, 41.013141134220476, 114.90100385621083
+MAE: 30.0, 49.6, 38.62384823848239
+SPL: 1.3106482329868596, 1.5747866758524334, 12.546699453479828

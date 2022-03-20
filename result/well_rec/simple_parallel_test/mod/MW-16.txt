@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'MinMaxScaler', '1': 'MinMaxScaler', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {}, '2': {'lag_1': 12, 'method': 'Median'}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': None}}, 'mean_rolling_periods': None, 'macd_periods': None, 'std_rolling_periods': None, 'max_rolling_periods': 28, 'min_rolling_periods': 28, 'quantile90_rolling_periods': None, 'quantile10_rolling_periods': 5, 'ewm_alpha': 0.5, 'ewm_var_alpha': 0.5, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 200.0, 0.0, 0.0
+MAE: 2.2442179609791277, 0.0, 0.0
+SPL: 2.2442179609791277, 0.0, 0.0

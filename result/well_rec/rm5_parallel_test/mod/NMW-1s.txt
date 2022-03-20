@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'PowerTransformer', '1': 'PowerTransformer'}, 'transformation_params': {'0': {}, '1': {}}}
+{'level': 'deterministic constant', 'maxiter': 50, 'cov_type': 'opg', 'method': 'powell', 'autoregressive': 1, 'regression_type': None}
+SMAPE: 93.76583694153396, 9.504562542202313, 0.0
+MAE: 1051.8943570748727, 47.26120524097469, inf
+SPL: 0.939521024170091, 1.2886770799349976, inf

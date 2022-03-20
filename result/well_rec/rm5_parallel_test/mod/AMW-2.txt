@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'mean', 'transformations': {'0': 'PctChangeTransformer', '1': 'ClipOutliers', '2': 'MinMaxScaler', '3': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '2': {}, '3': {'lag_1': 7, 'method': 'Median'}}}
+{'k': 1, 'ridge_param': 0.02, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'input_order'}
+SMAPE: 65.03944459999641, 2.96344570075212, 26.766583538781553
+MAE: 56.858789697568724, 4.971783676917795, 85.36226138770705
+SPL: 0.05442510502864896, 0.0036808491558114, 0.043158406906155994

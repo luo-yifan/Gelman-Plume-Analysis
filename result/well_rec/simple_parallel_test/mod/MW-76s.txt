@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateMotif
+{'fillna': 'rolling_mean', 'transformations': {'0': 'DifferencedTransformer'}, 'transformation_params': {'0': {}}}
+{'window': 10, 'point_method': 'mean', 'distance_metric': 'sqeuclidean', 'k': 3, 'max_windows': 10000}
+SMAPE: 10.543663230089638, 17.143898478578087, 6.698072268190019
+MAE: 29.83790349547803, 34.582483476836984, 8.549055714265606
+SPL: 0.9345438103480699, 1.8387145932716158, 1.454819500444601

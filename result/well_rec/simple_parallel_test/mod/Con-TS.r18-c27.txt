@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'KNNImputer', 'transformations': {'0': 'bkfilter', '1': 'EWMAFilter'}, 'transformation_params': {'0': {}, '1': {'span': 3}}}
+{'k': 2, 'ridge_param': 2e-05, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': 'linear', 'batch_size': 5, 'batch_method': 'input_order'}
+SMAPE: 8.643213499978572, 41.59115830078861, 196.00360913841422
+MAE: 0.27495184832967096, 2.214652105704239, 2.392106540860805e+39
+SPL: 0.7207186852916341, inf, inf

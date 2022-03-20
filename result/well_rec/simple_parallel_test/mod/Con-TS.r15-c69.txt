@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'time', 'transformations': {'0': 'Round', '1': 'Detrend'}, 'transformation_params': {'0': {'decimals': 0, 'on_transform': True, 'on_inverse': True}, '1': {'model': 'GLS', 'phi': 0.999, 'window': None}}}
+{'level': 'smooth trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'cg', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 4.6390107037777435, 12.688076364760942, 44.772405917726275
+MAE: 0.6004816055297795, 0.9614788055419983, 0.8397851347923279
+SPL: 0.8002418995112551, 0.563200368197935, 1.5159312333566808

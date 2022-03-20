@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'akima', 'transformations': {'0': 'Detrend', '1': 'bkfilter', '2': 'Discretize', '3': 'DifferencedTransformer'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': 900}, '1': {}, '2': {'discretization': 'lower', 'n_bins': 10}, '3': {}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 3, 'min_samples_split': 0.05}}}
+SMAPE: 20.42480731767601, 53.81396824522464, 6.016372865058179
+MAE: 116.59737468862004, 187.4252161935978, 8.401142097655987
+SPL: 1.8469820968921242, 20.206131187164697, 0.493028086104848

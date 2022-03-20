@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score', 'models': {'f05e4470b18d9971e2866bd79e589dc9': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": "multiplicative", "seasonal": "additive", "seasonal_periods": 7}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "SinTrend", "2": "PositiveShift"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}, '8323383572f33867609f6a7fbf53e3b2': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": "additive", "seasonal_periods": 7}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "SinTrend", "2": "PositiveShift"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}, 'a013330faa884c93d5cd245fce49e2b1': {'Model': 'DatepartRegression', 'ModelParameters': '{"regression_model": {"model": "SVM", "model_params": {}}, "datepart_method": "expanded", "polynomial_degree": null, "regression_type": null}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "SinTrend", "2": "PositiveShift"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 13.813856371236216
+MAE: 5.723284131997389
+SPL: 3.8809801422104604

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'pchip', 'transformations': {'0': 'QuantileTransformer', '1': 'Slice', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {'method': 0.5}, '2': {}}}
+{}
+SMAPE: 18.634558661903064, 6.927707104508331, 28.844820002516492
+MAE: 0.1132959365844725, 0.054067575931549164, 0.14754025936126722
+SPL: 0.4353104024120412, 0.17956872563170967, 0.47506884503461005

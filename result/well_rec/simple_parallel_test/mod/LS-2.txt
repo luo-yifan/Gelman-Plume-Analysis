@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnivariateMotif
+{'fillna': 'cubic', 'transformations': {'0': 'ClipOutliers', '1': 'ClipOutliers', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '2': {}}}
+{'window': 10, 'point_method': 'median', 'distance_metric': 'sqeuclidean', 'k': 3, 'max_windows': 10000}
+SMAPE: 43.14447345867526, 119.15721550838512, 43.26135885762521
+MAE: 126.77836830583836, 341.57657487684025, 700.2700578144203
+SPL: 0.4093112907503366, 0.43314979580920665, 0.5617642332614612

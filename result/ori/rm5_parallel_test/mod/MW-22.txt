@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'pad', 'transformations': {'0': 'Log', '1': 'DifferencedTransformer', '2': 'Slice', '3': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'method': 100}, '3': {'output_distribution': 'uniform', 'n_quantiles': 8}}}
+{'level': 'fixed intercept', 'maxiter': 250, 'cov_type': 'approx', 'method': 'bfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 43.36632598672754, 55.19460483595574, 26.695534265359363
+MAE: 407.61474066647395, 2272.3520340308996, 1043.0265984401565
+SPL: 0.0587677611007307, 0.2212289612187953, 0.09382516822574935

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'ffill', 'transformations': {'0': 'MinMaxScaler', '1': 'PositiveShift', '2': 'DatepartRegression'}, 'transformation_params': {'0': {}, '1': {}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 3, 'min_samples_split': 2}}, 'datepart_method': 'simple', 'polynomial_degree': None}}}
+{}
+SMAPE: 6.435596149255417, 6.6819204646187575, 4.019007637431679
+MAE: 253.34048766034385, 246.07622065035721, 137.6660237970772
+SPL: 0.06245024599705103, 0.0967175125584751, 0.06750701486295743

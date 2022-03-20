@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'fake_date', 'transformations': {'0': 'PctChangeTransformer', '1': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {}}}
+{'family': 'Poisson', 'constant': False, 'regression_type': None}
+SMAPE: 8.462581669972476, 25.732278541506865, 10.177236941627793
+MAE: 46.770632263037896, 188.40478720958419, 71.86773449054984
+SPL: 1.0220253814906028, 1.745659570204016, 1.810553932197708

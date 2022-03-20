@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'akima', 'transformations': {'0': 'DatepartRegression', '1': 'ClipOutliers', '2': 'DifferencedTransformer', '3': 'STLFilter'}, 'transformation_params': {'0': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'simple_2', 'polynomial_degree': 2}, '1': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '2': {}, '3': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
+{}
+SMAPE: 0.0, 124.67965895686703, 172.41215161745174
+MAE: 0.0, 0.017026814311609156, 0.021320706598340174
+SPL: 0.0, 0.4101970702309808, 0.7220205904395727

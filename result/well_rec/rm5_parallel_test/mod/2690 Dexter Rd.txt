@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'mean', 'transformations': {'0': 'Round', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'DatepartRegression', '4': 'Discretize', '5': 'bkfilter'}, 'transformation_params': {'0': {'decimals': -1, 'on_transform': True, 'on_inverse': True}, '1': {'output_distribution': 'uniform', 'n_quantiles': 8}, '2': {}, '3': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 3, 'min_samples_split': 2}}, 'datepart_method': 'simple_2', 'polynomial_degree': None}, '4': {'discretization': 'lower', 'n_bins': 5}, '5': {}}}
+{'regression_model': {'model': 'RandomForest', 'model_params': {'n_estimators': 1000, 'min_samples_leaf': 1, 'bootstrap': True}}, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 2.098767256771566, 6.08178556008899, 72.1144856043268
+MAE: 10.031541291492397, 27.425864873871593, 225.5723147621522
+SPL: 0.6346222287918922, 1.8189070148110325, 43.05827281784554

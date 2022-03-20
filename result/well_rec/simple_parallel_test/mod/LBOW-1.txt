@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'DatepartRegression', '1': 'IntermittentOccurrence'}, 'transformation_params': {'0': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 9, 'min_samples_split': 1.0}}, 'datepart_method': 'expanded', 'polynomial_degree': None}, '1': {'center': 'mean'}}}
+{'method': 'median', 'lag_1': 12, 'lag_2': 1}
+SMAPE: 1.6672215743917977, 9.354934210371614, 3.9766899694348217
+MAE: 8.650057229544199, 49.79224393130234, 19.898433767266557
+SPL: 0.2700410722762931, 1.763391591178177, 0.7127542039596212

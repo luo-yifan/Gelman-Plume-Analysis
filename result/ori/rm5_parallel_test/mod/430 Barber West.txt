@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score_unique', 'models': {'2455312d44efc27136572dca0a817e64': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Median"}', 'TransformationParameters': '{"fillna": "akima", "transformations": {"0": "Log", "1": "Round", "2": "RollingMean100thN"}, "transformation_params": {"0": {}, "1": {"model": "middle", "decimals": 0, "on_transform": false, "on_inverse": true}, "2": {}}}'}, '12c22ab3eaacc4c9f0fb48422eb273d2': {'Model': 'GLM', 'ModelParameters': '{"family": "NegativeBinomial", "constant": false, "regression_type": null}', 'TransformationParameters': '{"fillna": "pad", "transformations": {"0": "PositiveShift", "1": "Round", "2": "RollingMeanTransformer"}, "transformation_params": {"0": {}, "1": {"decimals": -1, "on_transform": true, "on_inverse": true}, "2": {"fixed": false, "window": 7}}}'}, '2bdbb5fcb24d5bb4c07bce961d30f66d': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "median", "lag_1": 1440, "lag_2": null}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "Log", "1": "Detrend"}, "transformation_params": {"0": {}, "1": {"model": "GLS", "phi": 1, "window": null}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 128.08965142234425
+MAE: 50.4795941736359
+SPL: 12.125561998489957

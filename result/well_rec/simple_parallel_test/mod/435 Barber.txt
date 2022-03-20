@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'Detrend', '1': 'PowerTransformer', '2': 'EWMAFilter'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': 30}, '1': {}, '2': {'span': 7}}}
+{}
+SMAPE: 4.496445451469961, 19.96137100053306, 27.406541462541593
+MAE: 1.1965321212469484, 4.42573295011897, 6.01355987126525
+SPL: 0.24772571562870482, 0.44046843516227835, 0.9198224805554821

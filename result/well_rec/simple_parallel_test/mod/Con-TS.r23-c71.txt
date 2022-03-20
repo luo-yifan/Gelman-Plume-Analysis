@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'horizontal', 'models': {'a8a406412ebe8de03a29b45abfaeac11': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Median"}', 'TransformationParameters': '{"fillna": "cubic", "transformations": {"0": "MaxAbsScaler", "1": "Detrend", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"model": "GLS", "phi": 1, "window": null}, "2": {}}}'}, '22032ea999a5758135bcdac0bcb3afb4': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "smooth trend", "maxiter": 100, "cov_type": "opg", "method": "lbfgs", "autoregressive": null, "regression_type": null}', 'TransformationParameters': '{"fillna": "cubic", "transformations": {"0": "bkfilter", "1": "bkfilter"}, "transformation_params": {"0": {}, "1": {}}}'}, 'a234936c7e0bc611c6b12c8ecb09a5b2': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "bkfilter", "1": "bkfilter", "2": "Detrend"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "Linear", "phi": 1, "window": null}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 11.313912452444283, 6.364631776903176, 3.8950004801788345
+MAE: 0.16064948933744141, 0.06923261459903532, 0.03753309229599244
+SPL: 1.7407998784638292, 1.30746066867445, 0.752916328409641

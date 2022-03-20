@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score_unique', 'models': {'6086089bdf654a9a59073f43ac9bb19d': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "Discretize", "1": "DifferencedTransformer", "2": "MinMaxScaler", "3": "ClipOutliers", "4": "RobustScaler"}, "transformation_params": {"0": {"discretization": "lower", "n_bins": 5}, "1": {}, "2": {}, "3": {"method": "clip", "std_threshold": 1, "fillna": null}, "4": {}}}'}, '0a780b5cda367a99c165a1243b0d8eb9': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": false, "method": "auto", "period": null, "theta": 3, "use_mle": false}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "Slice", "1": "DifferencedTransformer", "2": "MinMaxScaler"}, "transformation_params": {"0": {"method": 0.5}, "1": {}, "2": {}}}'}, '9a91986a58f0be669b481fe024b3d56b': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "linear", "transformations": {"0": "Slice", "1": "DifferencedTransformer", "2": "PositiveShift"}, "transformation_params": {"0": {"method": 0.5}, "1": {}, "2": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 59.66166782261993
+MAE: 4.239498733466579
+SPL: 0.5153738261889604

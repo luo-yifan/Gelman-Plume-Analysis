@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'18b61deb4015bcdc819693690bd1a755': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "DifferencedTransformer", "1": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 9}}}'}, '08f007c8dd2dc523a13bb632a4bd1991': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "DifferencedTransformer", "1": "Log", "2": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}, '52bc1a57422457c6c825f4c5915a4976': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "MinMaxScaler", "1": "Slice", "2": "StandardScaler", "3": "MaxAbsScaler"}, "transformation_params": {"0": {}, "1": {"method": 0.2}, "2": {}, "3": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 1.9750657747531055, 71.28818818329601, 7.991553493299008
+MAE: 11.855497587748733, 729.9911926280713, 112.80600685509648
+SPL: 0.30081171396181117, 1.3820261914829428, 0.40319199247856524

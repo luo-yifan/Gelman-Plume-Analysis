@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'horizontal', 'models': {'17861e7a0291bc37e7f09db6e4f48efe': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "local level", "maxiter": 250, "cov_type": "approx", "method": "lbfgs", "autoregressive": null, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "KNNImputer", "transformations": {"0": "RobustScaler", "1": "convolution_filter", "2": "CenterLastValue"}, "transformation_params": {"0": {}, "1": {}, "2": {"rows": 3}}}'}, '093dcd1b524f29d4fa3a75a0663cc14b': {'Model': 'GLM', 'ModelParameters': '{"family": "Poisson", "constant": false, "regression_type": null}', 'TransformationParameters': '{"fillna": "nearest", "transformations": {"0": "CumSumTransformer", "1": "DifferencedTransformer", "2": "CenterLastValue", "3": "RobustScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {"rows": 3}, "3": {}}}'}, '35dd1b08bf6783721122d86a18b5fc14': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": false, "use_test": true, "method": "auto", "period": null, "theta": 1.4, "use_mle": false}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "CumSumTransformer", "1": "DifferencedTransformer", "2": "bkfilter"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 13.060868005817161
+MAE: 80.52368710019883
+SPL: 0.8913072538359545

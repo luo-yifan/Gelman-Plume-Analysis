@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'akima', 'transformations': {'0': 'DifferencedTransformer', '1': 'ClipOutliers', '2': 'MinMaxScaler', '3': 'MinMaxScaler', '4': 'DifferencedTransformer', '5': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '2': {}, '3': {}, '4': {}, '5': {'lag_1': 7, 'method': 'Median'}}}
+{'window_size': 10, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 1000, 'regression_type': None, 'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 20}}}
+SMAPE: 27.518959908543433, 43.25358575319599, 0.0
+MAE: 0.18439829353867093, 0.13954279626738386, 0.0
+SPL: 3.5567269507325414, 3.98820044759709, 0.0

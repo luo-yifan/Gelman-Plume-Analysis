@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'rolling_mean', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend', '2': 'DifferencedTransformer', '3': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'model': 'GLS', 'phi': 1, 'window': None}, '2': {}, '3': {'model': 'Linear', 'phi': 1, 'window': 900}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 10}}, 'mean_rolling_periods': 90, 'macd_periods': None, 'std_rolling_periods': 5, 'max_rolling_periods': 2, 'min_rolling_periods': 7, 'quantile90_rolling_periods': 10, 'quantile10_rolling_periods': 5, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 10, 'holiday': False, 'probabilistic': False}
+SMAPE: 2.799169725687773, 13.334865225399492, 27.019225943390417
+MAE: 0.9524658391259877, 2.427941767177299, 3.0556029105499993
+SPL: 1.304384368784163, 1.9999969053957505, 1.8668521137011482

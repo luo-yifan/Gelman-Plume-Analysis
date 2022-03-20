@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'fake_date', 'transformations': {'0': 'EWMAFilter', '1': 'SeasonalDifference'}, 'transformation_params': {'0': {'span': 7}, '1': {'lag_1': 12, 'method': 'Mean'}}}
+{'method': 'Exp_Weighted_Mean'}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

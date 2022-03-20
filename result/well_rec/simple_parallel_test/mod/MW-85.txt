@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SectionalMotif
+{'fillna': 'pchip', 'transformations': {'0': 'DifferencedTransformer', '1': 'bkfilter', '2': 'SeasonalDifference', '3': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {'lag_1': 12, 'method': 'LastValue'}, '3': {'model': 'Linear', 'phi': 1, 'window': 30}}}
+{'window': 7, 'point_method': 'median', 'distance_metric': 'cosine', 'include_differenced': True, 'k': 3, 'stride_size': 1, 'regression_type': None}
+SMAPE: 18.683048384940047, 9.17064270467247, 3.172632917702102
+MAE: 165.07238405316042, 150.31351461839267, 50.06976824630628
+SPL: 1.4347651639335652, 1.854766689184857, 0.527546921176306

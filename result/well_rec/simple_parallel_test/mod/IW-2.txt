@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'ffill', 'transformations': {'0': 'PositiveShift', '1': 'STLFilter', '2': 'DifferencedTransformer', '3': 'MaxAbsScaler'}, 'transformation_params': {'0': {}, '1': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}, '2': {}, '3': {}}}
+{}
+SMAPE: 19.162359858730174, 121.42895720831957, 36.630526454085256
+MAE: 64.93555898118817, 369.9198523905251, 6.154347156288226
+SPL: 1.7099346178585653, 270.6433358810223, 201.21093987865234

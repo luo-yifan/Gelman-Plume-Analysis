@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill', 'transformations': {'0': 'HPFilter', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'Detrend'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 6.25}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {}, '3': {'model': 'GLS', 'phi': 1, 'window': 900}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 2, 'max_depth': 20}}, 'mean_rolling_periods': 30, 'macd_periods': 60, 'std_rolling_periods': 30, 'max_rolling_periods': 60, 'min_rolling_periods': 60, 'quantile90_rolling_periods': 90, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 160.0, 72.52405149773719, 17.708729339897943
+MAE: 0.017603250613126373, 0.09973622673404789, 0.12125344086478902
+SPL: 0.32457551567327797, 0.8722872184817524, 0.8545607077236347

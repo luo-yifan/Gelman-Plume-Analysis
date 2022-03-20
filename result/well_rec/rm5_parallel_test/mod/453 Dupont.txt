@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'ffill', 'transformations': {'0': 'PowerTransformer', '1': 'DifferencedTransformer', '2': 'Slice', '3': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {}, '2': {'method': 100}, '3': {}}}
+{}
+SMAPE: 2.4539855945390925, 19.368661244387486, 0.0
+MAE: 0.07674078042733701, 0.863468797019894, inf
+SPL: 0.03832139899151523, 0.3523064454802962, inf

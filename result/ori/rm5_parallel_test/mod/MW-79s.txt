@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'mean', 'transformations': {'0': 'ClipOutliers', '1': 'PowerTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {}}}
+{'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 100, 'loss': 'linear', 'base_estimator': None, 'learning_rate': 1}}, 'datepart_method': 'expanded', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 43.73767915401029, 56.31890956645723
+MAE: 187.80000000000004, 266.9999999999999
+SPL: 0.4879053675417625, 0.5670588845736823

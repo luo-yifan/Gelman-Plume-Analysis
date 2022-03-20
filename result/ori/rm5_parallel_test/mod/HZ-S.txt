@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score', 'models': {'3bf161230f6b3b5462ee618776c5e4e6': {'Model': 'GLM', 'ModelParameters': '{"family": "NegativeBinomial", "constant": false, "regression_type": null}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "Slice", "1": "MaxAbsScaler", "2": "ClipOutliers", "3": "Discretize"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {"method": "clip", "std_threshold": 3, "fillna": null}, "3": {"discretization": "upper", "n_bins": 10}}}'}, '776f436a00983efc4f310e9317d3ab0a': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "Slice", "1": "RobustScaler", "2": "Discretize"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {"discretization": "lower", "n_bins": 5}}}'}, '929c1263fe4ede4406489934c8710a39': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": null, "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "Slice", "1": "RobustScaler", "2": "Discretize"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {"discretization": "lower", "n_bins": 5}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 21.20882850793432, 23.665431216090568
+MAE: 164.27910302107773, 268.9362642370112
+SPL: 0.024857376569144832, 0.07518906962564616

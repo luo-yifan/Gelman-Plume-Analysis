@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'mean', 'transformations': {'0': 'PositiveShift', '1': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {}}}
+{'family': 'Poisson', 'constant': False, 'regression_type': None}
+SMAPE: 25.190622528083555, 22.23240128656446, 69.89805387631725
+MAE: 305.0095370809866, 101.58161525292451, 153.41463365243837
+SPL: 1.0454086782321437, 0.9928497585678768, 18.65938496994465

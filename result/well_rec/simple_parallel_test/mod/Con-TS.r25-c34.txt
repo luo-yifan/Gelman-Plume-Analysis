@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'cubic', 'transformations': {'0': 'Slice', '1': 'EWMAFilter', '2': 'MaxAbsScaler'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'span': 3}, '2': {}}}
+{'level': 'local level', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 2.666993703852054, 61.37375224379298, 35.17125825654565
+MAE: 0.01081638686520936, 0.33689371417822017, 0.28969845251610443
+SPL: 0.0040878981328705995, 0.01561608145062913, 0.07476660838400645

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'nearest', 'transformations': {'0': 'DifferencedTransformer', '1': 'PositiveShift', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {}, '2': {'lag_1': 7, 'method': 'Median'}}}
+{}
+SMAPE: 3.7291110603779543, 4.1000800691288894, 23.520858731230707
+MAE: 1.3299548566339765, 1.21556262969969, 3.9699133574961794
+SPL: 0.7602345334923629, 0.7413620601888016, 0.6259400629234356

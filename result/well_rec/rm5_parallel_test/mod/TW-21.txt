@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'zero', 'transformations': {'0': 'PositiveShift', '1': 'SinTrend', '2': 'Round', '3': 'DatepartRegression', '4': 'StandardScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {'decimals': 0, 'on_transform': True, 'on_inverse': True}, '3': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 1.0}}, 'datepart_method': 'simple_2', 'polynomial_degree': None}, '4': {}}}
+{}
+SMAPE: 41.42380404248848, 12.472068360983057, 40.0
+MAE: 94.44891123576717, 55.47743159019085, 97.9396707392562
+SPL: 1.4696959651122625, 0.9836592504046772, 97.9396707392562

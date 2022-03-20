@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score', 'models': {'eb044e1691bab257db21f886cebb4197': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 2e-06, "warmup_pts": 1, "seed_pts": 1, "seed_weighted": null, "batch_size": 10, "batch_method": "input_order"}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "ClipOutliers"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}}}'}, '6d6da0b3b9dd9d17fff8f39d04bb1c76': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 2e-06, "warmup_pts": 1, "seed_pts": 1, "seed_weighted": null, "batch_size": 10, "batch_method": "max_sorted"}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "ClipOutliers"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}}}'}, 'b35e57b689db5b46421d91225791a404': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 2e-06, "warmup_pts": 1, "seed_pts": 1, "seed_weighted": null, "batch_size": 5, "batch_method": "input_order"}', 'TransformationParameters': '{"fillna": "KNNImputer", "transformations": {"0": "ClipOutliers"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 8.562143543757434e-05, 0.00022832384171731792
+MAE: 4.28106967576003e-07, 1.1416177180145759e-06
+SPL: 7.131290801185328e-07, 6.863021777214761e-07

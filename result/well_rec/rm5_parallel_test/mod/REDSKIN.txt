@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'linear', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend', '2': 'Discretize'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {'discretization': 'upper', 'n_bins': 20}}}
+{'regression_model': {'model': 'Ridge', 'model_params': {'alpha': 10.0}}, 'mean_rolling_periods': 7, 'macd_periods': 17, 'std_rolling_periods': 30, 'max_rolling_periods': None, 'min_rolling_periods': 28, 'quantile90_rolling_periods': None, 'quantile10_rolling_periods': None, 'ewm_alpha': 0.5, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'simple_2_poly', 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 200.0, 169.96467546825997, 8.135868113804062
+MAE: 27.76627903465278, 362.3189673698831, 617.6836306169587
+SPL: 0.016552311024934797, 0.09980083557065805, 0.41224304514701593

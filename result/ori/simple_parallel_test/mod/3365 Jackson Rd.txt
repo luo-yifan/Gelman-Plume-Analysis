@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'PowerTransformer', '1': 'Slice', '2': 'Discretize'}, 'transformation_params': {'0': {}, '1': {'method': 100}, '2': {'discretization': 'upper', 'n_bins': 5}}}
+{}
+SMAPE: 11.705907324713278, 28.071280630949552, 45.593616801389956
+MAE: 18.11590638485374, 63.013236746992405, 183.49573190330193
+SPL: 0.1226497772378811, 0.13783284270100818, 0.21805042809052033

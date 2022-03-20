@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'3298bcdaa4c611f65a2500e0384c8eb6': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 1.4, "use_mle": false}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "MinMaxScaler", "1": "RollingMeanTransformer", "2": "Detrend", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"fixed": false, "window": 12}, "2": {"model": "GLS", "phi": 1, "window": null}, "3": {}}}'}, '6565320a58d12a9ea949468dcc8ed23f': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": false, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 3, "use_mle": false}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "IntermittentOccurrence", "1": "MinMaxScaler", "2": "DifferencedTransformer", "3": "DifferencedTransformer"}, "transformation_params": {"0": {"center": "mean"}, "1": {}, "2": {}, "3": {}}}'}}, 'dis_frac': 0.5, 'FirstModel': '3298bcdaa4c611f65a2500e0384c8eb6', 'SecondModel': '6565320a58d12a9ea949468dcc8ed23f'}
+SMAPE: 18.08414576796051, 90.70580321122226, 3.073879289561614
+MAE: 81.43169313905445, 8.237347034816128, 0.061630074306330405
+SPL: 55.53708383422525, 246.73201619088866, 6.925516710510572

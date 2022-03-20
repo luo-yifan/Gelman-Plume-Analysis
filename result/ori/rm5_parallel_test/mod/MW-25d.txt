@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'akima', 'transformations': {'0': 'Slice', '1': 'RobustScaler', '2': 'RobustScaler'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}, '2': {}}}
+{'family': 'Binomial', 'constant': False, 'regression_type': None}
+SMAPE: 77.71824222908059, 34.896265927940625, 47.049814032828486
+MAE: 229.40880083514602, 125.68203610394698, 208.85
+SPL: 0.1667972740780849, 0.02267942441668305, 0.07639338111289301

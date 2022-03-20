@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'piecewise_polynomial', 'transformations': {'0': 'PositiveShift', '1': 'DifferencedTransformer', '2': 'PowerTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{'method': 'Weighted_Mean'}
+SMAPE: 14.112759203533699, 71.5777084432386, 3.947879400145188
+MAE: 0.6046303575273588, 8.944213023884533, 0.8756085379941162
+SPL: 0.5015919786307658, 8.593452882910029, 2.806312789583755

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'Round', '1': 'QuantileTransformer', '2': 'ClipOutliers'}, 'transformation_params': {'0': {'decimals': 1, 'on_transform': False, 'on_inverse': True}, '1': {'output_distribution': 'uniform', 'n_quantiles': 1}, '2': {'method': 'clip', 'std_threshold': 3, 'fillna': None}}}
+{'method': 'Mean'}
+SMAPE: 6.489002420026944, 1.4788180647393454, 26.429563510467414
+MAE: 48.873294611196386, 12.065769057705802, 459.3185197364267
+SPL: 0.021938137791945197, 0.00424497564718549, 0.12168719925755185

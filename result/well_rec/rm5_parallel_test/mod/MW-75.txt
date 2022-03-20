@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'ffill', 'transformations': {'0': 'ClipOutliers', '1': 'StandardScaler', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {}, '2': {}}}
+{'deseasonalize': True, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.2, 'use_mle': False}
+SMAPE: 56.82132922176074, 22.902554216041192, 6.774857796275422
+MAE: 240.64875722003717, 86.44968121927027, 39.558813660171765
+SPL: 3.732481656263875, 8.427028253283178, 29.551101803754467

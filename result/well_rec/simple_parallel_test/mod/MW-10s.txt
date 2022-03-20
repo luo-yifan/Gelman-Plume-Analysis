@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'cubic', 'transformations': {'0': 'QuantileTransformer', '1': 'EWMAFilter'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 9}, '1': {'span': 3}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'BayesianRidge', 'model_params': {}}}
+SMAPE: 1.9014294539059997, 6.84147582576131, 0.9430916991248534
+MAE: 0.5465581793099048, 2.040515541440732, 0.33641273921953285
+SPL: 0.7529579642018904, 0.9594904868185401, 0.9923593169953903

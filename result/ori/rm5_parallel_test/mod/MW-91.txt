@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'b54bef470a389d1ec5f623c095d17065': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Weighted_Mean"}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "DifferencedTransformer", "1": "StandardScaler", "2": "Round", "3": "DifferencedTransformer", "4": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"decimals": 1, "on_transform": false, "on_inverse": true}, "3": {}, "4": {}}}'}, '61b4f6fe09e3b032ad9d6aee950a71b3': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 4, "use_mle": false}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}}}'}, '58c4ecd6f724febe91bb3c625112e078': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 4, "use_mle": false}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "DifferencedTransformer", "1": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 33.82964071351703, 18.1184668989547
+MAE: 34.93403421435282, 1.7
+SPL: 10.673603704839312, 1.6999073717481175

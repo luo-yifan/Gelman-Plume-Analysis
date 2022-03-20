@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'ffill', 'transformations': {'0': 'DatepartRegression', '1': 'DifferencedTransformer', '2': 'Detrend'}, 'transformation_params': {'0': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 9, 'min_samples_split': 1.0}}, 'datepart_method': 'expanded', 'polynomial_degree': None}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{'damped_trend': True, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 18.283892611968923, 6.716424200779672, 160.0
+MAE: 414.7264260697968, 214.35734090129, 1036.3545862846975
+SPL: 1.0529311971681967, 1.032127453738641, 1036.3545862846975

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'zero', 'transformations': {'0': 'ClipOutliers', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'HPFilter', '4': 'STLFilter'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {'output_distribution': 'uniform', 'n_quantiles': 8}, '2': {}, '3': {'part': 'cycle', 'lamb': 1600}, '4': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
+{'method': 'Median'}
+SMAPE: 0.0, 89.29484564111621, 120.0
+MAE: 0.0, 6.261885831820215, 12.3497270014818
+SPL: 0.0, 1.3254561119403905, 36.898947503086845

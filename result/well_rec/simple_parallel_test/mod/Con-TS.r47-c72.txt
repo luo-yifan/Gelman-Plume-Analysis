@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'SeasonalDifference', '1': 'Round', '2': 'StandardScaler'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'LastValue'}, '1': {'decimals': -1, 'on_transform': False, 'on_inverse': True}, '2': {}}}
+{'method': 'Median'}
+SMAPE: 0.0, 40.0, 0.0
+MAE: 0.0, 0.223438382148742, 0.0
+SPL: 0.0, 0.223438382148742, 0.0

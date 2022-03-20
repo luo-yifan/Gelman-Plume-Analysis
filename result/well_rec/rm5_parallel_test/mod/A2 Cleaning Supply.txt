@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'2e30cc79f7e22017a162b73345e54b24': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "irregular", "maxiter": 250, "cov_type": "robust", "method": "bfgs", "autoregressive": null, "regression_type": null}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "Detrend", "1": "PositiveShift", "2": "DifferencedTransformer", "3": "PositiveShift"}, "transformation_params": {"0": {"model": "Linear", "phi": 1, "window": null}, "1": {}, "2": {}, "3": {}}}'}, '2d7d51c49a7f0a15885f9c4f955bb36a': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 2.5, "use_mle": false}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "RollingMean100thN", "1": "Detrend", "2": "Detrend", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"model": "Linear", "phi": 1, "window": null}, "2": {"model": "GLS", "phi": 1, "window": 30}, "3": {}}}'}}, 'dis_frac': 0.5, 'FirstModel': '2e30cc79f7e22017a162b73345e54b24', 'SecondModel': '2d7d51c49a7f0a15885f9c4f955bb36a'}
+SMAPE: 6.369856694075738, 15.520485675976886, 1.9753591764526592
+MAE: 5.2422468674122795, 19.014252795568403, 2.673356243560659
+SPL: 2.5222826368683666, 15.545780424443585, 22.912577928844623

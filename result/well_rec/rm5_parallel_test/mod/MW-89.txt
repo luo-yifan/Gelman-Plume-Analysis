@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'cubic', 'transformations': {'0': 'RobustScaler', '1': 'Slice', '2': 'DifferencedTransformer', '3': 'MaxAbsScaler', '4': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {'method': 0.5}, '2': {}, '3': {}, '4': {'output_distribution': 'uniform', 'n_quantiles': 4}}}
+{}
+SMAPE: 0.0, 161.5986827968911, 1.1546938068050914
+MAE: 0.0, 1.901234645262504, 0.03330342691357746
+SPL: 0.0, 75.6223381732951, 2.2936995914964906

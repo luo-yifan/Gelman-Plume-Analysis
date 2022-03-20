@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'ffill', 'transformations': {'0': 'Log', '1': 'PositiveShift', '2': 'DatepartRegression'}, 'transformation_params': {'0': {}, '1': {}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 1.0}}, 'datepart_method': 'simple', 'polynomial_degree': None}}}
+{'method': 'mean', 'lag_1': 24, 'lag_2': None}
+SMAPE: 7.532667840310387, 38.130672001058706, 13.31504823418781
+MAE: 20.009618686319765, 83.7975108398723, 36.44378662632019
+SPL: 0.1708606187313172, 0.19132147691070037, 0.12595415035718457

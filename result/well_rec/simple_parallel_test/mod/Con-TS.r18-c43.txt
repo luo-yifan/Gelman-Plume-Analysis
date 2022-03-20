@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'pad', 'transformations': {'0': 'PositiveShift', '1': 'DifferencedTransformer', '2': 'Detrend', '3': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {}}}
+{}
+SMAPE: 5.055507783478019, 10.841172626593128, 11.842163943642344
+MAE: 1.2921354941245078, 3.038081756664191, 4.334281762681399
+SPL: 0.32134809265128406, 0.6953290654251563, 0.9950290846922014

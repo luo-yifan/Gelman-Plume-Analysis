@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score_unique', 'models': {'31b7a191b051cd41df1d606d7905cbaf': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "fixed slope", "maxiter": 250, "cov_type": "opg", "method": "bfgs", "autoregressive": null, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "bkfilter", "1": "Detrend"}, "transformation_params": {"0": {}, "1": {"model": "GLS", "phi": 1, "window": null}}}'}, 'af2564bc96a7326c1af4c358dc6bab89': {'Model': 'ETS', 'ModelParameters': '{"damped_trend": false, "trend": "additive", "seasonal": null, "seasonal_periods": null}', 'TransformationParameters': '{"fillna": "time", "transformations": {"0": "bkfilter", "1": "MaxAbsScaler", "2": "Detrend", "3": "RobustScaler"}, "transformation_params": {"0": {}, "1": {}, "2": {"model": "GLS", "phi": 1, "window": null}, "3": {}}}'}, 'c8a500e841dbcdd27f35d946a766204a': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "median", "transformations": {"0": "HPFilter", "1": "RobustScaler"}, "transformation_params": {"0": {"part": "trend", "lamb": 1600}, "1": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 13.336079159959066
+MAE: 0.10001323702153342
+SPL: 0.09888488951434993

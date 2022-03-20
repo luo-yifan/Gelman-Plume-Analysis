@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'quadratic', 'transformations': {'0': 'HPFilter', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'STLFilter'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 6.25}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {}, '3': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
+{'damped_trend': False, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 18.081724387085124, 79.1565447918936, 17.89714985179232
+MAE: 0.010561438680267553, 0.3731271309082495, 0.20682088540541432
+SPL: 0.08100250944957631, 0.8371897377192604, 0.2655314803778367

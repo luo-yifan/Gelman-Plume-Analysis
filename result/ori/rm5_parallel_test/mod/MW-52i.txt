@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'akima', 'transformations': {'0': 'SeasonalDifference', '1': 'DifferencedTransformer', '2': 'Detrend', '3': 'Log'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'Mean'}, '1': {}, '2': {'model': 'Linear'}, '3': {}}}
+{'level': 'deterministic constant', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': 1, 'regression_type': None}
+SMAPE: 92.57440254663514, 35.78947368421053
+MAE: 2.8662093929663994, 1.7
+SPL: 1.072389723824762, 1.0

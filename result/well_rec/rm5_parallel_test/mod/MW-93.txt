@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'ffill', 'transformations': {'0': 'DifferencedTransformer'}, 'transformation_params': {'0': {}}}
+{'method': 'lastvalue', 'lag_1': 24, 'lag_2': 84}
+SMAPE: 3.791449950662426, 41.308519530234584, 6.886283673791387
+MAE: 0.17363178925516926, 7.767929067001648, 1.7682415611890598
+SPL: 1.5573402139000778, 27.93489277258624, 12.94326621010578

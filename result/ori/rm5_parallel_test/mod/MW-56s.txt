@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'zero', 'transformations': {'0': 'RobustScaler', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'MaxAbsScaler'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 3}, '2': {}, '3': {}}}
+{'damped_trend': False, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 16.27004928442531, 199.99999999999983
+MAE: 12.499999999999986, 130.79999999999995
+SPL: 0.2502201490774225, 0.5713918263279191

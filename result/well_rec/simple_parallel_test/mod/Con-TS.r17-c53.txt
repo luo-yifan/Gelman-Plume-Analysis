@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateMotif
+{'fillna': 'zero', 'transformations': {'0': 'PositiveShift', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}}}
+{'window': 10, 'point_method': 'median', 'distance_metric': 'cityblock', 'k': 3, 'max_windows': 10000}
+SMAPE: 7.167599527619527, 10.011604085215682, 8.111585078299788
+MAE: 5.720088577270539, 6.202684116363602, 3.0406183242796914
+SPL: 0.8522619987294051, 1.3302430133903254, 1.2450795264553702

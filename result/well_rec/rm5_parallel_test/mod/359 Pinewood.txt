@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'ffill', 'transformations': {'0': 'Detrend', '1': 'QuantileTransformer', '2': 'HPFilter', '3': 'Detrend'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {'output_distribution': 'normal', 'n_quantiles': 8}, '2': {'part': 'trend', 'lamb': 1600}, '3': {'model': 'Linear', 'phi': 1, 'window': 900}}}
+{'deseasonalize': False, 'difference': False, 'use_test': False, 'method': 'auto', 'period': None, 'theta': 1.6, 'use_mle': False}
+SMAPE: 1.9173042959223192, 5.794018882820529, 5.751568448328273
+MAE: 0.690358901251831, 1.9825612452577204, 1.8912114957241513
+SPL: 0.6464080585582974, 1.9251857445666811, 3.318162609942957

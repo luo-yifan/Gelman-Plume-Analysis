@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'ffill', 'transformations': {'0': 'bkfilter', '1': 'PositiveShift', '2': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{}
+SMAPE: 32.56613343022823, 12.757170614250377, 33.420200663473246
+MAE: 1.1419966621472937, 0.6492648857816707, 2.1785617327586158
+SPL: 0.273402079325127, 0.26215699727534486, 0.27728769293271976

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'9452cac40c956e66b8edbfb7126ef737': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "fixed intercept", "maxiter": 100, "cov_type": "approx", "method": "lbfgs", "autoregressive": 1, "regression_type": null}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "QuantileTransformer"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 9}}}'}, 'f462d3cd16b1bfbc7597b2762cda1aa4': {'Model': 'UnivariateMotif', 'ModelParameters': '{"window": 10, "point_method": "mean", "distance_metric": "jaccard", "k": 3, "max_windows": 10000}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "DifferencedTransformer", "1": "MaxAbsScaler", "2": "SeasonalDifference", "3": "bkfilter"}, "transformation_params": {"0": {}, "1": {}, "2": {"lag_1": 12, "method": "Mean"}, "3": {}}}'}}, 'dis_frac': 0.5, 'FirstModel': '9452cac40c956e66b8edbfb7126ef737', 'SecondModel': 'f462d3cd16b1bfbc7597b2762cda1aa4'}
+SMAPE: 0.7570437486465289, 40.0, 0.0
+MAE: 0.02185159092781692, 0.613180309668536, 0.0
+SPL: 0.4843124024138392, 0.613180309668536, 0.0

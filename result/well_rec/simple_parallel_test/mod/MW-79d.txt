@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'SeasonalDifference', '1': 'SinTrend', '2': 'PowerTransformer', '3': 'Discretize', '4': 'SeasonalDifference'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'LastValue'}, '1': {}, '2': {}, '3': {'discretization': 'center', 'n_bins': 20}, '4': {'lag_1': 7, 'method': 'Median'}}}
+{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 2, 'max_depth': 20}}, 'mean_rolling_periods': 30, 'macd_periods': 364, 'std_rolling_periods': 7, 'max_rolling_periods': 4, 'min_rolling_periods': 7, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': 7, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 51.380141404468574, 81.16696952708658, 23.014593649125295
+MAE: 5.283058629045435, 9.948414239409209, 5.544121925086126
+SPL: 0.5858233512157724, 2.1428929523964118, 1.0538274179669036

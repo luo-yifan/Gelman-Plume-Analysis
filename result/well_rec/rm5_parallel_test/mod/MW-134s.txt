@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'KNNImputer', 'transformations': {'0': 'SinTrend', '1': 'Detrend'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear'}}}
+{'level': 'local linear deterministic trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'powell', 'autoregressive': None, 'regression_type': None}
+SMAPE: 9.154562233566379, 3.3426669475527717, 40.0
+MAE: 1.011934993896341, 0.4939775224795973, 3.0148298917751797
+SPL: 1.567575296760009, 0.5159115771572741, 3.0148298917751797

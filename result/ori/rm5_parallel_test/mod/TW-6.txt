@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'KNNImputer', 'transformations': {'0': 'PowerTransformer', '1': 'Discretize', '2': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {'discretization': 'upper', 'n_bins': 10}, '2': {'part': 'trend', 'lamb': 1600}}}
+{'deseasonalize': False, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.2, 'use_mle': False}
+SMAPE: 34.71191876055091, 0.0
+MAE: 20.536104491887933, inf
+SPL: 0.00973675163976517, 0.06310590935442417

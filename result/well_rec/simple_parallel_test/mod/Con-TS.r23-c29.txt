@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SectionalMotif
+{'fillna': 'cubic', 'transformations': {'0': 'Detrend', '1': 'RobustScaler', '2': 'HPFilter', '3': 'PctChangeTransformer'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': None}, '1': {}, '2': {'part': 'trend', 'lamb': 1600}, '3': {}}}
+{'window': 10, 'point_method': 'weighted_mean', 'distance_metric': 'cityblock', 'include_differenced': True, 'k': 1, 'stride_size': 1, 'regression_type': None}
+SMAPE: 27.37364961584216, 22.029065408982326, 182.98338268315476
+MAE: 0.007125901588903053, 0.004866854390255219, 0.09541416997089985
+SPL: 4.7602892705009925, 10.566856072874169, 0.09541416997089985

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'akima', 'transformations': {'0': 'CenterLastValue', '1': 'RobustScaler'}, 'transformation_params': {'0': {'rows': 5}, '1': {}}}
+{}
+SMAPE: 1.1804928000839048, 1.6895589825902337, 12.286097987606006
+MAE: 0.03826594475654401, 0.05486282839544314, 0.392601350653986
+SPL: 0.044190260167450424, 0.05259713722402743, 0.32371672985044664

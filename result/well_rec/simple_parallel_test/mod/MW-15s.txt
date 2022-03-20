@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'pchip', 'transformations': {'0': 'Detrend', '1': 'Slice', '2': 'QuantileTransformer', '3': 'StandardScaler'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': 10}, '1': {'method': 0.2}, '2': {'output_distribution': 'uniform', 'n_quantiles': 1}, '3': {}}}
+{'method': 'lastvalue', 'lag_1': 12, 'lag_2': 28}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

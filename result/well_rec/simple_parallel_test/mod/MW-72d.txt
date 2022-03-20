@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'ffill', 'transformations': {'0': 'PositiveShift', '1': 'SinTrend', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 21.21781802614704, 29.617018608366322, 1.8392269640862167
+MAE: 299.1540349864179, 820.7625221948538, 56.1276866723033
+SPL: 1.872519184353443, 4.128356236281935, 2.259789851509877

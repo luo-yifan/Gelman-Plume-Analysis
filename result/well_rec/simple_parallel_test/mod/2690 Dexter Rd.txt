@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'DifferencedTransformer', '1': 'Round', '2': 'Discretize'}, 'transformation_params': {'0': {}, '1': {'decimals': -2, 'on_transform': True, 'on_inverse': True}, '2': {'discretization': 'center', 'n_bins': 10}}}
+{'method': 'lastvalue', 'lag_1': 6, 'lag_2': 420}
+SMAPE: 0.924744267474636, 1.9112419022266667, 6.489433959081365
+MAE: 4.234254257374414, 9.127614628019398, 29.1772151134006
+SPL: 0.296918604276357, 0.5774374017380317, 0.48498586359202595

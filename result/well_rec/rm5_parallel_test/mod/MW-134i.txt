@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'pchip', 'transformations': {'0': 'PositiveShift', '1': 'DifferencedTransformer', '2': 'Slice', '3': 'CenterLastValue', '4': 'SeasonalDifference', '5': 'Discretize'}, 'transformation_params': {'0': {}, '1': {}, '2': {'method': 100}, '3': {'rows': 3}, '4': {'lag_1': 12, 'method': 'Median'}, '5': {'discretization': 'center', 'n_bins': 5}}}
+{'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'simple', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 22.164154565237425, 1.0339594054978822, 40.0
+MAE: 1.7467219927079263, 0.059000649552756454, 1.1293432502760878
+SPL: 2.543006217485204, 1.4803682642563243, 1.1293432502760878

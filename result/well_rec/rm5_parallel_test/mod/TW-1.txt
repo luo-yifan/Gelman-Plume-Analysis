@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnivariateMotif
+{'fillna': 'ffill', 'transformations': {'0': 'DifferencedTransformer', '1': 'Detrend', '2': 'Detrend', '3': 'PositiveShift', '4': 'MaxAbsScaler'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {'model': 'Linear', 'phi': 1, 'window': 365}, '3': {}, '4': {}}}
+{'window': 3, 'point_method': 'weighted_mean', 'distance_metric': 'sqeuclidean', 'k': 3, 'max_windows': 10000}
+SMAPE: 200.0, 200.0, 85.4460623623224
+MAE: 127.6287138778242, 226.7797289651538, 1484.243213287777
+SPL: 0.10029583241578614, 0.16453055835195976, 0.6873266189587345

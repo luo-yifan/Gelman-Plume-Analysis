@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'rolling_mean', 'transformations': {'0': 'Detrend', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'DifferencedTransformer'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {'output_distribution': 'normal', 'n_quantiles': 8}, '2': {}, '3': {}}}
+{'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 50, 'loss': 'linear', 'base_estimator': None, 'learning_rate': 1}}, 'mean_rolling_periods': 12, 'macd_periods': 12, 'std_rolling_periods': None, 'max_rolling_periods': 60, 'min_rolling_periods': 7, 'quantile90_rolling_periods': 7, 'quantile10_rolling_periods': 7, 'ewm_alpha': None, 'ewm_var_alpha': 0.5, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 44.62277854980592, 28.285524115801877, 44.76300784308076
+MAE: 119.88176572168922, 1.2472693176469611, 6.923612856024069
+SPL: 55.336691650480645, 0.9496173122042874, 1.714962334565397

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'7edca1cfa755bf3e6a52b4926edb6fff': {'Model': 'GLM', 'ModelParameters': '{"family": "Poisson", "constant": false, "regression_type": null}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "STLFilter", "1": "SeasonalDifference", "2": "QuantileTransformer"}, "transformation_params": {"0": {"decomp_type": "seasonal_decompose", "part": "trend"}, "1": {"lag_1": 12, "method": "LastValue"}, "2": {"output_distribution": "uniform", "n_quantiles": 10}}}'}, '486c1010ffdd6b042cf71e35ed3d07b3': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "lastvalue", "lag_1": 2, "lag_2": 364}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "IntermittentOccurrence", "1": "SeasonalDifference", "2": "DifferencedTransformer", "3": "MinMaxScaler"}, "transformation_params": {"0": {"center": "mean"}, "1": {"lag_1": 12, "method": "LastValue"}, "2": {}, "3": {}}}'}}, 'dis_frac': 0.5, 'FirstModel': '486c1010ffdd6b042cf71e35ed3d07b3', 'SecondModel': '7edca1cfa755bf3e6a52b4926edb6fff'}
+SMAPE: 5.46651986964269, 35.322770647313675, 24.496905416706554
+MAE: 0.03623965797121753, 0.29855746889114304, 0.21030642092228016
+SPL: 0.899511126289871, 1.8470186948094247, 1.3054084390478489

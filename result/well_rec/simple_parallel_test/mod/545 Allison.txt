@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'MaxAbsScaler'}, 'transformation_params': {'0': {}}}
+{'deseasonalize': True, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.4, 'use_mle': True}
+SMAPE: 0.5829586169965564, 14.872918882223905, 139.51952811114685
+MAE: 0.09015379017149101, 1.9164100125096137, 5.940276973582643
+SPL: 1.1383478933883593, 1.3947420896242513, 5.940263200956574

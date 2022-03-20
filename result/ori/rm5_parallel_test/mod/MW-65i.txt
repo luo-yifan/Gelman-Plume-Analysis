@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'zero', 'transformations': {'0': 'Log', '1': 'Detrend', '2': 'DifferencedTransformer', '3': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear', 'phi': 1, 'window': 90}, '2': {}, '3': {}}}
+{'level': 'random walk with drift', 'maxiter': 100, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 60.08147470789098, 178.05060039430955
+MAE: 0.6367396378144063, 8.590312242914688
+SPL: 0.028431149367805587, 0.07588531947645658

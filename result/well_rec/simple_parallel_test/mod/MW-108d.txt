@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'mean', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'ClipOutliers', '3': 'QuantileTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {'method': 'clip', 'std_threshold': 1, 'fillna': None}, '3': {'output_distribution': 'uniform', 'n_quantiles': 9}}}
+{'regression_model': {'model': 'KNN', 'model_params': {'n_neighbors': 3, 'weights': 'uniform', 'p': 2, 'leaf_size': 30}}, 'mean_rolling_periods': None, 'macd_periods': None, 'std_rolling_periods': 10, 'max_rolling_periods': None, 'min_rolling_periods': None, 'quantile90_rolling_periods': 30, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': 0.5, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 15.397191148671453, 27.30103117288703, 11.589737767888906
+MAE: 184.94056442896238, 664.5070405306781, 381.4339029029993
+SPL: 0.6791903957278824, 3.275457842314739, 1.2652964867917416

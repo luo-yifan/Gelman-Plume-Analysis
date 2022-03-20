@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'ClipOutliers', '1': 'SinTrend', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {}, '2': {}}}
+{'method': 'Median'}
+SMAPE: 7.565743334712248, 120.0, 0.0
+MAE: 0.27043735116201645, 1.6874307581398782, 0.0
+SPL: 0.9637516839236416, 1.6874307581398782, 0.0

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateMotif
+{'fillna': 'zero', 'transformations': {'0': 'DatepartRegression', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'recurring', 'polynomial_degree': None}, '1': {}}}
+{'window': 10, 'point_method': 'mean', 'distance_metric': 'jensenshannon', 'k': 5, 'max_windows': 10000}
+SMAPE: 13.551832086831928, 33.910474890172594, 47.106733389200386
+MAE: 0.17126676321029882, 0.28564775347709664, 0.15774527803063404
+SPL: 1.4200104210281337, 3.6837227715110767, 4.489081505068554

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'akima', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'PositiveShift'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {}}}
+{'level': 'local linear trend', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 200.0, 123.93924656615722, 34.55533876542139
+MAE: 52.44317374438185, 147.62860524709757, 2233.9148148274553
+SPL: 0.04534924893020375, 0.1105094467852793, 2.6442552449730705

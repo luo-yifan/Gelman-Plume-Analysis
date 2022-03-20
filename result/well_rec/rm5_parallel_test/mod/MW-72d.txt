@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'cubic', 'transformations': {'0': 'ClipOutliers', '1': 'MinMaxScaler', '2': 'DifferencedTransformer', '3': 'SeasonalDifference'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {}, '3': {'lag_1': 12, 'method': 'LastValue'}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [25, 15, 25], 'max_iter': 250, 'activation': 'tanh', 'solver': 'adam', 'early_stopping': False, 'learning_rate_init': 0.001}}}
+SMAPE: 16.29080294132242, 5.5974364065485895, 11.754516006787558
+MAE: 402.1552772289829, 167.47886950461287, 305.7985075543397
+SPL: 4.680780872738571, 1.7582622539658845, 19.403585077586737

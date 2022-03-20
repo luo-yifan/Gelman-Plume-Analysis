@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'ffill', 'transformations': {'0': 'ClipOutliers', '1': 'PctChangeTransformer', '2': 'HPFilter'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {'part': 'trend', 'lamb': 104976000000}}}
+{'family': 'Gamma', 'constant': False, 'regression_type': None}
+SMAPE: 29.623802736601846, 10.801976491102145, 22.395320062971873
+MAE: 178.88494428646646, 70.6687819085927, 284.4288736388651
+SPL: 0.358918635839712, 0.03142916049980081, 0.09591396775994898

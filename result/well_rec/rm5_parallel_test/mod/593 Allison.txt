@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'zero', 'transformations': {'0': 'DifferencedTransformer', '1': 'SinTrend', '2': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 8}}}
+{'regression_model': {'model': 'HistGradientBoost', 'model_params': {'loss': 'poisson', 'learning_rate': 1, 'max_depth': None, 'min_samples_leaf': 20, 'max_iter': 50, 'l2_regularization': 0}}, 'mean_rolling_periods': None, 'macd_periods': None, 'std_rolling_periods': 10, 'max_rolling_periods': 364, 'min_rolling_periods': 364, 'quantile90_rolling_periods': 30, 'quantile10_rolling_periods': None, 'ewm_alpha': 0.2, 'ewm_var_alpha': 0.2, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 5.1792409450709265, 30.34792088096596, 194.11948541817972
+MAE: 23.630552349407743, 99.46946276585382, 176.82951839068087
+SPL: 3.283193268813832, 3.678363458978747, 746.6510273754204

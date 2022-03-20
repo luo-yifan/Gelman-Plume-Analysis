@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score_unique', 'models': {'2887d2af24ace64615ccf0154ef2e4be': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Mean"}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "SinTrend"}, "transformation_params": {"0": {}, "1": {}}}'}, '84a8ec6c2b8a32b0bbb1a346b3079378': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "mean", "lag_1": 97, "lag_2": null}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "ClipOutliers"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 1, "fillna": null}}}'}, 'bbe7c02fe83ce0cebaac38bc97f98263': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": false, "use_test": false, "method": "auto", "period": null, "theta": 4, "use_mle": false}', 'TransformationParameters': '{"fillna": "KNNImputer", "transformations": {"0": "DifferencedTransformer", "1": "QuantileTransformer", "2": "PowerTransformer", "3": "Discretize"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 3}, "2": {}, "3": {"discretization": "lower", "n_bins": 5}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 0.0, 0.0
+MAE: 0.0, 0.0
+SPL: 0.0, 0.0

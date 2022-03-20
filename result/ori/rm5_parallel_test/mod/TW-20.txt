@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'rolling_mean', 'transformations': {'0': 'MaxAbsScaler', '1': 'PctChangeTransformer', '2': 'ClipOutliers'}, 'transformation_params': {'0': {}, '1': {}, '2': {'method': 'clip', 'std_threshold': 4, 'fillna': None}}}
+{'method': 'Mean'}
+SMAPE: 21.527819028557378
+MAE: 174.43019395154627
+SPL: 0.09739250157531054

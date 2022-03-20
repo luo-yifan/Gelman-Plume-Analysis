@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'ffill', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '1': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{}
+SMAPE: 11.332091741767183, 19.39684382824742, 16.955993534574425
+MAE: 4.378424231600906, 7.3700472375082, 4.928572340778085
+SPL: 1.5258827948206575, 3.1392731414170254, 2.1171135328979775

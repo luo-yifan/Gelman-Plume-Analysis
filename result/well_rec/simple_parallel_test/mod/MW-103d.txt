@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'pchip', 'transformations': {'0': 'SeasonalDifference', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {'lag_1': 12, 'method': 'Median'}, '1': {}}}
+{'level': 'deterministic trend', 'maxiter': 100, 'cov_type': 'robust', 'method': 'cg', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 4.235531120090016, 13.31922247964788, 0.6648268251655887
+MAE: 0.44951768431793865, 2.0031998696453464, 0.11023394532556097
+SPL: 0.8878782475125452, 37.20688275072622, 2.5813416778400913

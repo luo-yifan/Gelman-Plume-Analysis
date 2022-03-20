@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'KNNImputer', 'transformations': {'0': 'DatepartRegression', '1': 'PositiveShift'}, 'transformation_params': {'0': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 9, 'min_samples_split': 2}}, 'datepart_method': 'simple_2', 'polynomial_degree': 2}, '1': {}}}
+{}
+SMAPE: 2.151544089667449, 10.73378257265773, 5.24845954522751
+MAE: 1.0365653046586203, 4.650356718886404, 2.031263534562055
+SPL: 0.0031006329615024548, 0.011440507454972302, 0.0039121590376235416

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'horizontal', 'models': {'75409d0918714e45d1ae8f97aafa5baf': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "MinMaxScaler", "1": "MaxAbsScaler"}, "transformation_params": {"0": {}, "1": {}}}'}, '5f644179e27fa18749d2900634eee316': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Mean"}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "ClipOutliers"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 5, "fillna": null}}}'}, '5e4ed09077f6979eaec6beeefcc9a5e5': {'Model': 'GLM', 'ModelParameters': '{"family": "Binomial", "constant": false, "regression_type": null}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "EWMAFilter", "1": "PowerTransformer", "2": "MaxAbsScaler", "3": "QuantileTransformer"}, "transformation_params": {"0": {"span": 10}, "1": {}, "2": {}, "3": {"output_distribution": "normal", "n_quantiles": 1}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 23.69859525248051
+MAE: 16.61907643598371
+SPL: 0.165255155345469

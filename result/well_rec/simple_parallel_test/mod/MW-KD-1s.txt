@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'fake_date', 'transformations': {'0': 'DifferencedTransformer'}, 'transformation_params': {'0': {}}}
+{'level': 'smooth trend', 'maxiter': 100, 'cov_type': 'opg', 'method': 'cg', 'autoregressive': None, 'regression_type': None}
+SMAPE: 8.58816720218135, 4.225571335823037, 19.418216329954838
+MAE: 5.860151914090411, 1.490320618632103, 6.84268348735304
+SPL: 0.8012579068918598, 1.0023613286840163, 4.040169876442906

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'zero', 'transformations': {'0': 'PositiveShift', '1': 'Slice'}, 'transformation_params': {'0': {}, '1': {'method': 0.5}}}
+{}
+SMAPE: 0.0, 0.0, 80.0
+MAE: 0.0, 0.0, 1.346504295880722
+SPL: 0.0, 0.0, 16.971875663409353

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'ffill', 'transformations': {'0': 'DifferencedTransformer', '1': 'Round', '2': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {'model': 'middle', 'decimals': 0, 'on_transform': False, 'on_inverse': True}, '2': {'part': 'trend', 'lamb': 6.25}}}
+{}
+SMAPE: 0.0, 94.35982815278784, 4.9649563358858195
+MAE: 0.0, 0.0035289053805172598, 0.0003148512914776198
+SPL: 0.0, 0.12361812414636089, 0.008737599670602291

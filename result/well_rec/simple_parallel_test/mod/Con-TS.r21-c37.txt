@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'bestn_horizontal', 'models': {'ae4e0640f0b2ab18d434078aee1d4237': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "random trend", "maxiter": 50, "cov_type": "oim", "method": "lbfgs", "autoregressive": null, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "quadratic", "transformations": {"0": "Slice", "1": "PositiveShift", "2": "bkfilter"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {}}}'}, '389feae4034be9a1f1a1932149190dfe': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "quadratic", "transformations": {"0": "Slice", "1": "PositiveShift", "2": "bkfilter"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {}}}'}, 'd03da6db9964d54173ea1109a1b3074c': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "lastvalue", "lag_1": 4, "lag_2": 1}', 'TransformationParameters': '{"fillna": "quadratic", "transformations": {"0": "Slice", "1": "PositiveShift", "2": "bkfilter"}, "transformation_params": {"0": {"method": 0.2}, "1": {}, "2": {}}}'}}, 'model_weights': {'ae4e0640f0b2ab18d434078aee1d4237': 15.0, '389feae4034be9a1f1a1932149190dfe': 14.0, 'd03da6db9964d54173ea1109a1b3074c': 13.0}, 'point_method': 'mean'}
+SMAPE: 8.460583729704963, 32.154913889630095, 47.19951702727933
+MAE: 5.073336372726258, 14.056614566299123, 26.947633884120943
+SPL: 0.10156063967331969, 0.25078206577039, 0.38076923097813037

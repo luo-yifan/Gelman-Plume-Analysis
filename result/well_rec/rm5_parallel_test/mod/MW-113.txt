@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'pchip', 'transformations': {'0': 'IntermittentOccurrence', '1': 'MinMaxScaler', '2': 'MinMaxScaler'}, 'transformation_params': {'0': {'center': 'mean'}, '1': {}, '2': {}}}
+{'level': 'random trend', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 12.796387728897923, 3.874053439390418, 6.412900687947799
+MAE: 5.443599622108962, 1.1344932048041017, 1.9039288003032198
+SPL: 4.9242287911650005, 2.936012253572418, 1.4112720425762026

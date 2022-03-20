@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnivariateMotif
+{'fillna': 'pad', 'transformations': {'0': 'Discretize', '1': 'DifferencedTransformer', '2': 'Discretize'}, 'transformation_params': {'0': {'discretization': 'lower', 'n_bins': 5}, '1': {}, '2': {'discretization': 'center', 'n_bins': 20}}}
+{'window': 10, 'point_method': 'weighted_mean', 'distance_metric': 'euclidean', 'k': 5, 'max_windows': 10000}
+SMAPE: 6.716014996302755, 45.72931079447678, 14.558832529008324
+MAE: 0.09665081844467069, 0.3581781941950953, 0.12492441611563429
+SPL: 0.6421062824262529, 1.1325700737013427, 0.5902966736939318

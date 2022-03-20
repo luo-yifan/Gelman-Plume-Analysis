@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'fake_date', 'transformations': {'0': 'Slice', '1': 'QuantileTransformer', '2': 'Discretize'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'output_distribution': 'uniform', 'n_quantiles': 2}, '2': {'discretization': 'lower', 'n_bins': 20}}}
+{'method': 'Weighted_Mean'}
+SMAPE: 6.74671553186367, 50.126414538807005, 27.870225904235518
+MAE: 0.006676337064511787, 0.03904724020750562, 0.009541927387642177
+SPL: 0.12553701375712858, 0.8270968705171843, 0.6484851008396599

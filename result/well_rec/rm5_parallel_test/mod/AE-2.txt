@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'ffill', 'transformations': {'0': 'Detrend', '1': 'MaxAbsScaler', '2': 'DifferencedTransformer', '3': 'MaxAbsScaler'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': 10}, '1': {}, '2': {}, '3': {}}}
+{'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [72, 36, 72], 'max_iter': 250, 'activation': 'tanh', 'solver': 'adam', 'early_stopping': False, 'learning_rate_init': 0.001}}, 'datepart_method': 'simple', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 4.237080596161607, 20.44369380394397, 80.0
+MAE: 0.7914704120869075, 3.4092143343171735, 2.661699368172528
+SPL: 2.2067925753708497, 3.0356563633773934, 8.812736777148176

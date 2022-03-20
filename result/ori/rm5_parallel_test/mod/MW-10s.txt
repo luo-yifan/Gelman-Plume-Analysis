@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'KNNImputer', 'transformations': {'0': 'RobustScaler', '1': 'Round'}, 'transformation_params': {'0': {}, '1': {'model': 'middle', 'decimals': 0, 'on_transform': False, 'on_inverse': True}}}
+{'damped_trend': False, 'trend': None, 'seasonal': 'additive', 'seasonal_periods': 7}
+SMAPE: 18.79458583700037, 109.47775628626692, 31.11111111111111
+MAE: 8.7, 35.375, 6.333333333333333
+SPL: 0.419753086419753, 1.517746913580247, 0.21621621621621614

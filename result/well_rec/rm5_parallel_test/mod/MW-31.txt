@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'ffill', 'transformations': {'0': 'Detrend', '1': 'MinMaxScaler', '2': 'DifferencedTransformer', '3': 'Detrend'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': 365}, '1': {}, '2': {}, '3': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{}
+SMAPE: 11.767386435695313, 1.6665621548816385, 5.057183393683029
+MAE: 2.512236443769357, 0.4969642589713267, 1.5603463361872378
+SPL: 1.3628161658111957, 0.8569324373277024, 1.7448248442940697

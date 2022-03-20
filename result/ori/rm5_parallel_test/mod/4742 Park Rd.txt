@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'time', 'transformations': {'0': 'Slice', '1': 'Detrend', '2': 'DifferencedTransformer', '3': 'RobustScaler', '4': 'Detrend'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {}, '3': {}, '4': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{'method': 'Weighted_Mean'}
+SMAPE: 25.586031320697945, 15.144902765432334, 74.45909104278033
+MAE: 3.1421360094424804, 3.353933961353681, 10.109305135252649
+SPL: 0.12883380253703466, 0.6098172705567705, 0.7904112103573611

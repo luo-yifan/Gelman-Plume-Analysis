@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'3628cdef5e8db3b96d6a6a5ddddb31e5': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 3, "use_mle": false}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "MinMaxScaler"}, "transformation_params": {"0": {}}}'}, 'df254be674644a5b625c6f89403ca47b': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "smooth trend", "maxiter": 250, "cov_type": "opg", "method": "lbfgs", "autoregressive": null, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "MinMaxScaler", "1": "Round", "2": "MaxAbsScaler"}, "transformation_params": {"0": {}, "1": {"decimals": 0, "on_transform": true, "on_inverse": false}, "2": {}}}'}}, 'dis_frac': 0.5, 'FirstModel': 'df254be674644a5b625c6f89403ca47b', 'SecondModel': '3628cdef5e8db3b96d6a6a5ddddb31e5'}
+SMAPE: 4.019934797550488, 14.85893011567046, 14.624067260591072
+MAE: 2.49634274970136, 5.454091516926507, 4.47485266312466
+SPL: 2.008503598034301, 8.39509961109376, 11.875513884290903

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'ffill', 'transformations': {'0': 'PctChangeTransformer'}, 'transformation_params': {'0': {}}}
+{}
+SMAPE: 0.40858043092464946, 1.1295191476028914, 1.7739802202941672
+MAE: 0.6323563290340019, 1.7206002169110035, 2.7377758167289983
+SPL: 0.0986164653871754, 0.22851784737743971, 0.3141414477403506

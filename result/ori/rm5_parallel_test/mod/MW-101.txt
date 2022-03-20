@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'Detrend', '3': 'CumSumTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 1, 'fillna': None}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {}}}
+{'damped_trend': True, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 13.543501387692867
+MAE: 31.83263928169191
+SPL: 0.294383460727349

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill', 'transformations': {'0': 'HPFilter', '1': 'RobustScaler', '2': 'Detrend', '3': 'Round'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 6.25}, '1': {}, '2': {'model': 'GLS', 'phi': 1, 'window': None}, '3': {'decimals': 2, 'on_transform': False, 'on_inverse': True}}}
+{'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [25, 15, 25], 'max_iter': 250, 'activation': 'relu', 'solver': 'lbfgs', 'early_stopping': False, 'learning_rate_init': 0.001}}, 'mean_rolling_periods': 90, 'macd_periods': None, 'std_rolling_periods': 10, 'max_rolling_periods': 60, 'min_rolling_periods': 364, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': 10, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'simple_2_poly', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 2.215924076920177, 10.165745795429835, 11.07654406202401
+MAE: 0.8763419212146388, 4.443629173348289, 3.491103581058546
+SPL: 1.5325732154396638, 1.0708264373862928, 0.7323378276020549

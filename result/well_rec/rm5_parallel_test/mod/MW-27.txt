@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'ffill', 'transformations': {'0': 'MinMaxScaler', '1': 'CumSumTransformer', '2': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {}, '2': {'part': 'trend', 'lamb': 1600}}}
+{}
+SMAPE: 2.61423011305775, 15.013729594671517, 24.656758632373432
+MAE: 0.44931891055495965, 2.9244270208578405, 6.679409879987782
+SPL: 0.4569563568414893, 2.8818937892307974, 14.281965507238834

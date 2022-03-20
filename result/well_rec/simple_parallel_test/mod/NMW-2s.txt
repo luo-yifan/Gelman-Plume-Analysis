@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'mean', 'transformations': {'0': 'ClipOutliers', '1': 'Slice', '2': 'DatepartRegression'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {'method': 0.2}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 1.0}}, 'datepart_method': 'simple', 'polynomial_degree': None}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 2.578294057620581, 0.8057577300228127, 0.7485468379955579
+MAE: 57.48241432136001, 17.719965526415034, 16.499196365498666
+SPL: 0.27843712770667683, 0.07653278909426998, 0.05037309372332235

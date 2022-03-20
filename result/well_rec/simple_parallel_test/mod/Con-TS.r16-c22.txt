@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'fake_date', 'transformations': {'0': 'PositiveShift', '1': 'QuantileTransformer', '2': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {}}}
+{'level': 'local linear trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 23.28669521663719, 52.273734551221864, 12.334854444698161
+MAE: 0.4749499506175667, 2.882290807454015, 1.5369455337524394
+SPL: 0.5918821316634952, 2.0046928961068247, 0.6883902026402259

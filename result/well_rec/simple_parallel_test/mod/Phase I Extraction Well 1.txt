@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'pchip', 'transformations': {'0': 'Slice', '1': 'MinMaxScaler'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}}}
+{}
+SMAPE: 1.7307588980538917, 2.4127581921907777, 74.45830065538141
+MAE: 3.121137178969184, 4.309165539055192, 328.54041212711417
+SPL: 0.007635819626462455, 0.045407850285058615, 0.17572212850034452

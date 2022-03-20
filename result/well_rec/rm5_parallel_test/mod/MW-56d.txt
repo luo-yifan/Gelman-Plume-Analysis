@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score', 'models': {'2887d2af24ace64615ccf0154ef2e4be': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Mean"}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "DifferencedTransformer", "1": "SinTrend"}, "transformation_params": {"0": {}, "1": {}}}'}, 'fbdc2b938411b5d03c7bc2fd06b0ac44': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": true, "maxiter": 100, "cov_type": "opg", "method": "lbfgs", "autoregressive": null, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "PositiveShift", "1": "Detrend", "2": "bkfilter", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"model": "Linear"}, "2": {}, "3": {}}}'}, 'a138e1be703f0462a141f112fdd0b3b6': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 8}, "2": {"lag_1": 7, "method": "LastValue"}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 0.0, 200.0, 0.0
+MAE: 0.0, 0.8823657346363494, inf
+SPL: 0.0, 4.515699630244922, inf

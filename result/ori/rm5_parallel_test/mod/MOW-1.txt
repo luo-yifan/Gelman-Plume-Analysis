@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'median', 'transformations': {'0': 'Round', '1': 'MaxAbsScaler', '2': 'DatepartRegression', '3': 'RobustScaler', '4': 'PowerTransformer'}, 'transformation_params': {'0': {'decimals': -1, 'on_transform': True, 'on_inverse': False}, '1': {}, '2': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'recurring', 'polynomial_degree': None}, '3': {}, '4': {}}}
+{'level': 'fixed slope', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 38.979386742500324, 30.810676851864265, 39.31132209379954
+MAE: 193.59062813957092, 233.2451688477542, 639.8775550506041
+SPL: 0.19405606417622756, 0.15204832953255207, 1.8240129926191984

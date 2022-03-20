@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'mean', 'transformations': {'0': 'ClipOutliers', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 1, 'fillna': None}, '1': {'output_distribution': 'uniform', 'n_quantiles': 4}}}
+{}
+SMAPE: 31.71020408163265, 20.489283540196485
+MAE: 7.2, 7.298036969723375
+SPL: 0.42282000771957395, 0.4555305281613527

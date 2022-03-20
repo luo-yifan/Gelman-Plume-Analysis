@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'cubic', 'transformations': {'0': 'bkfilter', '1': 'PctChangeTransformer', '2': 'EWMAFilter', '3': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'span': 7}, '3': {}}}
+{'level': 'local linear deterministic trend', 'maxiter': 250, 'cov_type': 'opg', 'method': 'bfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 11.486731763585613, 22.921877036086748, 23.342333774684995
+MAE: 18.87060470120746, 29.92875523184879, 16.41657594633606
+SPL: 3.1919256773247935, 3.0032046430748727, 3.4012074849083778

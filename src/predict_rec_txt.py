@@ -14,6 +14,15 @@ def create_dir(filename):
     if not os.path.exists(os.path.dirname(filename)):
         os.makedirs(os.path.dirname(filename))
 
+def generate_name_dict():
+    well_data = pd.read_excel('../data/Gelman_2020_DATA_Rockworks6-2020.xlsx',
+                              sheet_name='TmInterval')
+    grouped = well_data.groupby('Bore')
+    dict = {}
+    for name, _ in grouped:
+        replaced_name = name.replace(' ', '-')
+        dict[replaced_name] = name
+    return dict
 
 def run_rec(output_directory, m_list, remove_recent_years=False):
     create_dir(output_directory)
@@ -284,34 +293,52 @@ def run_from_ori(output_directory, m_list, remove_recent_years=False):
         count += 1
 
 
-def predict_cache_to_csv(cache_dir, output_dir):
+def predict_cache_to_csv(cache_dir, output_dir, file_name):
     name_list = [name for name in os.listdir(cache_dir)]
     sum_data = []
+
     for i in name_list:
-        name = i.split('@')[0]
+        print(i)
         well_data = pd.read_csv(cache_dir + i + '/predict.csv')
-        well_data['WellName'] = name
+        well_data['WellName'] = i
         for index, row in well_data.iterrows():
             sum_data.append([row['WellName'], row['Date'], row['Concentration']])
     df = pd.DataFrame(sum_data, columns=['WellName', 'Date', 'Concentration'])
     # TODO: filename
-    df.to_csv(output_dir + '/all_predict_data_rec.csv')
+    df.to_csv(output_dir + '/'+ file_name + '.csv')
+
+def predict_cache_to_csv_ds_y(cache_dir, output_dir, file_name):
+    name_list = [name for name in os.listdir(cache_dir)]
+    sum_data = []
+
+    for i in name_list:
+        print(i)
+        well_data = pd.read_csv(cache_dir + i + '/predict.csv')
+        well_data['WellName'] = i
+        for index, row in well_data.iterrows():
+            sum_data.append([row['WellName'], row['Date'], row['y']])
+    df = pd.DataFrame(sum_data, columns=['WellName', 'Date', 'Concentration'])
+    # TODO: filename
+    df.to_csv(output_dir + '/'+ file_name + '.csv')
 
 
 def ori_data_to_csv(output_directory):
-    name_list = [name for name in os.listdir("../data/Well_Rec_txt/")]
+    name_list = [name for name in os.listdir("../data/Well_Rec_txt2/")]
     sum_data = []
+    name_dict = generate_name_dict()
     for i in name_list:
         name = i.split('.')[1]
         if i.split('.')[2] == 'S2020':
-            well_data = pd.read_csv('../data/Well_Rec_txt/' + i)
+            well_data = pd.read_csv('../data/Well_Rec_txt2/' + i)
             well_data['Date'] = well_data.apply(lambda row: datetime.datetime(int(row.Year), int(row.Month), 1), axis=1)
-            well_data['WellName'] = name
+            if name not in name_dict.keys():
+                name = name.split('_')[0]
+            well_data['WellName'] = name_dict[name]
             for index, row in well_data.iterrows():
                 sum_data.append([row['WellName'], row['Date'], row['Concentration']])
     df = pd.DataFrame(sum_data, columns=['WellName', 'Date', 'Concentration'])
     # TODO: filename
-    df.to_csv(output_directory + '/all_data.csv')
+    df.to_csv(output_directory + '/all_rec_data.csv')
 
 
 def pixel_data_to_csv(output_directory):
@@ -472,12 +499,11 @@ if __name__ == "__main__":
     ]
     # ori_data_to_csv(output_dir)
 
-    output_dir_ori = '../result/well_rec/rm_by_ori/'
+    # output_dir_ori = '../result/well_rec/rm_by_ori/'
     # output_dir = '../result/well_rec/simple/'
     # remove_recent_years_output_dir = '../result/well_rec/rm5/'
-    run_rec_remove_invalid_date(output_dir_ori, model_list)
+    # run_rec_remove_invalid_date(output_dir_ori, model_list)
     # dir = '../result/well_rec/rm5/cache/'
-    # predict_cache_to_csv(dir, remove_recent_years_output_dir)
 
     # output_dir_ori = '../result/ori/rm5/'
     # run_from_ori(output_dir_ori, model_list, True)
@@ -493,3 +519,20 @@ if __name__ == "__main__":
 
     # output_dir_ori = '../result/pixel_rec/'
     # run_map_rec(output_dir_ori, model_list)
+
+    predict_cache_to_csv('../result/well_rec/simple_parallel_test/cache/',
+                         '../result/well_rec/simple_parallel_test/',
+                         'all_predict_data_rec')
+    # predict_cache_to_csv('../result/well_rec/rm5_parallel_test/cache/',
+    #                      '../result/well_rec/rm5_parallel_test/',
+    #                      'all_predict_data_rec_rm5')
+    #
+    # predict_cache_to_csv_ds_y('../result/ori/rm5_parallel_test/cache/',
+    #                      '../result/ori/rm5_parallel_test/',
+    #                      'rm5_predict_data')
+    #
+    # predict_cache_to_csv_ds_y('../result/ori/simple_parallel_test/cache/',
+    #                      '../result/ori/simple_parallel_test/',
+    #                      'all_predict_data_ori')
+
+    # ori_data_to_csv('../data/')

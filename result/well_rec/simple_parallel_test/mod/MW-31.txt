@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'mean', 'transformations': {'0': 'DifferencedTransformer', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}}}
+{'method': 'Weighted_Mean'}
+SMAPE: 3.5338110784003463, 20.865932491802358, 7.341384696087869
+MAE: 0.5289057165269139, 4.805372159738164, 2.2190506746353287
+SPL: 0.9226678734542799, 1.7466105837832067, 0.8831947978702757

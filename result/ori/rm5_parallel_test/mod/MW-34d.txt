@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'KNNImputer', 'transformations': {'0': 'MaxAbsScaler', '1': 'QuantileTransformer', '2': 'HPFilter'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 7}, '2': {'part': 'cycle', 'lamb': 1600}}}
+{'damped_trend': False, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 0.0, 26.666666666666664, 40.00116159187321
+MAE: 0.0, 0.2, 0.4000118228508326
+SPL: 0.08675425899133166, 0.1653146896452182, 0.3333333333333333

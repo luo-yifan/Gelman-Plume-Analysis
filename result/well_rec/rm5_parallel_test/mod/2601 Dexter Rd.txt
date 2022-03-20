@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'fake_date', 'transformations': {'0': 'Slice', '1': 'EWMAFilter', '2': 'Detrend', '3': 'Round'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'span': 3}, '2': {'model': 'GLS', 'phi': 1, 'window': None}, '3': {'decimals': -1, 'on_transform': False, 'on_inverse': True}}}
+{'damped_trend': False, 'trend': 'multiplicative', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 2.9081794758005013, 16.6395862346641, 120.0
+MAE: 0.09198268828273841, 0.4572277287647649, 1.328157785670054
+SPL: 0.5976879031671146, 3.6027198866265047, 1.328157785670054

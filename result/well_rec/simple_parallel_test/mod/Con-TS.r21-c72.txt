@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'zero', 'transformations': {'0': 'ClipOutliers', '1': 'SeasonalDifference', '2': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'lag_1': 7, 'method': 'Median'}, '2': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{'deseasonalize': False, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.6, 'use_mle': False}
+SMAPE: 12.42934611208304, 43.22648385033212, 22.094139025205294
+MAE: 0.07240283166763652, 0.23825270555092842, 0.13838798358743817
+SPL: 1.7678081418925562, 2.0333071441044517, 1.6921981137061697

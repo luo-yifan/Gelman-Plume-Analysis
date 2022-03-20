@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'QuantileTransformer', '1': 'Round', '2': 'Discretize', '3': 'PowerTransformer'}, 'transformation_params': {'0': {'output_distribution': 'normal', 'n_quantiles': 3}, '1': {'decimals': -1, 'on_transform': False, 'on_inverse': True}, '2': {'discretization': 'upper', 'n_bins': 10}, '3': {}}}
+{'family': 'Gamma', 'constant': False, 'regression_type': None}
+SMAPE: 13.333333333333332, 40.0
+MAE: 0.2, 0.6
+SPL: 0.07142857142857141, 0.25

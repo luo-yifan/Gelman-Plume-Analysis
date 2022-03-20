@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'DifferencedTransformer'}, 'transformation_params': {'0': {}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'GaussianProcessRegressor', 'model_params': {'alpha': 1e-05}}}
+SMAPE: 13.427982403093045, 2.7976030998921617, 8.075651035231783
+MAE: 803.7063885901474, 186.14644856355153, 518.4630117488299
+SPL: 3.0742880641876553, 0.66219330322681, 1.5655967547870238

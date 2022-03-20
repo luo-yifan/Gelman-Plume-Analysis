@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'PositiveShift', '1': 'Log', '2': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{}
+SMAPE: 31.111111111111114, 0.0, 44.444444444444436
+MAE: 0.7, 0.0, 0.5
+SPL: 0.057232704402515724, 0.0, 0.022151898734177215

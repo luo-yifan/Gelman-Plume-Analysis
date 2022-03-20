@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateMotif
+{'fillna': 'mean', 'transformations': {'0': 'Detrend', '1': 'DifferencedTransformer', '2': 'SeasonalDifference', '3': 'HPFilter', '4': 'RollingMeanTransformer'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {}, '2': {'lag_1': 7, 'method': 'Median'}, '3': {'part': 'trend', 'lamb': 129600}, '4': {'fixed': False, 'window': 10}}}
+{'window': 10, 'point_method': 'weighted_mean', 'distance_metric': 'sqeuclidean', 'k': 5, 'max_windows': 1000}
+SMAPE: 1.821282390184399, 6.96651412556849, 3.5481665084635816
+MAE: 0.04579547398960369, 0.24463630403969966, 0.16751098352589827
+SPL: 0.09952233957250232, 0.539571999090687, 0.35525688835079233

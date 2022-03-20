@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'d933b50baf4ab7ddd7a8536ffa31bd1e': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": false, "difference": false, "use_test": true, "method": "auto", "period": null, "theta": 1.4, "use_mle": true}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "PCA"}, "transformation_params": {"0": {}}}'}, '6bc457879111383e4e5077e86e9b4844': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": false, "use_test": true, "method": "auto", "period": null, "theta": 1.4, "use_mle": true}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "PCA"}, "transformation_params": {"0": {}}}'}, 'f98665df098f1f31d191022c76594cb2': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 1.4, "use_mle": true}', 'TransformationParameters': '{"fillna": "ffill_mean_biased", "transformations": {"0": "PCA"}, "transformation_params": {"0": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 4.161737612478469
+MAE: 2.30131628665706
+SPL: 0.3240957267075673

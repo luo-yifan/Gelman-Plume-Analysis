@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'rolling_mean', 'transformations': {'0': 'DifferencedTransformer'}, 'transformation_params': {'0': {}}}
+{'family': 'Binomial', 'constant': False, 'regression_type': None}
+SMAPE: 9.721516787774721, 55.0809906178175, 42.188814119159495
+MAE: 85.01742406218239, 1014.3140033511336, 2341.914476736398
+SPL: 1.1792842218504513, 1.296248326504856, 11.049616085390861

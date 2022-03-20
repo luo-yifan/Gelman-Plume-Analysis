@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'pad', 'transformations': {'0': 'DifferencedTransformer', '1': 'CumSumTransformer', '2': 'Detrend', '3': 'SeasonalDifference', '4': 'PCA'}, 'transformation_params': {'0': {}, '1': {}, '2': {'model': 'GLS', 'phi': 1, 'window': None}, '3': {'lag_1': 7, 'method': 'Mean'}, '4': {}}}
+{'family': 'Binomial', 'constant': False, 'regression_type': None}
+SMAPE: 1.816309230013616, 5.293114004184588, 1.9452408981638338
+MAE: 0.7529849839821552, 1.9138684562378372, 0.6546379845106258
+SPL: 0.7439719853171457, 0.6513515516554947, 0.5606381514814955

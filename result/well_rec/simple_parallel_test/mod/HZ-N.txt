@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'linear', 'transformations': {'0': 'PctChangeTransformer', '1': 'RobustScaler', '2': 'SeasonalDifference', '3': 'DifferencedTransformer', '4': 'CumSumTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'lag_1': 12, 'method': 'Mean'}, '3': {}, '4': {}}}
+{'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 55.07479754872567, 1.8356600530083582, 34.17126075781951
+MAE: 175.64080500511318, 8.094872879091644, 124.9355990495105
+SPL: 0.3431710023068666, 0.41023688776493045, 0.3269455123075433

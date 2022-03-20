@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'StandardScaler', '1': 'Detrend', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {'model': 'GLS', 'phi': 1, 'window': None}, '2': {}}}
+{'method': 'Weighted_Mean'}
+SMAPE: 1.9392809833078537, 3.333928561036081, 16.874487408286917
+MAE: 0.27423280287050067, 0.38492532593465045, 1.2295291283923455
+SPL: 0.920498446991879, 1.3364591932400398, 24.649228988622923

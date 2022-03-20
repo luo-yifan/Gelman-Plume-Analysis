@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'time', 'transformations': {'0': 'CumSumTransformer', '1': 'StandardScaler', '2': 'SeasonalDifference', '3': 'DifferencedTransformer', '4': 'CumSumTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'lag_1': 12, 'method': 'Mean'}, '3': {}, '4': {}}}
+{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 102.06217769752648, nan, 126.88610947285196
+MAE: 66.49410169640191, nan, 88.0
+SPL: 0.8843191932886602, nan, 1.1655629139072847

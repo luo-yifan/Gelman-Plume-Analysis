@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'pad', 'transformations': {'0': 'Slice', '1': 'Detrend'}, 'transformation_params': {'0': {'method': 100}, '1': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{'level': 'local level', 'maxiter': 250, 'cov_type': 'opg', 'method': 'bfgs', 'autoregressive': 1, 'regression_type': 'Holiday'}
+SMAPE: 1.168962127431983, 40.0, 0.0
+MAE: 5.374436376780329, 96.4149756321776, 0.0
+SPL: 0.15812608421042756, 96.41497563217759, 0.0

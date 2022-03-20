@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'ffill', 'transformations': {'0': 'HPFilter', '1': 'MinMaxScaler', '2': 'RobustScaler', '3': 'PctChangeTransformer', '4': 'DatepartRegression'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 1600}, '1': {}, '2': {}, '3': {}, '4': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 9, 'min_samples_split': 0.05}}, 'datepart_method': 'simple', 'polynomial_degree': None}}}
+{'family': 'Poisson', 'constant': False, 'regression_type': None}
+SMAPE: 13.333333333204981
+MAE: 0.09999999999919426
+SPL: 0.09999999999919426

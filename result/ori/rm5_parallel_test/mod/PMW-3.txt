@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'ffill', 'transformations': {'0': 'PowerTransformer', '1': 'Slice', '2': 'Detrend', '3': 'PowerTransformer', '4': 'Detrend'}, 'transformation_params': {'0': {}, '1': {'method': 100}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {}, '4': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{'level': 'fixed slope', 'maxiter': 100, 'cov_type': 'robust', 'method': 'lbfgs', 'autoregressive': 2, 'regression_type': None}
+SMAPE: 22.217193682876324, 0.0, 3.8385629213485175
+MAE: 1321.052146744867, inf, 570.4132052551606
+SPL: 0.44205218793288553, inf, 0.12271258515043984

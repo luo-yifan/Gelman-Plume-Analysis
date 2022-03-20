@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'zero', 'transformations': {'0': 'Discretize', '1': 'SinTrend', '2': 'SeasonalDifference', '3': 'MaxAbsScaler'}, 'transformation_params': {'0': {'discretization': 'center', 'n_bins': 5}, '1': {}, '2': {'lag_1': 12, 'method': 'Median'}, '3': {}}}
+{}
+SMAPE: 0.0, 0.0
+MAE: 0.0, 0.0
+SPL: 0.0, 0.0

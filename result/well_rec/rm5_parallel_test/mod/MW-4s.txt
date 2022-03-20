@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'StandardScaler', '1': 'DifferencedTransformer', '2': 'PowerTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{}
+SMAPE: 1.357797999376107, 2.9359338613447385, 3.5780500925656646
+MAE: 0.03737520822403244, 0.0789693711122343, 0.10778077175221004
+SPL: 0.7096580733206928, 0.48971622138472337, 0.3811292344517856

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'ffill', 'transformations': {'0': 'ClipOutliers', '1': 'CenterLastValue', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'rows': 2}, '2': {'lag_1': 12, 'method': 'Median'}}}
+{'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 100, 'loss': 'linear', 'base_estimator': 'LinReg', 'learning_rate': 1}}, 'mean_rolling_periods': 30, 'macd_periods': 60, 'std_rolling_periods': 10, 'max_rolling_periods': 4, 'min_rolling_periods': 60, 'quantile90_rolling_periods': 7, 'quantile10_rolling_periods': 90, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
+SMAPE: 92.00309217061506, 200.0, 40.0
+MAE: 8.45921468761828, 2.130893716854585, 0.21930894465649783
+SPL: 40.60121087321962, 3.15798015213767, 0.4256173292899146

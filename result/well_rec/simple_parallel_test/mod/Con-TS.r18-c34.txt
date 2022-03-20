@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+NVAR
+{'fillna': 'pchip', 'transformations': {'0': 'QuantileTransformer', '1': 'RobustScaler', '2': 'QuantileTransformer', '3': 'MaxAbsScaler'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 10}, '3': {}}}
+{'k': 2, 'ridge_param': 0.002, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'input_order'}
+SMAPE: 2.941895334150483, 12.202606082829863, 1.685060028836579
+MAE: 0.0015147585504252103, 0.006867904304137092, 0.0007544932069429716
+SPL: 0.4044609728894223, 1.584358063580759, 1.0432672409407913

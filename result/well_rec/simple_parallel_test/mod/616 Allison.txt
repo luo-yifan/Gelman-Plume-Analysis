@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'ffill', 'transformations': {'0': 'EWMAFilter', '1': 'Round', '2': 'Detrend', '3': 'Discretize'}, 'transformation_params': {'0': {'span': 3}, '1': {'decimals': -1, 'on_transform': True, 'on_inverse': True}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'discretization': 'upper', 'n_bins': 20}}}
+{'deseasonalize': True, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.6, 'use_mle': True}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

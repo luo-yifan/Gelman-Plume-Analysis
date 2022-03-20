@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'median', 'transformations': {'0': 'Detrend', '1': 'ClipOutliers', '2': 'MinMaxScaler'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '2': {}}}
+{'regression_model': {'model': 'SVM', 'model_params': {}}, 'datepart_method': 'expanded', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 101.24454511557107, 150.38205096237093, 113.10526736330098
+MAE: 171.88470745364395, 1842.5146722677994, 587.3772812498207
+SPL: 0.7083731051108045, 0.8083813372266376, 0.5999692637765661

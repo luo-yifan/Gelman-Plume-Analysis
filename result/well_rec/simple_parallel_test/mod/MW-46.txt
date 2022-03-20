@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateMotif
+{'fillna': 'KNNImputer', 'transformations': {'0': 'QuantileTransformer', '1': 'PctChangeTransformer', '2': 'SeasonalDifference', '3': 'EWMAFilter'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 9}, '1': {}, '2': {'lag_1': 7, 'method': 'LastValue'}, '3': {'span': 12}}}
+{'window': 10, 'point_method': 'midhinge', 'distance_metric': 'canberra', 'k': 3, 'max_windows': 10000}
+SMAPE: 1.6426060482394835, 2.6143424612188837, 12.831382893979537
+MAE: 2.228387291300004, 3.7033572566092743, 20.25709573825772
+SPL: 0.014957259209162094, 0.02128024583382016, 0.09110723576585641

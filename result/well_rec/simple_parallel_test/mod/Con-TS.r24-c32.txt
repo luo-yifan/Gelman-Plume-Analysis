@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'median', 'transformations': {'0': 'PositiveShift', '1': 'Round', '2': 'QuantileTransformer', '3': 'PowerTransformer'}, 'transformation_params': {'0': {}, '1': {'decimals': 0, 'on_transform': True, 'on_inverse': True}, '2': {'output_distribution': 'uniform', 'n_quantiles': 10}, '3': {}}}
+{'method': 'mean', 'lag_1': 364, 'lag_2': 28}
+SMAPE: 0.0, 0.0, 0.0
+MAE: 0.0, 0.0, 0.0
+SPL: 0.0, 0.0, 0.0

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'median', 'transformations': {'0': 'DifferencedTransformer', '1': 'PositiveShift', '2': 'MaxAbsScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
+{'window_size': 10, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'Ridge', 'model_params': {'alpha': 10.0}}}
+SMAPE: 17.086388566209074, 36.774082052157645, 10.930855929308203
+MAE: 0.16022544636221758, 0.29734255582301233, 0.04254752198855064
+SPL: 1.0215396451657022, 3.2319388809128875, 1.360688702611321

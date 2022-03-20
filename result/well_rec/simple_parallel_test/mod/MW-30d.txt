@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'mean', 'transformations': {'0': 'QuantileTransformer', '1': 'RobustScaler'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 9}, '1': {}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'SVM', 'model_params': {}}}
+SMAPE: 33.2767086293318, 21.18017441791048, 14.28729141197669
+MAE: 100.69426169088085, 177.21242087047898, 116.66757689782234
+SPL: 1.9576774737159968, 1.267565625830712, 4.757933610808176

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'nearest', 'transformations': {'0': 'MinMaxScaler', '1': 'EWMAFilter'}, 'transformation_params': {'0': {}, '1': {'span': 10}}}
+{'deseasonalize': True, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 2.5, 'use_mle': True}
+SMAPE: 7.4285671822438415, 83.3091740309349, 25.71448098012156
+MAE: 0.0463484607762896, 0.40698125076333247, 0.15076543097944953
+SPL: 0.18683644121317616, 8.50294061320875, 5.9870013604924575

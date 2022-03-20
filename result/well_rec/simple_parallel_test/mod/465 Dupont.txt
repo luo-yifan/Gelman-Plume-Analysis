@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'ffill', 'transformations': {'0': 'MaxAbsScaler', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}}}
+{'family': 'Poisson', 'constant': False, 'regression_type': None}
+SMAPE: 15.10545739451753, 1.6112629986165612, 45.05975329397185
+MAE: 180.5486336495591, 22.550115644462903, 316.3259339206228
+SPL: 2.0790346945533584, 1.9177099711952914, 4.0310544914235455

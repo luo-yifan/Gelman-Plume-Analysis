@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'d990b93c2ae60467b1570e72e17c7171': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "Detrend", "1": "Detrend", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"model": "Linear", "phi": 1, "window": null}, "1": {"model": "Linear", "phi": 0.998, "window": 900}, "2": {}}}'}, '810f988e94da230b241fa95dd7f86380': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "pad", "transformations": {"0": "Detrend", "1": "Detrend", "2": "Detrend", "3": "MinMaxScaler"}, "transformation_params": {"0": {"model": "Linear", "phi": 1, "window": null}, "1": {"model": "Linear", "phi": 0.998, "window": 900}, "2": {"model": "Linear", "phi": 1, "window": 365}, "3": {}}}'}, '355eeb1ca23adeea285b624299e3af15': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "Detrend", "1": "IntermittentOccurrence", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"model": "Linear", "phi": 1, "window": null}, "1": {"center": "mean"}, "2": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 2.859540014394882, 23.066951058581395
+MAE: 12.985225600438207, 202.20000000000005
+SPL: 0.05393714162556347, 0.4570006918500071

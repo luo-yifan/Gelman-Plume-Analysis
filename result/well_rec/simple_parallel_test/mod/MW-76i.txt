@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'fake_date', 'transformations': {'0': 'Detrend'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{}
+SMAPE: 3.0261559216321645, 73.57749430930984, 20.313299292151065
+MAE: 3.093492609251578, 36.94545429670991, 3.454631459202909
+SPL: 0.5631833195554176, 47.9031818498783, 1.565932742580586

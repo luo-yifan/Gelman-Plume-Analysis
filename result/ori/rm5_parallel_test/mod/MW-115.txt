@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'306b80ae94dc30168459aa65f8c96870': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": false, "method": "auto", "period": null, "theta": 1.2, "use_mle": false}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PositiveShift"}, "transformation_params": {"0": {}}}'}, 'e7d503cd78b7f7411f0ee488e95ad9e1': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 1.4, "use_mle": false}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PositiveShift"}, "transformation_params": {"0": {}}}'}, '215e2df3268dd965ce747a87f2f8c094': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "deterministic trend", "maxiter": 50, "cov_type": "oim", "method": "lbfgs", "autoregressive": 1, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "Discretize", "1": "StandardScaler", "2": "bkfilter"}, "transformation_params": {"0": {"discretization": "center", "n_bins": 10}, "1": {}, "2": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 5.0017412084523905
+MAE: 29.92051973198618
+SPL: 0.09100145706154687

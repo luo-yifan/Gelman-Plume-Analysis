@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'MinMaxScaler', '1': 'DatepartRegression', '2': 'DatepartRegression'}, 'transformation_params': {'0': {}, '1': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 3, 'min_samples_split': 2}}, 'datepart_method': 'simple', 'polynomial_degree': None}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 3, 'min_samples_split': 2}}, 'datepart_method': 'simple', 'polynomial_degree': None}}}
+{'deseasonalize': False, 'difference': True, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.4, 'use_mle': False}
+SMAPE: 2.903209095236135, 2.040899365476462, 5.955439692554611
+MAE: 0.9053164053885261, 0.6361538589402536, 2.0596630376825305
+SPL: 0.12737877218949567, 0.17586288360863653, 0.875709468870575

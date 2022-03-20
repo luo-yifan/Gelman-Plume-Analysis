@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'rolling_mean', 'transformations': {'0': 'Round', '1': 'Detrend'}, 'transformation_params': {'0': {'decimals': 0, 'on_transform': True, 'on_inverse': False}, '1': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{}
+SMAPE: 4.375273725651816, 12.657628077237469, 14.651896982508896
+MAE: 0.13790010229484978, 0.3011320029119305, 0.2995389857425068
+SPL: 0.9109111455021178, 2.29598121600463, 8.059488117241198

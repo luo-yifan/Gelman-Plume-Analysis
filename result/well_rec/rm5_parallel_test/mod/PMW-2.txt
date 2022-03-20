@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'pchip', 'transformations': {'0': 'Discretize', '1': 'PctChangeTransformer', '2': 'QuantileTransformer', '3': 'Detrend', '4': 'StandardScaler'}, 'transformation_params': {'0': {'discretization': 'center', 'n_bins': 20}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 8}, '3': {'model': 'Linear', 'phi': 1, 'window': None}, '4': {}}}
+{'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 2}}, 'mean_rolling_periods': 7, 'macd_periods': 96, 'std_rolling_periods': 90, 'max_rolling_periods': 67, 'min_rolling_periods': 4, 'quantile90_rolling_periods': 30, 'quantile10_rolling_periods': 30, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
+SMAPE: 6.975621459562282, 3.2497146551184706, 38.69343948707669
+MAE: 261.2378020345469, 109.8993273311061, 1976.0748805021199
+SPL: 0.22525434281571022, 0.19500605922129463, 0.7489977290020673

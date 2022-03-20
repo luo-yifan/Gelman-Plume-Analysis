@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'zero', 'transformations': {'0': 'Discretize', '1': 'PowerTransformer'}, 'transformation_params': {'0': {'discretization': 'lower', 'n_bins': 5}, '1': {}}}
+{'damped_trend': True, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 42.22572895668948, 12.922737149142566, 18.89446327687302
+MAE: 24.511362559016277, 9.382731835830832, 19.224793391691637
+SPL: 0.3667380237383723, 0.389960804219926, 0.34950274350238075

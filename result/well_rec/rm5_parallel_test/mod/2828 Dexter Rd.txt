@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+AverageValueNaive
+{'fillna': 'median', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend', '2': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'model': 'GLS'}, '2': {'model': 'GLS'}}}
+{'method': 'Exp_Weighted_Mean'}
+SMAPE: 5.792009497828548, 14.39298210922394, 5.33193729350105
+MAE: 2.156551868013433, 4.8486175996356895, 1.6658640232129778
+SPL: 0.4846956641244791, 0.3422483801447311, 0.2561785787736446

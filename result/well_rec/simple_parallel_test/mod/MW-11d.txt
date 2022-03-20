@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SeasonalNaive
+{'fillna': 'fake_date', 'transformations': {'0': 'MaxAbsScaler', '1': 'PCA'}, 'transformation_params': {'0': {}, '1': {}}}
+{'method': 'lastvalue', 'lag_1': 24, 'lag_2': 1}
+SMAPE: 40.77380390593804, 30.618710647084583, 28.18240147638602
+MAE: 84.83789494976511, 63.29456240855234, 93.04095008835672
+SPL: 0.7127309296872288, 0.6062758185658897, 0.5926013238648156

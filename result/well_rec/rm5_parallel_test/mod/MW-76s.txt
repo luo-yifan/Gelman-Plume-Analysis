@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'piecewise_polynomial', 'transformations': {'0': 'RobustScaler', '1': 'SinTrend', '2': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': 10}}}
+{'damped_trend': False, 'trend': None, 'seasonal': 'multiplicative', 'seasonal_periods': 12}
+SMAPE: 8.757270514230257, 9.627685970268583, 37.065756951748384
+MAE: 17.341123638799928, 11.516247606778638, 24.30663675237993
+SPL: 1.3278919220667287, 1.1117250766335058, 48.00507502894961

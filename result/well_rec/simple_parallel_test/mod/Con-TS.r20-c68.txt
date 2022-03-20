@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SectionalMotif
+{'fillna': 'mean', 'transformations': {'0': 'ClipOutliers', '1': 'CenterLastValue', '2': 'DifferencedTransformer', '3': 'SeasonalDifference'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {'rows': 2}, '2': {}, '3': {'lag_1': 12, 'method': 'Mean'}}}
+{'window': 5, 'point_method': 'weighted_mean', 'distance_metric': 'cityblock', 'include_differenced': True, 'k': 5, 'stride_size': 1, 'regression_type': None}
+SMAPE: 13.546610130152143, 4.1866715541465, 22.197821166850783
+MAE: 3.1346999765206633, 0.7717539741164693, 2.70095305163518
+SPL: 0.9987860685904598, 1.2633489922880812, 1.4353077304323236

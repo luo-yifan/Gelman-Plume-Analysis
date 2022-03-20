@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'cubic', 'transformations': {'0': 'StandardScaler', '1': 'Log'}, 'transformation_params': {'0': {}, '1': {}}}
+{'deseasonalize': True, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.2, 'use_mle': True}
+SMAPE: 3.108120614001873, 4.829683674137025, 133.46707469007555
+MAE: 4.815340192464004, 7.581671916020246, 87.04895087912948
+SPL: 2.020905334439606, 2.129423510987898, 35.23929037247407

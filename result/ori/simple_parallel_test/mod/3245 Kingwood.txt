@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'horizontal', 'models': {'a6c1672e768d0544896b6c891e6f01a1': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "random trend", "maxiter": 50, "cov_type": "opg", "method": "cg", "autoregressive": null, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "DifferencedTransformer", "1": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}}}'}, '7ef8d3f894c56ee13de4e930e2a0616f': {'Model': 'NVAR', 'ModelParameters': '{"k": 1, "ridge_param": 0.2, "warmup_pts": 1, "seed_pts": 1, "seed_weighted": null, "batch_size": 5, "batch_method": "input_order"}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "bkfilter", "1": "MinMaxScaler"}, "transformation_params": {"0": {}, "1": {}}}'}, 'fb27b20e9828b552b20e056dba110b8b': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": false, "use_test": true, "method": "auto", "period": null, "theta": 1.4, "use_mle": false}', 'TransformationParameters': '{"fillna": "akima", "transformations": {"0": "PCA", "1": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 42.662137774534905
+MAE: 1.0051698777943616
+SPL: 0.0783972752597003

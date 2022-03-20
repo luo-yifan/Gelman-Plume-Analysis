@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'time', 'transformations': {'0': 'PowerTransformer', '1': 'MinMaxScaler', '2': 'RollingMeanTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'fixed': True, 'window': 12}}}
+{'window_size': 10, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'RandomForest', 'model_params': {'n_estimators': 300, 'min_samples_leaf': 1, 'bootstrap': True}}}
+SMAPE: 23.43148814688886, 103.05608222855031, 57.12768672497189
+MAE: 116.73603444927762, 583.3603856946336, 691.4803131481177
+SPL: 0.260123098204933, 0.229419909827043, 0.3549064767410425

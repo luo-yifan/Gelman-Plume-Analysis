@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'KNNImputer', 'transformations': {'0': 'DifferencedTransformer', '1': 'PctChangeTransformer', '2': 'RobustScaler', '3': 'STLFilter'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
+{}
+SMAPE: 42.58491542436598, 43.212846356057796
+MAE: 165.45629779701557, 730.4659044948463
+SPL: 0.07656075476468586, 0.18581008699391957

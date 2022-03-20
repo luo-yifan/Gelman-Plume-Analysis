@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Theta
+{'fillna': 'KNNImputer', 'transformations': {'0': 'HPFilter', '1': 'QuantileTransformer', '2': 'PowerTransformer', '3': 'Discretize', '4': 'ClipOutliers', '5': 'PositiveShift'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 6.25}, '1': {'output_distribution': 'uniform', 'n_quantiles': 2}, '2': {}, '3': {'discretization': 'lower', 'n_bins': 5}, '4': {'method': 'clip', 'std_threshold': 5, 'fillna': None}, '5': {}}}
+{'deseasonalize': False, 'difference': False, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.2, 'use_mle': False}
+SMAPE: 18.355226021077947, 30.642886955468192
+MAE: 38.27323880847895, 136.68831168831187
+SPL: 0.03016536960763366, 0.09422392695716814

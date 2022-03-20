@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnivariateMotif
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'MinMaxScaler', '1': 'PositiveShift', '2': 'DatepartRegression'}, 'transformation_params': {'0': {}, '1': {}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 3, 'min_samples_split': 2}}, 'datepart_method': 'simple', 'polynomial_degree': None}}}
+{'window': 10, 'point_method': 'mean', 'distance_metric': 'chebyshev', 'k': 3, 'max_windows': 10000}
+SMAPE: 0.9579904192127078, 3.445510105764691, 1.7809587207085058
+MAE: 0.16946135848618127, 0.5950964388766955, 0.2974712293384073
+SPL: 0.11377216092594872, 0.6400063404545054, 0.1739959088956545

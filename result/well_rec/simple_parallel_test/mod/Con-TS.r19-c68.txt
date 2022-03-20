@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SectionalMotif
+{'fillna': 'fake_date', 'transformations': {'0': 'Detrend', '1': 'ClipOutliers', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': None}, '1': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '2': {}}}
+{'window': 5, 'point_method': 'weighted_mean', 'distance_metric': 'cosine', 'include_differenced': True, 'k': 10, 'stride_size': 1, 'regression_type': None}
+SMAPE: 7.700710834369045, 13.931312952422306, 14.823196997452154
+MAE: 2.4975442433776456, 3.499722456637767, 2.385826212325234
+SPL: 0.9431963444202873, 1.526668053179938, 2.4912331169457826

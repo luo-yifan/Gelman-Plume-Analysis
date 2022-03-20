@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'zero', 'transformations': {'0': 'CenterLastValue', '1': 'PctChangeTransformer', '2': 'RobustScaler'}, 'transformation_params': {'0': {'rows': 6}, '1': {}, '2': {}}}
+{}
+SMAPE: 25.844719863466924, 58.4019400189286
+MAE: 7.964167976379395, 20.266261385117566
+SPL: 0.06988481914113501, 0.02300012442576394

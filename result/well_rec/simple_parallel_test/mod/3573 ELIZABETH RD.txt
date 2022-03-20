@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+DatepartRegression
+{'fillna': 'rolling_mean', 'transformations': {'0': None}, 'transformation_params': {'0': {}}}
+{'regression_model': {'model': 'SVM', 'model_params': {}}, 'datepart_method': 'expanded', 'polynomial_degree': None, 'regression_type': None}
+SMAPE: 120.0, 0.0, 0.0
+MAE: 0.7702239497633421, 0.0, 0.0
+SPL: 2.319426883831997, 1.774110895256882, 0.872610830860401

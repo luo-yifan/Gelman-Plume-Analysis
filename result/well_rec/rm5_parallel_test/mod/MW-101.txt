@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'mean', 'transformations': {'0': 'MinMaxScaler', '1': 'SinTrend'}, 'transformation_params': {'0': {}, '1': {}}}
+{}
+SMAPE: 22.76497996270811, 10.134136410347354, 23.33321302253139
+MAE: 58.37439363983428, 40.967268555360285, 83.46692372804719
+SPL: 1.242282907215971, 0.5783359544445844, 1.9916104862175732

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score', 'models': {'0e04835236fd2de9ba35cb7e2e24c9f0': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": "local level", "maxiter": 100, "cov_type": "opg", "method": "powell", "autoregressive": 1, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "bkfilter"}, "transformation_params": {"0": {}}}'}, '91effd003044ebd623d48e16f66617b2': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 2}}}'}, '0de52750d898a83b52304922e6c3066d': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "time", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 2}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 0.0069579765032688635
+MAE: 3.479133509942667e-05
+SPL: 0.004235366942456426

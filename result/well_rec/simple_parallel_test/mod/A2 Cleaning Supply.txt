@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'MinMaxScaler', '1': 'MaxAbsScaler', '2': 'DifferencedTransformer', '3': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {}}}
+{'family': 'Tweedie', 'constant': False, 'regression_type': None}
+SMAPE: 29.543346754096937, 13.734461079464362, 16.805928461425573
+MAE: 17.209180495050518, 10.761984784354798, 20.517047108042483
+SPL: 1.3258716080013495, 1.7867535103786487, 17.70303492445038

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+MultivariateRegression
+{'fillna': 'nearest', 'transformations': {'0': 'MinMaxScaler', '1': 'PctChangeTransformer', '2': 'MaxAbsScaler', '3': 'Detrend', '4': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'model': 'Linear', 'phi': 1, 'window': None}, '4': {'lag_1': 12, 'method': 'Mean'}}}
+{'regression_model': {'model': 'KNN', 'model_params': {'n_neighbors': 5, 'weights': 'distance', 'p': 2, 'leaf_size': 30}}, 'mean_rolling_periods': 12, 'macd_periods': 22, 'std_rolling_periods': None, 'max_rolling_periods': 80, 'min_rolling_periods': 28, 'quantile90_rolling_periods': None, 'quantile10_rolling_periods': 5, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'expanded', 'polynomial_degree': None, 'regression_type': None, 'window': 7, 'holiday': True, 'probabilistic': False}
+SMAPE: 66.61143830010653, 54.86561860636836, 31.442751426327526
+MAE: 0.1955898017652187, 0.025101267563572487, 0.014675887114122783
+SPL: 20.057148155226415, 6.990612628351893, 6.61618079081146

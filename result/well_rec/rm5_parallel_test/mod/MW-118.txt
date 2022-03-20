@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'fake_date', 'transformations': {'0': 'Detrend', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {'output_distribution': 'uniform', 'n_quantiles': 8}}}
+{'family': 'NegativeBinomial', 'constant': False, 'regression_type': None}
+SMAPE: 51.78739077714461, 101.97473685378604, 51.25770566632747
+MAE: 48.078661406067255, 151.61493085834746, 47.755490013464
+SPL: 1.0990254008234632, 16.99124652272375, 89.18912064793857

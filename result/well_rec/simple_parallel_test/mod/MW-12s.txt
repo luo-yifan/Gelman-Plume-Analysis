@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'f8d64caed1e39cbf7478d8a22fe3621e': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "median", "transformations": {"0": "ClipOutliers", "1": "QuantileTransformer", "2": "RobustScaler", "3": "Round", "4": "MaxAbsScaler"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3.5, "fillna": null}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {}, "3": {"model": "middle", "decimals": 2, "on_transform": true, "on_inverse": true}, "4": {}}}'}, 'e9f0d788942e408099443831a8ebbd2c': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "lastvalue", "lag_1": 92, "lag_2": null}', 'TransformationParameters': '{"fillna": "pad", "transformations": {"0": "QuantileTransformer", "1": "DifferencedTransformer", "2": "Detrend", "3": "QuantileTransformer"}, "transformation_params": {"0": {"output_distribution": "uniform", "n_quantiles": 9}, "1": {}, "2": {"model": "GLS", "phi": 1, "window": null}, "3": {"output_distribution": "uniform", "n_quantiles": 9}}}'}}, 'dis_frac': 0.5, 'FirstModel': 'e9f0d788942e408099443831a8ebbd2c', 'SecondModel': 'f8d64caed1e39cbf7478d8a22fe3621e'}
+SMAPE: 8.756542980373997, 80.0, 0.0
+MAE: 211.07718303735683, 815.2435263319039, 0.0
+SPL: 1.9771950017168458, 2455.9763593262714, 0.6074456307586001

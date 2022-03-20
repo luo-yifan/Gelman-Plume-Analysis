@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'ffill', 'transformations': {'0': 'PowerTransformer', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'PositiveShift', '4': 'Detrend'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 3}, '2': {}, '3': {}, '4': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{}
+SMAPE: 64.87966802703957, 5.161150013322226
+MAE: 5.419456670070959, 0.02962870482404458
+SPL: 19.510044012255452, 0.04740592771847133

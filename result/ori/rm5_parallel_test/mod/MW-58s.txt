@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ZeroesNaive
+{'fillna': 'rolling_mean', 'transformations': {'0': 'PctChangeTransformer', '1': 'ClipOutliers', '2': 'MaxAbsScaler', '3': 'StandardScaler', '4': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '2': {}, '3': {}, '4': {}}}
+{}
+SMAPE: 17.42403291700073, 30.979613909877685
+MAE: 28.16778892210625, 91.1951051695073
+SPL: 0.13787463985367718, 0.2696484481653084

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLS
+{'fillna': 'rolling_mean', 'transformations': {'0': 'Detrend', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'DifferencedTransformer', '4': 'Detrend'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {'output_distribution': 'normal', 'n_quantiles': 9}, '2': {}, '3': {}, '4': {'model': 'Linear', 'phi': 1, 'window': 900}}}
+{}
+SMAPE: 46.253878482076, 68.99213441775255, 2.7557159032413154
+MAE: 175.4529077348308, 684.5613600296585, 67.82548284899504
+SPL: 0.9118780651649666, 2.2997799695882555, 0.4899898446490877

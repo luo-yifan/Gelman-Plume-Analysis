@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'ffill', 'transformations': {'0': 'SeasonalDifference', '1': 'PositiveShift', '2': 'MaxAbsScaler', '3': 'Discretize'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'Median'}, '1': {}, '2': {}, '3': {'discretization': 'lower', 'n_bins': 5}}}
+{'window_size': 10, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 20}}}
+SMAPE: 180.03172993452282, 13.153306092503598, 160.0
+MAE: 0.30328560967921947, 0.22830147779340454, 1.5703203576607918
+SPL: 1.741885248963554, 3.3545941882112333, 1.5703203576607918

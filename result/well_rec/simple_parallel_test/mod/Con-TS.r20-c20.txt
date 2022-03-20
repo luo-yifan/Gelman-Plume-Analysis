@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'KNNImputer', 'transformations': {'0': 'RollingMeanTransformer', '1': 'DifferencedTransformer', '2': 'EWMAFilter', '3': 'Detrend'}, 'transformation_params': {'0': {'fixed': True, 'window': 3}, '1': {}, '2': {'span': 12}, '3': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{'window_size': 10, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [25, 15, 25], 'max_iter': 250, 'activation': 'tanh', 'solver': 'lbfgs', 'early_stopping': False, 'learning_rate_init': 0.001}}}
+SMAPE: 3.264788568666807, 25.438243408304388, 5.828236654735528
+MAE: 0.09021416165025817, 1.105296746366118, 0.3540354170320906
+SPL: 0.28343261828016897, 2.192617554832333, 0.30205255132995346

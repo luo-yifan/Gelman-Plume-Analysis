@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'ClipOutliers', '1': 'MaxAbsScaler', '2': 'Detrend', '3': 'bkfilter', '4': 'DifferencedTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {}, '2': {'model': 'GLS'}, '3': {}, '4': {}}}
+{'damped_trend': False, 'trend': 'multiplicative', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 79.70048449634184, 62.99734329825793, 61.323176298800504
+MAE: 5.014906131070356, 2.474989726446524, 1.5
+SPL: 1.7527666606481465, 0.8555134200164298, 1.4556127447821312

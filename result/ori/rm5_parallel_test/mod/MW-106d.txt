@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'mixed_metric', 'models': {'59bcf0046fec6e17d15631455f7f77e0': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": false, "difference": false, "use_test": true, "method": "auto", "period": null, "theta": 1.2, "use_mle": false}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "bkfilter", "1": "PowerTransformer", "2": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}, 'c93b871e8f75f4b6abba3cbb8dfcdca9': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": false, "difference": false, "use_test": true, "method": "auto", "period": null, "theta": 1.2, "use_mle": false}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "RobustScaler", "1": "PowerTransformer"}, "transformation_params": {"0": {}, "1": {}}}'}, 'f3f0d3af6253f2c344a29c9b338eaa5a': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "bkfilter", "1": "PowerTransformer", "2": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 25.276013828947463
+MAE: 0.17548520012720817
+SPL: 0.06456275224173631

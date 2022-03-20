@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'ffill', 'transformations': {'0': 'ClipOutliers', '1': 'MaxAbsScaler', '2': 'Detrend', '3': 'RobustScaler', '4': 'QuantileTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 1, 'fillna': None}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {}, '4': {'output_distribution': 'uniform', 'n_quantiles': 10}}}
+{'window_size': 7, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'RANSAC', 'model_params': {}}}
+SMAPE: 23.337490673165902, 56.661264954098115, 23.81500608451052
+MAE: 1.8491502546638885, 5.3237312373186985, 1.2813928882011683
+SPL: 0.3880108178304438, 5.95382182073697, 0.9179121845514652

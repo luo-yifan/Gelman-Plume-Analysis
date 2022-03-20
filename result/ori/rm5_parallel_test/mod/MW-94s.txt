@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score_unique', 'models': {'056c84c304bab834a2ebb20249754407': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "DifferencedTransformer", "1": "ClipOutliers"}, "transformation_params": {"0": {}, "1": {"method": "clip", "std_threshold": 1, "fillna": null}}}'}, '11c40f7ce99d0c0af887530280b5245d': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "mean", "lag_1": 28, "lag_2": 7}', 'TransformationParameters': '{"fillna": "zero", "transformations": {"0": "DifferencedTransformer", "1": "Detrend", "2": "IntermittentOccurrence"}, "transformation_params": {"0": {}, "1": {"model": "Linear", "phi": 1, "window": null}, "2": {"center": "mean"}}}'}, '477ca9d5ac3a94372e957e6703e77474': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "pchip", "transformations": {"0": "DifferencedTransformer", "1": "DatepartRegression", "2": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {"regression_model": {"model": "ElasticNet", "model_params": {}}, "datepart_method": "simple_2", "polynomial_degree": null}, "2": {"output_distribution": "uniform", "n_quantiles": 2}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 39.907463758643374
+MAE: 110.15579972993062
+SPL: 0.2950597922774028

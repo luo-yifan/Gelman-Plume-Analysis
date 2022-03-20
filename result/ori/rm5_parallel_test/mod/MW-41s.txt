@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'cubic', 'transformations': {'0': 'bkfilter', '1': 'PCA', '2': 'QuantileTransformer', '3': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 6}, '3': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{'level': 'random walk with drift', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 6.837430828967181, 6.747871254996322, 5.708579628205415
+MAE: 1.4381787092126337, 1.2572680638189488, 0.7889094068203051
+SPL: 0.498050367826785, 0.32528515148887804, 0.13364461231313648

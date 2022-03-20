@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'KNNImputer', 'transformations': {'0': 'ClipOutliers', '1': 'convolution_filter', '2': 'CenterLastValue'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {'rows': 3}}}
+{'damped_trend': False, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 0.0, 3.3527698907461587e-06
+MAE: 0.0, 1.6763849797207798e-08
+SPL: 0.14062297848575991, 0.0874970981554912

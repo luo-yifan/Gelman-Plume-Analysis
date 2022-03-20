@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'pad', 'transformations': {'0': 'DifferencedTransformer'}, 'transformation_params': {'0': {}}}
+{'level': 'irregular', 'maxiter': 100, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 16.088516779140164, 20.465379596036644, 21.791763439212307
+MAE: 9.586557769775332, 17.79099426269534, 17.841977759356375
+SPL: 0.879747515650275, 0.8252800905486111, 0.7043827483947237

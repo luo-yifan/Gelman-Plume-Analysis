@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'best_score', 'models': {'4f4472becd51d932d62579f8fe3f7c00': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Mean"}', 'TransformationParameters': '{"fillna": "mean", "transformations": {"0": "ClipOutliers", "1": "QuantileTransformer", "2": "DifferencedTransformer"}, "transformation_params": {"0": {"method": "clip", "std_threshold": 3, "fillna": null}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {}}}'}, 'fbdc2b938411b5d03c7bc2fd06b0ac44': {'Model': 'UnobservedComponents', 'ModelParameters': '{"level": true, "maxiter": 100, "cov_type": "opg", "method": "lbfgs", "autoregressive": null, "regression_type": "Holiday"}', 'TransformationParameters': '{"fillna": "fake_date", "transformations": {"0": "PositiveShift", "1": "Detrend", "2": "bkfilter", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {"model": "Linear"}, "2": {}, "3": {}}}'}, '8576aff52ddbfbe99d3e517a147fca1f': {'Model': 'ZeroesNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "ffill", "transformations": {"0": "PowerTransformer", "1": "QuantileTransformer", "2": "SeasonalDifference"}, "transformation_params": {"0": {}, "1": {"output_distribution": "uniform", "n_quantiles": 9}, "2": {"lag_1": 7, "method": "LastValue"}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
+SMAPE: 0.0, 200.0, 0.0
+MAE: 0.0, 0.5487343750565169, inf
+SPL: 0.0, 4.281695281779567, inf

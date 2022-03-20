@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'pad', 'transformations': {'0': 'SeasonalDifference', '1': 'STLFilter', '2': 'RobustScaler', '3': 'MaxAbsScaler', '4': 'Detrend'}, 'transformation_params': {'0': {'lag_1': 12, 'method': 'Median'}, '1': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}, '2': {}, '3': {}, '4': {'model': 'GLS', 'phi': 1, 'window': None}}}
+{'level': 'local linear deterministic trend', 'maxiter': 100, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 32.02521538477781, 40.406643441479794, 80.0
+MAE: 16.348979814135635, 105.119857404165, 110.25410430129145
+SPL: 0.2940887140067784, 3.3725189266271123, 110.25410430129145

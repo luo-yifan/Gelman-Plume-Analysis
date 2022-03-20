@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'rolling_mean', 'transformations': {'0': 'QuantileTransformer', '1': 'QuantileTransformer', '2': 'HPFilter', '3': 'STLFilter'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 9}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}, '2': {'part': 'cycle', 'lamb': 1600}, '3': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
+{'window_size': 10, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 1000, 'regression_type': None, 'regression_model': {'model': 'BayesianRidge', 'model_params': {}}}
+SMAPE: 3.030503727264832, 4.66575683331442, 21.64061804912044
+MAE: 21.641045901270104, 34.75584503665523, 245.89549183033597
+SPL: 0.033595344777468054, 0.07646158158241156, 0.18800547321303998

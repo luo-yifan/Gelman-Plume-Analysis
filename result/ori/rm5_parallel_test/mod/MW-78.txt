@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+ETS
+{'fillna': 'pad', 'transformations': {'0': 'bkfilter', '1': 'PowerTransformer', '2': 'Detrend', '3': 'Detrend'}, 'transformation_params': {'0': {}, '1': {}, '2': {'model': 'GLS', 'phi': 1, 'window': 90}, '3': {'model': 'Linear', 'phi': 1, 'window': 365}}}
+{'damped_trend': False, 'trend': 'additive', 'seasonal': None, 'seasonal_periods': None}
+SMAPE: 5.878758208471066, 0.0
+MAE: 1.5598287231241224, inf
+SPL: 0.06937234944873592, inf

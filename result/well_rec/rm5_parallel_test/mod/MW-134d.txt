@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'mean', 'transformations': {'0': 'DifferencedTransformer', '1': 'MaxAbsScaler', '2': 'SeasonalDifference', '3': 'DatepartRegression', '4': 'ClipOutliers'}, 'transformation_params': {'0': {}, '1': {}, '2': {'lag_1': 12, 'method': 'LastValue'}, '3': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'simple_2', 'polynomial_degree': None}, '4': {'method': 'clip', 'std_threshold': 4, 'fillna': None}}}
+{}
+SMAPE: 2.164482354130846, 2.8603970980607722, 40.0
+MAE: 0.11158885258954783, 0.1410668347390029, 0.954896664430646
+SPL: 0.5067526402513115, 0.34998901939381283, 0.954896664430646

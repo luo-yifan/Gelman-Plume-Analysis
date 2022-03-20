@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+LastValueNaive
+{'fillna': 'rolling_mean', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend', '2': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'model': 'Linear', 'phi': 0.999, 'window': None}, '2': {'model': 'Linear'}}}
+{}
+SMAPE: 46.09480869510165, 34.11119551362303, 45.17559464434001
+MAE: 57.6132777680632, 73.5674087120358, 90.72548191877775
+SPL: 0.19356114046879314, 0.2457191230601831, 0.4108244036055712

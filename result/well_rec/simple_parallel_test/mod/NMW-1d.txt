@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+GLM
+{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'ClipOutliers', '1': 'QuantileTransformer', '2': 'QuantileTransformer', '3': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}, '2': {'output_distribution': 'uniform', 'n_quantiles': 9}, '3': {'model': 'Linear', 'phi': 1, 'window': None}}}
+{'family': 'NegativeBinomial', 'constant': False, 'regression_type': None}
+SMAPE: 13.982453994799528, 13.887382608622875, 2.9214881798981462
+MAE: 88.63754687553799, 98.07681042977336, 23.30572974728559
+SPL: 0.23415668265076, 0.21572989737764817, 0.03848188523850732

@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+WindowRegression
+{'fillna': 'rolling_mean', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {'lag_1': 12, 'method': 'Median'}}}
+{'window_size': 5, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'SVM', 'model_params': {}}}
+SMAPE: 3.457215409966307, 1.6500923842537851, 80.0
+MAE: 0.08726131320572365, 0.043345014999266775, 1.044657054860218
+SPL: 0.3986055121838144, 0.29126023510859833, 1.044657054860218

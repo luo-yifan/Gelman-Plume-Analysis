@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'rolling_mean_24', 'transformations': {'0': 'MaxAbsScaler'}, 'transformation_params': {'0': {}}}
+{'level': 'local level', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 28.777805897515925, 43.496557416727086
+MAE: 102.80000000161435, 139.60000008433855
+SPL: 0.5071814671814673, 1.5274509813843746

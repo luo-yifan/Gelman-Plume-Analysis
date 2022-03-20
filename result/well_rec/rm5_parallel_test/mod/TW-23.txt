@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+Ensemble
+{}
+{'model_name': 'Dist', 'model_count': 2, 'model_metric': 'smape', 'models': {'fc98ef2a32f141992d1a2319ef8a1c4f': {'Model': 'GLS', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "MinMaxScaler", "1": "PositiveShift", "2": "DatepartRegression", "3": "DifferencedTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {"regression_model": {"model": "DecisionTree", "model_params": {"max_depth": null, "min_samples_split": 1.0}}, "datepart_method": "simple", "polynomial_degree": null}, "3": {}}}'}, 'e2bae3ce6964cd0cdf23043cda6ce44d': {'Model': 'SeasonalNaive', 'ModelParameters': '{"method": "lastvalue", "lag_1": 4, "lag_2": null}', 'TransformationParameters': '{"fillna": "cubic", "transformations": {"0": "Round", "1": "DatepartRegression", "2": "Detrend"}, "transformation_params": {"0": {"decimals": -1, "on_transform": false, "on_inverse": true}, "1": {"regression_model": {"model": "DecisionTree", "model_params": {"max_depth": null, "min_samples_split": 1.0}}, "datepart_method": "simple", "polynomial_degree": null}, "2": {"model": "Linear", "phi": 0.99, "window": null}}}'}}, 'dis_frac': 0.5, 'FirstModel': 'fc98ef2a32f141992d1a2319ef8a1c4f', 'SecondModel': 'e2bae3ce6964cd0cdf23043cda6ce44d'}
+SMAPE: 0.26680357289615786, 2.2055204183195296, 120.0
+MAE: 1.3988348807619786, 11.174576813574356, 166.09654283558103
+SPL: 0.9552241380105666, 0.9127098279865624, 166.09654283558103

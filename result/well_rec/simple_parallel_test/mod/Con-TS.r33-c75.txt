@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'cubic', 'transformations': {'0': 'Round', '1': 'HPFilter', '2': 'Round'}, 'transformation_params': {'0': {'decimals': 0, 'on_transform': True, 'on_inverse': False}, '1': {'part': 'trend', 'lamb': 129600}, '2': {'decimals': -1, 'on_transform': True, 'on_inverse': False}}}
+{'level': 'random trend', 'maxiter': 50, 'cov_type': 'robust', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': 'Holiday'}
+SMAPE: 0.0, 199.9957243823427, 0.0
+MAE: 0.0, 0.09301254147901766, 0.0
+SPL: 0.0, 0.09301254147901766, 0.0

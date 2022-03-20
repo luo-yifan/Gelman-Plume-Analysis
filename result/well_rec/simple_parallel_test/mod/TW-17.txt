@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+SectionalMotif
+{'fillna': 'rolling_mean', 'transformations': {'0': 'QuantileTransformer', '1': 'QuantileTransformer', '2': 'DatepartRegression', '3': 'PowerTransformer'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 9}, '1': {'output_distribution': 'uniform', 'n_quantiles': 9}, '2': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 9, 'min_samples_split': 0.05}}, 'datepart_method': 'simple', 'polynomial_degree': None}, '3': {}}}
+{'window': 5, 'point_method': 'midhinge', 'distance_metric': 'matching', 'include_differenced': True, 'k': 1, 'stride_size': 1, 'regression_type': None}
+SMAPE: 6.412071338002567, 49.24597951201393, 84.17365348417428
+MAE: 29.177498600692, 141.72280690829538, 270.22405837446394
+SPL: 0.08300155285682277, 0.3447367706430751, 0.5348370756996659

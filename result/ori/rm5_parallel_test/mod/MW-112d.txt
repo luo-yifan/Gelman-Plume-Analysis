@@ -1,0 +1,7 @@
+Initiated AutoTS object with best model: 
+UnobservedComponents
+{'fillna': 'fake_date', 'transformations': {'0': 'DifferencedTransformer', '1': 'SinTrend'}, 'transformation_params': {'0': {}, '1': {}}}
+{'level': 'irregular', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
+SMAPE: 0.0
+MAE: 0.0
+SPL: 0.0
