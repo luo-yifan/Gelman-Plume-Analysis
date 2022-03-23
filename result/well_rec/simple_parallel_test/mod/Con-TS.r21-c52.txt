@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{'fillna': 'KNNImputer', 'transformations': {'0': 'RobustScaler', '1': 'convolution_filter', '2': 'MinMaxScaler', '3': 'CenterLastValue', '4': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'rows': 3}, '4': {}}}
-{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
-SMAPE: 29.213189064054063, 90.61460143686108, 13.445397669036737
-MAE: 0.14050647914409625, 3.61342340707779, 1.0828734397888171
-SPL: 0.5971084133212694, 0.9879139710567352, 1.0157996139804857

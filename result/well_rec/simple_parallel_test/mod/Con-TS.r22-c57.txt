@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnivariateMotif
-{'fillna': 'rolling_mean', 'transformations': {'0': 'Round', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {'decimals': -1, 'on_transform': False, 'on_inverse': True}, '1': {}}}
-{'window': 5, 'point_method': 'median', 'distance_metric': 'minkowski', 'k': 10, 'max_windows': 10000}
-SMAPE: 19.028465424199453, 16.451305718263157, 17.971431588717916
-MAE: 28.1842819213866, 23.762985229492198, 18.267723083496218
-SPL: 1.1404499152428698, 1.5275617829000934, 1.705365675867907

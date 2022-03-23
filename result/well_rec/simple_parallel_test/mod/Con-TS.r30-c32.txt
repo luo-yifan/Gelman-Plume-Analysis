@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateMotif
-{'fillna': 'fake_date', 'transformations': {'0': 'ClipOutliers', '1': 'Round', '2': 'DatepartRegression', '3': 'MinMaxScaler', '4': 'Discretize'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3, 'fillna': None}, '1': {'decimals': -1, 'on_transform': True, 'on_inverse': True}, '2': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'expanded', 'polynomial_degree': None}, '3': {}, '4': {'discretization': 'upper', 'n_bins': 20}}}
-{'window': 7, 'point_method': 'mean', 'distance_metric': 'rogerstanimoto', 'k': 5, 'max_windows': 10000}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

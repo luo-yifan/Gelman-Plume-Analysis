@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnivariateMotif
-{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'Detrend', '1': 'DifferencedTransformer', '2': 'MinMaxScaler'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': None}, '1': {}, '2': {}}}
-{'window': 5, 'point_method': 'midhinge', 'distance_metric': 'canberra', 'k': 5, 'max_windows': 10000}
-SMAPE: 19.6924424384097, 3.8542524802521925, 6.9555637313409004
-MAE: 0.027339299017921592, 0.0029174292928630776, 0.004702559500457154
-SPL: 3.336518936347553, 0.8248606935018238, 1.012527461535188

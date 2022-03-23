@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{'fillna': 'ffill', 'transformations': {'0': 'Discretize', '1': 'Round', '2': 'StandardScaler', '3': 'CumSumTransformer'}, 'transformation_params': {'0': {'discretization': 'lower', 'n_bins': 10}, '1': {'decimals': -1, 'on_transform': False, 'on_inverse': True}, '2': {}, '3': {}}}
-{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.0622300446033478, 0.0
-SPL: 0.0, 0.0622300446033478, 0.0

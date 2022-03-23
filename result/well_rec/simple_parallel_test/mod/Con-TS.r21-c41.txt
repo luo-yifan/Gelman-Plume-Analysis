@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-SeasonalNaive
-{'fillna': 'rolling_mean_24', 'transformations': {'0': 'SinTrend', '1': 'Round', '2': 'PowerTransformer'}, 'transformation_params': {'0': {}, '1': {'model': 'middle', 'decimals': 2, 'on_transform': False, 'on_inverse': True}, '2': {}}}
-{'method': 'lastvalue', 'lag_1': 2, 'lag_2': 7}
-SMAPE: 19.597046173453496, 26.568118455597677, 37.11561043532443
-MAE: 5.635118740241427, 5.496449758132892, 3.5884925052858554
-SPL: 0.6489284390864105, 0.8628712545632028, 0.4960957923101569

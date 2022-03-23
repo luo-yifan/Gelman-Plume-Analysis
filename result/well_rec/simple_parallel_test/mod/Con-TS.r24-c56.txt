@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{'fillna': 'akima', 'transformations': {'0': 'Detrend'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': None}}}
-{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'KNN', 'model_params': {'n_neighbors': 5, 'weights': 'uniform', 'p': 1, 'leaf_size': 30}}}
-SMAPE: 6.523679111024767, 31.7229893876118, 12.139532011507002
-MAE: 0.0006975075817223717, 0.0031442750063028504, 0.000673627051725386
-SPL: 0.7014387333262783, 0.5776312508897945, 0.5509171083323606

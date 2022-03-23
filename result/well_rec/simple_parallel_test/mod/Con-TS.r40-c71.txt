@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{'fillna': 'rolling_mean', 'transformations': {'0': 'MinMaxScaler', '1': 'Slice', '2': 'MaxAbsScaler', '3': 'Discretize'}, 'transformation_params': {'0': {}, '1': {'method': 0.2}, '2': {}, '3': {'discretization': 'lower', 'n_bins': 20}}}
-{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
-SMAPE: 9.677199364458838, 23.16301640330827, 111.32349896875762
-MAE: 0.061145525336278504, 0.15083101552262382, 0.26903321954214154
-SPL: 0.39289788310565793, 1.3815771903290703, 3.389169980440073

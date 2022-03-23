@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'MaxAbsScaler', '1': 'Detrend', '2': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {'model': 'GLS', 'phi': 1, 'window': None}, '2': {}}}
-{}
-SMAPE: 5.674287935058715, 5.008175216059046, 1.9520199090730261
-MAE: 0.0013082182487503626, 0.0011096363191767287, 0.0003782000470478733
-SPL: 1.0715738211000767, 0.8762029014613941, 1.028127808443394

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{'fillna': 'akima', 'transformations': {'0': 'Slice', '1': 'QuantileTransformer', '2': 'CenterLastValue'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'output_distribution': 'uniform', 'n_quantiles': 2}, '2': {'rows': 5}}}
-{}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

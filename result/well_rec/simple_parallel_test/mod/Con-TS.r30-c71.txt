@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{'fillna': 'zero', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'QuantileTransformer'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 10}}}
-{'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [72, 36, 72], 'max_iter': 250, 'activation': 'tanh', 'solver': 'adam', 'early_stopping': True, 'learning_rate_init': 0.001}}, 'datepart_method': 'simple_2', 'polynomial_degree': None, 'regression_type': None}
-SMAPE: 4.7316340874902085, 133.58249209623017, 4.676372790719893
-MAE: 0.00030881248908370024, 0.02413653635885572, 4.0256651118339965e-05
-SPL: 2.820380945159965, 593.4149037149432, 0.9184067129311543

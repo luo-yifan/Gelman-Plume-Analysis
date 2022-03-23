@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'ffill', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {}, '2': {'lag_1': 7, 'method': 'Median'}}}
-{'level': 'irregular', 'maxiter': 100, 'cov_type': 'oim', 'method': 'lbfgs', 'autoregressive': 1, 'regression_type': 'Holiday'}
-SMAPE: 4.260835587141653, 9.708480707313695, 24.664687494056317
-MAE: 0.15244604945655899, 0.30763114255146523, 0.6488670392508724
-SPL: 1.2032101991248219, 2.04538062579517, 1.4495373393090254

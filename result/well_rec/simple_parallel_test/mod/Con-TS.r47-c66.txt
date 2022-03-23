@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{'fillna': 'KNNImputer', 'transformations': {'0': 'Slice', '1': 'MinMaxScaler', '2': 'DifferencedTransformer', '3': 'QuantileTransformer', '4': 'RollingMean100thN'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}, '2': {}, '3': {'output_distribution': 'uniform', 'n_quantiles': 2}, '4': {}}}
-{'family': 'Poisson', 'constant': False, 'regression_type': None}
-SMAPE: 10.807498879984594, 4.7496404984261575, 5.183102251300629
-MAE: 0.09034167208354923, 0.0353664041325261, 0.03409231381116107
-SPL: 0.20974784009058126, 0.2111950649132056, 1.7245525468484493

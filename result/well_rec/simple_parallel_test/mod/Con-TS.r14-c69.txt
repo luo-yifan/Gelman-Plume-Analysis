@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'rolling_mean_24', 'transformations': {'0': 'DifferencedTransformer', '1': 'SinTrend', '2': 'StandardScaler', '3': 'DatepartRegression', '4': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'simple_2', 'polynomial_degree': 2}, '4': {'output_distribution': 'uniform', 'n_quantiles': 10}}}
-{'level': 'random walk with drift', 'maxiter': 50, 'cov_type': 'approx', 'method': 'bfgs', 'autoregressive': None, 'regression_type': None}
-SMAPE: 4.410988984337392, 17.9756682448065, 28.792709332075553
-MAE: 0.08417202344369756, 0.37518552728925936, 0.16855192285858772
-SPL: 0.8006308964919923, 0.8778027496326442, 0.6477926693863482

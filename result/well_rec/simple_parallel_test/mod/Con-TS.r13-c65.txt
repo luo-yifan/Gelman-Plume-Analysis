@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'cubic', 'transformations': {'0': 'Detrend', '1': 'Detrend', '2': 'RobustScaler', '3': 'Round'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': 365}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {}, '3': {'decimals': 2, 'on_transform': False, 'on_inverse': True}}}
-{'level': 'local linear deterministic trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'nm', 'autoregressive': None, 'regression_type': None}
-SMAPE: 5.694452301224844, 0.5182783598188535, 2.735512637139843
-MAE: 0.017900491195559233, 0.0015177561267027072, 0.007055217765332589
-SPL: 0.8026925480591973, 0.4883045455954157, 0.41713480454117335

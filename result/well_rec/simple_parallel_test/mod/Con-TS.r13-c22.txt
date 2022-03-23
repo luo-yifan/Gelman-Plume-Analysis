@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'zero', 'transformations': {'0': 'PositiveShift', '1': 'MinMaxScaler', '2': 'MaxAbsScaler', '3': 'IntermittentOccurrence', '4': 'PositiveShift', '5': 'Log'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {'center': 'mean'}, '4': {}, '5': {}}}
-{}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

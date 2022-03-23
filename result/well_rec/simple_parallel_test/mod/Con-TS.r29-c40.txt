@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-Theta
-{'fillna': 'pad', 'transformations': {'0': 'DifferencedTransformer', '1': 'HPFilter', '2': 'Round'}, 'transformation_params': {'0': {}, '1': {'part': 'trend', 'lamb': 104976000000}, '2': {'decimals': 0, 'on_transform': False, 'on_inverse': True}}}
-{'deseasonalize': True, 'difference': True, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 2, 'use_mle': False}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{'fillna': 'KNNImputer', 'transformations': {'0': 'Slice', '1': 'EWMAFilter', '2': 'Detrend'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'span': 3}, '2': {'model': 'Linear', 'phi': 1, 'window': None}}}
-{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 20}}, 'datepart_method': 'simple', 'polynomial_degree': None, 'regression_type': None}
-SMAPE: 22.403345976559915, 9.420831427724272, 23.300941059870535
-MAE: 31.925443463583793, 14.407186032305196, 20.721275818093897
-SPL: 5.8711196968985195, 2.460725154146238, 7.287206675134628

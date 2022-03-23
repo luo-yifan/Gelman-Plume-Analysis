@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-NVAR
-{'fillna': 'pchip', 'transformations': {'0': 'ClipOutliers'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}}}
-{'k': 2, 'ridge_param': 2e-06, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': 'exponential', 'batch_size': 5, 'batch_method': 'input_order'}
-SMAPE: 2.079182875243923, 5.160455196529481, 199.4567972285212
-MAE: 0.2476499428675382, 0.5190438232777034, 1.0534923471301516e+22
-SPL: 0.4815337031556121, 0.442425105126046, inf

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateMotif
-{'fillna': 'zero', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'model': 'Linear', 'phi': 1, 'window': 365}}}
-{'window': 7, 'point_method': 'weighted_mean', 'distance_metric': 'hamming', 'k': 5, 'max_windows': 10000}
-SMAPE: 10.104916875325284, 22.385408216197042, 13.059790387693004
-MAE: 7.087330736928015, 14.787650184306756, 5.188756346372914
-SPL: 0.6345562411606793, 2.184160725043046, 0.6143230834984978

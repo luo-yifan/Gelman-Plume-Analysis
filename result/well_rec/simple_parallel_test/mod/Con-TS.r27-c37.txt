@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{'fillna': 'ffill', 'transformations': {'0': 'Slice', '1': 'StandardScaler', '2': 'StandardScaler', '3': 'RobustScaler'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}, '2': {}, '3': {}}}
-{'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'expanded', 'polynomial_degree': None, 'regression_type': None}
-SMAPE: 3.696187283448579, 5.487785264507325, 18.165745006186107
-MAE: 1.0498036002240432, 1.810700045653497, 8.559705480620677
-SPL: 0.08210740374990241, 0.07801312053943646, 0.18718186267548695

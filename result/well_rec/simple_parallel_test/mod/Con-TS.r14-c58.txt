@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-Theta
-{'fillna': 'pchip', 'transformations': {'0': 'CenterLastValue', '1': 'bkfilter', '2': 'Detrend'}, 'transformation_params': {'0': {'rows': 6}, '1': {}, '2': {'model': 'Linear'}}}
-{'deseasonalize': False, 'difference': True, 'use_test': True, 'method': 'auto', 'period': None, 'theta': 1.4, 'use_mle': False}
-SMAPE: 6.137776160433061, 2.8188462893272948, 1.9380853483278677
-MAE: 0.48763537696064585, 0.19625521184160277, 0.11931049851130168
-SPL: 1.01576910055416, 1.0426555867062486, 1.1228558613898694

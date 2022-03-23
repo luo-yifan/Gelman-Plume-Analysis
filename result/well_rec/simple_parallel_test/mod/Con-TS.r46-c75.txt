@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-NVAR
-{'fillna': 'KNNImputer', 'transformations': {'0': 'MaxAbsScaler', '1': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {'lag_1': 12, 'method': 'LastValue'}}}
-{'k': 2, 'ridge_param': 0.002, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'input_order'}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.00529999993741512, 0.0
-SPL: 0.0, 0.00529999993741512, 0.0

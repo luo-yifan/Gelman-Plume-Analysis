@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateMotif
-{'fillna': 'zero', 'transformations': {'0': 'MinMaxScaler', '1': 'MinMaxScaler', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
-{'window': 10, 'point_method': 'weighted_mean', 'distance_metric': 'sqeuclidean', 'k': 3, 'max_windows': 10000}
-SMAPE: 4.159613776316683, 28.65802444448383, 25.578446529171064
-MAE: 0.6728972620638942, 3.6648225226650433, 1.5597521276939585
-SPL: 1.0038882732934007, 2.154567579847434, 1.156131684036534

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{'fillna': 'median', 'transformations': {'0': 'Slice', '1': 'Detrend', '2': 'Detrend'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'model': 'GLS', 'phi': 1, 'window': 365}, '2': {'model': 'GLS', 'phi': 1, 'window': None}}}
-{}
-SMAPE: 8.559513868807977, 16.604441616850913, 115.7430038926954
-MAE: 0.00014841246443077113, 0.00029102185465965634, 0.0007699446806808338
-SPL: 0.38148647475186065, 0.628127398512669, 8.271589824448437

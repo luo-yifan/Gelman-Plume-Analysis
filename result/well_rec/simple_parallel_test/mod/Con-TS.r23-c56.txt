@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'KNNImputer', 'transformations': {'0': 'Slice', '1': 'PositiveShift'}, 'transformation_params': {'0': {'method': 0.2}, '1': {}}}
-{}
-SMAPE: 15.406793373511917, 36.6006034786915, 16.73919648239179
-MAE: 0.4689944971952446, 0.9672094948874875, 0.28672095118700325
-SPL: 0.8284130543399286, 2.691079037279189, 0.4978462176067175

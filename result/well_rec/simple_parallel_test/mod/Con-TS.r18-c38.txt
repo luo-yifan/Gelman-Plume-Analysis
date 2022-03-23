@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-NVAR
-{'fillna': 'median', 'transformations': {'0': 'IntermittentOccurrence', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {'center': 'mean'}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}}}
-{'k': 1, 'ridge_param': 2, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'max_sorted'}
-SMAPE: 10.452868432777018, 7.9870271777028155, 14.371452850777525
-MAE: 4.880770331934867, 4.113599259512786, 8.187318916320804
-SPL: 0.24252780465835094, 0.33877613960094133, 0.45093580915199466

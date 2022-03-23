@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-SectionalMotif
-{'fillna': 'fake_date', 'transformations': {'0': 'Discretize', '1': 'RobustScaler'}, 'transformation_params': {'0': {'discretization': 'upper', 'n_bins': 5}, '1': {}}}
-{'window': 5, 'point_method': 'midhinge', 'distance_metric': 'dice', 'include_differenced': True, 'k': 1, 'stride_size': 1, 'regression_type': None}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{'fillna': 'KNNImputer', 'transformations': {'0': 'SeasonalDifference', '1': 'QuantileTransformer', '2': 'PctChangeTransformer'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'Median'}, '1': {'output_distribution': 'normal', 'n_quantiles': 10}, '2': {}}}
-{'family': 'Binomial', 'constant': False, 'regression_type': None}
-SMAPE: 43.428560283633715, 31.196759473567578, 75.81794251907226
-MAE: 0.47948078364133784, 0.3314386467035616, 0.3764554736376376
-SPL: 1.339543533097028, 2.1135542011182156, 0.7066912565293673

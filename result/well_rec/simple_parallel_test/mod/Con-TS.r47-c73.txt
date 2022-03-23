@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{'fillna': 'ffill', 'transformations': {'0': 'PowerTransformer', '1': 'QuantileTransformer', '2': 'SeasonalDifference', '3': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {'lag_1': 7, 'method': 'LastValue'}, '3': {}}}
-{}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.0207409843802452, 0.0
-SPL: 0.0, 0.0207409843802452, 0.0

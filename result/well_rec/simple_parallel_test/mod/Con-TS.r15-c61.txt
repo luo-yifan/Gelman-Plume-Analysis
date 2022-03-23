@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'fake_date', 'transformations': {'0': 'DifferencedTransformer', '1': 'bkfilter', '2': 'bkfilter', '3': 'StandardScaler', '4': 'Slice', '5': 'Slice'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {}, '4': {'method': 0.5}, '5': {'method': 0.2}}}
-{'level': 'deterministic constant', 'maxiter': 100, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': 1, 'regression_type': 'Holiday'}
-SMAPE: 3.406151896161698, 2.3502545992977337, 7.824311917508169
-MAE: 0.6133553237466728, 0.37433075053047526, 1.1044111951095217
-SPL: 0.7267055012586932, 0.701294985823236, 2.4713663223248385

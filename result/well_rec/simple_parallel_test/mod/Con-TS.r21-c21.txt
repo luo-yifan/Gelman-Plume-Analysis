@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnivariateMotif
-{'fillna': 'zero', 'transformations': {'0': 'Detrend', '1': 'DifferencedTransformer', '2': 'Discretize', '3': 'StandardScaler'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {}, '2': {'discretization': 'lower', 'n_bins': 10}, '3': {}}}
-{'window': 10, 'point_method': 'mean', 'distance_metric': 'braycurtis', 'k': 3, 'max_windows': 1000}
-SMAPE: 15.465125019598933, 8.57796510603329, 3.441760917592883
-MAE: 0.30334929958375934, 0.23379572298951193, 0.0915659229238078
-SPL: 1.417630880505847, 0.9127553822301333, 0.6617637068059227

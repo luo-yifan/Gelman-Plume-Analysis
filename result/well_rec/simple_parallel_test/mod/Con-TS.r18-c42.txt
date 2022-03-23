@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'fake_date', 'transformations': {'0': 'Slice', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'Log', '4': 'QuantileTransformer'}, 'transformation_params': {'0': {'method': 0.2}, '1': {'output_distribution': 'uniform', 'n_quantiles': 2}, '2': {}, '3': {}, '4': {'output_distribution': 'normal', 'n_quantiles': 2}}}
-{}
-SMAPE: 5.092608498502289, 10.24028073552155, 6.535098939303403
-MAE: 0.820621096672905, 1.6625245663833375, 1.2656455993652393
-SPL: 0.3768560209136733, 1.2688154791623267, 0.5955873355583318

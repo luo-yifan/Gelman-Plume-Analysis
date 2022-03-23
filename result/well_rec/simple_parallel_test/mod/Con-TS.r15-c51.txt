@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{'fillna': 'time', 'transformations': {'0': 'MinMaxScaler', '1': 'DifferencedTransformer', '2': 'RollingMeanTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'fixed': True, 'window': 10}}}
-{'family': 'Binomial', 'constant': False, 'regression_type': None}
-SMAPE: 9.317884282902025, 17.467589871741087, 3.8860258887935037
-MAE: 0.5870347191720864, 1.4823247506111472, 0.3436021816792575
-SPL: 0.3995123618314545, 1.3628027107778253, 0.5042924655664587

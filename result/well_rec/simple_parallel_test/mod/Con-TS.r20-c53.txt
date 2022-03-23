@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{'fillna': 'ffill', 'transformations': {'0': 'Detrend', '1': 'DifferencedTransformer', '2': 'Detrend'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': 365}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': None}}}
-{'window_size': 5, 'input_dim': 'univariate', 'output_dim': 'forecast_length', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'BayesianRidge', 'model_params': {}}}
-SMAPE: 7.727293609085419, 16.979564802090014, 4.639492060780361
-MAE: 0.44977319538127086, 1.7568206154507053, 0.5850094301807843
-SPL: 0.6616698118287998, 0.7037110142732198, 0.6558696720402389

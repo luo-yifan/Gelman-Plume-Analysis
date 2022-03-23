@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{'fillna': 'fake_date', 'transformations': {'0': 'RobustScaler', '1': 'QuantileTransformer', '2': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {}}}
-{'regression_model': {'model': 'ElasticNet', 'model_params': {}}, 'datepart_method': 'simple', 'polynomial_degree': None, 'regression_type': None}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.07977306842803959, 0.0
-SPL: 0.0, 0.07977306842803959, 0.0

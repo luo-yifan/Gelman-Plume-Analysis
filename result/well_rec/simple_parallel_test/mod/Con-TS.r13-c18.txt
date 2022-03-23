@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnivariateMotif
-{'fillna': 'rolling_mean_24', 'transformations': {'0': 'QuantileTransformer', '1': 'MaxAbsScaler', '2': 'PositiveShift'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {}, '2': {}}}
-{'window': 7, 'point_method': 'weighted_mean', 'distance_metric': 'matching', 'k': 3, 'max_windows': 10000}
-SMAPE: 0.0, 0.0, 40.0
-MAE: 0.0, 0.0, 8.181272423826e-05
-SPL: 0.019994152137099944, 0.016546884527255123, 0.7228057787186455

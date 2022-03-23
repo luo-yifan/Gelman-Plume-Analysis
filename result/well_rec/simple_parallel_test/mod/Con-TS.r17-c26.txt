@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{'fillna': 'rolling_mean', 'transformations': {'0': 'PctChangeTransformer', '1': 'Slice', '2': 'bkfilter'}, 'transformation_params': {'0': {}, '1': {'method': 0.2}, '2': {}}}
-{'method': 'Weighted_Mean'}
-SMAPE: 3.7678312729615215, 2.2822524409569125, 43.245180422528776
-MAE: 0.0014513352484160386, 0.0012273131140641783, 0.01764327889490013
-SPL: 0.06512406921376114, 0.08452093508041979, 1.1044590952260542

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'ffill', 'transformations': {'0': 'HPFilter', '1': 'RobustScaler', '2': 'RobustScaler', '3': 'Discretize'}, 'transformation_params': {'0': {'part': 'trend', 'lamb': 1600}, '1': {}, '2': {}, '3': {'discretization': 'upper', 'n_bins': 20}}}
-{}
-SMAPE: 2.3019616044822846, 32.44103944091305, 6.136197968491649
-MAE: 0.18276074380140556, 2.941605090082434, 0.4579850881189335
-SPL: 0.586186285036308, 0.5964356448299298, 0.6394089928544889

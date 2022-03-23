@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{'fillna': 'KNNImputer', 'transformations': {'0': 'RobustScaler', '1': 'ClipOutliers', '2': 'Detrend', '3': 'CenterLastValue', '4': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {'method': 'clip', 'std_threshold': 5, 'fillna': None}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'rows': 3}, '4': {}}}
-{'damped_trend': False, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
-SMAPE: 8.421225925853692, 70.84822207201063, 11.403293215971164
-MAE: 0.16493488856134858, 0.8911442894650466, 0.1599682219772936
-SPL: 0.5460742617244322, 7.267998887096891, 2.3298851110786027

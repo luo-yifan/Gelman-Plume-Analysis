@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'rolling_mean', 'transformations': {'0': 'DifferencedTransformer', '1': 'DifferencedTransformer', '2': 'MinMaxScaler', '3': 'PositiveShift'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {}}}
-{}
-SMAPE: 64.45912509145437, 112.90235563052643, 97.18256888418277
-MAE: 5.150845540653501, 0.32997718357607553, 0.013604931873456474
-SPL: 161.8889063995815, 946.1040419958985, 28.34905691259155

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'rolling_mean_24', 'transformations': {'0': 'SeasonalDifference', '1': 'StandardScaler', '2': 'Detrend', '3': 'DifferencedTransformer'}, 'transformation_params': {'0': {'lag_1': 12, 'method': 'Median'}, '1': {}, '2': {'model': 'Linear', 'phi': 1, 'window': 365}, '3': {}}}
-{'level': 'fixed intercept', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': 1, 'regression_type': None}
-SMAPE: 32.676943638124385, 39.33593497976337, 200.0
-MAE: 0.0038819558493076015, 0.0024803855793675772, 0.004171181330457301
-SPL: 4.572357818468384, 2.385826997438551, 0.004171181330457301

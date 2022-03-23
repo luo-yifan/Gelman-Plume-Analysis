@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'akima', 'transformations': {'0': 'ClipOutliers', '1': 'Detrend'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '1': {'model': 'Linear', 'phi': 0.999, 'window': None}}}
-{}
-SMAPE: 12.798930610074112, 21.02786416707552, 10.009218326324994
-MAE: 0.04075589411757152, 0.05963699846139141, 0.020004493480082243
-SPL: 0.6363078648105931, 0.967785401995154, 0.5406805440993184

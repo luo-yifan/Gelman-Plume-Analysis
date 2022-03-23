@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'median', 'transformations': {'0': 'PctChangeTransformer', '1': 'QuantileTransformer', '2': 'PctChangeTransformer', '3': 'MaxAbsScaler'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'normal', 'n_quantiles': 10}, '2': {}, '3': {}}}
-{}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.0563829481601716, 0.0
-SPL: 0.0, 0.0563829481601716, 0.0

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'rolling_mean', 'transformations': {'0': 'Slice'}, 'transformation_params': {'0': {'method': 0.2}}}
-{'level': 'random trend', 'maxiter': 250, 'cov_type': 'robust', 'method': 'nm', 'autoregressive': None, 'regression_type': None}
-SMAPE: 4.24218964037715, 9.968784505158613, 18.683199554507226
-MAE: 0.718438339233385, 1.7467262268287265, 2.167238426493241
-SPL: 0.47393542984645565, 1.061965056290238, 3.6390620433676215

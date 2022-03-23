@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{'fillna': 'cubic', 'transformations': {'0': 'CumSumTransformer', '1': 'Round', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {'decimals': -1, 'on_transform': False, 'on_inverse': True}, '2': {}}}
-{}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

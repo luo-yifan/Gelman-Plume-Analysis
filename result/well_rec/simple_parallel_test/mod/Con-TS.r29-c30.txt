@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateRegression
-{'fillna': 'rolling_mean_24', 'transformations': {'0': 'ClipOutliers', '1': 'QuantileTransformer', '2': 'Detrend', '3': 'Detrend', '4': 'HPFilter'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {'model': 'GLS', 'phi': 1, 'window': None}, '4': {'part': 'trend', 'lamb': 1600}}}
-{'regression_model': {'model': 'RandomForest', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 2, 'bootstrap': True}}, 'mean_rolling_periods': 30, 'macd_periods': 28, 'std_rolling_periods': None, 'max_rolling_periods': 364, 'min_rolling_periods': 35, 'quantile90_rolling_periods': 90, 'quantile10_rolling_periods': 10, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'simple_2', 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

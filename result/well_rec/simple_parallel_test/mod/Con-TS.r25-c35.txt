@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'mean', 'transformations': {'0': 'PctChangeTransformer', '1': 'Round'}, 'transformation_params': {'0': {}, '1': {'decimals': 1, 'on_transform': False, 'on_inverse': True}}}
-{'level': 'local linear trend', 'maxiter': 250, 'cov_type': 'opg', 'method': 'cg', 'autoregressive': None, 'regression_type': None}
-SMAPE: 6.650446448352183, 50.29961543988086, 36.668313681942564
-MAE: 1.2544327659606864, 8.525191249847413, 3.5155379970855885
-SPL: 0.03281663106433662, 0.013863980847553223, 0.013631306562831276

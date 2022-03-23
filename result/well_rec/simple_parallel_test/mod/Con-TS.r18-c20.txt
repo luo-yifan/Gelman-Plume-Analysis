@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'rolling_mean', 'transformations': {'0': 'MaxAbsScaler', '1': 'QuantileTransformer', '2': 'CenterLastValue', '3': 'STLFilter'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {'rows': 5}, '3': {'decomp_type': 'seasonal_decompose', 'part': 'trend'}}}
-{'level': 'random trend', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
-SMAPE: 8.227671196635903, 36.09401928582655, 4.044372567717728
-MAE: 0.527597045898438, 4.2988925173746715, 0.76093940734862
-SPL: 0.7197484100215752, 3.1513151712539678, 0.3796611750725863

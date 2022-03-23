@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'time', 'transformations': {'0': 'CenterLastValue', '1': 'Discretize'}, 'transformation_params': {'0': {'rows': 2}, '1': {'discretization': 'center', 'n_bins': 20}}}
-{'level': 'random trend', 'maxiter': 100, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
-SMAPE: 4.46263735385115, 6.971560291750333, 19.749670774786395
-MAE: 0.2583592510223406, 0.38138617515564055, 0.640549969673154
-SPL: 1.8584144501158135, 1.3775660684381297, 1.661338594365624

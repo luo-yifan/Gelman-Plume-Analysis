@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateRegression
-{'fillna': 'rolling_mean', 'transformations': {'0': 'Detrend', '1': 'QuantileTransformer'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {'output_distribution': 'normal', 'n_quantiles': 10}}}
-{'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [32, 32, 32], 'max_iter': 250, 'activation': 'relu', 'solver': 'adam', 'early_stopping': False, 'learning_rate_init': 0.001}}, 'mean_rolling_periods': 7, 'macd_periods': 24, 'std_rolling_periods': 7, 'max_rolling_periods': 364, 'min_rolling_periods': None, 'quantile90_rolling_periods': None, 'quantile10_rolling_periods': 5, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'simple_2', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
-SMAPE: 17.471987603852945, 11.811220706576787, 15.720038940618133
-MAE: 0.9392685017266921, 1.0391070028761542, 1.09834816204553
-SPL: 1.4524790233375646, 2.7196917146623694, 4.133180545344829

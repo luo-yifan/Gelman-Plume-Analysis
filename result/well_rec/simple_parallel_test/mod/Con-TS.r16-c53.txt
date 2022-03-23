@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{'fillna': 'pchip', 'transformations': {'0': 'DifferencedTransformer', '1': 'SeasonalDifference', '2': 'SeasonalDifference'}, 'transformation_params': {'0': {}, '1': {'lag_1': 7, 'method': 'Mean'}, '2': {'lag_1': 12, 'method': 'LastValue'}}}
-{'family': 'Gaussian', 'constant': False, 'regression_type': None}
-SMAPE: 18.485754177622404, 8.749709582003195, 8.665238185576154
-MAE: 10.283060382882343, 4.078615388885101, 2.7194694574671865
-SPL: 1.9280883500109784, 1.2947441908502737, 1.034947681276995

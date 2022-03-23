@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'pchip', 'transformations': {'0': 'MinMaxScaler', '1': 'ClipOutliers', '2': 'PctChangeTransformer'}, 'transformation_params': {'0': {}, '1': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '2': {}}}
-{'level': 'local linear trend', 'maxiter': 250, 'cov_type': 'oim', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
-SMAPE: 30.0211033761796, 27.496143024173485, 22.120094879523855
-MAE: 43.47507086040575, 41.76670874979211, 47.295440833849185
-SPL: 0.12825567799762372, 0.11961370886733985, 0.09646343667608842

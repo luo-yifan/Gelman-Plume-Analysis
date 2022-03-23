@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-NVAR
-{'fillna': 'ffill', 'transformations': {'0': 'CumSumTransformer', '1': 'DifferencedTransformer', '2': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {}}}
-{'k': 3, 'ridge_param': 0.002, 'warmup_pts': 1, 'seed_pts': 10, 'seed_weighted': None, 'batch_size': 5, 'batch_method': 'max_sorted'}
-SMAPE: 105.68616532336515, 200.0, 0.0
-MAE: 9.222324556320919, 0.21711406335234637, 0.0
-SPL: 329.4664518040771, 0.21711406335234637, 0.0

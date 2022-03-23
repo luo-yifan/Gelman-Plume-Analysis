@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'rolling_mean', 'transformations': {'0': 'RollingMeanTransformer', '1': 'QuantileTransformer', '2': 'ClipOutliers', '3': 'Detrend'}, 'transformation_params': {'0': {'fixed': True, 'window': 3}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {'method': 'clip', 'std_threshold': 1, 'fillna': None}, '3': {'model': 'Linear', 'phi': 1, 'window': 900}}}
-{}
-SMAPE: 8.291783449929405, 7.237978210752745, 32.64195337830627
-MAE: 1.225423833791656, 1.3144497794336647, 6.315069010996436
-SPL: 0.07944617002475667, 0.08309333986930949, 0.2916772910573767

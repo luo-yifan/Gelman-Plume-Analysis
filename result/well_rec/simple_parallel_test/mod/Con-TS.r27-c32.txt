@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'mean', 'transformations': {'0': 'EWMAFilter', '1': 'Round'}, 'transformation_params': {'0': {'span': 7}, '1': {'decimals': -1, 'on_transform': True, 'on_inverse': True}}}
-{'level': 'deterministic constant', 'maxiter': 50, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

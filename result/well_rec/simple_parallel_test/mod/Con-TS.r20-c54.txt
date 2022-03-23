@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{'fillna': 'fake_date', 'transformations': {'0': 'bkfilter', '1': 'SinTrend', '2': 'Round', '3': 'SeasonalDifference', '4': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {'decimals': 1, 'on_transform': False, 'on_inverse': True}, '3': {'lag_1': 12, 'method': 'Median'}, '4': {}}}
-{}
-SMAPE: 6.8198218911180915, 12.630320657079661, 22.28219796049526
-MAE: 3.5101587011574766, 10.498948379911473, 16.343199827717918
-SPL: 0.36754407732148636, 1.0961376157109608, 1.939622568640222

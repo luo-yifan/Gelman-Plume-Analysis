@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'nearest', 'transformations': {'0': 'StandardScaler', '1': 'Detrend', '2': 'ClipOutliers', '3': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {'method': 'clip', 'std_threshold': 1, 'fillna': None}, '3': {'output_distribution': 'normal', 'n_quantiles': 10}}}
-{'level': 'local linear deterministic trend', 'maxiter': 50, 'cov_type': 'opg', 'method': 'powell', 'autoregressive': None, 'regression_type': None}
-SMAPE: 19.947882381353384, 8.175084516208177, 2.4575848151498683
-MAE: 2.471365902904883, 1.0509586235124295, 0.2714888609895745
-SPL: 2.0145077658232466, 0.4276221446079841, 0.3888711084256829

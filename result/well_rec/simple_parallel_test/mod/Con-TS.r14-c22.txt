@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{'fillna': 'ffill', 'transformations': {'0': 'Discretize', '1': 'DifferencedTransformer', '2': 'RobustScaler', '3': 'Discretize'}, 'transformation_params': {'0': {'discretization': 'lower', 'n_bins': 5}, '1': {}, '2': {}, '3': {'discretization': 'upper', 'n_bins': 20}}}
-{}
-SMAPE: 0.0, 95.44245410934217, 2.57707389779403
-MAE: 0.0, 0.19940639883279773, 0.008879473805427873
-SPL: 0.0, 2.294007196175575, 0.08995984052622277

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{'fillna': 'ffill', 'transformations': {'0': 'CumSumTransformer', '1': 'Detrend', '2': 'Detrend'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {'model': 'Linear', 'phi': 1, 'window': None}}}
-{'method': 'Weighted_Mean'}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-Ensemble
-{}
-{'model_name': 'BestN', 'model_count': 3, 'model_metric': 'horizontal', 'models': {'8cb208cc0b57679c2e4092d6e995e8c3': {'Model': 'LastValueNaive', 'ModelParameters': '{}', 'TransformationParameters': '{"fillna": "rolling_mean_24", "transformations": {"0": "PositiveShift", "1": "SinTrend", "2": "bkfilter"}, "transformation_params": {"0": {}, "1": {}, "2": {}}}'}, '1bc3cb8f8222f44e968c9bda5830f915': {'Model': 'AverageValueNaive', 'ModelParameters': '{"method": "Exp_Weighted_Mean"}', 'TransformationParameters': '{"fillna": "KNNImputer", "transformations": {"0": "Slice", "1": "EWMAFilter"}, "transformation_params": {"0": {"method": 0.2}, "1": {"span": 3}}}'}, '3a1e66abb8cd4fb639b692863308c44b': {'Model': 'Theta', 'ModelParameters': '{"deseasonalize": true, "difference": true, "use_test": true, "method": "auto", "period": null, "theta": 2, "use_mle": false}', 'TransformationParameters': '{"fillna": "rolling_mean", "transformations": {"0": "PCA", "1": "bkfilter", "2": "bkfilter", "3": "QuantileTransformer"}, "transformation_params": {"0": {}, "1": {}, "2": {}, "3": {"output_distribution": "normal", "n_quantiles": 10}}}'}}, 'model_weights': {}, 'point_method': 'mean'}
-SMAPE: 0.7828308473063395, 3.934083728576005, 5.6752579712347595
-MAE: 0.005191511862642817, 0.02728522317794173, 0.029899698917911822
-SPL: 0.23919713413423552, 0.41766237559434677, 0.7551318934479248

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{'fillna': 'rolling_mean', 'transformations': {'0': 'SinTrend', '1': 'EWMAFilter', '2': 'MaxAbsScaler', '3': 'bkfilter', '4': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {'span': 3}, '2': {}, '3': {}, '4': {}}}
-{'family': 'Binomial', 'constant': False, 'regression_type': None}
-SMAPE: 4.6403434677366, 4.782625576148197, 2.194178754629125
-MAE: 0.2768633295833462, 0.3066243429873454, 0.14172175128447845
-SPL: 0.22965748803727395, 0.20507229711134736, 0.1867073676872726

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateRegression
-{'fillna': 'ffill', 'transformations': {'0': 'Detrend', '1': 'EWMAFilter'}, 'transformation_params': {'0': {'model': 'GLS', 'phi': 1, 'window': None}, '1': {'span': 3}}}
-{'regression_model': {'model': 'Adaboost', 'model_params': {'n_estimators': 50, 'loss': 'exponential', 'base_estimator': None, 'learning_rate': 1}}, 'mean_rolling_periods': 30, 'macd_periods': 10, 'std_rolling_periods': 90, 'max_rolling_periods': None, 'min_rolling_periods': None, 'quantile90_rolling_periods': 90, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': 7, 'holiday': False, 'probabilistic': False}
-SMAPE: 8.666175597064788, 23.61003414607991, 18.996128663551353
-MAE: 0.2711401773080112, 0.5578502591041362, 0.7077240827329694
-SPL: 0.7032772402760622, 1.1324192506472481, 1.358883549552392

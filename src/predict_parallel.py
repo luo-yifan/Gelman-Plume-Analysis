@@ -5,6 +5,16 @@ import pathlib
 from autots import AutoTS
 from functools import partial
 import pandas as pd
+import warnings
+
+warnings.filterwarnings('ignore')
+
+forecast_length = 5
+frequency = 'Y'
+n_jobs = "auto"
+verbose = -10
+no_negatives = True
+num_validations = 8
 
 
 def create_dir(filename):
@@ -23,7 +33,7 @@ def generate_name_dict():
     return dict
 
 
-def predict_single_full(output_directory, m_list, remove_recent_years, grouped_by_name):
+def predict_single_full(output_directory, remove_recent_years, grouped_by_name):
     name, group = grouped_by_name
 
     if len(group) < 20:
@@ -43,14 +53,14 @@ def predict_single_full(output_directory, m_list, remove_recent_years, grouped_b
 
     group.set_index('Date', inplace=True)
 
-    mod = AutoTS(forecast_length=5,
-                 # TODO: Based on sample size
-                 frequency='Y',
-                 # TODO: ensemble method
-                 ensemble='simple',
-                 no_negatives=True,
-                 model_list=m_list,
-                 verbose=-4)
+    mod = AutoTS(
+        forecast_length=forecast_length,
+        frequency=frequency,
+        no_negatives=no_negatives,
+        verbose=verbose,
+        n_jobs=n_jobs,
+        num_validations=8
+    )
 
     try:
         mod = mod.fit(group, date_col='ds', value_col='y', id_col=None)
@@ -93,7 +103,7 @@ def run(output_directory, m_list):
     pool.map(predict, grouped)
 
 
-def run_from_ori(output_directory, m_list, n_jobs, remove_recent_years=False):
+def run_from_ori(output_directory, remove_recent_years=False):
     create_dir(output_directory)
     well_data = pd.read_excel('../data/Gelman_2020_DATA_Rockworks6-2020.xlsx',
                               sheet_name='TmInterval')
@@ -119,16 +129,14 @@ def run_from_ori(output_directory, m_list, n_jobs, remove_recent_years=False):
 
         group.set_index('Date', inplace=True)
 
-        mod = AutoTS(forecast_length=5,
-                     # TODO: Based on sample size
-                     frequency='Y',
-                     # TODO: ensemble method
-                     ensemble='simple',
-                     no_negatives=True,
-                     model_list=m_list,
-                     verbose=-4,
-                     n_jobs=n_jobs
-                     )
+        mod = AutoTS(
+            forecast_length=forecast_length,
+            frequency=frequency,
+            no_negatives=no_negatives,
+            verbose=verbose,
+            n_jobs=n_jobs,
+            num_validations=8
+        )
 
         try:
             mod = mod.fit(group, date_col='ds', value_col='y', id_col=None)
@@ -163,7 +171,7 @@ def run_from_ori(output_directory, m_list, n_jobs, remove_recent_years=False):
         count += 1
 
 
-def run_from_rec(output_directory, m_list, n_jobs, name_dict, remove_recent_years=False):
+def run_from_rec(output_directory, name_dict, remove_recent_years=False):
     create_dir(output_directory)
     name_list = [name for name in os.listdir("../data/Well_Rec_txt2/")]
     count = 0
@@ -189,13 +197,15 @@ def run_from_rec(output_directory, m_list, n_jobs, name_dict, remove_recent_year
 
             well_data.set_index('ds', inplace=True)
 
-            mod = AutoTS(forecast_length=5,
-                         frequency='Y',
-                         no_negatives=True,
-                         min_allowed_train_percent=0.2,
-                         model_list=m_list,
-                         n_jobs=n_jobs,
-                         verbose=-4)
+            mod = AutoTS(
+                forecast_length=forecast_length,
+                frequency=frequency,
+                no_negatives=no_negatives,
+                verbose=verbose,
+                n_jobs=n_jobs,
+                num_validations=8
+            )
+
             try:
                 mod = mod.fit(well_data, date_col='Date', value_col='Concentration', id_col=None)
                 prediction = mod.predict()
@@ -228,7 +238,7 @@ def run_from_rec(output_directory, m_list, n_jobs, name_dict, remove_recent_year
             print("[predict success]", name, count, '/', len_name_list)
 
 
-def run_from_pixel_rec(output_directory, m_list, n_jobs):
+def run_from_pixel_rec(output_directory):
     create_dir(output_directory)
     name_list = [name for name in os.listdir("../data/pixel_rec/")]
     count = 0
@@ -247,13 +257,14 @@ def run_from_pixel_rec(output_directory, m_list, n_jobs):
 
         pixel_data.set_index('ds', inplace=True)
 
-        mod = AutoTS(forecast_length=5,
-                     frequency='Y',
-                     no_negatives=True,
-                     min_allowed_train_percent=0.2,
-                     model_list=m_list,
-                     n_jobs=n_jobs,
-                     verbose=-4)
+        mod = AutoTS(
+            forecast_length=forecast_length,
+            frequency=frequency,
+            no_negatives=no_negatives,
+            verbose=verbose,
+            n_jobs=n_jobs,
+            num_validations=8
+        )
 
         try:
             mod = mod.fit(pixel_data, date_col='Date', value_col='Conc', id_col=None)
@@ -291,13 +302,12 @@ def run_from_pixel_rec(output_directory, m_list, n_jobs):
 
 
 if __name__ == '__main__':
-
-    # run_from_ori( '../result/ori/simple_parallel_test/', 'default', 32, False)
+    run_from_ori('../result/ori/simple/8v/', False)
 
     # run_from_ori( '../result/ori/rm5_parallel_test/', 'default', 32, True)
 
     # run_from_rec('../result/well_rec/simple_parallel_test/', 'default',32,generate_name_dict(), False)
 
-    run_from_rec('../result/well_rec/rm5_parallel_test/', 'default',32,generate_name_dict(), True)
+    # run_from_rec('../result/well_rec/rm5_parallel_test/', generate_name_dict(), True)
 
     # run_from_pixel_rec('../result/well_rec/simple_parallel_test/', 'default', 32)

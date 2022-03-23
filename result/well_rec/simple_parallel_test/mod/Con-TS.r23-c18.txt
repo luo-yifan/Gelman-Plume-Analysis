@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{'fillna': 'fake_date', 'transformations': {'0': 'PositiveShift', '1': 'MinMaxScaler', '2': 'DifferencedTransformer', '3': 'RobustScaler'}, 'transformation_params': {'0': {}, '1': {}, '2': {}, '3': {}}}
-{'window_size': 10, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 5000, 'regression_type': None, 'regression_model': {'model': 'GaussianProcessRegressor', 'model_params': {'alpha': 1e-10}}}
-SMAPE: 49.82789744557618, 10.309600440177446, 1.1008837662028097
-MAE: 0.0028177776608956976, 0.0010510721709579309, 0.00012198230251672833
-SPL: 3.3794701262559665, 0.737962132212847, 0.3991748721449734

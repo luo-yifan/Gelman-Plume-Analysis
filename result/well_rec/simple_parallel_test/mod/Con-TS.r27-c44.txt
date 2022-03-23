@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'median', 'transformations': {'0': 'QuantileTransformer', '1': 'HPFilter', '2': 'QuantileTransformer', '3': 'RobustScaler'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {'part': 'trend', 'lamb': 1600}, '2': {'output_distribution': 'uniform', 'n_quantiles': 10}, '3': {}}}
-{}
-SMAPE: 10.7612717608005, 8.115774669565495, 27.525294789997425
-MAE: 0.010442892407387586, 0.007504708541298835, 0.02298565155268465
-SPL: 0.1651538786964904, 0.03397741282880899, 0.8804803549185577

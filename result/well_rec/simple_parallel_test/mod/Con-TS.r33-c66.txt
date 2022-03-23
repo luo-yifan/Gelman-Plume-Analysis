@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-SectionalMotif
-{'fillna': 'zero', 'transformations': {'0': 'ClipOutliers', '1': 'QuantileTransformer', '2': 'DifferencedTransformer', '3': 'PositiveShift', '4': 'PositiveShift'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 1, 'fillna': None}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {}, '3': {}, '4': {}}}
-{'window': 5, 'point_method': 'midhinge', 'distance_metric': 'dice', 'include_differenced': True, 'k': 5, 'stride_size': 1, 'regression_type': None}
-SMAPE: 0.270744905382568, 3.3878689998432834, 5.581194716602127
-MAE: 0.003665254265100648, 0.044135493293318805, 0.06715943014020395
-SPL: 0.01970471102257168, 0.202120037715473, 0.28750614136080177

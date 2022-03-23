@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'SeasonalDifference', '1': 'SeasonalDifference'}, 'transformation_params': {'0': {'lag_1': 7, 'method': 'Mean'}, '1': {'lag_1': 7, 'method': 'Mean'}}}
-{'method': 'Mean'}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.353444170951844, 0.0
-SPL: 0.0, 0.353444170951844, 0.0

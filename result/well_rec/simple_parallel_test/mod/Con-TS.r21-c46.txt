@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateRegression
-{'fillna': 'mean', 'transformations': {'0': 'Discretize', '1': 'DifferencedTransformer', '2': 'ClipOutliers'}, 'transformation_params': {'0': {'discretization': 'lower', 'n_bins': 5}, '1': {}, '2': {'method': 'clip', 'std_threshold': 3.5, 'fillna': None}}}
-{'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 2}}, 'mean_rolling_periods': 5, 'macd_periods': 43, 'std_rolling_periods': None, 'max_rolling_periods': 85, 'min_rolling_periods': None, 'quantile90_rolling_periods': 90, 'quantile10_rolling_periods': 7, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'expanded', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
-SMAPE: 12.30043148310963, 30.32283924207553, 6.549723661344684
-MAE: 4.198427009582563, 14.958332876861117, 3.0893253374099765
-SPL: 1.3316955867027427, 1.7311231477628977, 1.8523891657921903

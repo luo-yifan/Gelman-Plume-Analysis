@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'ffill', 'transformations': {'0': 'QuantileTransformer', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {}}}
-{'level': 'local linear trend', 'maxiter': 100, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
-SMAPE: 14.196639481373357, 32.465936544230644, 1.287830876928296
-MAE: 0.6927497863769579, 2.7120967649222147, 0.16751836874941262
-SPL: 1.1377566230246443, 2.303912239181945, 0.5698041934692605

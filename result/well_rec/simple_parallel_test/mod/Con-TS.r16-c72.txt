@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateRegression
-{'fillna': 'ffill', 'transformations': {'0': 'EWMAFilter', '1': 'DifferencedTransformer', '2': 'StandardScaler'}, 'transformation_params': {'0': {'span': 12}, '1': {}, '2': {}}}
-{'regression_model': {'model': 'MLP', 'model_params': {'hidden_layer_sizes': [32, 64, 32], 'max_iter': 250, 'activation': 'tanh', 'solver': 'lbfgs', 'early_stopping': False, 'learning_rate_init': 0.001}}, 'mean_rolling_periods': 5, 'macd_periods': 82, 'std_rolling_periods': 10, 'max_rolling_periods': None, 'min_rolling_periods': 60, 'quantile90_rolling_periods': 10, 'quantile10_rolling_periods': None, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': None, 'polynomial_degree': None, 'regression_type': None, 'window': None, 'holiday': False, 'probabilistic': False}
-SMAPE: 2.798772371692655, 70.19388549678767, 25.343232607420894
-MAE: 0.01941195314736901, 0.5286870982802515, 0.19479167168436531
-SPL: 0.3985100638837032, 5.399985703393104, 2.822641039844333

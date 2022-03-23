@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateRegression
-{'fillna': 'ffill', 'transformations': {'0': 'RobustScaler', '1': 'Detrend', '2': 'Detrend', '3': 'MinMaxScaler'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {'model': 'Linear', 'phi': 1, 'window': None}, '3': {}}}
-{'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 1.0}}, 'mean_rolling_periods': 5, 'macd_periods': 12, 'std_rolling_periods': None, 'max_rolling_periods': 4, 'min_rolling_periods': 7, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': 7, 'ewm_alpha': None, 'ewm_var_alpha': 0.5, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'simple', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
-SMAPE: 4.599706597333374, 23.99794428448768, 28.087011177596146
-MAE: 0.32279880492774266, 1.1588626167917528, 1.4045105738856019
-SPL: 0.6168932517066134, 1.2718623245755467, 3.0205128550535996

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLM
-{'fillna': 'mean', 'transformations': {'0': 'QuantileTransformer', '1': 'Detrend', '2': 'Detrend', '3': 'SeasonalDifference'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {'model': 'Linear', 'phi': 1, 'window': None}, '2': {'model': 'Linear', 'phi': 0.999, 'window': None}, '3': {'lag_1': 7, 'method': 'Median'}}}
-{'family': 'Binomial', 'constant': False, 'regression_type': None}
-SMAPE: 14.807402190899376, 132.6706914881425, 126.72689086758498
-MAE: 0.0046875691861986545, 0.1340952060166638, 0.08972999565303323
-SPL: 0.12127076135519946, 1.018706669021209, 0.6128818669293545

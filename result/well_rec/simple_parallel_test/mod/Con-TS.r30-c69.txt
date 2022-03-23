@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ZeroesNaive
-{'fillna': 'rolling_mean_24', 'transformations': {'0': 'DifferencedTransformer', '1': 'Detrend', '2': 'QuantileTransformer', '3': 'PctChangeTransformer', '4': 'StandardScaler'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear', 'phi': 0.998, 'window': 900}, '2': {'output_distribution': 'uniform', 'n_quantiles': 10}, '3': {}, '4': {}}}
-{}
-SMAPE: 21.2028018560375, 87.26344734431652, 4.0081286506210905
-MAE: 0.28712167175067566, 0.6433628029987712, 0.004730269959602809
-SPL: 3.0411357067569766, 20.333816184886693, 0.12119364120547385

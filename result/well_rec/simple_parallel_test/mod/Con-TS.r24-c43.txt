@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-SectionalMotif
-{'fillna': 'akima', 'transformations': {'0': 'Detrend', '1': 'Discretize', '2': 'PowerTransformer'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': None}, '1': {'discretization': 'upper', 'n_bins': 5}, '2': {}}}
-{'window': 3, 'point_method': 'weighted_mean', 'distance_metric': 'sokalsneath', 'include_differenced': True, 'k': 3, 'stride_size': 2, 'regression_type': None}
-SMAPE: 4.017046055388484, 7.9452130797330955, 9.347212302226984
-MAE: 5.592568612523439, 9.985676878394454, 9.560231507677383
-SPL: 0.3288578484238784, 0.38487468112857376, 0.7427331730141522

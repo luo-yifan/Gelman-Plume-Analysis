@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-DatepartRegression
-{'fillna': 'pad', 'transformations': {'0': 'ClipOutliers', '1': 'DifferencedTransformer', '2': 'Detrend', '3': 'QuantileTransformer', '4': 'Discretize'}, 'transformation_params': {'0': {'method': 'clip', 'std_threshold': 4, 'fillna': None}, '1': {}, '2': {'model': 'Linear', 'phi': 0.99, 'window': 90}, '3': {'output_distribution': 'uniform', 'n_quantiles': 10}, '4': {'discretization': 'lower', 'n_bins': 20}}}
-{'regression_model': {'model': 'ExtraTrees', 'model_params': {'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 10}}, 'datepart_method': 'expanded', 'polynomial_degree': None, 'regression_type': None}
-SMAPE: 8.404174412306261, 4.220986184045257, 66.2685016635668
-MAE: 0.17794725718439447, 0.06491521631497883, 0.3496633653777394
-SPL: 1.2712596117230537, 1.2003830318690787, 1.195599750664646

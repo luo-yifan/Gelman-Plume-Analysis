@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-SeasonalNaive
-{'fillna': 'rolling_mean_24', 'transformations': {'0': 'Detrend'}, 'transformation_params': {'0': {'model': 'Linear', 'phi': 1, 'window': None}}}
-{'method': 'mean', 'lag_1': 13, 'lag_2': 7}
-SMAPE: 3.202605866308023, 13.468563309699089, 9.124033688956892
-MAE: 0.25986971683037846, 1.026280751999256, 0.547646027146962
-SPL: 0.507458103774459, 0.5453567937902395, 0.5097210579495323

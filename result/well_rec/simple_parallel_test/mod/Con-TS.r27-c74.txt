@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-Theta
-{'fillna': 'rolling_mean', 'transformations': {'0': 'MinMaxScaler', '1': 'QuantileTransformer', '2': 'RobustScaler', '3': 'QuantileTransformer'}, 'transformation_params': {'0': {}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {}, '3': {'output_distribution': 'uniform', 'n_quantiles': 10}}}
-{'deseasonalize': False, 'difference': False, 'use_test': False, 'method': 'auto', 'period': None, 'theta': 1.4, 'use_mle': False}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.029080069065094, 0.0
-SPL: 0.0, 0.029080069065094, 0.0

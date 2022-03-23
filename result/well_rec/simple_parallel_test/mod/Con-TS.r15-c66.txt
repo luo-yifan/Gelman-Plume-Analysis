@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-UnobservedComponents
-{'fillna': 'mean', 'transformations': {'0': 'PositiveShift', '1': 'Detrend', '2': 'bkfilter', '3': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {'model': 'Linear'}, '2': {}, '3': {}}}
-{'level': 'smooth trend', 'maxiter': 250, 'cov_type': 'opg', 'method': 'lbfgs', 'autoregressive': None, 'regression_type': None}
-SMAPE: 5.407127009178012, 83.22169752332823, 15.541906556624209
-MAE: 0.7323782858372667, 5.346016955404873, 0.29151976598949525
-SPL: 1.6852868669187098, 65.17090283313247, 1.8727614477257135

@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{'fillna': 'KNNImputer', 'transformations': {'0': 'IntermittentOccurrence', '1': 'DifferencedTransformer', '2': 'QuantileTransformer'}, 'transformation_params': {'0': {'center': 'mean'}, '1': {}, '2': {'output_distribution': 'uniform', 'n_quantiles': 10}}}
-{'method': 'Median'}
-SMAPE: 7.107995783350877, 23.77388692384961, 65.5238918686308
-MAE: 0.08276265237642359, 0.3405217365214708, 1.062891993352346
-SPL: 0.04943434131912295, 0.1724857753767908, 0.44375885649458746

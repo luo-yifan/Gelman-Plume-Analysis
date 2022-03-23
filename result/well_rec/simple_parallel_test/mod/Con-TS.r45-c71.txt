@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-AverageValueNaive
-{'fillna': 'nearest', 'transformations': {'0': 'MinMaxScaler', '1': 'StandardScaler', '2': 'Discretize', '3': 'Detrend', '4': 'Detrend', '5': 'PctChangeTransformer'}, 'transformation_params': {'0': {}, '1': {}, '2': {'discretization': 'lower', 'n_bins': 10}, '3': {'model': 'GLS', 'phi': 1, 'window': None}, '4': {'model': 'Linear', 'phi': 1, 'window': None}, '5': {}}}
-{'method': 'Mean'}
-SMAPE: 13.533495160641712, 152.3707315348309, 96.88027978182703
-MAE: 0.17940992558114285, 0.793665347919039, 0.005929459963381961
-SPL: 2.7380642325668383, 1543.0150137509938, 12.624125881215798

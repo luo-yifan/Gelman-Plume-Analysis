@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-NVAR
-{'fillna': 'rolling_mean', 'transformations': {'0': 'Round', '1': 'HPFilter', '2': 'ClipOutliers', '3': 'SeasonalDifference'}, 'transformation_params': {'0': {'decimals': 2, 'on_transform': True, 'on_inverse': False}, '1': {'part': 'trend', 'lamb': 129600}, '2': {'method': 'clip', 'std_threshold': 2, 'fillna': None}, '3': {'lag_1': 12, 'method': 'LastValue'}}}
-{'k': 1, 'ridge_param': 2e-06, 'warmup_pts': 1, 'seed_pts': 1, 'seed_weighted': None, 'batch_size': 20, 'batch_method': 'std_sorted'}
-SMAPE: 0.0, 0.0, 0.0
-MAE: 0.0, 0.0, 0.0
-SPL: 0.0, 0.0, 0.0

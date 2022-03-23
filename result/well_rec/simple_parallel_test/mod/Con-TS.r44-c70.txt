@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-WindowRegression
-{'fillna': 'cubic', 'transformations': {'0': 'DifferencedTransformer', '1': 'RobustScaler', '2': 'HPFilter', '3': 'Discretize', '4': 'Discretize'}, 'transformation_params': {'0': {}, '1': {}, '2': {'part': 'trend', 'lamb': 1600}, '3': {'discretization': 'upper', 'n_bins': 20}, '4': {'discretization': 'upper', 'n_bins': 20}}}
-{'window_size': 5, 'input_dim': 'univariate', 'output_dim': '1step', 'normalize_window': False, 'max_windows': 50000, 'regression_type': None, 'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': 3, 'min_samples_split': 2}}}
-SMAPE: 6.388769138315309, 8.58937587049213, 11.725714127204602
-MAE: 0.07453651019954907, 0.08353847606625249, 0.07568549293941196
-SPL: 0.5482259504300052, 0.6689900954410374, 0.9203195970489148

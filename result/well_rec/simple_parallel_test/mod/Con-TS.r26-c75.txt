@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-GLS
-{'fillna': 'zero', 'transformations': {'0': 'EWMAFilter', '1': 'QuantileTransformer', '2': 'EWMAFilter', '3': 'ClipOutliers'}, 'transformation_params': {'0': {'span': 10}, '1': {'output_distribution': 'uniform', 'n_quantiles': 10}, '2': {'span': 7}, '3': {'method': 'clip', 'std_threshold': 1, 'fillna': None}}}
-{}
-SMAPE: 0.0, 40.0, 0.0
-MAE: 0.0, 0.014753156900405882, 0.0
-SPL: 0.0, 0.014753156900405882, 0.0

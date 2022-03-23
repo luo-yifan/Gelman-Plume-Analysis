@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-SectionalMotif
-{'fillna': 'cubic', 'transformations': {'0': 'QuantileTransformer', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {'output_distribution': 'uniform', 'n_quantiles': 10}, '1': {}}}
-{'window': 5, 'point_method': 'weighted_mean', 'distance_metric': 'canberra', 'include_differenced': True, 'k': 5, 'stride_size': 1, 'regression_type': None}
-SMAPE: 17.015038544247, 11.108152442234433, 15.925223753146312
-MAE: 0.21332039185924306, 0.20676591130967764, 0.17829373634873014
-SPL: 0.9730090805176912, 0.9171001902058676, 0.7439828328914353

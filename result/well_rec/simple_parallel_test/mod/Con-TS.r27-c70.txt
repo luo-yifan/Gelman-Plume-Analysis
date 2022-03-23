@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-LastValueNaive
-{'fillna': 'rolling_mean', 'transformations': {'0': 'MaxAbsScaler', '1': 'SeasonalDifference', '2': 'StandardScaler', '3': 'Detrend'}, 'transformation_params': {'0': {}, '1': {'lag_1': 7, 'method': 'Median'}, '2': {}, '3': {'model': 'Linear', 'phi': 1, 'window': None}}}
-{}
-SMAPE: 14.621194363277155, 81.25171354104863, 3.5815733426497887
-MAE: 0.25539932959689887, 0.48539537544598066, 0.02743318661340748
-SPL: 1.8166019571724925, 8.563968664286515, 0.6817201352097271

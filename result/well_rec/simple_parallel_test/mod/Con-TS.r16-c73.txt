@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-ETS
-{'fillna': 'nearest', 'transformations': {'0': 'DatepartRegression', '1': 'Detrend', '2': 'RollingMeanTransformer', '3': 'MaxAbsScaler'}, 'transformation_params': {'0': {'regression_model': {'model': 'DecisionTree', 'model_params': {'max_depth': None, 'min_samples_split': 1.0}}, 'datepart_method': 'expanded', 'polynomial_degree': None}, '1': {'model': 'Linear', 'phi': 0.998, 'window': 900}, '2': {'fixed': True, 'window': 3}, '3': {}}}
-{'damped_trend': True, 'trend': None, 'seasonal': None, 'seasonal_periods': None}
-SMAPE: 10.337271866149697, 80.21996851313038, 24.004003377072728
-MAE: 0.007604284087516, 0.047991733520699034, 0.017000822674709405
-SPL: 0.18213054336475196, 8.792891679522825, 6.812913342499586

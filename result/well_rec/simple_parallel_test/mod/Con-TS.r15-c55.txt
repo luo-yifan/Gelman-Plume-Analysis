@@ -1,7 +1,0 @@
-Initiated AutoTS object with best model: 
-MultivariateRegression
-{'fillna': 'ffill_mean_biased', 'transformations': {'0': 'PCA', '1': 'DifferencedTransformer'}, 'transformation_params': {'0': {}, '1': {}}}
-{'regression_model': {'model': 'KNN', 'model_params': {'n_neighbors': 5, 'weights': 'uniform', 'p': 2, 'leaf_size': 30}}, 'mean_rolling_periods': 90, 'macd_periods': None, 'std_rolling_periods': None, 'max_rolling_periods': None, 'min_rolling_periods': 12, 'quantile90_rolling_periods': 5, 'quantile10_rolling_periods': 10, 'ewm_alpha': None, 'ewm_var_alpha': None, 'additional_lag_periods': None, 'abs_energy': False, 'rolling_autocorr_periods': None, 'datepart_method': 'recurring', 'polynomial_degree': None, 'regression_type': None, 'window': 3, 'holiday': False, 'probabilistic': False}
-SMAPE: 6.29824810492026, 15.431515393719971, 5.880175029830114
-MAE: 2.1819587326049907, 3.5183959197997927, 0.9294866752624642
-SPL: 1.7178583377982684, 1.8507299733159963, 1.7265142792277666
