@@ -323,7 +323,7 @@ def predict_cache_to_csv_ds_y(cache_dir, output_dir, file_name):
 
 
 def ori_data_to_csv(output_directory):
-    name_list = [name for name in os.listdir("../data/Well_Rec_txt2/")]
+    name_list = [name for name in os.listdir("../data/Well_Rec_txt/")]
     sum_data = []
     name_dict = generate_name_dict()
     for i in name_list:

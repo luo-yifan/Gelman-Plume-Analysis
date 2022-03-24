@@ -173,7 +173,7 @@ def run_from_ori(output_directory, remove_recent_years=False):
 
 def run_from_rec(output_directory, name_dict, remove_recent_years=False):
     create_dir(output_directory)
-    name_list = [name for name in os.listdir("../data/Well_Rec_txt2/")]
+    name_list = [name for name in os.listdir("../data/Well_Rec_txt/")]
     count = 0
     len_name_list = len(name_list)
     for i in name_list:
@@ -263,7 +263,8 @@ def run_from_pixel_rec(output_directory):
             no_negatives=no_negatives,
             verbose=verbose,
             n_jobs=n_jobs,
-            num_validations=8
+            model_list="fast_parallel",
+            num_validations=5
         )
 
         try:
@@ -302,12 +303,11 @@ def run_from_pixel_rec(output_directory):
 
 
 if __name__ == '__main__':
-    run_from_ori('../result/ori/simple/8v/', False)
+    # run_from_ori('../result/ori/simple/8v/', False)
 
     # run_from_ori( '../result/ori/rm5_parallel_test/', 'default', 32, True)
 
-    # run_from_rec('../result/well_rec/simple_parallel_test/', 'default',32,generate_name_dict(), False)
+    run_from_rec('../result/well_rec/simple/8v/',generate_name_dict(), False)
+    run_from_rec('../result/well_rec/simple/8v/', generate_name_dict(), True)
 
-    # run_from_rec('../result/well_rec/rm5_parallel_test/', generate_name_dict(), True)
-
-    # run_from_pixel_rec('../result/well_rec/simple_parallel_test/', 'default', 32)
+    run_from_pixel_rec('../result/pixel_rec/simple/5v/')
