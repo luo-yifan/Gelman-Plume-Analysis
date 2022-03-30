@@ -203,7 +203,8 @@ def run_from_rec(output_directory, name_dict, remove_recent_years=False):
                 no_negatives=no_negatives,
                 verbose=verbose,
                 n_jobs=n_jobs,
-                num_validations=8
+                num_validations=5,
+                model_list='fast_parallel'
             )
 
             try:
@@ -250,12 +251,24 @@ def run_from_pixel_rec(output_directory):
         if os.path.exists(output_directory + '/res/' + name + '.txt'):
             continue
         pixel_data = pd.read_csv('../data/pixel_rec/' + i)
+        ori_data = pd.read_csv('../data/pixel_rec/' + i).dropna()
         pixel_data = pixel_data.dropna()
         pixel_data['Date'] = pixel_data.apply(lambda row: datetime.datetime(int(row.Year), int(row.Month), 1), axis=1)
         pixel_data['ds'] = pd.to_datetime(pixel_data['Date'])
         pixel_data['y'] = pixel_data['Conc']
 
         pixel_data.set_index('ds', inplace=True)
+
+        all_zero = all(v == 0 for v in pixel_data['y'])
+        if all_zero:
+            print(pixel_data)
+            create_dir(output_directory + "res/")
+            for year in ['2021', '2022', '2023', '2024', '2025']:
+                to_append = {'Year': year, 'Month': 1, 'Conc': 0}
+                ori_data = ori_data.append(to_append, ignore_index=True)
+            ori_data = ori_data.astype({'Year': 'int32', 'Month': 'int32'})
+            ori_data.to_csv(output_directory + '/res/' + name + '.txt')
+            continue
 
         mod = AutoTS(
             forecast_length=forecast_length,
@@ -277,19 +290,10 @@ def run_from_pixel_rec(output_directory):
 
         create_dir(output_directory + "mod/")
         create_dir(output_directory + "res/")
-        create_dir(output_directory + "fig/")
 
         ft = open(output_directory + "mod/" + name + '.txt', "w")
         ft.write(str(mod))
         ft.close()
-
-        # fig, ax = plt.subplots()
-        # ax.scatter(pixel_data.y.index, pixel_data.y, label='a')
-        # ax.scatter(forecast.index, forecast, label='b')
-        # ax.set_title(name)
-        # plt.savefig(output_directory + '/fig/' + name + '.png')
-
-        ori_data = pd.read_csv('../data/pixel_rec/' + i).dropna()
 
         for row_datetime, row in forecast.iterrows():
             dt = pd.to_datetime(row_datetime)
@@ -307,7 +311,7 @@ if __name__ == '__main__':
 
     # run_from_ori( '../result/ori/rm5_parallel_test/', 'default', 32, True)
 
-    run_from_rec('../result/well_rec/simple/8v/',generate_name_dict(), False)
-    run_from_rec('../result/well_rec/simple/8v/', generate_name_dict(), True)
+    # run_from_rec('../result/well_rec/simple/8v/',generate_name_dict(), False)
+    # run_from_rec('../result/well_rec/simple/8v/', generate_name_dict(), True)
 
     run_from_pixel_rec('../result/pixel_rec/simple/5v/')
