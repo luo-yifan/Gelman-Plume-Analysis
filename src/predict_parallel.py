@@ -116,9 +116,12 @@ def run_from_ori(output_directory, remove_recent_years=False):
         if len(group) < 20:
             print('skip ' + name, ':length is less than 20.')
             continue
-        if os.path.exists(output_directory + '/cache/' + name):
-            print('skip ' + name, ':cache exists.')
+        if name not in ['MW-129s', 'MW-17', 'MW-61d']:
+            print('skip ' + name, ':not in re-predict list.')
             continue
+        # if os.path.exists(output_directory + '/cache/' + name):
+        #     print('skip ' + name, ':cache exists.')
+        #     continue
         group['Date'] = pd.to_datetime(group['ds'])
         # ori_group = group[:]
         # ori_group.set_index('Date', inplace=True)
@@ -240,16 +243,34 @@ def run_from_rec(output_directory, name_dict, remove_recent_years=False):
 
 
 def run_from_pixel_rec(output_directory):
+    redo_list = ['Con-TS.r27-c68.txt',
+                 'Con-TS.r15-c66.txt',
+                 'Con-TS.r20-c65.txt',
+                 'Con-TS.r20-c64.txt',
+                 'Con-TS.r20-c66.txt',
+                 'Con-TS.r16-c65.txt',
+                 'Con-TS.r25-c72.txt',
+                 'Con-TS.r27-c04.txt',
+                 'Con-TS.r31-c68.txt',
+                 'Con-TS.r19-c65.txt',
+                 'Con-TS.r27-c72.txt']
+    redo_list = ['Con-TS.r20-c65.txt',
+                 'Con-TS.r20-c64.txt',
+                 'Con-TS.r16-c65.txt',
+                 'Con-TS.r19-c65.txt',
+                 'Con-TS.r27-c72.txt']
     create_dir(output_directory)
     name_list = [name for name in os.listdir("../data/pixel_rec/")]
     count = 0
     len_name_list = len(name_list)
     for i in name_list:
+        if i not in redo_list:
+            continue
         count += 1
         name = i.split('.')[0] + '.' + i.split('.')[1]
         print(name)
-        if os.path.exists(output_directory + '/res/' + name + '.txt'):
-            continue
+        # if os.path.exists(output_directory + '/res/' + name + '.txt'):
+        #     continue
         pixel_data = pd.read_csv('../data/pixel_rec/' + i)
         ori_data = pd.read_csv('../data/pixel_rec/' + i).dropna()
         pixel_data = pixel_data.dropna()
@@ -276,8 +297,7 @@ def run_from_pixel_rec(output_directory):
             no_negatives=no_negatives,
             verbose=verbose,
             n_jobs=n_jobs,
-            model_list="fast_parallel",
-            num_validations=5
+            num_validations=2
         )
 
         try:
@@ -314,4 +334,4 @@ if __name__ == '__main__':
     # run_from_rec('../result/well_rec/simple/8v/',generate_name_dict(), False)
     # run_from_rec('../result/well_rec/simple/8v/', generate_name_dict(), True)
 
-    run_from_pixel_rec('../result/pixel_rec/simple/5v/')
+    run_from_pixel_rec('../result/pixel_rec/fast_parallel+5v/')

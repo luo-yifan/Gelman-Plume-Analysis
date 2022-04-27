@@ -520,9 +520,9 @@ if __name__ == "__main__":
     # output_dir_ori = '../result/pixel_rec/'
     # run_map_rec(output_dir_ori, model_list)
 
-    predict_cache_to_csv('../result/well_rec/simple_parallel_test/cache/',
-                         '../result/well_rec/simple_parallel_test/',
-                         'all_predict_data_rec')
+    # predict_cache_to_csv('../result/well_rec/simple_parallel_test/cache/',
+    #                      '../result/well_rec/simple_parallel_test/',
+    #                      'all_predict_data_rec')
     # predict_cache_to_csv('../result/well_rec/rm5_parallel_test/cache/',
     #                      '../result/well_rec/rm5_parallel_test/',
     #                      'all_predict_data_rec_rm5')
@@ -531,8 +531,8 @@ if __name__ == "__main__":
     #                      '../result/ori/rm5_parallel_test/',
     #                      'rm5_predict_data')
     #
-    # predict_cache_to_csv_ds_y('../result/ori/simple_parallel_test/cache/',
-    #                      '../result/ori/simple_parallel_test/',
-    #                      'all_predict_data_ori')
+    predict_cache_to_csv_ds_y('../result/ori/simple/8v/cache/',
+                         '../result/ori/simple/8v/',
+                         'all_predict_data')
 
     # ori_data_to_csv('../data/')
